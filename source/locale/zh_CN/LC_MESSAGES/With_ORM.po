@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../With_ORM.rst:2
+msgid "With ORM"
+msgstr "与ORM配合使用"
+
+#: ../With_ORM.rst:7
+msgid ""
+"For convience, RiskQuantLib provides with functions to interact with ORM."
+" However, these functions can be used to any iterable objects. We shall "
+"introduce them as follows:"
+msgstr "为了方便，RiskQuantLib提供了一些函数，用于与ORM进行交互。但是这些函数可以广泛地被使用于于任何可迭代对象交互，我们下面进行介绍："
+
+#: ../With_ORM.rst:10
+msgid "From Iterable"
+msgstr "从可迭代对象转换为RiskQuantLib模板列表"
+
+#: ../With_ORM.rst:12
+msgid ""
+"If you use ORM to get a list, whose elements is the record in database "
+"and all columns in database are mapped into element attributes, you may "
+"want to change this list into RiskQuantLib list."
+msgstr "如果你使用ORM获取了一个list，它的每个元素是数据库的一条记录，数据库的每一列被映射为元素的属性。那么你或许需要将这样的list转换为RiskQuantLib模板列表。"
+
+#: ../With_ORM.rst:14
+msgid ""
+"Let's suppose you have a ORM list object ``ORM`` whose element has "
+"attributes named: ``OptionCode``, ``PayOff``, ``ExerciseType``, "
+"``ExerciseDate``, ``StockPrice``, ``RiskFreeRate``, ``Sigma``."
+msgstr "让我们假设你有一个ORM的list对象，名为 ``ORM``，它的元素有很多属性，例如 ``OptionCode``, ``PayOff``, ``ExerciseType``, ``ExerciseDate``, ``StockPrice``, ``RiskFreeRate``, ``Sigma``"
+
+#: ../With_ORM.rst:16
+msgid "Now we build our project by edit ``Build_Attr.xlsx`` to:"
+msgstr "现在我们编辑 ``Build_Attr.xlsx`` 以便于编译我们的工程："
+
+#: ../With_ORM.rst:19
+msgid "SecurityType"
+msgstr ""
+
+#: ../With_ORM.rst:19
+msgid "AttrName"
+msgstr ""
+
+#: ../With_ORM.rst:19
+msgid "AttrType"
+msgstr ""
+
+#: ../With_ORM.rst:21 ../With_ORM.rst:23 ../With_ORM.rst:25 ../With_ORM.rst:27
+#: ../With_ORM.rst:29
+msgid "MyEuropeanOption"
+msgstr ""
+
+#: ../With_ORM.rst:21
+msgid "PayOff"
+msgstr ""
+
+#: ../With_ORM.rst:21
+msgid "qlPayOff"
+msgstr ""
+
+#: ../With_ORM.rst:23
+msgid "ExerciseDate"
+msgstr ""
+
+#: ../With_ORM.rst:23
+msgid "qlExercise"
+msgstr ""
+
+#: ../With_ORM.rst:25
+msgid "StockPrice"
+msgstr ""
+
+#: ../With_ORM.rst:25 ../With_ORM.rst:27 ../With_ORM.rst:29
+msgid "qlQuote"
+msgstr ""
+
+#: ../With_ORM.rst:27
+msgid "RiskFreeRate"
+msgstr ""
+
+#: ../With_ORM.rst:29
+msgid "Sigma"
+msgstr ""
+
+#: ../With_ORM.rst:32
+msgid ""
+"**Noticed here, we have all attribute names that are the same with ORM "
+"list element attribute names. This will help RiskQuantLib to identify "
+"attribute and set them automatically.**"
+msgstr "**注意到这里，我们所有的属性的名称都和ORM的属性名称完全相同，这会帮助RiskQuantLib自动识别那些可以被Set函数族捕捉的属性。**"
+
+#: ../With_ORM.rst:34
+msgid "After building it, you can open the ``main.py`` and use it directly: ::"
+msgstr "当编译后，你可以打开 ``main.py`` 并且直接使用：::"
+
+#: ../With_ORM.rst:40
+msgid ""
+"You can generate RiskQuantLib list from another RiskQuantLib list in this"
+" way: ::"
+msgstr "你可以从另一个模板列表生成一个新的模板列表：::"
+
+#: ../With_ORM.rst:46
+msgid ""
+"Here, if ``subStockList`` is a class inheriting from ``stockList``, all "
+"attributes of stockListA will be kept in stockListB. If ``subStockList`` "
+"doesn't have any relation with ``stockList``, then only the attributes "
+"registered in both classes will be kept."
+msgstr "这里，如果 ``subStockList`` 是继承自 ``stockList`` 的，那么stockListA的所有属性在stockListB都会被保留，如果 ``subStockList`` 和 ``stockList`` 毫无关系，那么只有那些在两个模板类中都注册过的属性会被保留。"
+

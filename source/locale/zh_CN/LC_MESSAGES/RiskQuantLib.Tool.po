@@ -1,0 +1,4818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Tool.rst:2
+msgid "RiskQuantLib.Tool package"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:8
+msgid "RiskQuantLib.Tool.GUITool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.alertGUI:1 RiskQuantLib.Tool.GUITool.confirmGUI:1
+#: RiskQuantLib.Tool.GUITool.inputGUI:1
+#: RiskQuantLib.Tool.codeBuilderTool.codeBuilder:1
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder:1
+#: RiskQuantLib.Tool.databaseTool.mysqlTool:1
+#: RiskQuantLib.Tool.databaseTool.neo4jTool:1
+#: RiskQuantLib.Tool.databaseTool.oracleTool:1
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook:1
+#: RiskQuantLib.Tool.outlookTool.sendMailFromOutlook:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.alertGUI:1 of
+msgid "This class is used to alert some information."
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.confirmGUI:1 of
+msgid "This GUI is used to confirm some information."
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.guiAlert:1 of
+msgid "This function will alert some information."
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.guiConfirm:1 of
+msgid "This function will ask confirmation of some information."
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.guiInput:1 of
+msgid "This function will receive some information by GUI."
+msgstr ""
+
+#: RiskQuantLib.Tool.GUITool.inputGUI:1 of
+msgid "This GUI is used to input data."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:16
+msgid "RiskQuantLib.Tool.codeBuilderTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.codeBuilder:1 of
+msgid ""
+"This class is the basic class used to generate source code of any "
+"language."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder:1 of
+msgid ""
+"This class is the python source code builder, used to generate python "
+"source code automatically."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.endClass:1 of
+msgid "Specify the end of a class."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.endFunction:1 of
+msgid "Specify the end of a function."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:1 of
+msgid "Import a module to python source file."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:5 of
+msgid "libraryNameString"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:6 of
+msgid "The library name you want to import."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:7 of
+msgid "libraryAbbrString"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:8 of
+msgid ""
+"If not blank, library will be imported with the form 'import "
+"libraryNameString as libraryAbbrString'"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:10 of
+msgid "importSubModule"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.isnan:10 of
+msgid "bool"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:10 of
+msgid ""
+"If True, library will be imported with the form 'from libraryNameString "
+"import subModuleName as libraryAbbrString'"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:14 of
+msgid "subModuleName"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:13 of
+msgid ""
+"If not blank and importSubModule is true, library will be imported with "
+"the form 'from libraryNameString import subModuleName as "
+"libraryAbbrString'"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:18
+#: RiskQuantLib.Tool.fileTool.compressExcel:14
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:12
+#: RiskQuantLib.Tool.plotTool.plotBar:18 RiskQuantLib.Tool.plotTool.plotLine:18
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:20
+#: RiskQuantLib.Tool.plotTool.plotPie:14 RiskQuantLib.Tool.plotTool.shuffle:18
+#: of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setTitle:1 of
+msgid "Set python source file title, including coding method and python version."
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.startClass:1 of
+msgid "Start a new class. This function must be followed by endClass()"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.startFunction:1 of
+msgid "Start a function. This function must be followed by endFunction()"
+msgstr ""
+
+#: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.writeToFile:1 of
+msgid "Output the source code to a file, use mode 'w+'."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:24
+msgid "RiskQuantLib.Tool.databaseTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.databaseTool.mysqlTool:1 of
+msgid "This is the API to connect with mysql database."
+msgstr ""
+
+#: RiskQuantLib.Tool.databaseTool.neo4jTool:1 of
+msgid "This is the API to connect with neo4j database."
+msgstr ""
+
+#: RiskQuantLib.Tool.databaseTool.oracleTool:1 of
+msgid "This is the API to connect with oracle database."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:32
+msgid "RiskQuantLib.Tool.fileTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.clearCachePklFile:1 of
+msgid "Delete all '.pkl' files in filePath."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:1 of
+msgid "Re-format excel in form of ['PATH','FILE','COLUMN','ROW','VALUE']"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:5 of
+msgid "filePathString"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:6 of
+msgid "The path where you hold your excel files."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:7 of
+msgid "outputPathString"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:8 of
+msgid "The path of return file."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:10 of
+msgid "subDictionary"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.compressExcel:10 of
+msgid "If there are still other dictionaries in filePathString."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:1 of
+msgid ""
+"This function is like pandas.DataFrame.groupby, however, this function "
+"will sum the value for each group, and insert it as a new row before that"
+" group."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:6
+#: RiskQuantLib.Tool.plotTool.chisquare:14
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:15
+#: RiskQuantLib.Tool.plotTool.plotBar:5 RiskQuantLib.Tool.plotTool.plotLine:5
+#: RiskQuantLib.Tool.plotTool.plotPie:5
+#: RiskQuantLib.Tool.plotTool.standard_t:14 of
+msgid "df"
+msgstr ""
+
+#: of
+msgid "pd.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:7 of
+msgid "The dataframe that you want to louverBox"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:8
+#: RiskQuantLib.Tool.fileTool.louverBox:8 of
+msgid "groupBy"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:9 of
+msgid "The column you want to group by."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:11 of
+msgid "insertTo :str"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:11 of
+msgid "The column you want to record the result"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dataFrameLouverBox:15 of
+msgid "result : pd.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dumpDictToJson:1 of
+msgid "Dump dict to json file."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.dumpVariable:1 of
+msgid "Use python module pickle to dump variable."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.findFirstNotNanValueOfSeries:1 of
+msgid "Return the first not nan value of a pandas.Series object."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateDataFrameFromDict:1 of
+msgid "Generate a dataframe from a dict."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:1 of
+msgid "This function generate a dict of file."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:5 of
+msgid "filePathString :str"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:6 of
+msgid "The path you want to read files from."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:7
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:14 of
+msgid "targetDict"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:8 of
+msgid "The dict to hold result."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:10 of
+msgid "onlyExcel"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:10 of
+msgid "If true, only excel will be read and loaded."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.generateFileDictFromPath:15 of
+msgid "The dict holding excel dataframe or paths."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.loadVariable:1 of
+msgid "Use python module pickle to load variable."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:1 of
+msgid ""
+"This function is like pandas.DataFrame.sum, however, this function will "
+"sum the value for each column, and insert it as a new row before the "
+"dataframe."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:6 of
+msgid "target_df"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:7 of
+msgid "The dataframe you want to louverBox"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:9 of
+msgid "The column name that you want to groupby."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:11 of
+msgid "insertTo"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:11 of
+msgid "The index name of the insert row."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:15 of
+msgid "tmp_df"
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.louverBox:16 of
+msgid "The louverBox-ed dataframe."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.modifyDateIsToday:1 of
+msgid ""
+"This function will return a bool value, showing whether the target file "
+"is modified on today."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.resetIndexByFirstNotNanValue:1 of
+msgid "Reset index by the first not nan value."
+msgstr ""
+
+#: RiskQuantLib.Tool.fileTool.waitForFile:1 of
+msgid "This function will wait for the change or modification of a file."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:40
+msgid "RiskQuantLib.Tool.mathTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:1 of
+msgid "This function returns a cubic interpolate of two lists."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:5
+#: RiskQuantLib.Tool.mathTool.linearRegression:5 of
+msgid "xList"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:14 of
+msgid "list"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:6
+#: RiskQuantLib.Tool.mathTool.linearRegression:6 of
+msgid "The X list"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:8
+#: RiskQuantLib.Tool.mathTool.linearRegression:8 of
+msgid "yList"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:8
+#: RiskQuantLib.Tool.mathTool.linearRegression:8 of
+msgid "The Y list"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:12
+#: RiskQuantLib.Tool.mathTool.linearRegression:12
+#: RiskQuantLib.Tool.mathTool.maxDropDown:12 of
+msgid "model"
+msgstr ""
+
+#: of
+msgid "object"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.interP1d:13
+#: RiskQuantLib.Tool.mathTool.linearRegression:13 of
+msgid "The scipy model."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.isnan:1 of
+msgid "This function returns a bool value of given data."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.isnan:6 RiskQuantLib.Tool.plotTool.permutation:15
+#: RiskQuantLib.Tool.plotTool.shuffle:14 of
+msgid "x"
+msgstr ""
+
+#: of
+msgid "Any"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.isnan:6 of
+msgid "This is the data you want to tell whether it is a nan."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.linearRegression:1 of
+msgid "This function returns a linear regression of two lists."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:1 of
+msgid "This function returns a max dropdown of given list."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:5
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:5 of
+msgid "dataList"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:6 of
+msgid "The data list"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:8 of
+msgid "valueType"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:8 of
+msgid "The drop down type. 'Relative' or 'Absolute' can be used."
+msgstr ""
+
+#: of
+msgid "np.float"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.maxDropDown:13 of
+msgid "The max drop down of given data."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:1 of
+msgid "This function returns the percentage of a list."
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:6 of
+msgid "The list holding data"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:8 of
+msgid "percentage"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: RiskQuantLib.Tool.mathTool.percentageOfSeries:8 of
+msgid "The percentage number. 99 means 99% percentage."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:48
+msgid "RiskQuantLib.Tool.multiThreadTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:1 of
+msgid "基类：:class:`threading.Thread`"
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:1 of
+msgid "This class is used to create multiple threads."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:3 of
+msgid ""
+"This constructor should always be called with keyword arguments. "
+"Arguments are:"
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:5 of
+msgid ""
+"*group* should be None; reserved for future extension when a ThreadGroup "
+"class is implemented."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:8 of
+msgid ""
+"*target* is the callable object to be invoked by the run() method. "
+"Defaults to None, meaning nothing is called."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:11 of
+msgid ""
+"*name* is the thread name. By default, a unique name is constructed of "
+"the form \"Thread-N\" where N is a small decimal number."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:14 of
+msgid "*args* is the argument tuple for the target invocation. Defaults to ()."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:16 of
+msgid ""
+"*kwargs* is a dictionary of keyword arguments for the target invocation. "
+"Defaults to {}."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread:19 of
+msgid ""
+"If a subclass overrides the constructor, it must make sure to invoke the "
+"base class constructor (Thread.__init__()) before doing anything else to "
+"the thread."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread.run:1 of
+msgid "Method representing the thread's activity."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.functionMultiThread.run:3 of
+msgid ""
+"You may override this method in a subclass. The standard run() method "
+"invokes the callable object passed to the object's constructor as the "
+"target argument, if any, with sequential and keyword arguments taken from"
+" the args and kwargs arguments, respectively."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.multiThread:1 of
+msgid ""
+"This function will run all functions in the given functionList by "
+"multiple threads."
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.multiThread:5 of
+msgid "functionList"
+msgstr ""
+
+#: RiskQuantLib.Tool.multiThreadTool.multiThread:6 of
+msgid "A list holding all functions you want to run."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:56
+msgid "RiskQuantLib.Tool.outlookTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook:1 of
+msgid ""
+"This class is used to control Outlook App in windows. Due to the "
+"difference of version of win32.com module, this class may not perform "
+"well."
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook.readOutlookMailbox:1 of
+msgid "Connect to outlook, and read numberOfReadingMails mails in receive box."
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook.readOutlookMailbox:6 of
+msgid "numberOfReadingMails"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook.readOutlookMailbox:6 of
+msgid "The number of mails you want to read."
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook.readOutlookMailbox:10 of
+msgid "result"
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.readMailFromOutlook.readOutlookMailbox:11 of
+msgid "A dict which contains information of mails. Key starts from 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.sendMailFromOutlook:1 of
+msgid "This class is used to send mails by outlook."
+msgstr ""
+
+#: RiskQuantLib.Tool.outlookTool.sendMailFromOutlook.sendMail:1 of
+msgid "Send mails by outlook"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:64
+msgid "RiskQuantLib.Tool.parallelComputingTool module"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:72
+msgid "RiskQuantLib.Tool.plotTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:1 of
+msgid "Draw samples from a Beta distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:3 of
+msgid ""
+"The Beta distribution is a special case of the Dirichlet distribution, "
+"and is related to the Gamma distribution.  It has the probability "
+"distribution function"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:7 of
+msgid ""
+"f(x; a,b) = \\frac{1}{B(\\alpha, \\beta)} x^{\\alpha - 1}\n"
+"(1 - x)^{\\beta - 1},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:10 of
+msgid "where the normalization, B, is the beta function,"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:12 of
+msgid ""
+"B(\\alpha, \\beta) = \\int_0^1 t^{\\alpha - 1}\n"
+"(1 - t)^{\\beta - 1} dt.\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:15 of
+msgid "It is often seen in Bayesian inference and order statistics."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:18 of
+msgid ""
+"New code should use the ``beta`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:23 RiskQuantLib.Tool.plotTool.choice:12
+#: RiskQuantLib.Tool.plotTool.pareto:27 RiskQuantLib.Tool.plotTool.power:12
+#: RiskQuantLib.Tool.plotTool.weibull:19 RiskQuantLib.Tool.plotTool.zipf:17 of
+msgid "a"
+msgstr ""
+
+#: of
+msgid "float or array_like of floats"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:24 of
+msgid "Alpha, positive (>0)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:25 of
+msgid "b"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:26 of
+msgid "Beta, positive (>0)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:31 RiskQuantLib.Tool.plotTool.binomial:23
+#: RiskQuantLib.Tool.plotTool.chisquare:20 RiskQuantLib.Tool.plotTool.choice:16
+#: RiskQuantLib.Tool.plotTool.dirichlet:21
+#: RiskQuantLib.Tool.plotTool.exponential:30 RiskQuantLib.Tool.plotTool.f:27
+#: RiskQuantLib.Tool.plotTool.gamma:22 RiskQuantLib.Tool.plotTool.geometric:27
+#: RiskQuantLib.Tool.plotTool.gumbel:22
+#: RiskQuantLib.Tool.plotTool.hypergeometric:26
+#: RiskQuantLib.Tool.plotTool.laplace:24 RiskQuantLib.Tool.plotTool.logistic:21
+#: RiskQuantLib.Tool.plotTool.lognormal:23
+#: RiskQuantLib.Tool.plotTool.logseries:18
+#: RiskQuantLib.Tool.plotTool.multinomial:27
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:24
+#: RiskQuantLib.Tool.plotTool.negative_binomial:21
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:23
+#: RiskQuantLib.Tool.plotTool.noncentral_f:29
+#: RiskQuantLib.Tool.plotTool.normal:28 RiskQuantLib.Tool.plotTool.pareto:33
+#: RiskQuantLib.Tool.plotTool.poisson:19 RiskQuantLib.Tool.plotTool.power:18
+#: RiskQuantLib.Tool.plotTool.randint:23
+#: RiskQuantLib.Tool.plotTool.random_integers:25
+#: RiskQuantLib.Tool.plotTool.random_sample:18
+#: RiskQuantLib.Tool.plotTool.rayleigh:18
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:14
+#: RiskQuantLib.Tool.plotTool.standard_exponential:15
+#: RiskQuantLib.Tool.plotTool.standard_gamma:18
+#: RiskQuantLib.Tool.plotTool.standard_normal:12
+#: RiskQuantLib.Tool.plotTool.standard_t:20
+#: RiskQuantLib.Tool.plotTool.triangular:27
+#: RiskQuantLib.Tool.plotTool.uniform:24 RiskQuantLib.Tool.plotTool.vonmises:25
+#: RiskQuantLib.Tool.plotTool.wald:26 RiskQuantLib.Tool.plotTool.weibull:25
+#: RiskQuantLib.Tool.plotTool.zipf:23 of
+msgid "size"
+msgstr ""
+
+#: of
+msgid "int or tuple of ints, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:28 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``a`` and ``b`` are both scalars. Otherwise, "
+"``np.broadcast(a, b).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:36 RiskQuantLib.Tool.plotTool.binomial:29
+#: RiskQuantLib.Tool.plotTool.chisquare:25
+#: RiskQuantLib.Tool.plotTool.exponential:35 RiskQuantLib.Tool.plotTool.f:32
+#: RiskQuantLib.Tool.plotTool.gamma:27 RiskQuantLib.Tool.plotTool.geometric:32
+#: RiskQuantLib.Tool.plotTool.get_state:23 RiskQuantLib.Tool.plotTool.gumbel:27
+#: RiskQuantLib.Tool.plotTool.hypergeometric:33
+#: RiskQuantLib.Tool.plotTool.laplace:29 RiskQuantLib.Tool.plotTool.logistic:26
+#: RiskQuantLib.Tool.plotTool.lognormal:28
+#: RiskQuantLib.Tool.plotTool.logseries:23
+#: RiskQuantLib.Tool.plotTool.multinomial:36
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:39
+#: RiskQuantLib.Tool.plotTool.negative_binomial:28
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:28
+#: RiskQuantLib.Tool.plotTool.noncentral_f:34
+#: RiskQuantLib.Tool.plotTool.normal:33 RiskQuantLib.Tool.plotTool.pareto:38
+#: RiskQuantLib.Tool.plotTool.permutation:20
+#: RiskQuantLib.Tool.plotTool.poisson:24 RiskQuantLib.Tool.plotTool.power:23
+#: RiskQuantLib.Tool.plotTool.randint:35
+#: RiskQuantLib.Tool.plotTool.random_integers:31
+#: RiskQuantLib.Tool.plotTool.random_sample:24
+#: RiskQuantLib.Tool.plotTool.rayleigh:23
+#: RiskQuantLib.Tool.plotTool.set_state:25
+#: RiskQuantLib.Tool.plotTool.standard_exponential:20
+#: RiskQuantLib.Tool.plotTool.standard_gamma:23
+#: RiskQuantLib.Tool.plotTool.standard_normal:18
+#: RiskQuantLib.Tool.plotTool.standard_t:25
+#: RiskQuantLib.Tool.plotTool.triangular:32
+#: RiskQuantLib.Tool.plotTool.uniform:29 RiskQuantLib.Tool.plotTool.vonmises:30
+#: RiskQuantLib.Tool.plotTool.wald:31 RiskQuantLib.Tool.plotTool.weibull:30
+#: RiskQuantLib.Tool.plotTool.zipf:28 of
+msgid "out"
+msgstr ""
+
+#: of
+msgid "ndarray or scalar"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:36 of
+msgid "Drawn samples from the parameterized beta distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.beta:40 of
+msgid "Generator.beta: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:1 of
+msgid "Draw samples from a binomial distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:3 of
+msgid ""
+"Samples are drawn from a binomial distribution with specified parameters,"
+" n trials and p probability of success where n an integer >= 0 and p is "
+"in the interval [0,1]. (n may be input as a float, but it is truncated to"
+" an integer in use)"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:9 of
+msgid ""
+"New code should use the ``binomial`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:15
+#: RiskQuantLib.Tool.plotTool.multinomial:17
+#: RiskQuantLib.Tool.plotTool.negative_binomial:13
+#: RiskQuantLib.Tool.strTool.getNthWeekday:5 of
+msgid "n"
+msgstr ""
+
+#: of
+msgid "int or array_like of ints"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:15 of
+msgid ""
+"Parameter of the distribution, >= 0. Floats are also accepted, but they "
+"will be truncated to integers."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:17 RiskQuantLib.Tool.plotTool.choice:23
+#: RiskQuantLib.Tool.plotTool.geometric:21
+#: RiskQuantLib.Tool.plotTool.logseries:12
+#: RiskQuantLib.Tool.plotTool.negative_binomial:15 of
+msgid "p"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:18
+#: RiskQuantLib.Tool.plotTool.negative_binomial:16 of
+msgid "Parameter of the distribution, >= 0 and <=1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:20
+#: RiskQuantLib.Tool.plotTool.negative_binomial:18 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``n`` and ``p`` are both scalars. Otherwise, "
+"``np.broadcast(n, p).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:28 of
+msgid ""
+"Drawn samples from the parameterized binomial distribution, where each "
+"sample is equal to the number of successes over the n trials."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:33 of
+msgid "scipy.stats.binom"
+msgstr ""
+
+#: of
+msgid "probability density function, distribution or"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:34 RiskQuantLib.Tool.plotTool.f:37
+#: RiskQuantLib.Tool.plotTool.gamma:32
+#: RiskQuantLib.Tool.plotTool.hypergeometric:38
+#: RiskQuantLib.Tool.plotTool.logistic:31
+#: RiskQuantLib.Tool.plotTool.lognormal:33
+#: RiskQuantLib.Tool.plotTool.logseries:28 RiskQuantLib.Tool.plotTool.normal:38
+#: RiskQuantLib.Tool.plotTool.pareto:43 RiskQuantLib.Tool.plotTool.pareto:45
+#: RiskQuantLib.Tool.plotTool.standard_gamma:28
+#: RiskQuantLib.Tool.plotTool.vonmises:35 RiskQuantLib.Tool.plotTool.zipf:33 of
+msgid "cumulative density function, etc."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:35 of
+msgid "Generator.binomial: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:39 of
+msgid "The probability density for the binomial distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:41 of
+msgid ""
+"P(N) = \\binom{n}{N}p^N(1-p)^{n-N},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:43 of
+msgid ""
+"where :math:`n` is the number of trials, :math:`p` is the probability of "
+"success, and :math:`N` is the number of successes."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:46 of
+msgid ""
+"When estimating the standard error of a proportion in a population by "
+"using a random sample, the normal distribution works well unless the "
+"product p*n <=5, where p = population proportion estimate, and n = number"
+" of samples, in which case the binomial distribution is used instead. For"
+" example, a sample of 15 people shows 4 who are left handed, and 11 who "
+"are right handed. Then p = 4/15 = 27%. 0.27*15 = 4, so the binomial "
+"distribution should be used in this case."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:56 of
+msgid ""
+"Dalgaard, Peter, \"Introductory Statistics with R\", Springer-Verlag, "
+"2002."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:58 RiskQuantLib.Tool.plotTool.f:52 of
+msgid ""
+"Glantz, Stanton A. \"Primer of Biostatistics.\", McGraw-Hill, Fifth "
+"Edition, 2002."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:60
+#: RiskQuantLib.Tool.plotTool.hypergeometric:65 of
+msgid ""
+"Lentner, Marvin, \"Elementary Applied Statistics\", Bogden and Quigley, "
+"1972."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:62 of
+msgid ""
+"Weisstein, Eric W. \"Binomial Distribution.\" From MathWorld--A Wolfram "
+"Web Resource. http://mathworld.wolfram.com/BinomialDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:65 of
+msgid ""
+"Wikipedia, \"Binomial distribution\", "
+"https://en.wikipedia.org/wiki/Binomial_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:70 RiskQuantLib.Tool.plotTool.f:69
+#: RiskQuantLib.Tool.plotTool.gamma:58 RiskQuantLib.Tool.plotTool.gumbel:79
+#: RiskQuantLib.Tool.plotTool.hypergeometric:75
+#: RiskQuantLib.Tool.plotTool.logistic:61
+#: RiskQuantLib.Tool.plotTool.lognormal:64
+#: RiskQuantLib.Tool.plotTool.logseries:61
+#: RiskQuantLib.Tool.plotTool.negative_binomial:62
+#: RiskQuantLib.Tool.plotTool.normal:68 RiskQuantLib.Tool.plotTool.pareto:79
+#: RiskQuantLib.Tool.plotTool.poisson:55 RiskQuantLib.Tool.plotTool.power:59
+#: RiskQuantLib.Tool.plotTool.standard_gamma:54
+#: RiskQuantLib.Tool.plotTool.uniform:66 RiskQuantLib.Tool.plotTool.vonmises:63
+#: RiskQuantLib.Tool.plotTool.weibull:75 RiskQuantLib.Tool.plotTool.zipf:56 of
+msgid "Draw samples from the distribution:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:76 of
+msgid ""
+"A real world example. A company drills 9 wild-cat oil exploration wells, "
+"each with an estimated probability of success of 0.1. All nine wells "
+"fail. What is the probability of that happening?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.binomial:80 of
+msgid ""
+"Let's do 20,000 trials of the model, and count the number that generate "
+"zero positive results."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:1 of
+msgid "Draw samples from a chi-square distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:3 of
+msgid ""
+"When `df` independent random variables, each with standard normal "
+"distributions (mean 0, variance 1), are squared and summed, the resulting"
+" distribution is chi-square (see Notes).  This distribution is often used"
+" in hypothesis testing."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:9 of
+msgid ""
+"New code should use the ``chisquare`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:15 of
+msgid "Number of degrees of freedom, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:17
+#: RiskQuantLib.Tool.plotTool.standard_t:17 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``df`` is a scalar.  Otherwise, ``np.array(df).size`` "
+"samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:25 of
+msgid "Drawn samples from the parameterized chi-square distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:31 RiskQuantLib.Tool.plotTool.choice:37
+#: RiskQuantLib.Tool.plotTool.dirichlet:31 RiskQuantLib.Tool.plotTool.power:28
+#: of
+msgid "ValueError"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:30 of
+msgid ""
+"When `df` <= 0 or when an inappropriate `size` (e.g. ``size=-1``) is "
+"given."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:35 of
+msgid "Generator.chisquare: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:39 of
+msgid ""
+"The variable obtained by summing the squares of `df` independent, "
+"standard normally distributed random variables:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:42 of
+msgid ""
+"Q = \\sum_{i=0}^{\\mathtt{df}} X^2_i\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:44 of
+msgid "is chi-square distributed, denoted"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:46 of
+msgid ""
+"Q \\sim \\chi^2_k.\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:48 of
+msgid "The probability density function of the chi-squared distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:50 of
+msgid ""
+"p(x) = \\frac{(1/2)^{k/2}}{\\Gamma(k/2)}\n"
+"x^{k/2 - 1} e^{-x/2},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:53 of
+msgid "where :math:`\\Gamma` is the gamma function,"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:55 of
+msgid ""
+"\\Gamma(x) = \\int_0^{-\\infty} t^{x - 1} e^{-t} dt.\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.chisquare:59 of
+msgid ""
+"NIST \"Engineering Statistics Handbook\" "
+"https://www.itl.nist.gov/div898/handbook/eda/section3/eda3666.htm"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:1 of
+msgid "Generates a random sample from a given 1-D array"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:6 of
+msgid ""
+"New code should use the ``choice`` method of a ``default_rng()`` instance"
+" instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: of
+msgid "1-D array-like or int"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:12 of
+msgid ""
+"If an ndarray, a random sample is generated from its elements. If an int,"
+" the random sample is generated as if a were np.arange(a)"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:15
+#: RiskQuantLib.Tool.plotTool.multinomial:25
+#: RiskQuantLib.Tool.plotTool.randint:22
+#: RiskQuantLib.Tool.plotTool.random_integers:23
+#: RiskQuantLib.Tool.plotTool.random_sample:16
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:12
+#: RiskQuantLib.Tool.plotTool.standard_exponential:13
+#: RiskQuantLib.Tool.plotTool.standard_normal:10 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  Default is None, in which case a single value is"
+" returned."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:18 of
+msgid "replace"
+msgstr ""
+
+#: of
+msgid "boolean, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:19 of
+msgid "Whether the sample is with or without replacement"
+msgstr ""
+
+#: of
+msgid "1-D array-like, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:21 of
+msgid ""
+"The probabilities associated with each entry in a. If not given the "
+"sample assumes a uniform distribution over all entries in a."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:28 RiskQuantLib.Tool.plotTool.dirichlet:26
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:19 of
+msgid "samples"
+msgstr ""
+
+#: of
+msgid "single item or ndarray"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:28 of
+msgid "The generated random samples"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:33 of
+msgid ""
+"If a is an int and less than zero, if a or p are not 1-dimensional, if a "
+"is an array-like of size 0, if p is not a vector of probabilities, if a "
+"and p have different lengths, or if replace=False and the sample size is "
+"greater than the population size"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:41 of
+msgid ""
+"randint, shuffle, permutation Generator.choice: which should be used in "
+"new code"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:46 of
+msgid ""
+"Sampling random rows from a 2-D array is not possible with this function,"
+" but is possible with `Generator.choice` through its ``axis`` keyword."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:51 of
+msgid "Generate a uniform random sample from np.arange(5) of size 3:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:57 of
+msgid "Generate a non-uniform random sample from np.arange(5) of size 3:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:62 of
+msgid ""
+"Generate a uniform random sample from np.arange(5) of size 3 without "
+"replacement:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:69 of
+msgid ""
+"Generate a non-uniform random sample from np.arange(5) of size 3 without "
+"replacement:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:75 of
+msgid ""
+"Any of the above can be repeated with an arbitrary array-like instead of "
+"just integers. For instance:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:1 of
+msgid "Draw samples from the Dirichlet distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:3 of
+msgid ""
+"Draw `size` samples of dimension k from a Dirichlet distribution. A "
+"Dirichlet-distributed random variable can be seen as a multivariate "
+"generalization of a Beta distribution. The Dirichlet distribution is a "
+"conjugate prior of a multinomial distribution in Bayesian inference."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:10 of
+msgid ""
+"New code should use the ``dirichlet`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:16 of
+msgid "alpha"
+msgstr ""
+
+#: of
+msgid "sequence of floats, length k"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:16 of
+msgid "Parameter of the distribution (length ``k`` for sample of length ``k``)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:19 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n)``, then ``m * n * "
+"k`` samples are drawn.  Default is None, in which case a vector of length"
+" ``k`` is returned."
+msgstr ""
+
+#: of
+msgid "ndarray,"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:26 of
+msgid "The drawn samples, of shape ``(size, k)``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:31 of
+msgid "If any value in ``alpha`` is less than or equal to zero"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:35 of
+msgid "Generator.dirichlet: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:39 of
+msgid ""
+"The Dirichlet distribution is a distribution over vectors :math:`x` that "
+"fulfil the conditions :math:`x_i>0` and :math:`\\sum_{i=1}^k x_i = 1`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:43 of
+msgid ""
+"The probability density function :math:`p` of a Dirichlet-distributed "
+"random vector :math:`X` is proportional to"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:47 of
+msgid ""
+"p(x) \\propto \\prod_{i=1}^{k}{x^{\\alpha_i-1}_i},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:49 of
+msgid ""
+"where :math:`\\alpha` is a vector containing the positive concentration "
+"parameters."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:52 of
+msgid ""
+"The method uses the following property for computation: let :math:`Y` be "
+"a random vector which has components that follow a standard gamma "
+"distribution, then :math:`X = \\frac{1}{\\sum_{i=1}^k{Y_i}} Y` is "
+"Dirichlet-distributed"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:59 of
+msgid ""
+"David McKay, \"Information Theory, Inference and Learning Algorithms,\" "
+"chapter 23, http://www.inference.org.uk/mackay/itila/"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:62 of
+msgid ""
+"Wikipedia, \"Dirichlet distribution\", "
+"https://en.wikipedia.org/wiki/Dirichlet_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.dirichlet:67 of
+msgid ""
+"Taking an example cited in Wikipedia, this distribution can be used if "
+"one wanted to cut strings (each of initial length 1.0) into K pieces with"
+" different lengths, where each piece had, on average, a designated "
+"average length, but allowing some variation in the relative sizes of the "
+"pieces."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:1 of
+msgid "Draw samples from an exponential distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:3 of
+msgid "Its probability density function is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:5 of
+msgid ""
+"f(x; \\frac{1}{\\beta}) = \\frac{1}{\\beta} \\exp(-\\frac{x}{\\beta}),\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:7 of
+msgid ""
+"for ``x > 0`` and 0 elsewhere. :math:`\\beta` is the scale parameter, "
+"which is the inverse of the rate parameter :math:`\\lambda = 1/\\beta`. "
+"The rate parameter is an alternative, widely used parameterization of the"
+" exponential distribution [3]_."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:12 of
+msgid ""
+"The exponential distribution is a continuous analogue of the geometric "
+"distribution.  It describes many common situations, such as the size of "
+"raindrops measured over many rainstorms [1]_, or the time between page "
+"requests to Wikipedia [2]_."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:18 of
+msgid ""
+"New code should use the ``exponential`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:24
+#: RiskQuantLib.Tool.plotTool.gamma:16 RiskQuantLib.Tool.plotTool.gumbel:16
+#: RiskQuantLib.Tool.plotTool.laplace:18 RiskQuantLib.Tool.plotTool.logistic:15
+#: RiskQuantLib.Tool.plotTool.normal:22 RiskQuantLib.Tool.plotTool.rayleigh:12
+#: RiskQuantLib.Tool.plotTool.wald:20 of
+msgid "scale"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:24 of
+msgid "The scale parameter, :math:`\\beta = 1/\\lambda`. Must be non-negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:27
+#: RiskQuantLib.Tool.plotTool.rayleigh:15 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``scale`` is a scalar.  Otherwise, ``np.array(scale).size`` "
+"samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:35 of
+msgid "Drawn samples from the parameterized exponential distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:39 of
+msgid "Generator.exponential: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:43 of
+msgid ""
+"Peyton Z. Peebles Jr., \"Probability, Random Variables and Random Signal "
+"Principles\", 4th ed, 2001, p. 57."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:45 of
+msgid ""
+"Wikipedia, \"Poisson process\", "
+"https://en.wikipedia.org/wiki/Poisson_process"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.exponential:47 of
+msgid ""
+"Wikipedia, \"Exponential distribution\", "
+"https://en.wikipedia.org/wiki/Exponential_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:1 of
+msgid "Draw samples from an F distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:3 of
+msgid ""
+"Samples are drawn from an F distribution with specified parameters, "
+"`dfnum` (degrees of freedom in numerator) and `dfden` (degrees of freedom"
+" in denominator), where both parameters must be greater than zero."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:8 of
+msgid ""
+"The random variate of the F distribution (also known as the Fisher "
+"distribution) is a continuous probability distribution that arises in "
+"ANOVA tests, and is the ratio of two chi-square variates."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:14 of
+msgid ""
+"New code should use the ``f`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:19 RiskQuantLib.Tool.plotTool.noncentral_f:17
+#: of
+msgid "dfnum"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:20 of
+msgid "Degrees of freedom in numerator, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:21 RiskQuantLib.Tool.plotTool.noncentral_f:19
+#: of
+msgid "dfden"
+msgstr ""
+
+#: of
+msgid "float or array_like of float"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:22 of
+msgid "Degrees of freedom in denominator, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:24 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``dfnum`` and ``dfden`` are both scalars. Otherwise, "
+"``np.broadcast(dfnum, dfden).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:32 of
+msgid "Drawn samples from the parameterized Fisher distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:36 of
+msgid "scipy.stats.f"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:38 of
+msgid "Generator.f: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:42 of
+msgid ""
+"The F statistic is used to compare in-group variances to between-group "
+"variances. Calculating the distribution depends on the sampling, and so "
+"it is a function of the respective degrees of freedom in the problem.  "
+"The variable `dfnum` is the number of samples minus one, the between-"
+"groups degrees of freedom, while `dfden` is the within-groups degrees of "
+"freedom, the sum of the number of samples in each group minus the number "
+"of groups."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:54 of
+msgid ""
+"Wikipedia, \"F-distribution\", "
+"https://en.wikipedia.org/wiki/F-distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:59 of
+msgid "An example from Glantz[1], pp 47-40:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:61 of
+msgid ""
+"Two groups, children of diabetics (25 people) and children from people "
+"without diabetes (25 controls). Fasting blood glucose was measured, case "
+"group had a mean value of 86.1, controls had a mean value of 82.2. "
+"Standard deviations were 2.09 and 2.49 respectively. Are these data "
+"consistent with the null hypothesis that the parents diabetic status does"
+" not affect their children's blood glucose levels? Calculating the F "
+"statistic from the data gives a value of 36.01."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:75 of
+#, python-format
+msgid "The lower bound for the top 1% of the samples is :"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.f:80 of
+#, python-format
+msgid ""
+"So there is about a 1% chance that the F statistic will exceed 7.62, the "
+"measured value is 36, so the null hypothesis is rejected at the 1% level."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:1 of
+msgid "Draw samples from a Gamma distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:3 of
+msgid ""
+"Samples are drawn from a Gamma distribution with specified parameters, "
+"`shape` (sometimes designated \"k\") and `scale` (sometimes designated "
+"\"theta\"), where both parameters are > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:8 of
+msgid ""
+"New code should use the ``gamma`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:13
+#: RiskQuantLib.Tool.plotTool.standard_gamma:12 of
+msgid "shape"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:14 of
+msgid "The shape of the gamma distribution. Must be non-negative."
+msgstr ""
+
+#: of
+msgid "float or array_like of floats, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:16 of
+msgid ""
+"The scale of the gamma distribution. Must be non-negative. Default is "
+"equal to 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:19 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``shape`` and ``scale`` are both scalars. Otherwise, "
+"``np.broadcast(shape, scale).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:27 of
+msgid "Drawn samples from the parameterized gamma distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:31
+#: RiskQuantLib.Tool.plotTool.standard_gamma:27 of
+msgid "scipy.stats.gamma"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:33 of
+msgid "Generator.gamma: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:37
+#: RiskQuantLib.Tool.plotTool.standard_gamma:33 of
+msgid "The probability density for the Gamma distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:39
+#: RiskQuantLib.Tool.plotTool.standard_gamma:35 of
+msgid ""
+"p(x) = x^{k-1}\\frac{e^{-x/\\theta}}{\\theta^k\\Gamma(k)},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:41
+#: RiskQuantLib.Tool.plotTool.standard_gamma:37 of
+msgid ""
+"where :math:`k` is the shape and :math:`\\theta` the scale, and "
+":math:`\\Gamma` is the Gamma function."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:44
+#: RiskQuantLib.Tool.plotTool.standard_gamma:40 of
+msgid ""
+"The Gamma distribution is often used to model the times to failure of "
+"electronic components, and arises naturally in processes for which the "
+"waiting times between Poisson distributed events are relevant."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:50
+#: RiskQuantLib.Tool.plotTool.standard_gamma:46 of
+msgid ""
+"Weisstein, Eric W. \"Gamma Distribution.\" From MathWorld--A Wolfram Web "
+"Resource. http://mathworld.wolfram.com/GammaDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:53
+#: RiskQuantLib.Tool.plotTool.standard_gamma:49 of
+msgid ""
+"Wikipedia, \"Gamma distribution\", "
+"https://en.wikipedia.org/wiki/Gamma_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gamma:63 RiskQuantLib.Tool.plotTool.gumbel:84
+#: RiskQuantLib.Tool.plotTool.laplace:69
+#: RiskQuantLib.Tool.plotTool.lognormal:69 RiskQuantLib.Tool.plotTool.normal:81
+#: RiskQuantLib.Tool.plotTool.pareto:84 RiskQuantLib.Tool.plotTool.power:65
+#: RiskQuantLib.Tool.plotTool.standard_gamma:59
+#: RiskQuantLib.Tool.plotTool.uniform:77 RiskQuantLib.Tool.plotTool.vonmises:68
+#: RiskQuantLib.Tool.plotTool.weibull:80 RiskQuantLib.Tool.plotTool.zipf:61 of
+msgid ""
+"Display the histogram of the samples, along with the probability density "
+"function:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:1 of
+msgid "Draw samples from the geometric distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:3 of
+msgid ""
+"Bernoulli trials are experiments with one of two outcomes: success or "
+"failure (an example of such an experiment is flipping a coin).  The "
+"geometric distribution models the number of trials that must be run in "
+"order to achieve success.  It is therefore supported on the positive "
+"integers, ``k = 1, 2, ...``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:9 of
+msgid "The probability mass function of the geometric distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:11 of
+msgid ""
+"f(k) = (1 - p)^{k - 1} p\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:13 of
+msgid "where `p` is the probability of success of an individual trial."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:16 of
+msgid ""
+"New code should use the ``geometric`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:22 of
+msgid "The probability of success of an individual trial."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:24
+#: RiskQuantLib.Tool.plotTool.logseries:15 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``p`` is a scalar.  Otherwise, ``np.array(p).size`` samples "
+"are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:32 of
+msgid "Drawn samples from the parameterized geometric distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:36 of
+msgid "Generator.geometric: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:40 of
+msgid ""
+"Draw ten thousand values from the geometric distribution, with the "
+"probability of an individual success equal to 0.35:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.geometric:45 of
+msgid "How many trials succeeded after a single run?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:1 of
+msgid "Return a tuple representing the internal state of the generator."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:3 of
+msgid "For more details, see `set_state`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:9 of
+msgid "legacy"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:8 of
+msgid ""
+"Flag indicating to return a legacy tuple state when the BitGenerator is "
+"MT19937, instead of a dict."
+msgstr ""
+
+#: of
+msgid "{tuple(str, ndarray of 624 uints, int, int, float), dict}"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:14 of
+msgid "The returned tuple has the following items:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:16 of
+msgid "the string 'MT19937'."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:17 of
+msgid "a 1-D array of 624 unsigned integer keys."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:18
+#: RiskQuantLib.Tool.plotTool.set_state:15 of
+msgid "an integer ``pos``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:19
+#: RiskQuantLib.Tool.plotTool.set_state:16 of
+msgid "an integer ``has_gauss``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:20
+#: RiskQuantLib.Tool.plotTool.set_state:17 of
+msgid "a float ``cached_gaussian``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:22 of
+msgid ""
+"If `legacy` is False, or the BitGenerator is not MT19937, then state is "
+"returned as a dictionary."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:27 of
+msgid "set_state"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.get_state:31
+#: RiskQuantLib.Tool.plotTool.set_state:33 of
+msgid ""
+"`set_state` and `get_state` are not needed to work with any of the random"
+" distributions in NumPy. If the internal state is manually altered, the "
+"user should know exactly what he/she is doing."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:1 of
+msgid "Draw samples from a Gumbel distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:3 of
+msgid ""
+"Draw samples from a Gumbel distribution with specified location and "
+"scale.  For more information on the Gumbel distribution, see Notes and "
+"References below."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:8 of
+msgid ""
+"New code should use the ``gumbel`` method of a ``default_rng()`` instance"
+" instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:13 RiskQuantLib.Tool.plotTool.laplace:15
+#: RiskQuantLib.Tool.plotTool.logistic:12 RiskQuantLib.Tool.plotTool.normal:19
+#: of
+msgid "loc"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:14 of
+msgid "The location of the mode of the distribution. Default is 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:16 of
+msgid ""
+"The scale parameter of the distribution. Default is 1. Must be non- "
+"negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:19 RiskQuantLib.Tool.plotTool.laplace:21
+#: RiskQuantLib.Tool.plotTool.logistic:18 RiskQuantLib.Tool.plotTool.normal:25
+#: of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``loc`` and ``scale`` are both scalars. Otherwise, "
+"``np.broadcast(loc, scale).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:27 of
+msgid "Drawn samples from the parameterized Gumbel distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:31 of
+msgid ""
+"scipy.stats.gumbel_l scipy.stats.gumbel_r scipy.stats.genextreme weibull "
+"Generator.gumbel: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:39 of
+msgid ""
+"The Gumbel (or Smallest Extreme Value (SEV) or the Smallest Extreme Value"
+" Type I) distribution is one of a class of Generalized Extreme Value "
+"(GEV) distributions used in modeling extreme value problems. The Gumbel "
+"is a special case of the Extreme Value Type I distribution for maximums "
+"from distributions with \"exponential-like\" tails."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:45 of
+msgid "The probability density for the Gumbel distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:47 of
+msgid ""
+"p(x) = \\frac{e^{-(x - \\mu)/ \\beta}}{\\beta} e^{ -e^{-(x - \\mu)/\n"
+"\\beta}},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:50 of
+msgid ""
+"where :math:`\\mu` is the mode, a location parameter, and :math:`\\beta` "
+"is the scale parameter."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:53 of
+msgid ""
+"The Gumbel (named for German mathematician Emil Julius Gumbel) was used "
+"very early in the hydrology literature, for modeling the occurrence of "
+"flood events. It is also used for modeling maximum wind speed and "
+"rainfall rates.  It is a \"fat-tailed\" distribution - the probability of"
+" an event in the tail of the distribution is larger than if one used a "
+"Gaussian, hence the surprisingly frequent occurrence of 100-year floods. "
+"Floods were initially modeled as a Gaussian process, which underestimated"
+" the frequency of extreme events."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:62 of
+msgid ""
+"It is one of a class of extreme value distributions, the Generalized "
+"Extreme Value (GEV) distributions, which also includes the Weibull and "
+"Frechet."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:66 of
+msgid ""
+"The function has a mean of :math:`\\mu + 0.57721\\beta` and a variance of"
+" :math:`\\frac{\\pi^2}{6}\\beta^2`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:71 of
+msgid ""
+"Gumbel, E. J., \"Statistics of Extremes,\" New York: Columbia University "
+"Press, 1958."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:73 of
+msgid ""
+"Reiss, R.-D. and Thomas, M., \"Statistical Analysis of Extreme Values "
+"from Insurance, Finance, Hydrology and Other Fields,\" Basel: Birkhauser "
+"Verlag, 2001."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.gumbel:94 of
+msgid ""
+"Show how an extreme value distribution can arise from a Gaussian process "
+"and compare to a Gaussian:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:1 of
+msgid "Draw samples from a Hypergeometric distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:3 of
+msgid ""
+"Samples are drawn from a hypergeometric distribution with specified "
+"parameters, `ngood` (ways to make a good selection), `nbad` (ways to make"
+" a bad selection), and `nsample` (number of items sampled, which is less "
+"than or equal to the sum ``ngood + nbad``)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:9 of
+msgid ""
+"New code should use the ``hypergeometric`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:14 of
+msgid "ngood"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:15 of
+msgid "Number of ways to make a good selection.  Must be nonnegative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:16 of
+msgid "nbad"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:17 of
+msgid "Number of ways to make a bad selection.  Must be nonnegative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:19 of
+msgid "nsample"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:19 of
+msgid "Number of items sampled.  Must be at least 1 and at most ``ngood + nbad``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:22 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if `ngood`, `nbad`, and `nsample` are all scalars.  Otherwise, "
+"``np.broadcast(ngood, nbad, nsample).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:31 of
+msgid ""
+"Drawn samples from the parameterized hypergeometric distribution. Each "
+"sample is the number of good items within a randomly selected subset of "
+"size `nsample` taken from a set of `ngood` good items and `nbad` bad "
+"items."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:37 of
+msgid "scipy.stats.hypergeom"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:39 of
+msgid "Generator.hypergeometric: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:43 of
+msgid "The probability density for the Hypergeometric distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:45 of
+msgid ""
+"P(x) = \\frac{\\binom{g}{x}\\binom{b}{n-x}}{\\binom{g+b}{n}},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:47 of
+msgid "where :math:`0 \\le x \\le n` and :math:`n-b \\le x \\le g`"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:49 of
+msgid ""
+"for P(x) the probability of ``x`` good results in the drawn sample, g = "
+"`ngood`, b = `nbad`, and n = `nsample`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:52 of
+msgid ""
+"Consider an urn with black and white marbles in it, `ngood` of them are "
+"black and `nbad` are white. If you draw `nsample` balls without "
+"replacement, then the hypergeometric distribution describes the "
+"distribution of black balls in the drawn sample."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:57 of
+msgid ""
+"Note that this distribution is very similar to the binomial distribution,"
+" except that in this case, samples are drawn without replacement, whereas"
+" in the Binomial case samples are drawn with replacement (or the sample "
+"space is infinite). As the sample space becomes large, this distribution "
+"approaches the binomial."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:67 of
+msgid ""
+"Weisstein, Eric W. \"Hypergeometric Distribution.\" From MathWorld--A "
+"Wolfram Web Resource. "
+"http://mathworld.wolfram.com/HypergeometricDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:70 of
+msgid ""
+"Wikipedia, \"Hypergeometric distribution\", "
+"https://en.wikipedia.org/wiki/Hypergeometric_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.hypergeometric:84 of
+msgid ""
+"Suppose you have an urn with 15 white and 15 black marbles. If you pull "
+"15 marbles at random, how likely is it that 12 or more of them are one "
+"color?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:1 of
+msgid ""
+"Draw samples from the Laplace or double exponential distribution with "
+"specified location (or mean) and scale (decay)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:4 of
+msgid ""
+"The Laplace distribution is similar to the Gaussian/normal distribution, "
+"but is sharper at the peak and has fatter tails. It represents the "
+"difference between two independent, identically distributed exponential "
+"random variables."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:10 of
+msgid ""
+"New code should use the ``laplace`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:16 of
+msgid "The position, :math:`\\mu`, of the distribution peak. Default is 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:18 of
+msgid ""
+":math:`\\lambda`, the exponential decay. Default is 1. Must be non- "
+"negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:29 of
+msgid "Drawn samples from the parameterized Laplace distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:33 of
+msgid "Generator.laplace: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:37 of
+msgid "It has the probability density function"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:39 of
+msgid ""
+"f(x; \\mu, \\lambda) = \\frac{1}{2\\lambda}\n"
+"\\exp\\left(-\\frac{|x - \\mu|}{\\lambda}\\right).\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:42 of
+msgid ""
+"The first law of Laplace, from 1774, states that the frequency of an "
+"error can be expressed as an exponential function of the absolute "
+"magnitude of the error, which leads to the Laplace distribution. For many"
+" problems in economics and health sciences, this distribution seems to "
+"model the data better than the standard Gaussian distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:51 RiskQuantLib.Tool.plotTool.vonmises:55
+#: of
+msgid ""
+"Abramowitz, M. and Stegun, I. A. (Eds.). \"Handbook of Mathematical "
+"Functions with Formulas, Graphs, and Mathematical Tables, 9th printing,\""
+" New York: Dover, 1972."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:54 of
+msgid ""
+"Kotz, Samuel, et. al. \"The Laplace Distribution and Generalizations, \" "
+"Birkhauser, 2001."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:56 of
+msgid ""
+"Weisstein, Eric W. \"Laplace Distribution.\" From MathWorld--A Wolfram "
+"Web Resource. http://mathworld.wolfram.com/LaplaceDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:59 of
+msgid ""
+"Wikipedia, \"Laplace distribution\", "
+"https://en.wikipedia.org/wiki/Laplace_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:64 of
+msgid "Draw samples from the distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.laplace:78 of
+msgid "Plot Gaussian for comparison:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:1 of
+msgid "Draw samples from a logistic distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:3 of
+msgid ""
+"Samples are drawn from a logistic distribution with specified parameters,"
+" loc (location or mean, also median), and scale (>0)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:7 of
+msgid ""
+"New code should use the ``logistic`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:13 of
+msgid "Parameter of the distribution. Default is 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:15 of
+msgid "Parameter of the distribution. Must be non-negative. Default is 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:26 of
+msgid "Drawn samples from the parameterized logistic distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:30 of
+msgid "scipy.stats.logistic"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:32 of
+msgid "Generator.logistic: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:36 of
+msgid "The probability density for the Logistic distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:38 of
+msgid ""
+"P(x) = P(x) = \\frac{e^{-(x-\\mu)/s}}{s(1+e^{-(x-\\mu)/s})^2},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:40 of
+msgid "where :math:`\\mu` = location and :math:`s` = scale."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:42 of
+msgid ""
+"The Logistic distribution is used in Extreme Value problems where it can "
+"act as a mixture of Gumbel distributions, in Epidemiology, and by the "
+"World Chess Federation (FIDE) where it is used in the Elo ranking system,"
+" assuming the performance of each player is a logistically distributed "
+"random variable."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:50 of
+msgid ""
+"Reiss, R.-D. and Thomas M. (2001), \"Statistical Analysis of Extreme "
+"Values, from Insurance, Finance, Hydrology and Other Fields,\" Birkhauser"
+" Verlag, Basel, pp 132-133."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:53 of
+msgid ""
+"Weisstein, Eric W. \"Logistic Distribution.\" From MathWorld--A Wolfram "
+"Web Resource. http://mathworld.wolfram.com/LogisticDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:56 of
+msgid ""
+"Wikipedia, \"Logistic-distribution\", "
+"https://en.wikipedia.org/wiki/Logistic_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logistic:68
+#: RiskQuantLib.Tool.plotTool.logseries:68 of
+msgid "#   plot against distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:1 of
+msgid "Draw samples from a log-normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:3 of
+msgid ""
+"Draw samples from a log-normal distribution with specified mean, standard"
+" deviation, and array shape.  Note that the mean and standard deviation "
+"are not the values for the distribution itself, but of the underlying "
+"normal distribution it is derived from."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:9 of
+msgid ""
+"New code should use the ``lognormal`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:14
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:16
+#: RiskQuantLib.Tool.plotTool.wald:18 of
+msgid "mean"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:15 of
+msgid "Mean value of the underlying normal distribution. Default is 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:17 of
+msgid "sigma"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:17 of
+msgid ""
+"Standard deviation of the underlying normal distribution. Must be non-"
+"negative. Default is 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:20 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``mean`` and ``sigma`` are both scalars. Otherwise, "
+"``np.broadcast(mean, sigma).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:28 of
+msgid "Drawn samples from the parameterized log-normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:32 of
+msgid "scipy.stats.lognorm"
+msgstr ""
+
+#: of
+msgid "probability density function, distribution,"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:34 of
+msgid "Generator.lognormal: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:38 of
+msgid ""
+"A variable `x` has a log-normal distribution if `log(x)` is normally "
+"distributed.  The probability density function for the log-normal "
+"distribution is:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:42 of
+msgid ""
+"p(x) = \\frac{1}{\\sigma x \\sqrt{2\\pi}}\n"
+"e^{(-\\frac{(ln(x)-\\mu)^2}{2\\sigma^2})}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:45 of
+msgid ""
+"where :math:`\\mu` is the mean and :math:`\\sigma` is the standard "
+"deviation of the normally distributed logarithm of the variable. A log-"
+"normal distribution results if a random variable is the *product* of a "
+"large number of independent, identically-distributed variables in the "
+"same way that a normal distribution results if the variable is the *sum* "
+"of a large number of independent, identically-distributed variables."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:55 of
+msgid ""
+"Limpert, E., Stahel, W. A., and Abbt, M., \"Log-normal Distributions "
+"across the Sciences: Keys and Clues,\" BioScience, Vol. 51, No. 5, May, "
+"2001. https://stat.ethz.ch/~stahel/lognormal/bioscience.pdf"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:59 of
+msgid ""
+"Reiss, R.D. and Thomas, M., \"Statistical Analysis of Extreme Values,\" "
+"Basel: Birkhauser Verlag, 2001, pp. 31-32."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.lognormal:83 of
+msgid ""
+"Demonstrate that taking the products of random samples from a uniform "
+"distribution can be fit well by a log-normal probability density "
+"function."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:1 of
+msgid "Draw samples from a logarithmic series distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:3 of
+msgid ""
+"Samples are drawn from a log series distribution with specified shape "
+"parameter, 0 < ``p`` < 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:7 of
+msgid ""
+"New code should use the ``logseries`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:13 of
+msgid "Shape parameter for the distribution.  Must be in the range (0, 1)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:23 of
+msgid "Drawn samples from the parameterized logarithmic series distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:27 of
+msgid "scipy.stats.logser"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:29 of
+msgid "Generator.logseries: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:33 of
+msgid "The probability density for the Log Series distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:35 of
+msgid ""
+"P(k) = \\frac{-p^k}{k \\ln(1-p)},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:37 of
+msgid "where p = probability."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:39 of
+msgid ""
+"The log series distribution is frequently used to represent species "
+"richness and occurrence, first proposed by Fisher, Corbet, and Williams "
+"in 1943 [2].  It may also be used to model the numbers of occupants seen "
+"in cars [3]."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:46 of
+msgid ""
+"Buzas, Martin A.; Culver, Stephen J.,  Understanding regional species "
+"diversity through the log series distribution of occurrences: "
+"BIODIVERSITY RESEARCH Diversity & Distributions, Volume 5, Number 5, "
+"September 1999 , pp. 187-195(9)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:50 of
+msgid ""
+"Fisher, R.A,, A.S. Corbet, and C.B. Williams. 1943. The relation between "
+"the number of species and the number of individuals in a random sample of"
+" an animal population. Journal of Animal Ecology, 12:42-58."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:54 of
+msgid ""
+"D. J. Hand, F. Daly, D. Lunn, E. Ostrowski, A Handbook of Small Data "
+"Sets, CRC Press, 1994."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.logseries:56 of
+msgid ""
+"Wikipedia, \"Logarithmic distribution\", "
+"https://en.wikipedia.org/wiki/Logarithmic_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:1 of
+msgid "Draw samples from a multinomial distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:3 of
+msgid ""
+"The multinomial distribution is a multivariate generalization of the "
+"binomial distribution.  Take an experiment with one of ``p`` possible "
+"outcomes.  An example of such an experiment is throwing a dice, where the"
+" outcome can be 1 through 6.  Each sample drawn from the distribution "
+"represents `n` such experiments.  Its values, ``X_i = [X_0, X_1, ..., "
+"X_p]``, represent the number of times the outcome was ``i``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:12 of
+msgid ""
+"New code should use the ``multinomial`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:18 of
+msgid "Number of experiments."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:22 of
+msgid "pvals"
+msgstr ""
+
+#: of
+msgid "sequence of floats, length p"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:20 of
+msgid ""
+"Probabilities of each of the ``p`` different outcomes.  These must sum to"
+" 1 (however, the last element is always assumed to account for the "
+"remaining probability, as long as ``sum(pvals[:-1]) <= 1)``."
+msgstr ""
+
+#: of
+msgid "ndarray"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:32
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:35 of
+msgid ""
+"The drawn samples, of shape *size*, if that was provided.  If not, the "
+"shape is ``(N,)``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:35
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:38 of
+msgid ""
+"In other words, each entry ``out[i,j,...,:]`` is an N-dimensional value "
+"drawn from the distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:40 of
+msgid "Generator.multinomial: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:44 of
+msgid "Throw a dice 20 times:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:49 of
+msgid "It landed 4 times on 1, once on 2, etc."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:51 of
+msgid "Now, throw the dice 20 times, and 20 times again:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:57 of
+msgid ""
+"For the first run, we threw 3 times 1, 4 times 2, etc.  For the second, "
+"we threw 2 times 1, 4 times 2, etc."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:60 of
+msgid "A loaded die is more likely to land on number 6:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:65 of
+msgid ""
+"The probability inputs should be normalized. As an implementation detail,"
+" the value of the last entry is ignored and assumed to take up any "
+"leftover probability mass, but this should not be relied on. A biased "
+"coin which has twice as much weight on one side as on the other should be"
+" sampled like so:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multinomial:74 of
+msgid "not like:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:1 of
+msgid "Draw random samples from a multivariate normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:3 of
+msgid ""
+"The multivariate normal, multinormal or Gaussian distribution is a "
+"generalization of the one-dimensional normal distribution to higher "
+"dimensions.  Such a distribution is specified by its mean and covariance "
+"matrix.  These parameters are analogous to the mean (average or "
+"\"center\") and variance (standard deviation, or \"width,\" squared) of "
+"the one-dimensional normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:11 of
+msgid ""
+"New code should use the ``multivariate_normal`` method of a "
+"``default_rng()`` instance instead; please see the :ref:`random-quick-"
+"start`."
+msgstr ""
+
+#: of
+msgid "1-D array_like, of length N"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:17 of
+msgid "Mean of the N-dimensional distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:19 of
+msgid "cov"
+msgstr ""
+
+#: of
+msgid "2-D array_like, of shape (N, N)"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:19 of
+msgid ""
+"Covariance matrix of the distribution. It must be symmetric and positive-"
+"semidefinite for proper sampling."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:22 of
+msgid ""
+"Given a shape of, for example, ``(m,n,k)``, ``m*n*k`` samples are "
+"generated, and packed in an `m`-by-`n`-by-`k` arrangement.  Because each "
+"sample is `N`-dimensional, the output shape is ``(m,n,k,N)``. If no shape"
+" is specified, a single (`N`-D) sample is returned."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:26 of
+msgid "check_valid"
+msgstr ""
+
+#: of
+msgid "{ 'warn', 'raise', 'ignore' }, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:27 of
+msgid "Behavior when the covariance matrix is not positive semidefinite."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:30 of
+msgid "tol"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:29 of
+msgid ""
+"Tolerance when checking the singular values in covariance matrix. cov is "
+"cast to double before the check."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:43 of
+msgid "Generator.multivariate_normal: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:47 of
+msgid ""
+"The mean is a coordinate in N-dimensional space, which represents the "
+"location where samples are most likely to be generated.  This is "
+"analogous to the peak of the bell curve for the one-dimensional or "
+"univariate normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:52 of
+msgid ""
+"Covariance indicates the level to which two variables vary together. From"
+" the multivariate normal distribution, we draw N-dimensional samples, "
+":math:`X = [x_1, x_2, ... x_N]`.  The covariance matrix element "
+":math:`C_{ij}` is the covariance of :math:`x_i` and :math:`x_j`. The "
+"element :math:`C_{ii}` is the variance of :math:`x_i` (i.e. its "
+"\"spread\")."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:59 of
+msgid ""
+"Instead of specifying the full covariance matrix, popular approximations "
+"include:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:62 of
+msgid "Spherical covariance (`cov` is a multiple of the identity matrix)"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:63 of
+msgid ""
+"Diagonal covariance (`cov` has non-negative elements, and only on the "
+"diagonal)"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:66 of
+msgid ""
+"This geometrical property can be seen in two dimensions by plotting "
+"generated data-points:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:72 of
+msgid "Diagonal covariance means that points are oriented along x or y-axis:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:80 of
+msgid ""
+"Note that the covariance matrix must be positive semidefinite (a.k.a. "
+"nonnegative-definite). Otherwise, the behavior of this method is "
+"undefined and backwards compatibility is not guaranteed."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:86 of
+msgid ""
+"Papoulis, A., \"Probability, Random Variables, and Stochastic "
+"Processes,\" 3rd ed., New York: McGraw-Hill, 1991."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:88 of
+msgid ""
+"Duda, R. O., Hart, P. E., and Stork, D. G., \"Pattern Classification,\" "
+"2nd ed., New York: Wiley, 2001."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:99 of
+msgid ""
+"The following is probably true, given that 0.6 is roughly twice the "
+"standard deviation:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:1 of
+msgid "Draw samples from a negative binomial distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:3 of
+msgid ""
+"Samples are drawn from a negative binomial distribution with specified "
+"parameters, `n` successes and `p` probability of success where `n` is > 0"
+" and `p` is in the interval [0, 1]."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:8 of
+msgid ""
+"New code should use the ``negative_binomial`` method of a "
+"``default_rng()`` instance instead; please see the :ref:`random-quick-"
+"start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:14 of
+msgid "Parameter of the distribution, > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:26 of
+msgid ""
+"Drawn samples from the parameterized negative binomial distribution, "
+"where each sample is equal to N, the number of failures that occurred "
+"before a total of n successes was reached."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:32 of
+msgid "Generator.negative_binomial: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:36 of
+msgid "The probability mass function of the negative binomial distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:38 of
+msgid ""
+"P(N;n,p) = \\frac{\\Gamma(N+n)}{N!\\Gamma(n)}p^{n}(1-p)^{N},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:40 of
+msgid ""
+"where :math:`n` is the number of successes, :math:`p` is the probability "
+"of success, :math:`N+n` is the number of trials, and :math:`\\Gamma` is "
+"the gamma function. When :math:`n` is an integer, "
+":math:`\\frac{\\Gamma(N+n)}{N!\\Gamma(n)} = \\binom{N+n-1}{N}`, which is "
+"the more common form of this term in the the pmf. The negative binomial "
+"distribution gives the probability of N failures given n successes, with "
+"a success on the last trial."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:48 of
+msgid ""
+"If one throws a die repeatedly until the third time a \"1\" appears, then"
+" the probability distribution of the number of non-\"1\"s that appear "
+"before the third \"1\" is a negative binomial distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:54 of
+msgid ""
+"Weisstein, Eric W. \"Negative Binomial Distribution.\" From MathWorld--A "
+"Wolfram Web Resource. "
+"http://mathworld.wolfram.com/NegativeBinomialDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:57 of
+msgid ""
+"Wikipedia, \"Negative binomial distribution\", "
+"https://en.wikipedia.org/wiki/Negative_binomial_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.negative_binomial:64 of
+msgid ""
+"A real world example. A company drills wild-cat oil exploration wells, "
+"each with an estimated probability of success of 0.1.  What is the "
+"probability of having one success for each successive well, that is what "
+"is the probability of a single success after drilling 5 wells, after 6 "
+"wells, etc.?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:1 of
+msgid "Draw samples from a noncentral chi-square distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:3 of
+msgid ""
+"The noncentral :math:`\\chi^2` distribution is a generalization of the "
+":math:`\\chi^2` distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:7 of
+msgid ""
+"New code should use the ``noncentral_chisquare`` method of a "
+"``default_rng()`` instance instead; please see the :ref:`random-quick-"
+"start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:13
+#: RiskQuantLib.Tool.plotTool.standard_t:15 of
+msgid "Degrees of freedom, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:15
+#: RiskQuantLib.Tool.plotTool.noncentral_f:17 of
+msgid "Earlier NumPy versions required dfnum > 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:17
+#: RiskQuantLib.Tool.plotTool.noncentral_f:22 of
+msgid "nonc"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:18 of
+msgid "Non-centrality, must be non-negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:20 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``df`` and ``nonc`` are both scalars. Otherwise, "
+"``np.broadcast(df, nonc).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:28 of
+msgid "Drawn samples from the parameterized noncentral chi-square distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:32 of
+msgid "Generator.noncentral_chisquare: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:36 of
+msgid ""
+"The probability density function for the noncentral Chi-square "
+"distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:39 of
+msgid ""
+"P(x;df,nonc) = \\sum^{\\infty}_{i=0}\n"
+"\\frac{e^{-nonc/2}(nonc/2)^{i}}{i!}\n"
+"P_{Y_{df+2i}}(x),\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:43 of
+msgid "where :math:`Y_{q}` is the Chi-square with q degrees of freedom."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:47 of
+msgid ""
+"Wikipedia, \"Noncentral chi-squared distribution\" "
+"https://en.wikipedia.org/wiki/Noncentral_chi-squared_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:52
+#: RiskQuantLib.Tool.plotTool.rayleigh:49 of
+msgid "Draw values from the distribution and plot the histogram"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:59 of
+msgid ""
+"Draw values from a noncentral chisquare with very small noncentrality, "
+"and compare to a chisquare."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_chisquare:70 of
+msgid ""
+"Demonstrate how large values of non-centrality lead to a more symmetric "
+"distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:1 of
+msgid "Draw samples from the noncentral F distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:3 of
+msgid ""
+"Samples are drawn from an F distribution with specified parameters, "
+"`dfnum` (degrees of freedom in numerator) and `dfden` (degrees of freedom"
+" in denominator), where both parameters > 1. `nonc` is the non-centrality"
+" parameter."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:9 of
+msgid ""
+"New code should use the ``noncentral_f`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:15 of
+msgid "Numerator degrees of freedom, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:20 of
+msgid "Denominator degrees of freedom, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:22 of
+msgid ""
+"Non-centrality parameter, the sum of the squares of the numerator means, "
+"must be >= 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:25 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``dfnum``, ``dfden``, and ``nonc`` are all scalars.  "
+"Otherwise, ``np.broadcast(dfnum, dfden, nonc).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:34 of
+msgid "Drawn samples from the parameterized noncentral Fisher distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:38 of
+msgid "Generator.noncentral_f: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:42 of
+msgid ""
+"When calculating the power of an experiment (power = probability of "
+"rejecting the null hypothesis when a specific alternative is true) the "
+"non-central F statistic becomes important.  When the null hypothesis is "
+"true, the F statistic follows a central F distribution. When the null "
+"hypothesis is not true, then it follows a non-central F statistic."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:50 of
+msgid ""
+"Weisstein, Eric W. \"Noncentral F-Distribution.\" From MathWorld--A "
+"Wolfram Web Resource. http://mathworld.wolfram.com/NoncentralF-"
+"Distribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:53 of
+msgid ""
+"Wikipedia, \"Noncentral F-distribution\", https://en.wikipedia.org/wiki"
+"/Noncentral_F-distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.noncentral_f:58 of
+msgid ""
+"In a study, testing for a specific alternative to the null hypothesis "
+"requires use of the Noncentral F distribution. We need to calculate the "
+"area in the tail of the distribution that exceeds the value of the F "
+"distribution for the null hypothesis.  We'll plot the two probability "
+"distributions for comparison."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:1 of
+msgid "Draw random samples from a normal (Gaussian) distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:3 of
+msgid ""
+"The probability density function of the normal distribution, first "
+"derived by De Moivre and 200 years later by both Gauss and Laplace "
+"independently [2]_, is often called the bell curve because of its "
+"characteristic shape (see the example below)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:8 of
+msgid ""
+"The normal distributions occurs often in nature.  For example, it "
+"describes the commonly occurring distribution of samples influenced by a "
+"large number of tiny, random disturbances, each with its own unique "
+"distribution [2]_."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:14 of
+msgid ""
+"New code should use the ``normal`` method of a ``default_rng()`` instance"
+" instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:20 of
+msgid "Mean (\"centre\") of the distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:22 of
+msgid ""
+"Standard deviation (spread or \"width\") of the distribution. Must be "
+"non-negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:33 of
+msgid "Drawn samples from the parameterized normal distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:37 of
+msgid "scipy.stats.norm"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:39 of
+msgid "Generator.normal: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:43 of
+msgid "The probability density for the Gaussian distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:45 of
+msgid ""
+"p(x) = \\frac{1}{\\sqrt{ 2 \\pi \\sigma^2 }}\n"
+"e^{ - \\frac{ (x - \\mu)^2 } {2 \\sigma^2} },\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:48 of
+msgid ""
+"where :math:`\\mu` is the mean and :math:`\\sigma` the standard "
+"deviation. The square of the standard deviation, :math:`\\sigma^2`, is "
+"called the variance."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:52 of
+msgid ""
+"The function has its peak at the mean, and its \"spread\" increases with "
+"the standard deviation (the function reaches 0.607 times its maximum at "
+":math:`x + \\sigma` and :math:`x - \\sigma` [2]_).  This implies that "
+"normal is more likely to return samples lying close to the mean, rather "
+"than those far away."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:60 of
+msgid ""
+"Wikipedia, \"Normal distribution\", "
+"https://en.wikipedia.org/wiki/Normal_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:62 of
+msgid ""
+"P. R. Peebles Jr., \"Central Limit Theorem\" in \"Probability, Random "
+"Variables and Random Signal Principles\", 4th ed., 2001, pp. 51, 51, 125."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:73 of
+msgid "Verify the mean and the variance:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.normal:91 RiskQuantLib.Tool.plotTool.randn:49 of
+msgid "Two-by-four array of samples from N(3, 6.25):"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:1 of
+msgid "Draw samples from a Pareto II or Lomax distribution with specified shape."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:4 of
+msgid ""
+"The Lomax or Pareto II distribution is a shifted Pareto distribution. The"
+" classical Pareto distribution can be obtained from the Lomax "
+"distribution by adding 1 and multiplying by the scale parameter ``m`` "
+"(see Notes).  The smallest value of the Lomax distribution is zero while "
+"for the classical Pareto distribution it is ``mu``, where the standard "
+"Pareto distribution has location ``mu = 1``.  Lomax can also be "
+"considered as a simplified version of the Generalized Pareto distribution"
+" (available in SciPy), with the scale set to one and the location set to "
+"zero."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:15 of
+msgid ""
+"The Pareto distribution must be greater than zero, and is unbounded "
+"above.  It is also known as the \"80-20 rule\".  In this distribution, 80"
+" percent of the weights are in the lowest 20 percent of the range, while "
+"the other 20 percent fill the remaining 80 percent of the range."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:22 of
+msgid ""
+"New code should use the ``pareto`` method of a ``default_rng()`` instance"
+" instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:28 of
+msgid "Shape of the distribution. Must be positive."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:30 RiskQuantLib.Tool.plotTool.power:15
+#: RiskQuantLib.Tool.plotTool.weibull:22 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``a`` is a scalar.  Otherwise, ``np.array(a).size`` samples "
+"are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:38 of
+msgid "Drawn samples from the parameterized Pareto distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:42 of
+msgid "scipy.stats.lomax"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:44 of
+msgid "scipy.stats.genpareto"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:46 of
+msgid "Generator.pareto: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:50 of
+msgid "The probability density for the Pareto distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:52 of
+msgid ""
+"p(x) = \\frac{am^a}{x^{a+1}}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:54 of
+msgid "where :math:`a` is the shape and :math:`m` the scale."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:56 of
+msgid ""
+"The Pareto distribution, named after the Italian economist Vilfredo "
+"Pareto, is a power law probability distribution useful in many real world"
+" problems.  Outside the field of economics it is generally referred to as"
+" the Bradford distribution. Pareto developed the distribution to describe"
+" the distribution of wealth in an economy.  It has also found use in "
+"insurance, web page access statistics, oil field sizes, and many other "
+"problems, including the download frequency for projects in Sourceforge "
+"[1]_.  It is one of the so-called \"fat-tailed\" distributions."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:69 of
+msgid ""
+"Francis Hunt and Paul Johnson, On the Pareto Distribution of Sourceforge "
+"projects."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:71 of
+msgid "Pareto, V. (1896). Course of Political Economy. Lausanne."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:72 of
+msgid ""
+"Reiss, R.D., Thomas, M.(2001), Statistical Analysis of Extreme Values, "
+"Birkhauser Verlag, Basel, pp 23-30."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.pareto:74 of
+msgid ""
+"Wikipedia, \"Pareto distribution\", "
+"https://en.wikipedia.org/wiki/Pareto_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:1 of
+msgid "Randomly permute a sequence, or return a permuted range."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:3 of
+msgid ""
+"If `x` is a multi-dimensional array, it is only shuffled along its first "
+"index."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:7 of
+msgid ""
+"New code should use the ``permutation`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: of
+msgid "int or array_like"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:13 of
+msgid ""
+"If `x` is an integer, randomly permute ``np.arange(x)``. If `x` is an "
+"array, make a copy and shuffle the elements randomly."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:20 of
+msgid "Permuted sequence or array range."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.permutation:24 of
+msgid "Generator.permutation: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:1
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:1 of
+msgid "Plot a bar chart."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:6 RiskQuantLib.Tool.plotTool.plotLine:6
+#: RiskQuantLib.Tool.plotTool.plotPie:6 of
+msgid ""
+"The dataframe you want to plot. Each column is a series. Values must be "
+"number."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:7 RiskQuantLib.Tool.plotTool.plotLine:7
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:9
+#: RiskQuantLib.Tool.plotTool.plotPie:7 of
+msgid "titleStr"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:8
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:10
+#: RiskQuantLib.Tool.plotTool.plotPie:8 of
+msgid "The chart title."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:9 RiskQuantLib.Tool.plotTool.plotLine:9
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:11 of
+msgid "xLabelStr"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:10 RiskQuantLib.Tool.plotTool.plotLine:10
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:12 of
+msgid "The x label"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:11 RiskQuantLib.Tool.plotTool.plotLine:11
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:13 of
+msgid "yLabelStr"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:12 RiskQuantLib.Tool.plotTool.plotLine:12
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:14 of
+msgid "The y label"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:14 RiskQuantLib.Tool.plotTool.plotLine:14
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:16
+#: RiskQuantLib.Tool.plotTool.plotPie:10 of
+msgid "savePathStr"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotBar:14
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:16
+#: RiskQuantLib.Tool.plotTool.plotPie:10 of
+msgid "The path where you want to save the chart"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotLine:1 of
+msgid "Plot a multiple line graph."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotLine:8 of
+msgid "The graph title."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotLine:14 of
+msgid "The path where you want to save the graph"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:5 of
+msgid "xSeries"
+msgstr ""
+
+#: of
+msgid "pd.Series"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:6 of
+msgid "The series you want to use as x axis."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:7 of
+msgid "yDataframe"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotMultiBar:8 of
+msgid ""
+"The dataframe you want to plot. Each column is a series. Value must be "
+"number."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.plotPie:1 of
+msgid "Plot a pie chart."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:1 of
+msgid "Draw samples from a Poisson distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:3 of
+msgid ""
+"The Poisson distribution is the limit of the binomial distribution for "
+"large N."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:7 of
+msgid ""
+"New code should use the ``poisson`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:13 of
+msgid "lam"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:13 of
+msgid ""
+"Expectation of interval, must be >= 0. A sequence of expectation "
+"intervals must be broadcastable over the requested size."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:16 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``lam`` is a scalar. Otherwise, ``np.array(lam).size`` "
+"samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:24 of
+msgid "Drawn samples from the parameterized Poisson distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:28 of
+msgid "Generator.poisson: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:32 of
+msgid "The Poisson distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:34 of
+msgid ""
+"f(k; \\lambda)=\\frac{\\lambda^k e^{-\\lambda}}{k!}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:36 of
+msgid ""
+"For events with an expected separation :math:`\\lambda` the Poisson "
+"distribution :math:`f(k; \\lambda)` describes the probability of "
+":math:`k` events occurring within the observed interval :math:`\\lambda`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:41 of
+msgid ""
+"Because the output is limited to the range of the C int64 type, a "
+"ValueError is raised when `lam` is within 10 sigma of the maximum "
+"representable value."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:47 of
+msgid ""
+"Weisstein, Eric W. \"Poisson Distribution.\" From MathWorld--A Wolfram "
+"Web Resource. http://mathworld.wolfram.com/PoissonDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:50 of
+msgid ""
+"Wikipedia, \"Poisson distribution\", "
+"https://en.wikipedia.org/wiki/Poisson_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:60 of
+msgid "Display histogram of the sample:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.poisson:66 of
+msgid "Draw each 100 values for lambda 100 and 500:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:1 of
+msgid ""
+"Draws samples in [0, 1] from a power distribution with positive exponent "
+"a - 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:4 of
+msgid "Also known as the power function distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:7 of
+msgid ""
+"New code should use the ``power`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:13 of
+msgid "Parameter of the distribution. Must be non-negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:23 of
+msgid "Drawn samples from the parameterized power distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:28 of
+msgid "If a < 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:32 of
+msgid "Generator.power: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:36 of
+msgid "The probability density function is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:38 of
+msgid ""
+"P(x; a) = ax^{a-1}, 0 \\le x \\le 1, a>0.\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:40 of
+msgid ""
+"The power function distribution is just the inverse of the Pareto "
+"distribution. It may also be seen as a special case of the Beta "
+"distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:44 of
+msgid ""
+"It is used, for example, in modeling the over-reporting of insurance "
+"claims."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:49 of
+msgid ""
+"Christian Kleiber, Samuel Kotz, \"Statistical size distributions in "
+"economics and actuarial sciences\", Wiley, 2003."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:51 of
+msgid ""
+"Heckert, N. A. and Filliben, James J. \"NIST Handbook 148: Dataplot "
+"Reference Manual, Volume 2: Let Subcommands and Library Functions\", "
+"National Institute of Standards and Technology Handbook Series, June "
+"2003. "
+"https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/powpdf.pdf"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.power:76 of
+msgid "Compare the power function distribution to the inverse of the Pareto."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:1 of
+msgid "Random values in a given shape."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:4 of
+msgid ""
+"This is a convenience function for users porting code from Matlab, and "
+"wraps `random_sample`. That function takes a tuple to specify the size of"
+" the output, which is consistent with other NumPy functions like "
+"`numpy.zeros` and `numpy.ones`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:9 of
+msgid ""
+"Create an array of the given shape and populate it with random samples "
+"from a uniform distribution over ``[0, 1)``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:17 RiskQuantLib.Tool.plotTool.randn:23 of
+msgid "d0, d1, ..., dn"
+msgstr ""
+
+#: of
+msgid "int, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:16 RiskQuantLib.Tool.plotTool.randn:22 of
+msgid ""
+"The dimensions of the returned array, must be non-negative. If no "
+"argument is given a single Python float is returned."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:22 of
+msgid "out : ndarray, shape ``(d0, d1, ..., dn)``"
+msgstr ""
+
+#: of
+msgid "ndarray, shape"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:22 of
+msgid "Random values."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rand:26 of
+msgid "random"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:1 of
+msgid "Return random integers from `low` (inclusive) to `high` (exclusive)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:3 of
+msgid ""
+"Return random integers from the \"discrete uniform\" distribution of the "
+"specified dtype in the \"half-open\" interval [`low`, `high`). If `high` "
+"is None (the default), then results are from [0, `low`)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:8 of
+msgid ""
+"New code should use the ``integers`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:15
+#: RiskQuantLib.Tool.plotTool.random_integers:17
+#: RiskQuantLib.Tool.plotTool.uniform:15 of
+msgid "low"
+msgstr ""
+
+#: of
+msgid "int or array-like of ints"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:14 of
+msgid ""
+"Lowest (signed) integers to be drawn from the distribution (unless "
+"``high=None``, in which case this parameter is one above the *highest* "
+"such integer)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:19
+#: RiskQuantLib.Tool.plotTool.random_integers:20
+#: RiskQuantLib.Tool.plotTool.uniform:18 of
+msgid "high"
+msgstr ""
+
+#: of
+msgid "int or array-like of ints, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:18 of
+msgid ""
+"If provided, one above the largest (signed) integer to be drawn from the "
+"distribution (see above for behavior if ``high=None``). If array-like, "
+"must contain integer values"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:29 of
+msgid "dtype"
+msgstr ""
+
+#: of
+msgid "dtype, optional"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:26 of
+msgid ""
+"Desired dtype of the result. Byteorder must be native. The default value "
+"is int."
+msgstr ""
+
+#: of
+msgid "int or ndarray of ints"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:34
+#: RiskQuantLib.Tool.plotTool.random_integers:30 of
+msgid ""
+"`size`-shaped array of random integers from the appropriate distribution,"
+" or a single such random int if `size` not provided."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:40 of
+msgid "random_integers : similar to `randint`, only for the closed"
+msgstr ""
+
+#: of
+msgid "similar to"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:40 of
+msgid "interval [`low`, `high`], and 1 is the lowest value if `high` is omitted."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:42 of
+msgid "Generator.integers: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:51 of
+msgid "Generate a 2 x 4 array of ints between 0 and 4, inclusive:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:57 of
+msgid "Generate a 1 x 3 array with 3 different upper bounds"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:62 of
+msgid "Generate a 1 by 3 array with 3 different lower bounds"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randint:67 of
+msgid "Generate a 2 by 4 array using broadcasting with dtype of uint8"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:1 of
+msgid "Return a sample (or samples) from the \"standard normal\" distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:4 of
+msgid ""
+"This is a convenience function for users porting code from Matlab, and "
+"wraps `standard_normal`. That function takes a tuple to specify the size "
+"of the output, which is consistent with other NumPy functions like "
+"`numpy.zeros` and `numpy.ones`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:10
+#: RiskQuantLib.Tool.plotTool.standard_normal:4 of
+msgid ""
+"New code should use the ``standard_normal`` method of a ``default_rng()``"
+" instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:13 of
+msgid ""
+"If positive int_like arguments are provided, `randn` generates an array "
+"of shape ``(d0, d1, ..., dn)``, filled with random floats sampled from a "
+"univariate \"normal\" (Gaussian) distribution of mean 0 and variance 1. A"
+" single float randomly sampled from the distribution is returned if no "
+"argument is provided."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:30 of
+msgid "Z"
+msgstr ""
+
+#: of
+msgid "ndarray or float"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:28 of
+msgid ""
+"A ``(d0, d1, ..., dn)``-shaped array of floating-point samples from the "
+"standard normal distribution, or a single such float if no parameters "
+"were supplied."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:34 of
+msgid ""
+"standard_normal : Similar, but takes a tuple as its argument. normal : "
+"Also accepts mu and sigma arguments. Generator.standard_normal: which "
+"should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:40 of
+msgid "For random samples from :math:`N(\\mu, \\sigma^2)`, use:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.randn:42 of
+msgid "``sigma * np.random.randn(...) + mu``"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random:1 of
+msgid ""
+"Return random floats in the half-open interval [0.0, 1.0). Alias for "
+"`random_sample` to ease forward-porting to the new random API."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:1 of
+msgid "Random integers of type `np.int_` between `low` and `high`, inclusive."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:3 of
+msgid ""
+"Return random integers of type `np.int_` from the \"discrete uniform\" "
+"distribution in the closed interval [`low`, `high`].  If `high` is None "
+"(the default), then results are from [1, `low`]. The `np.int_` type "
+"translates to the C long integer type and its precision is platform "
+"dependent."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:9 of
+msgid "This function has been deprecated. Use randint instead."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:16 of
+msgid ""
+"Lowest (signed) integer to be drawn from the distribution (unless "
+"``high=None``, in which case this parameter is the *highest* such "
+"integer)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:20 of
+msgid ""
+"If provided, the largest (signed) integer to be drawn from the "
+"distribution (see above for behavior if ``high=None``)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:37 of
+msgid "randint : Similar to `random_integers`, only for the half-open"
+msgstr ""
+
+#: of
+msgid "Similar to"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:36 of
+msgid "interval [`low`, `high`), and 0 is the lowest value if `high` is omitted."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:41 of
+msgid ""
+"To sample from N evenly spaced floating-point numbers between a and b, "
+"use::"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:57 of
+msgid ""
+"Choose five random numbers from the set of five evenly-spaced numbers "
+"between 0 and 2.5, inclusive (*i.e.*, from the set :math:`{0, 5/8, 10/8, "
+"15/8, 20/8}`):"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:64 of
+msgid "Roll two six sided dice 1000 times and sum the results:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_integers:70 of
+msgid "Display results as a histogram:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:1 of
+msgid "Return random floats in the half-open interval [0.0, 1.0)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:3 of
+msgid ""
+"Results are from the \"continuous uniform\" distribution over the stated "
+"interval.  To sample :math:`Unif[a, b), b > a` multiply the output of "
+"`random_sample` by `(b-a)` and add `a`::"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:10 of
+msgid ""
+"New code should use the ``random`` method of a ``default_rng()`` instance"
+" instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: of
+msgid "float or ndarray of floats"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:23 of
+msgid ""
+"Array of random floats of shape `size` (unless ``size=None``, in which "
+"case a single float is returned)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:28 of
+msgid "Generator.random: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.random_sample:39 of
+msgid "Three-by-two array of random numbers from [-5, 0):"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:1 of
+msgid "Draw samples from a Rayleigh distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:3 of
+msgid ""
+"The :math:`\\chi` and Weibull distributions are generalizations of the "
+"Rayleigh."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:7 of
+msgid ""
+"New code should use the ``rayleigh`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:13 of
+msgid "Scale, also equals the mode. Must be non-negative. Default is 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:23 of
+msgid "Drawn samples from the parameterized Rayleigh distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:27 of
+msgid "Generator.rayleigh: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:31 of
+msgid "The probability density function for the Rayleigh distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:33 of
+msgid ""
+"P(x;scale) = \\frac{x}{scale^2}e^{\\frac{-x^2}{2 \\cdotp scale^2}}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:35 of
+msgid ""
+"The Rayleigh distribution would arise, for example, if the East and North"
+" components of the wind velocity had identical zero-mean Gaussian "
+"distributions.  Then the wind speed would have a Rayleigh distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:42 of
+msgid ""
+"Brighton Webs Ltd., \"Rayleigh Distribution,\" "
+"https://web.archive.org/web/20090514091424/http://brighton-"
+"webs.co.uk:80/distributions/rayleigh.asp"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:44 of
+msgid ""
+"Wikipedia, \"Rayleigh distribution\" "
+"https://en.wikipedia.org/wiki/Rayleigh_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:54 of
+msgid ""
+"Wave heights tend to follow a Rayleigh distribution. If the mean wave "
+"height is 1 meter, what fraction of waves are likely to be larger than 3 "
+"meters?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.rayleigh:62 of
+msgid "The percentage of waves larger than 3 meters is:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.seed:1 of
+msgid "Reseed a legacy MT19937 BitGenerator"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.seed:5 of
+msgid "This is a convenience, legacy function."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.seed:7 of
+msgid ""
+"The best practice is to **not** reseed a BitGenerator, rather to recreate"
+" a new one. This method is here for legacy reasons. This example "
+"demonstrates best practice."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:1 of
+msgid "Set the internal state of the generator from a tuple."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:3 of
+msgid ""
+"For use if one has reason to manually (re-)set the internal state of the "
+"bit generator used by the RandomState instance. By default, RandomState "
+"uses the \"Mersenne Twister\"[1]_ pseudo-random number generating "
+"algorithm."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:20 of
+msgid "state"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:11 of
+msgid "The `state` tuple has the following items:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:13 of
+msgid "the string 'MT19937', specifying the Mersenne Twister algorithm."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:14 of
+msgid "a 1-D array of 624 unsigned integers ``keys``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:19 of
+msgid ""
+"If state is a dictionary, it is directly set using the BitGenerators "
+"`state` property."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:25 of
+msgid "Returns 'None' on success."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:29 of
+msgid "get_state"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:37 of
+msgid ""
+"For backwards compatibility, the form (str, array of 624 uints, int) is "
+"also accepted although it is missing some information about the cached "
+"Gaussian value: ``state = ('MT19937', keys, pos)``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.set_state:43 of
+msgid ""
+"M. Matsumoto and T. Nishimura, \"Mersenne Twister: A 623-dimensionally "
+"equidistributed uniform pseudorandom number generator,\" *ACM Trans. on "
+"Modeling and Computer Simulation*, Vol. 8, No. 1, pp. 3-30, Jan. 1998."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:1 of
+msgid "Modify a sequence in-place by shuffling its contents."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:3 of
+msgid ""
+"This function only shuffles the array along the first axis of a multi-"
+"dimensional array. The order of sub-arrays is changed but their contents "
+"remains the same."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:8 of
+msgid ""
+"New code should use the ``shuffle`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: of
+msgid "ndarray or MutableSequence"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:14 of
+msgid "The array, list or mutable sequence to be shuffled."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:22 of
+msgid "Generator.shuffle: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.shuffle:31 of
+msgid "Multi-dimensional arrays are only shuffled along the first axis:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:1 of
+msgid "Draw samples from a standard Cauchy distribution with mode = 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:3 of
+msgid "Also known as the Lorentz distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:6 of
+msgid ""
+"New code should use the ``standard_cauchy`` method of a ``default_rng()``"
+" instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:19 of
+msgid "The drawn samples."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:23 of
+msgid "Generator.standard_cauchy: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:27 of
+msgid "The probability density function for the full Cauchy distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:29 of
+msgid ""
+"P(x; x_0, \\gamma) = \\frac{1}{\\pi \\gamma \\bigl[ 1+\n"
+"(\\frac{x-x_0}{\\gamma})^2 \\bigr] }\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:32 of
+msgid ""
+"and the Standard Cauchy distribution just sets :math:`x_0=0` and "
+":math:`\\gamma=1`"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:35 of
+msgid ""
+"The Cauchy distribution arises in the solution to the driven harmonic "
+"oscillator problem, and also describes spectral line broadening. It also "
+"describes the distribution of values at which a line tilted at a random "
+"angle will cut the x axis."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:40 of
+msgid ""
+"When studying hypothesis tests that assume normality, seeing how the "
+"tests perform on data from a Cauchy distribution is a good indicator of "
+"their sensitivity to a heavy-tailed distribution, since the Cauchy looks "
+"very much like a Gaussian distribution, but with heavier tails."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:47 of
+msgid ""
+"NIST/SEMATECH e-Handbook of Statistical Methods, \"Cauchy Distribution\","
+" https://www.itl.nist.gov/div898/handbook/eda/section3/eda3663.htm"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:50 of
+msgid ""
+"Weisstein, Eric W. \"Cauchy Distribution.\" From MathWorld--A Wolfram Web"
+" Resource. http://mathworld.wolfram.com/CauchyDistribution.html"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:53 of
+msgid ""
+"Wikipedia, \"Cauchy distribution\" "
+"https://en.wikipedia.org/wiki/Cauchy_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_cauchy:58 of
+msgid "Draw samples and plot the distribution:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:1 of
+msgid "Draw samples from the standard exponential distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:3 of
+msgid ""
+"`standard_exponential` is identical to the exponential distribution with "
+"a scale parameter of 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:7 of
+msgid ""
+"New code should use the ``standard_exponential`` method of a "
+"``default_rng()`` instance instead; please see the :ref:`random-quick-"
+"start`."
+msgstr ""
+
+#: of
+msgid "float or ndarray"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:20 of
+msgid "Drawn samples."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:24 of
+msgid "Generator.standard_exponential: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_exponential:28 of
+msgid "Output a 3x8000 array:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:1 of
+msgid "Draw samples from a standard Gamma distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:3 of
+msgid ""
+"Samples are drawn from a Gamma distribution with specified parameters, "
+"shape (sometimes designated \"k\") and scale=1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:7 of
+msgid ""
+"New code should use the ``standard_gamma`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:13 of
+msgid "Parameter, must be non-negative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:15 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``shape`` is a scalar.  Otherwise, ``np.array(shape).size`` "
+"samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:23 of
+msgid "Drawn samples from the parameterized standard gamma distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_gamma:29 of
+msgid "Generator.standard_gamma: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:1 of
+msgid "Draw samples from a standard Normal distribution (mean=0, stdev=1)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:17 of
+msgid ""
+"A floating-point array of shape ``size`` of drawn samples, or a single "
+"sample if ``size`` was not specified."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:23 of
+msgid "normal :"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:23 of
+msgid ""
+"Equivalent function with additional ``loc`` and ``scale`` arguments for "
+"setting the mean and standard deviation."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:25 of
+msgid "Generator.standard_normal: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:29 of
+msgid "For random samples from :math:`N(\\mu, \\sigma^2)`, use one of::"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_normal:49 of
+msgid "Two-by-four array of samples from :math:`N(3, 6.25)`:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:1 of
+msgid ""
+"Draw samples from a standard Student's t distribution with `df` degrees "
+"of freedom."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:4 of
+msgid ""
+"A special case of the hyperbolic distribution.  As `df` gets large, the "
+"result resembles that of the standard normal distribution "
+"(`standard_normal`)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:9 of
+msgid ""
+"New code should use the ``standard_t`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:25 of
+msgid "Drawn samples from the parameterized standard Student's t distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:29 of
+msgid "Generator.standard_t: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:33 of
+msgid "The probability density function for the t distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:35 of
+msgid ""
+"P(x, df) = \\frac{\\Gamma(\\frac{df+1}{2})}{\\sqrt{\\pi df}\n"
+"\\Gamma(\\frac{df}{2})}\\Bigl( 1+\\frac{x^2}{df} \\Bigr)^{-(df+1)/2}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:38 of
+msgid ""
+"The t test is based on an assumption that the data come from a Normal "
+"distribution. The t test provides a way to test whether the sample mean "
+"(that is the mean calculated from the data) is a good estimate of the "
+"true mean."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:43 of
+msgid ""
+"The derivation of the t-distribution was first published in 1908 by "
+"William Gosset while working for the Guinness Brewery in Dublin. Due to "
+"proprietary issues, he had to publish under a pseudonym, and so he used "
+"the name Student."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:50 of
+msgid "Dalgaard, Peter, \"Introductory Statistics With R\", Springer, 2002."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:52 of
+msgid ""
+"Wikipedia, \"Student's t-distribution\" "
+"https://en.wikipedia.org/wiki/Student's_t-distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:57 of
+msgid ""
+"From Dalgaard page 83 [1]_, suppose the daily energy intake for 11 women "
+"in kilojoules (kJ) is:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:63 of
+msgid ""
+"Does their energy intake deviate systematically from the recommended "
+"value of 7725 kJ?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:66 of
+#, python-format
+msgid ""
+"We have 10 degrees of freedom, so is the sample mean within 95% of the "
+"recommended value?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:75 of
+msgid ""
+"Calculate the t statistic, setting the ddof parameter to the unbiased "
+"value so the divisor in the standard deviation will be degrees of "
+"freedom, N-1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:83 of
+msgid ""
+"For a one-sided t-test, how far out in the distribution does the t "
+"statistic appear?"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:89 of
+#, python-format
+msgid ""
+"So the p-value is about 0.009, which says the null hypothesis has a "
+"probability of about 99% of being true."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:1 of
+msgid ""
+"Draw samples from the triangular distribution over the interval ``[left, "
+"right]``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:4 of
+msgid ""
+"The triangular distribution is a continuous probability distribution with"
+" lower limit left, peak at mode, and upper limit right. Unlike the other "
+"distributions, these parameters directly define the shape of the pdf."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:10 of
+msgid ""
+"New code should use the ``triangular`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:15 of
+msgid "left"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:16 of
+msgid "Lower limit."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:18 of
+msgid "mode"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:18 of
+msgid ""
+"The value where the peak of the distribution occurs. The value must "
+"fulfill the condition ``left <= mode <= right``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:20 of
+msgid "right"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:21 of
+msgid "Upper limit, must be larger than `left`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:23 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``left``, ``mode``, and ``right`` are all scalars.  "
+"Otherwise, ``np.broadcast(left, mode, right).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:32 of
+msgid "Drawn samples from the parameterized triangular distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:36 of
+msgid "Generator.triangular: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:40 of
+msgid "The probability density function for the triangular distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:42 of
+msgid ""
+"P(x;l, m, r) = \\begin{cases}\n"
+"\\frac{2(x-l)}{(r-l)(m-l)}& \\text{for $l \\leq x \\leq m$},\\\\\n"
+"\\frac{2(r-x)}{(r-l)(r-m)}& \\text{for $m \\leq x \\leq r$},\\\\\n"
+"0& \\text{otherwise}.\n"
+"\\end{cases}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:48 of
+msgid ""
+"The triangular distribution is often used in ill-defined problems where "
+"the underlying distribution is not known, but some knowledge of the "
+"limits and mode exists. Often it is used in simulations."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:55 of
+msgid ""
+"Wikipedia, \"Triangular distribution\" "
+"https://en.wikipedia.org/wiki/Triangular_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.triangular:60 RiskQuantLib.Tool.plotTool.wald:61
+#: of
+msgid "Draw values from the distribution and plot the histogram:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:1 of
+msgid "Draw samples from a uniform distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:3 of
+msgid ""
+"Samples are uniformly distributed over the half-open interval ``[low, "
+"high)`` (includes low, but excludes high).  In other words, any value "
+"within the given interval is equally likely to be drawn by `uniform`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:9 of
+msgid ""
+"New code should use the ``uniform`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:15 of
+msgid ""
+"Lower boundary of the output interval.  All values generated will be "
+"greater than or equal to low.  The default value is 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:18 of
+msgid ""
+"Upper boundary of the output interval.  All values generated will be less"
+" than or equal to high.  The default value is 1.0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:21 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``low`` and ``high`` are both scalars. Otherwise, "
+"``np.broadcast(low, high).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:29 of
+msgid "Drawn samples from the parameterized uniform distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:33 of
+msgid ""
+"randint : Discrete uniform distribution, yielding integers. "
+"random_integers : Discrete uniform distribution over the closed"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:35 of
+msgid "interval ``[low, high]``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:36 of
+msgid ""
+"random_sample : Floats uniformly distributed over ``[0, 1)``. random : "
+"Alias for `random_sample`. rand : Convenience function that accepts "
+"dimensions as input, e.g.,"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:39 of
+msgid ""
+"``rand(2,2)`` would generate a 2-by-2 array of floats, uniformly "
+"distributed over ``[0, 1)``."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:41 of
+msgid "Generator.uniform: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:45 of
+msgid "The probability density function of the uniform distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:47 of
+msgid ""
+"p(x) = \\frac{1}{b - a}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:49 of
+msgid "anywhere within the interval ``[a, b)``, and zero elsewhere."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:51 of
+msgid ""
+"When ``high`` == ``low``, values of ``low`` will be returned. If ``high``"
+" < ``low``, the results are officially undefined and may eventually raise"
+" an error, i.e. do not rely on this function to behave when passed "
+"arguments satisfying that inequality condition. The ``high`` limit may be"
+" included in the returned array of floats due to floating-point rounding "
+"in the equation ``low + (high-low) * random_sample()``. For example:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.uniform:70 of
+msgid "All values are within the given interval:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:1 of
+msgid "Draw samples from a von Mises distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:3 of
+msgid ""
+"Samples are drawn from a von Mises distribution with specified mode (mu) "
+"and dispersion (kappa), on the interval [-pi, pi]."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:6 of
+msgid ""
+"The von Mises distribution (also known as the circular normal "
+"distribution) is a continuous probability distribution on the unit "
+"circle.  It may be thought of as the circular analogue of the normal "
+"distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:12 of
+msgid ""
+"New code should use the ``vonmises`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:17 of
+msgid "mu"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:18 of
+msgid "Mode (\"center\") of the distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:19 of
+msgid "kappa"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:20 of
+msgid "Dispersion of the distribution, has to be >=0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:22 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``mu`` and ``kappa`` are both scalars. Otherwise, "
+"``np.broadcast(mu, kappa).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:30 of
+msgid "Drawn samples from the parameterized von Mises distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:34 of
+msgid "scipy.stats.vonmises"
+msgstr ""
+
+#: of
+msgid "probability density function, distribution, or"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:36 of
+msgid "Generator.vonmises: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:40 of
+msgid "The probability density for the von Mises distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:42 of
+msgid ""
+"p(x) = \\frac{e^{\\kappa cos(x-\\mu)}}{2\\pi I_0(\\kappa)},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:44 of
+msgid ""
+"where :math:`\\mu` is the mode and :math:`\\kappa` the dispersion, and "
+":math:`I_0(\\kappa)` is the modified Bessel function of order 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:47 of
+msgid ""
+"The von Mises is named for Richard Edler von Mises, who was born in "
+"Austria-Hungary, in what is now the Ukraine.  He fled to the United "
+"States in 1939 and became a professor at Harvard.  He worked in "
+"probability theory, aerodynamics, fluid mechanics, and philosophy of "
+"science."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.vonmises:58 of
+msgid ""
+"von Mises, R., \"Mathematical Theory of Probability and Statistics\", New"
+" York: Academic Press, 1964."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:1 of
+msgid "Draw samples from a Wald, or inverse Gaussian, distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:3 of
+msgid ""
+"As the scale approaches infinity, the distribution becomes more like a "
+"Gaussian. Some references claim that the Wald is an inverse Gaussian with"
+" mean equal to 1, but this is by no means universal."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:7 of
+msgid ""
+"The inverse Gaussian distribution was first studied in relationship to "
+"Brownian motion. In 1956 M.C.K. Tweedie used the name inverse Gaussian "
+"because there is an inverse relationship between the time to cover a unit"
+" distance and distance covered in unit time."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:13 of
+msgid ""
+"New code should use the ``wald`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:19 of
+msgid "Distribution mean, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:21 of
+msgid "Scale parameter, must be > 0."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:23 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``mean`` and ``scale`` are both scalars. Otherwise, "
+"``np.broadcast(mean, scale).size`` samples are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:31 of
+msgid "Drawn samples from the parameterized Wald distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:35 of
+msgid "Generator.wald: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:39 of
+msgid "The probability density function for the Wald distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:41 of
+msgid ""
+"P(x;mean,scale) = \\sqrt{\\frac{scale}{2\\pi x^3}}e^\n"
+"\\frac{-scale(x-mean)^2}{2\\cdotp mean^2x}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:44 of
+msgid ""
+"As noted above the inverse Gaussian distribution first arise from "
+"attempts to model Brownian motion. It is also a competitor to the Weibull"
+" for use in reliability modeling and modeling stock returns and interest "
+"rate processes."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:51 of
+msgid ""
+"Brighton Webs Ltd., Wald Distribution, "
+"https://web.archive.org/web/20090423014010/http://www.brighton-"
+"webs.co.uk:80/distributions/wald.asp"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:53 of
+msgid ""
+"Chhikara, Raj S., and Folks, J. Leroy, \"The Inverse Gaussian "
+"Distribution: Theory : Methodology, and Applications\", CRC Press, 1988."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.wald:56 of
+msgid ""
+"Wikipedia, \"Inverse Gaussian distribution\" "
+"https://en.wikipedia.org/wiki/Inverse_Gaussian_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:1 of
+msgid "Draw samples from a Weibull distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:3 of
+msgid ""
+"Draw samples from a 1-parameter Weibull distribution with the given shape"
+" parameter `a`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:6 of
+msgid ""
+"X = (-ln(U))^{1/a}\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:8 of
+msgid "Here, U is drawn from the uniform distribution over (0,1]."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:10 of
+msgid ""
+"The more common 2-parameter Weibull, including a scale parameter "
+":math:`\\lambda` is just :math:`X = \\lambda(-ln(U))^{1/a}`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:14 of
+msgid ""
+"New code should use the ``weibull`` method of a ``default_rng()`` "
+"instance instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:20 of
+msgid "Shape parameter of the distribution.  Must be nonnegative."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:30 of
+msgid "Drawn samples from the parameterized Weibull distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:34 of
+msgid ""
+"scipy.stats.weibull_max scipy.stats.weibull_min scipy.stats.genextreme "
+"gumbel Generator.weibull: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:42 of
+msgid ""
+"The Weibull (or Type III asymptotic extreme value distribution for "
+"smallest values, SEV Type III, or Rosin-Rammler distribution) is one of a"
+" class of Generalized Extreme Value (GEV) distributions used in modeling "
+"extreme value problems. This class includes the Gumbel and Frechet "
+"distributions."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:48 of
+msgid "The probability density for the Weibull distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:50 of
+msgid ""
+"p(x) = \\frac{a}\n"
+"{\\lambda}(\\frac{x}{\\lambda})^{a-1}e^{-(x/\\lambda)^a},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:53 of
+msgid "where :math:`a` is the shape and :math:`\\lambda` the scale."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:55 of
+msgid ""
+"The function has its peak (the mode) at "
+":math:`\\lambda(\\frac{a-1}{a})^{1/a}`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:58 of
+msgid ""
+"When ``a = 1``, the Weibull distribution reduces to the exponential "
+"distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:63 of
+msgid ""
+"Waloddi Weibull, Royal Technical University, Stockholm, 1939 \"A "
+"Statistical Theory Of The Strength Of Materials\", "
+"Ingeniorsvetenskapsakademiens Handlingar Nr 151, 1939, Generalstabens "
+"Litografiska Anstalts Forlag, Stockholm."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:67 of
+msgid ""
+"Waloddi Weibull, \"A Statistical Distribution Function of Wide "
+"Applicability\", Journal Of Applied Mechanics ASME Paper 1951."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.weibull:70 of
+msgid ""
+"Wikipedia, \"Weibull distribution\", "
+"https://en.wikipedia.org/wiki/Weibull_distribution"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:1 of
+msgid "Draw samples from a Zipf distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:3 of
+msgid ""
+"Samples are drawn from a Zipf distribution with specified parameter `a` >"
+" 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:6 of
+msgid ""
+"The Zipf distribution (also known as the zeta distribution) is a "
+"continuous probability distribution that satisfies Zipf's law: the "
+"frequency of an item is inversely proportional to its rank in a frequency"
+" table."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:12 of
+msgid ""
+"New code should use the ``zipf`` method of a ``default_rng()`` instance "
+"instead; please see the :ref:`random-quick-start`."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:18 of
+msgid "Distribution parameter. Must be greater than 1."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:20 of
+msgid ""
+"Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
+" k`` samples are drawn.  If size is ``None`` (default), a single value is"
+" returned if ``a`` is a scalar. Otherwise, ``np.array(a).size`` samples "
+"are drawn."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:28 of
+msgid "Drawn samples from the parameterized Zipf distribution."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:32 of
+msgid "scipy.stats.zipf"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:34 of
+msgid "Generator.zipf: which should be used for new code."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:38 of
+msgid "The probability density for the Zipf distribution is"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:40 of
+msgid ""
+"p(x) = \\frac{x^{-a}}{\\zeta(a)},\n"
+"\n"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:42 of
+msgid "where :math:`\\zeta` is the Riemann Zeta function."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:44 of
+msgid ""
+"It is named for the American linguist George Kingsley Zipf, who noted "
+"that the frequency of any word in a sample of a language is inversely "
+"proportional to its rank in the frequency table."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:50 of
+msgid ""
+"Zipf, G. K., \"Selected Studies of the Principle of Relative Frequency in"
+" Language,\" Cambridge, MA: Harvard Univ. Press, 1932."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.zipf:67 of
+msgid "Truncate s values at 50 so plot is interesting:"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:80
+msgid "RiskQuantLib.Tool.strTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.changeSecurityListToStr:1 of
+msgid "This function will convert a list of string into a single string."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.changeSeriesIndexTypeFromStrToTimestamp:1 of
+msgid ""
+"This function will change the data type of pd.Series.index into "
+"pd.Timestamp"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.convertFutureCodeToExpirationDate:1 of
+msgid ""
+"Convert future code into expiration date. This function only applies in "
+"China."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.convertFutureCodeToExpirationDate:3 of
+msgid ""
+"In China, future code is like T2108.CFE, this function will convert it "
+"into expiration date, which is 2021.08.21 in this case, the third "
+"Saturday in August. (Due to the rules of exchange.)"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.convertNumberOfDaysToChineseStr:1 of
+msgid ""
+"This function will convert number of days into Chinese string, such as "
+"'一个月','三个月',etc."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.convertTimeToString:1 of
+msgid "This function will convert pd.Timestamp into string."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:1 of
+msgid "This function will generate a list of business day."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:5 of
+msgid "startDateString"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:6 of
+msgid "The range start."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:7 of
+msgid "endDateString"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:8 of
+msgid "The range end"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:10 of
+msgid "freq"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateBusinessDateList:10 of
+msgid "The frequency used to generate date list."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateNextNWeekday:1 of
+msgid "This function will return a list, whose elements are the next n weekdays."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.generateTradingDateList:1 of
+msgid ""
+"This function will return a list of trading day, using the trading "
+"calendar of China exchange."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:1 of
+msgid ""
+"Extract number from a string. Return a list whose element is strings that"
+" is number."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:5
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:5 of
+msgid "string"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:6
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:6 of
+msgid "The string that may contain numbers."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:8
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:8 of
+msgid "withDigitPoint"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:8
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:8 of
+msgid "Use true is the numbers are float. False if all numbers are int."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:12
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:12 of
+msgid "strList"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getDigitsFromStr:13 of
+msgid "A list whose elements are string that can be converted into numbers."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getFutureTypeByExpirationDate:1 of
+msgid ""
+"This function will classify the future code into contract type, such as "
+"'Expired','Current','Month', 'Season','Half Year', etc, given the date "
+"where you stand and the expiration date of future."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getFutureTypeByExpirationDate:4 of
+msgid "This function only applies in China."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getLastTradingDate:1 of
+msgid ""
+"This function will return the last trading date given standing point, "
+"using China exchange trading calendar."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getMostSimilarStringFromList:1 of
+msgid ""
+"This function will return the most similar string of a given string, "
+"after specifying the list where you choose string from."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNTradingDaysBeforeTradingDate:1 of
+msgid "This function will return the N-th trading day before standing point."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:1 of
+msgid ""
+"This function will return the n-th weekday of the month, which contains "
+"the given day."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:6 of
+msgid "The n-th weekday you want to get"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:7 of
+msgid "weekdayCode"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:8 of
+msgid "The weekday code, use int from 1 to 7"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:10 of
+msgid "TimeStamp"
+msgstr ""
+
+#: of
+msgid "pd.Timestamp"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:10 of
+msgid "The standing point, calculation will be done based on this day."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNthWeekday:14 of
+msgid "result : pd.Timestamp"
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:1 of
+msgid "Extract number from a string. Return a list whose element is number."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNumbersFromStr:13 of
+msgid "A list whose elements are numbers."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getStringSimilarity:1 of
+msgid "This function will return a similarity of two strings."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.isTradingDate:1 of
+msgid ""
+"This function will return a bool value, telling whether the given date is"
+" a trading day, using China exchange trading calendar."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:88
+msgid "Module contents"
+msgstr ""
+

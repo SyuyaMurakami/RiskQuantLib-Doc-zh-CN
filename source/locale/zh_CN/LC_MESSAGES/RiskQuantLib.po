@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.rst:2
+msgid "RiskQuantLib package"
+msgstr ""
+
+#: ../RiskQuantLib.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../RiskQuantLib.rst:26
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.rst:29
+msgid "RiskQuantLib.Module module"
+msgstr ""
+
+#: ../RiskQuantLib.rst:37
+msgid "Module contents"
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:1 of
+msgid ""
+"addProjectTemplate() is a function to add a RiskQuantLib project '.zip' "
+"file to library."
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:3 of
+msgid ""
+"Use terminal command 'addRQL' to use this function. The terminal command "
+"'addRQL' accept a parameter 'targetPathString', which is the RiskQuantLib"
+" project '.zip' file path that you want to add to library. It have to be "
+"a '.zip' file to be added to library."
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:11 RiskQuantLib.newProject:10
+#: RiskQuantLib.packProject:11 RiskQuantLib.saveProject:13
+#: RiskQuantLib.unpackProject:17 of
+msgid "targetPathString"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:11 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project '.zip' "
+"file path which you want to add to library."
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:15 RiskQuantLib.clearAllProjectTemplate:8
+#: RiskQuantLib.delProjectTemplate:15 RiskQuantLib.listProjectTemplate:7
+#: RiskQuantLib.newProject:14 RiskQuantLib.packProject:15
+#: RiskQuantLib.saveProject:20 RiskQuantLib.unpackProject:21 of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.clearAllProjectTemplate:1 of
+msgid ""
+"clearAllProjectTemplate() is a function to delete all RiskQuantLib "
+"projects from library."
+msgstr ""
+
+#: RiskQuantLib.clearAllProjectTemplate:3 of
+msgid ""
+"Use terminal command 'clearRQL' to use this function. After calling this "
+"function, all existing RiskQuantLib projects will be removed."
+msgstr ""
+
+#: RiskQuantLib.delProjectTemplate:1 of
+msgid "delProject() is a function to delete a RiskQuantLib project from library."
+msgstr ""
+
+#: RiskQuantLib.delProjectTemplate:3 of
+msgid ""
+"Use terminal command 'delRQL' to use this function. The terminal command "
+"'delRQL' accept a parameter 'projectName', which is the project name you "
+"want to delete from library. After calling this function, the existing "
+"RiskQuantLib project will be removed from library."
+msgstr ""
+
+#: RiskQuantLib.delProjectTemplate:11 RiskQuantLib.saveProject:16
+#: RiskQuantLib.unpackProject:14 of
+msgid "projectName"
+msgstr ""
+
+#: RiskQuantLib.delProjectTemplate:11 of
+msgid ""
+"A terminal command parameter, specify the project name you want to delete"
+" from library."
+msgstr ""
+
+#: RiskQuantLib.listProjectTemplate:1 of
+msgid ""
+"listProjectTemplate() is a function to show all RiskQuantLib projects "
+"from library."
+msgstr ""
+
+#: RiskQuantLib.listProjectTemplate:3 of
+msgid "Use terminal command 'listRQL' to use this function."
+msgstr ""
+
+#: RiskQuantLib.newProject:1 of
+msgid "newProject() is a function to create a new RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.newProject:3 of
+msgid ""
+"Use terminal command 'newRQL' to use this function. The terminal command "
+"'newRQL' accept a parameter 'targetPathString', which is the path that "
+"you want to build RiskQuantLib project. If there is already a "
+"RiskQuantLib project in target path, it will be deleted and replaced by a"
+" new project."
+msgstr ""
+
+#: RiskQuantLib.newProject:10 of
+msgid ""
+"A terminal command parameter, specify the path where you want to build a "
+"new project."
+msgstr ""
+
+#: RiskQuantLib.packProject:1 of
+msgid ""
+"packProject() is a function to pack a RiskQuantLib project into '.zip' "
+"file."
+msgstr ""
+
+#: RiskQuantLib.packProject:3 of
+msgid ""
+"Use terminal command 'pkgRQL' to use this function. The terminal command "
+"'pkgRQL' accept a parameter 'targetPathString', which is the RiskQuantLib"
+" project path that you want to package. It doesn't need to have a "
+"dictionary named 'RiskQuantLib' to be packaged."
+msgstr ""
+
+#: RiskQuantLib.packProject:11 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path which"
+" you want to package."
+msgstr ""
+
+#: RiskQuantLib.saveProject:1 of
+msgid ""
+"saveProject() is a function to save a RiskQuantLib project and add it to "
+"library."
+msgstr ""
+
+#: RiskQuantLib.saveProject:3 of
+msgid ""
+"Use terminal command 'saveRQL' to use this function. The terminal command"
+" 'saveRQL' accept a parameter 'targetPathString', which is the "
+"RiskQuantLib project path that you want to save, and an optional "
+"parameter 'projectName', which is the name you want to give to this "
+"project. After calling this function, a '.zip' file will be created in "
+"RiskQuantLib project dictionary, and this project will be stored as a "
+"template."
+msgstr ""
+
+#: RiskQuantLib.saveProject:14 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path which"
+" you want to save as template."
+msgstr ""
+
+#: RiskQuantLib.saveProject:16 of
+msgid ""
+"A terminal command parameter, specify the name you want to save this "
+"project as."
+msgstr ""
+
+#: RiskQuantLib.unpackProject:1 of
+msgid ""
+"unpackProject() is a function to unpack a RiskQuantLib project from "
+"library and use it again."
+msgstr ""
+
+#: RiskQuantLib.unpackProject:3 of
+msgid ""
+"Use terminal command 'tplRQL' to use this function. The terminal command "
+"'tplRQL' accept a parameter 'projectName', which is the project name you "
+"want to unpack from library. and a parameter 'targetPathString', which is"
+" the path where you want to unpack RiskQuantLib project, After calling "
+"this function, the content of existing RiskQuantLib project will be "
+"unpacked to the location you choose, and you can start a project at the "
+"fundation of this unpakced project."
+msgstr ""
+
+#: RiskQuantLib.unpackProject:14 of
+msgid ""
+"A terminal command parameter, specify the project name you want to unpack"
+" from library."
+msgstr ""
+
+#: RiskQuantLib.unpackProject:17 of
+msgid ""
+"A terminal command parameter, specify the path where you want to unpack "
+"RiskQuantLib project."
+msgstr ""
+

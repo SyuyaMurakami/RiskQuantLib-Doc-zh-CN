@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.IndexList.BondIndex.rst:2
+msgid "RiskQuantLib.IndexList.BondIndex package"
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.BondIndex.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.BondIndex.rst:8
+msgid "RiskQuantLib.IndexList.BondIndex.bondIndexList module"
+msgstr ""
+
+#: RiskQuantLib.IndexList.BondIndex.bondIndexList.bondIndexList:1 of
+msgid ""
+"基类：:class:`RiskQuantLib.IndexList.base.baseList`, "
+":class:`RiskQuantLib.Set.IndexList.BondIndexList.bondIndexList.setBondIndexList`"
+msgstr ""
+
+#: RiskQuantLib.IndexList.BondIndex.bondIndexList.bondIndexList:1 of
+msgid "This class is the list of bond index."
+msgstr ""
+
+#: RiskQuantLib.IndexList.BondIndex.bondIndexList.bondIndexList.addBondIndex:1
+#: of
+msgid "Add a bond index object into this list."
+msgstr ""
+
+#: RiskQuantLib.IndexList.BondIndex.bondIndexList.bondIndexList.addBondIndexSeries:1
+#: of
+msgid "Add bundles of bond index into this list."
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.BondIndex.rst:16
+msgid "Module contents"
+msgstr ""
+

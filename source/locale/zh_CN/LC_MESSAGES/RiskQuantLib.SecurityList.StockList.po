@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.SecurityList.StockList.rst:2
+msgid "RiskQuantLib.SecurityList.StockList package"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.StockList.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.StockList.rst:8
+msgid "RiskQuantLib.SecurityList.StockList.stockIndexUnderlyingStockList module"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.StockList.stockIndexUnderlyingStockList.stockIndexUnderlyingStockList:1
+#: of
+msgid ""
+"基类：:class:`RiskQuantLib.SecurityList.StockList.stockList.stockList`, "
+":class:`RiskQuantLib.Set.SecurityList.StockList.stockIndexUnderlyingStockList.setStockIndexUnderlyingStockList`"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.StockList.rst:16
+msgid "RiskQuantLib.SecurityList.StockList.stockList module"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.StockList.stockList.stockList:1 of
+msgid ""
+"基类：:class:`RiskQuantLib.SecurityList.base.baseList`, "
+":class:`RiskQuantLib.Set.SecurityList.StockList.stockList.setStockList`"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.StockList.stockList.stockList:1 of
+msgid "stockList is one of the five basic list classes."
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.StockList.rst:24
+msgid "Module contents"
+msgstr ""
+

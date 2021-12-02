@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Create_Project.rst:2
+msgid "Create A New Project"
+msgstr "创建一个新的工程"
+
+#: ../Create_Project.rst:7
+msgid ""
+"RiskQuantLib is based on project. For any data analysis mission, you "
+"should create at least one project to do it."
+msgstr "RiskQuantLib以工程的方式来进行数据分析。对于任何的数据分析任务，你应该首先创建一个工程。（至少一个工程）"
+
+#: ../Create_Project.rst:9
+msgid ""
+"To create a new RiskQuantLib project, you can use ``newRQL`` command in "
+"terminal as follows: ::"
+msgstr "你可以通过终端命令来新建RiskQuantLib工程，新建工程的命令为 ``newRQL``，它的后面应该紧接一个文件夹地址，你可以像这样使用：::"
+
+#: ../Create_Project.rst:14
+msgid ""
+"**Notice: If there is already a project in the target dictionary, all old"
+" files will be deleted, and replaced with brand new project files.**"
+msgstr "**注意：如果你把一个已经是RiskQuantLib工程的文件夹地址传给 ``newRQL`` 命令，"
+"所有的旧文件都会被删除，并且用新的工程文件替换。**"
+
+#: ../Create_Project.rst:16
+msgid "After this command, your dictionary should looks like: ::"
+msgstr "当运行这条命令之后，你的文件夹应该多出许多文件，文件夹现在看起来像这样：::"
+
+#: ../Create_Project.rst:26
+msgid ""
+"Then you can build it to suit your mission, we will explain it in next "
+"chapter."
+msgstr "在这之后你可以编译这个工程，来使得它符合你的数据处理任务的要求，我们将在下一章解释如何编译工程。"
+

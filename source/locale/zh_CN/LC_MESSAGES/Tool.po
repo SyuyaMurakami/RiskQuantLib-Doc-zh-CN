@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Tool.rst:2
+msgid "Tool"
+msgstr "工具"
+
+#: ../Tool.rst:7
+msgid ""
+"RiskQuantLib provides different kinds of tools to do different work, like"
+" ``strTool``, ``fileTool``, ``databaseTool``, etc. All these tools can be"
+" changed to suit your style of coding. You can refer to `Details <https"
+"://riskquantlib-doc.readthedocs.io/en/latest/RiskQuantLib.Tool.html>`_ "
+"for more information."
+msgstr "为了适应不同的数据处理任务，RiskQuantLib提供了不同的工具包，比如 ``strTool``, ``fileTool``, ``databaseTool`` 等。这些工具包可以被任意修改，以便于适应你的数据分析项目。这些修改仅对于当前的工程有效。"
+"你可以参考 `Details <https"
+"://riskquantlib-doc.readthedocs.io/en/latest/RiskQuantLib.Tool.html>`_ 来获得更多信息。"
+
+#: ../Tool.rst:9
+msgid ""
+"**Notice: RiskQuantLib is not designed to provide with detail functions, "
+"such as connecting to database or dealing with string. It is designed as "
+"an scaffold, like a box where you put all your familiar tools into it. "
+"RiskQuantLib will package those tools into a template, and make it "
+"convient to use next time. So here, all these kinds of tools are more "
+"examples than tools, it help users to understand how RiskQuantLib "
+"organize a project.**"
+msgstr "**注意：RiskQuantLib并不是被设计用于提供诸如连接数据库，进行字符串处理等具体的功能的。正如一开始所说，RiskQuantLib是一个脚手架，便于你收纳各种你习惯于使用的工具，并提供方便的接口来多次调用。RiskQuantLib通过模板来做到这一点，我们将在下面进行介绍。本章所说的工具包更多的作为例子，来展示如何利用RiskQuantLib规范地组织一个工程。**"
+

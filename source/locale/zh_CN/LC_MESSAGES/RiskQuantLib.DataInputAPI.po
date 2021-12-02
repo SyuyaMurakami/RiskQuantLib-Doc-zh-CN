@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.DataInputAPI.rst:2
+msgid "RiskQuantLib.DataInputAPI package"
+msgstr ""
+
+#: ../RiskQuantLib.DataInputAPI.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.DataInputAPI.rst:8
+msgid "RiskQuantLib.DataInputAPI.getDataFromJYDB module"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.decoratorQuery:1 of
+msgid ""
+"This function deal with the issue that oracle can not query more than "
+"1000 'IN' condition."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getAllPublicFund:1
+#: of
+msgid "This function returns all public fund, given a date."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getAllPublicFund:6
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:8
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:8
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:8
+#: of
+msgid "date"
+msgstr ""
+
+#: of
+msgid "pd.Timestamp"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getAllPublicFund:6
+#: of
+msgid "The date you want to pull data on."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getAllPublicFund:10
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:12
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:12
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:12
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getSwIndustryName:5
+#: of
+msgid "pd.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:1 of
+msgid "This function returns fund net asset value after interest adjust."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:5
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:5
+#: of
+msgid "fund"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:6
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:6
+#: of
+msgid "Fund code."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundAccNav:8
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:8
+#: of
+msgid "The date you need to pull the data on."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getFundStockTopTen:1
+#: of
+msgid "This function returns top ten stock holdings of a mutual fund."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:1
+#: of
+msgid "This function will return the index constitution."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:5
+#: of
+msgid "index"
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:6
+#: of
+msgid "Index code."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getIndexConstitute:8
+#: of
+msgid "The date you want to pull your data on."
+msgstr ""
+
+#: RiskQuantLib.DataInputAPI.getDataFromJYDB.getDataFromJYDB.getSwIndustryName:1
+#: of
+msgid "This function returns the name of shen wan industry level one."
+msgstr ""
+
+#: ../RiskQuantLib.DataInputAPI.rst:16
+msgid "RiskQuantLib.DataInputAPI.getDataFromWind module"
+msgstr ""
+
+#: ../RiskQuantLib.DataInputAPI.rst:24
+msgid "Module contents"
+msgstr ""
+

@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Variable_Type.rst:2
+msgid "Variable Type"
+msgstr "数据类型"
+
+#: ../Variable_Type.rst:7
+msgid ""
+"Variable is the type of attribute, ususally it should be ``String``, "
+"``Number``, ``Series``, ``Any``. However, RiskQuantLib allows to build "
+"your own variable type, for example, ``List``, or ``Blank``, or whatever "
+"you like."
+msgstr "数据类型指的是类属性的值的类型，一般情况下，数据类型应该是 ``String``, ``Number``, ``Series``, ``Any`` 其中之一。但是，RiskQuantLib允许你自定义新的数据类型，比如 ``List``, 或者 ``Blank``, 或者是任何你自定义名称的数据类型。""
+
+#: ../Variable_Type.rst:9
+msgid ""
+"This is a powerful design when you deal with some complicated situations."
+" Somtimes, you may wonder why list in python doesn't have ``reduce`` "
+"function any more, or you want to reload the ``__add__`` function of list"
+" so that list objects can be added as you like. In RiskQuantLib, this is "
+"done by defining your own variable type class."
+msgstr "当处理复杂的数据时，自定义数据类型是非常有效的手段。有时你会有一些问题，比如为什么python中的list不再具有reduce函数，或者你想重载list
+的 ``__add__`` 函数，以便于list可以以你想要的方式相加。在RiskQuantLib中，你可以通过自定义数据类型来做到这一点。"
+
+#: ../Variable_Type.rst:11
+msgid ""
+"The way to build your own type is to use ``Build_Attr.xlsx``, remember we"
+" have a dataframe like:"
+msgstr "自定义数据类型的具体方式是通过 ``Build_Attr.xlsx`` 文件，如果你还有印象，我们在之前几章提到过，我们有一个像这样的excel："
+
+#: ../Variable_Type.rst:14 ../Variable_Type.rst:28
+msgid "SecurityType"
+msgstr ""
+
+#: ../Variable_Type.rst:14 ../Variable_Type.rst:28
+msgid "AttrName"
+msgstr ""
+
+#: ../Variable_Type.rst:14 ../Variable_Type.rst:28
+msgid "AttrType"
+msgstr ""
+
+#: ../Variable_Type.rst:16 ../Variable_Type.rst:30
+msgid "Fund"
+msgstr ""
+
+#: ../Variable_Type.rst:16 ../Variable_Type.rst:30
+msgid "yourAttribute"
+msgstr ""
+
+#: ../Variable_Type.rst:16 ../Variable_Type.rst:30
+msgid "Number"
+msgstr ""
+
+#: ../Variable_Type.rst:18 ../Variable_Type.rst:32
+msgid "Stock"
+msgstr ""
+
+#: ../Variable_Type.rst:18 ../Variable_Type.rst:32
+msgid "anotherAttribute"
+msgstr ""
+
+#: ../Variable_Type.rst:18
+msgid "String"
+msgstr ""
+
+#: ../Variable_Type.rst:20 ../Variable_Type.rst:34
+msgid "..."
+msgstr ""
+
+#: ../Variable_Type.rst:23
+msgid ""
+"In the column named *AttrType*, you specified variable type of "
+"*yourAttribute* is ``Number``, and variable type of *anotherAttribute* is"
+" ``String``. Now, we want to create a type named ``yourNewType``, and let"
+" variable type of *anotherAttribute* be ``yourNewType``. All we need to "
+"do is to change ``String`` to ``yourNewType``, and run ``build.py``, "
+"which is in your project root path."
+msgstr "在名为 *AttrType* 的一列，你可以声明属性 *yourAttribute* 是 ``Number`` （数字）类型的。但现在，你想新创建一个类型，名为 ``yourNewType``, 并且让属性  *anotherAttribute* 的值的数据类型为你新创建的 ``yourNewType``。我们唯一需要做的，是把 ``String`` 换为 ``yourNewType``。并且重新运行 ``build.py``。"
+
+#: ../Variable_Type.rst:25
+msgid "The modified file should look like:"
+msgstr "修改过的文件看起来像这样："
+
+#: ../Variable_Type.rst:32
+msgid "yourNewType"
+msgstr ""
+
+#: ../Variable_Type.rst:37
+msgid ""
+"Notice here that we don't have any pre-defined type class named "
+"``yourNewType``, don't worry, RiskQuantLib will scan and create it if it "
+"doesn't exist. After run ``build.py``, you could find the created file "
+"``RiskQuantLib/Property/YourNewType/yourNewType.py``."
+msgstr "注意到我们在这些操作之前，并没有自行手动创建任何名为 ``yourNewType`` 的python类文件，不用担心，RiskQuantLib会扫描工程目录，如果它不存在，RiskQuantLib会自动创建它。当运行 ``build.py`` 进行编译之后，你可以发现数据类型的类文件处于路径 ``RiskQuantLib/Property/YourNewType/yourNewType.py`` 下。"
+
+#: ../Variable_Type.rst:39
+msgid ""
+"Same with instrument building, once the type class file is created, "
+"RiskQuantLib can **not** delete it automatically. It can only be deleted "
+"by your own hand. However, If it doesn't show in ``Build_Attr.xlsx``, "
+"after a second building or after clear command, it will be un-registered "
+"from RiskQuantLib, so that you can't use it with automatical building any"
+" more."
+msgstr "和编译生成模板类一样，一旦数据类型类被编译创建，RiskQuantLib就 **不能** 自动将它的源文件删除。如果偶需要删除，你只能手动删除它。但是，如果这个数据类型不再出现于 ``Build_Attr.xlsx`` 中，那么当你重新编译工程之后，或着运行清除命令后，这个数据类型会被取消注册，这样你就无法再使用它。"
+

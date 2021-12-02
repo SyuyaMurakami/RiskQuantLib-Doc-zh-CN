@@ -1,0 +1,1373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Build.rst:2
+msgid "RiskQuantLib.Build package"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:8
+msgid "RiskQuantLib.Build.build module"
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:1 of
+msgid ""
+"buildAttr(filePath, targetProjectPath = '') is a function to "
+"automatically build attributes to instrument classes."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:7
+#: RiskQuantLib.Build.build.buildInstrument:10 of
+msgid "filePath"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:6 of
+msgid ""
+"The excel file path that tells RiskQuantLib how to build attributes, "
+"including the name of attributes, which instrument it belongs to, and "
+"value type of attributes."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:12
+#: RiskQuantLib.Build.build.buildInstrument:15
+#: RiskQuantLib.Build.build.buildPropertyType:13
+#: RiskQuantLib.Build.build.clearAttr:9
+#: RiskQuantLib.Build.build.clearInstrumentPath:10
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:21
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:12
+#: RiskQuantLib.Build.buildInstrument.clearInstrumentPath:11
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:12
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:9
+#: RiskQuantLib.Build.buildPropertyType.clearPropertyTypePath:11
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:9
+#: RiskQuantLib.Build.instrumentList.instrumentList.commit:7
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.commit:6
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.commit:7
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.commit:6 of
+msgid "targetProjectPath"
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:10 of
+msgid ""
+"The RiskQuantLib project path where you want to build attributes. You can"
+" leave this parameter empty to build attributes in this project. Or "
+"specify a path to build attributes to another RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildAttr:16
+#: RiskQuantLib.Build.build.buildInstrument:19
+#: RiskQuantLib.Build.build.buildPropertyType:17
+#: RiskQuantLib.Build.build.clearAttr:13
+#: RiskQuantLib.Build.build.clearInstrumentPath:14
+#: RiskQuantLib.Build.buildFuction.clearBuiltFunction:12
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:14
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:13
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:25
+#: RiskQuantLib.Build.buildInstrument.clearInstrumentPath:15
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:13
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:16
+#: RiskQuantLib.Build.buildPropertyType.clearPropertyTypePath:15
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:13
+#: RiskQuantLib.Build.buildShortcut.clearShortcut:12
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:13
+#: RiskQuantLib.Build.instrumentList.instrumentList.addInstrument:11
+#: RiskQuantLib.Build.instrumentList.instrumentList.commit:11
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:16
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:17
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:17
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:17
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:13
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.commit:10
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setDefaultInstrumentType:11
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setInstrumentName:10
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setLibraryName:12
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentQuantLibClassName:12
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentRQLClassName:12
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:16
+#: RiskQuantLib.Build.propertyList.propertyList.commit:11
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:16
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:22
+#: RiskQuantLib.Build.propertyObj.propertyObj.setBelongTo:11
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyName:10
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyType:11
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.addPropertyType:11
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.commit:11
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:17
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:13
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.commit:10
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setLibraryName:12
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setPropertyTypeName:10 of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildInstrument:1 of
+msgid ""
+"buildInstrument(filePath, targetProjectPath = '') is a function to "
+"automatically build instrument classes. If instrument already exists, it "
+"will skip this instrument. Any instrument that doesn't exist in excel "
+"file won't be built and added into RiskQuantLib path, regardless of "
+"whether it used to exist in target project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildInstrument:9 of
+msgid ""
+"The excel file path that tells RiskQuantLib how to build instruments, "
+"including the name of instruments, which instrument class it inherits "
+"from, which QuantLib class it inherits from, and instrument default type "
+"string."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildInstrument:13 of
+msgid ""
+"The RiskQuantLib project path where you want to build instruments. You "
+"can leave this parameter empty to build instruments in this project. Or "
+"specify a path to build instruments to another RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildPropertyType:1 of
+msgid ""
+"buildPropertyType(propertyNameList : list, targetProjectPath = '') is a "
+"function to automatically build propertyType classes. If propertyType "
+"already exists, it will skip this propertyType. Any propertyType that "
+"doesn't exist in excel file won't be built and added into RiskQuantLib "
+"path, regardless of whether it used to exist in target project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildPropertyType:8 of
+msgid "propertyNameList"
+msgstr ""
+
+#: of
+msgid "list"
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildPropertyType:9 of
+msgid "A list contains the types of variables you may use."
+msgstr ""
+
+#: RiskQuantLib.Build.build.buildPropertyType:11 of
+msgid ""
+"The RiskQuantLib project path where you want to build propertyTypes. You "
+"can leave this parameter empty to build propertyTypes in this project. Or"
+" specify a path to build propertyTypes to another RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.clearAttr:1 of
+msgid ""
+"clearAttr(targetProjectPath = '') is a function to automatically clear "
+"all attributes of all instrument classes. Once attributes are cleared, "
+"you can not use them directly any more. The setAttr function will also be"
+" removed."
+msgstr ""
+
+#: RiskQuantLib.Build.build.clearAttr:7 of
+msgid ""
+"The RiskQuantLib project path where you want to clear attributes. You can"
+" leave this parameter empty to clear attributes in this project. Or "
+"specify a path to clear attributes to another RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.Build.build.clearInstrumentPath:1 of
+msgid ""
+"clearInstrumentPath(targetProjectPath:str = '') is a function to "
+"automatically clear instrument path. This function won't clear instrument"
+" class files. It only remove instrument path from RiskQuantLib project, "
+"so that you can't use these instruments class directly any more."
+msgstr ""
+
+#: RiskQuantLib.Build.build.clearInstrumentPath:8 of
+msgid ""
+"The RiskQuantLib project path where you want to clear instrument paths. "
+"You can leave this parameter empty to clear instrument paths in this "
+"project. Or specify a path to clear instrument paths of another "
+"RiskQuantLib project."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:16
+msgid "RiskQuantLib.Build.buildFuction module"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildBaseFunction:1 of
+msgid ""
+"buildBaseFunction(variableNameString:str) is a function to automatically "
+"build a set function, given the variable type as 'Any'. This function "
+"will import a property instance from RiskQuantLib.Property.base, and "
+"returns a codeBuilder object."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildBaseFunction:10
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:8
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction2D:9
+#: RiskQuantLib.Build.buildFuction.buildNumberFunction:10
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:9
+#: RiskQuantLib.Build.buildFuction.buildStringFunction:9 of
+msgid "variableNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildBaseFunction:9
+#: RiskQuantLib.Build.buildFuction.buildNumberFunction:9
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:9
+#: RiskQuantLib.Build.buildFuction.buildStringFunction:8 of
+msgid ""
+"The variable name you want to use. This name will be used as attribute "
+"name of class."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildBaseFunction:14
+#: RiskQuantLib.Build.buildFuction.buildNumberFunction:14
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:18
+#: RiskQuantLib.Build.buildFuction.buildStringFunction:13 of
+msgid "code : codeBuilder Object"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:1 of
+msgid ""
+"buildListSetFunction1D(variableNameString:str,variableType:str = 'Base') "
+"is a function to generate set function of RiskQuantLib list object, given"
+" the condition that variable is a one-dimension variable. This function "
+"returns a codeBuilder object"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:9
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction2D:9 of
+msgid "The variable name you used."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:11 of
+msgid "variableType"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:11 of
+msgid "The variable type you specified."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction1D:15
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction2D:13 of
+msgid "code : codeBuilder object"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildListSetFunction2D:1 of
+msgid ""
+"buildListSetFunction2D(variableNameString:str) is a function to generate "
+"set function of RiskQuantLib list object, given the condition that "
+"variable is a two-dimension variable, like a time series. This function "
+"returns a codeBuilder object"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildNumberFunction:1 of
+msgid ""
+"buildNumberFunction(variableNameString:str) is a function to "
+"automatically build a set function, given the variable type as 'Number'. "
+"This function will import a number instance from "
+"RiskQuantLib.Property.NumberProperty.numberProperty, and returns a "
+"codeBuilder object."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:1 of
+msgid ""
+"is a function to automatically build a set function, given the variable "
+"type as self-defined string. This function will import a property "
+"instance from RiskQuantLib.Property.selfDefinedType, and returns a "
+"codeBuilder object."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:14 of
+msgid "variableTypeString"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildSelfDefinedTypeFunction:12 of
+msgid ""
+"The variable type you want to set your variable to, usually, it should be"
+" 'String', 'Number' or 'Any', but after defining your own type class, you"
+" can use it as a variable type."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.buildStringFunction:1 of
+msgid ""
+"buildStringFunction(variableNameString:str) is a function to "
+"automatically build a set function, given the variable type as 'String'. "
+"This function returns a codeBuilder object."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.clearBuiltFunction:1 of
+msgid ""
+"clearBuiltFunction(sourceFilePath:str) is a function to clear creations "
+"of set function of both RiskQuantLib instrument class object and "
+"instrument list class object. This function clear any contents between "
+"'#-<Begin>' and '#-<End>',"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.clearBuiltFunction:8
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:10
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:9 of
+msgid "sourceFilePath"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.clearBuiltFunction:8 of
+msgid "The file where your want to clear all set functions."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:1 of
+msgid ""
+"commitListFunctionBuild(codeList:list,sourceFilePath:str) is a function "
+"to commit creations of set function of RiskQuantLib list object. This "
+"function clear any contents between '#-<Begin>' and '#-<End>', replace it"
+" with new source code generated by 'codeList',"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:7
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:6 of
+msgid "codeList"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:8 of
+msgid "A list of codeBuilder objects, contains multiple of list set functions."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitListFunctionBuild:10
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:9 of
+msgid "The file where your want to rewrite set function."
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:1 of
+msgid ""
+"commitObjectFunctionBuild(codeList:list,sourceFilePath:str) is a function"
+" to commit creations of variable set function. This function clear any "
+"contents between '#-<Begin>' and '#-<End>', replace it with new source "
+"code generated by 'codeList',"
+msgstr ""
+
+#: RiskQuantLib.Build.buildFuction.commitObjectFunctionBuild:7 of
+msgid "A list of codeBuilder objects, contains multiple of set functions."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:24
+msgid "RiskQuantLib.Build.buildInstrument module"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:1 of
+msgid ""
+"buildInstrument(instrumentNameString:str, parentRQLClassName:str = '', "
+"parentQuantLibClassName:str = '', libraryName:str = '', "
+"defaultInstrumentType:str = '', targetProjectPath:str='') is the entrance"
+" of build instruments. It call four functions to generate source code of "
+"instrument class, instrument set class, instrument list class, instrument"
+" list set class. Then it commit change to target files."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:9
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:6
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:6
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:8
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:7
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:6
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:9
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setInstrumentName:6 of
+msgid "instrumentNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:10 of
+msgid "The name you want to create new instrument by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:11
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:8
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:9
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:13
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:9
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:9 of
+msgid "parentRQLClassName"
+msgstr ""
+
+#: of
+msgid "str or list"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:12 of
+msgid ""
+"The parent RiskQuantLib class you want to inherit from. This parameter "
+"can also be a list."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:13
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:16 of
+msgid "parentQuantLibClassName"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:14 of
+msgid "The parent QuantLib class you want to inherit from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:15
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:18
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:8
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:11 of
+msgid "libraryName"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:16
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:9 of
+msgid "Other library you want to include in your source file."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:17 of
+msgid "defaultInstrumentType"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:18 of
+msgid "The default instrument type you want to mark your new instrument."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrument:20 of
+msgid ""
+"The RiskQuantLib project path where you want to build instruments. A "
+"''(blank string) will specify this project."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:1 of
+msgid ""
+"is a function to generate code of instrument list class, given instrument"
+" name and which parent RiskQuantLib class it inherited from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:7 of
+msgid "The name you want to create instrument list class by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:9 of
+msgid ""
+"Which RiskQuantLib list class it inherits from. This parameter can also "
+"be a list."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:11 of
+msgid "securityType"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:11 of
+msgid "The default type of instrument list."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:15
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:13
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:25
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:13
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:15
+#: RiskQuantLib.Build.buildShortcut.buildShortcut:11
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:6 of
+msgid "psb"
+msgstr ""
+
+#: of
+msgid "pythonScriptBuilder"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentList:16
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:14
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:14 of
+msgid "A python ScriptBuilder object"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:1 of
+msgid ""
+"is a function to generate code of instrument list set class, given "
+"instrument name and which parent RiskQuantLib list set class it inherited"
+" from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:7 of
+msgid "The name you want to create instrument list set class by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentListSet:9 of
+msgid ""
+"Which RiskQuantLib list set class it inherits from. This parameter can "
+"also be a list."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:1 of
+msgid ""
+"buildInstrumentObj(instrumentNameString:str, parentRQLClassName:str = '',"
+" parentQuantLibClassName:str = '', libraryName:str = '', "
+"defaultInstrumentType:str = '') is a function to generate source code of "
+"new instrument file, given instrument name and which class it inherited "
+"from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:9 of
+msgid "The instrument name you want to create python source file by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:11 of
+msgid ""
+"The parent RiskQuantLib class name you want the new instrument class to "
+"inherit from. If 'Any' is specified, it will inherit from "
+"RiskQuantLib.Security.base If ''(blank string) is specified, it will "
+"inherit from no RiskQuantLib class and created as an independent new "
+"class, located at project root path."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:16 of
+msgid ""
+"The parent QuantLib class name you want the new instrument class to "
+"inherit from. If ''(blank string) is specified, it will inherit from no "
+"QuantLib class."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:19 of
+msgid "Other library you want to use in new instrument class file."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:21 of
+msgid "defaultInstrumentType :str"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:21 of
+msgid "The default type you want to mark your new instrument class as."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentObj:26
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:16 of
+msgid "A pythonScriptBuilder object."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:1 of
+msgid ""
+"is a function to create new instrument class file paths. The created path"
+" will be beside its parent RiskQuantLib class file. If path already "
+"exists, it won't be overwritten. If multiple RiskQuantLib parent classes "
+"are specified, new class file will be beside the first RiskQuantLib "
+"parent class file."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:8 of
+msgid "The instrument name that you want to create by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:10 of
+msgid "The parent RiskQuantLib class name or a list of class names."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:12 of
+msgid ""
+"The location of RiskQuantLib project where you want to create instrument "
+"path."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentPath:16 of
+msgid "List[filePath:str,setFilePath:str,listFilePath:str,setListFilePath:str]"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:1 of
+msgid ""
+"is a function to generate code of instrument set class, given instrument "
+"name and which parent RiskQuantLib class it inherited from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:7 of
+msgid "The name you want to create instrument set class by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.buildInstrumentSet:9 of
+msgid ""
+"Which RiskQuantLib set class it inherits from. This parameter can also be"
+" a list."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.clearInstrumentPath:1 of
+msgid ""
+"clearInstrumentPath(targetProjectPath:str = '') is a function to clear "
+"all instrument path registration of RiskQuantLib. This function won't "
+"delete instrument class files, it only remove path registration, so that "
+"you can not use it directly through RiskQuantLib.Module, or build new "
+"instrument classes inherited from it. This function won't clear default "
+"instrument registration."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.clearInstrumentPath:11 of
+msgid ""
+"The location of RiskQuantLib project where you want to clear all "
+"instrument registration."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:1
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:1 of
+msgid ""
+"is a function to commit generated source code change to target files. If "
+"the file already exists, it will skip."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:6
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:6 of
+msgid "sourcePSBObj"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:7
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:7 of
+msgid "The pythonScriptBuilder object, which contains source code."
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:9
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:9 of
+msgid "targetPath"
+msgstr ""
+
+#: RiskQuantLib.Build.buildInstrument.commitBuildInstrument:9
+#: RiskQuantLib.Build.buildPropertyType.commitBuildPropertyType:9 of
+msgid "The file path where you want to overwrite contents with new contents."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:32
+msgid "RiskQuantLib.Build.buildPropertyType module"
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:1 of
+msgid ""
+"is the entrance of build propertyTypes. It call function to generate "
+"source code of propertyType class. Then it commit change to target files."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:6
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:8
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:6
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:9
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setPropertyTypeName:6 of
+msgid "propertyTypeNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:7 of
+msgid "The name you want to create new propertyType by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyType:11 of
+msgid ""
+"The RiskQuantLib project path where you want to build propertyTypes. A "
+"''(blank string) will specify this project."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:1 of
+msgid ""
+"buildPropertyTypeObj(propertyTypeNameString:str, parentRQLClassName:str ="
+" '', parentQuantLibClassName:str = '', libraryName:str = '', "
+"defaultPropertyTypeType:str = '') is a function to generate source code "
+"of new propertyType file, given propertyType name and which class it "
+"inherited from."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:9 of
+msgid "The propertyType name you want to create python source file by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypeObj:11 of
+msgid "Other library you want to use in new propertyType class file."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:1 of
+msgid ""
+"is a function to create new propertyType class file paths. The created "
+"path will be in the path: RiskQuantLib.Property. If path already exists, "
+"it won't be overwritten."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:7 of
+msgid "The propertyType name that you want to create attribute type class by."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:9 of
+msgid ""
+"The location of RiskQuantLib project where you want to create "
+"propertyType class."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.buildPropertyTypePath:13 of
+msgid "filePath : str"
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.clearPropertyTypePath:1 of
+msgid ""
+"clearPropertyTypePath(targetProjectPath:str = '') is a function to clear "
+"all propertyType path registration of RiskQuantLib. This function won't "
+"delete propertyType class files, it only remove path registration, so "
+"that you can not use it directly through RiskQuantLib.Module, or build "
+"new propertyType classes inherited from it. This function won't clear "
+"default propertyType registration."
+msgstr ""
+
+#: RiskQuantLib.Build.buildPropertyType.clearPropertyTypePath:11 of
+msgid ""
+"The location of RiskQuantLib project where you want to clear all "
+"propertyType registration."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:40
+msgid "RiskQuantLib.Build.buildShortcut module"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.buildShortcut:1 of
+msgid ""
+"buildShortcut(instrumentNameList:list) is the function to generate source"
+" code of shortcut map. It joins class name to class import path, making "
+"it easy to use instrument class."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.buildShortcut:7 of
+msgid "instrumentNameList"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.buildShortcut:7 of
+msgid "The instruments whose shortcut you want to add to RiskQuantLib.module."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.buildShortcut:12 of
+msgid ""
+"A pythonScriptBuilder object contains map relation from instrument name "
+"to import path."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.clearShortcut:1 of
+msgid ""
+"clearShortcut(targetProjectPath:str='') is a function to clear all "
+"registration of class paths. To simplify usage of class, a shortcut will "
+"be inserted to RiskQuantLib.module for every auto-built instrument class."
+" After calling this function, these shortcuts will be removed, but the "
+"original source files still exist."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.clearShortcut:8 of
+msgid "targetProjectPath :str"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.clearShortcut:8 of
+msgid ""
+"The RiskQuantLib project path where you want to remove all instrument "
+"class shortcuts."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:1 of
+msgid ""
+"commitShortcut(psb:pythonScriptBuilder,targetProjectPath:str) is a "
+"function to commit the change of shortcut files. It makes modification to"
+" RiskQuantLib.module."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:7 of
+msgid ""
+"A pythonScriptBuilder object, contains the source code of shortcuts map "
+"relation."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.commitShortcut:9 of
+msgid "The RiskQuantLib project path where you want to commit shortcut change."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.convertPathToImportPath:1 of
+msgid ""
+"convertPathToImportPath(pathString:str) is a function to convert file "
+"path to class import path."
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.convertPathToImportPath:6 of
+msgid "pathString"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.convertPathToImportPath:6 of
+msgid ""
+"The relative path of RiskQuantLib files. This path must be relative to "
+"RiskQuantLib.__init__.py"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.convertPathToImportPath:10 of
+msgid "classImportPath"
+msgstr ""
+
+#: RiskQuantLib.Build.buildShortcut.convertPathToImportPath:11 of
+msgid "The import path of RiskQuantLib files."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:48
+msgid "RiskQuantLib.Build.instrumentList module"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList:1
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:1
+#: RiskQuantLib.Build.pathObj.pathObj:1
+#: RiskQuantLib.Build.propertyList.propertyList:1
+#: RiskQuantLib.Build.propertyObj.propertyObj:1
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList:1
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList:1 of
+msgid ""
+"instrumentList() is a class used to format instrument building "
+"information and commit building. This is the entrance of new instrument "
+"building action."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList:4
+#: RiskQuantLib.Build.propertyList.propertyList:4
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList:4 of
+msgid ""
+"Any 'RiskQuantLib List' object should have self.all, which is a list to "
+"contain elements."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.addInstrument:1 of
+msgid ""
+"addInstrument(self,instrumentNameSeries) is a function to add new "
+"instrument registrations."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.addInstrument:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:7 of
+msgid "instrumentNameSeries"
+msgstr ""
+
+#: of
+msgid "iterable object"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.addInstrument:6
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:7
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:7 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the name of instruments."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.commit:1 of
+msgid ""
+"commit(self,targetProjectPath:str = '') is a function to commit building "
+"of new instruments."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.commit:7 of
+msgid "The RiskQuantLib project path where you want to build new instruments."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:1
+#: of
+msgid ""
+"setDefaultInstrumentType(self,instrumentNameSeries,defaultInstrumentTypeSeries)"
+" is a function to set default instrument type you want to mark new "
+"instrument class as."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:12
+#: of
+msgid "defaultInstrumentTypeSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setDefaultInstrumentType:10
+#: of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the type you want to mark instrument as. Note: The "
+"length of defaultInstrumentTypeSeries must be equal to that of "
+"instrumentNameSeries."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:1 of
+msgid ""
+"setLibraryName(self,instrumentNameSeries,libraryNameSeries) is a function"
+" to set other library you want to use in new instrument class."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:13
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:13 of
+msgid "libraryNameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setLibraryName:10 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the library you want to include in instrument class "
+"file. If multiple classes are included, they should be within one string,"
+" separated by ','. Note: The length of libraryNameSeries must be equal to"
+" that of instrumentNameSeries."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:1
+#: of
+msgid ""
+"setParentQuantLibClassName(self,instrumentNameSeries,parentQuantLibClassNameSeries)"
+" is a function to set parent QuantLib class of new instrument."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:13
+#: of
+msgid "parentQuantLibClassNameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentQuantLibClassName:10
+#: of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the QuantLib class name which instruments inherit "
+"from. If multiple classes are parents, they should be within one string, "
+"separated by ','. Note: The length of parentQuantLibClassNameSeries must "
+"be equal to that of instrumentNameSeries."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:1 of
+msgid ""
+"setParentRQLClassName(self,instrumentNameSeries,parentRQLClassNameSeries)"
+" is a function to set parent RiskQuantLib class of new instrument."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:13 of
+msgid "parentRQLClassNameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentList.instrumentList.setParentRQLClassName:10 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the RiskQuantLib class name which instruments inherit "
+"from. If multiple classes are parents, they should be within one string, "
+"separated by ','. Note: The length of parentRQLClassNameSeries must be "
+"equal to that of instrumentNameSeries."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:56
+msgid "RiskQuantLib.Build.instrumentObj module"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:1 of
+msgid ""
+"instrumentObj() is a class to store new instrument class information. It "
+"is the entrance of single instrument building."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:4 of
+msgid "Any instrument class should have a name."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj:9
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setInstrumentName:6 of
+msgid "The instrument name you want to create class by."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.commit:1
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.commit:1 of
+msgid "commit(self, targetProjectPath:str = '') is a function to commit ."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.commit:6 of
+msgid ""
+"The RiskQuantLib project path where you want to commit instrument "
+"creation."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setDefaultInstrumentType:1 of
+msgid ""
+"setDefaultInstrumentType(self,defaultInstrumentTypeString:str) is a "
+"function to set default class type that you want to mark the new "
+"instrument class as."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setDefaultInstrumentType:7 of
+msgid "defaultInstrumentTypeString"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setDefaultInstrumentType:7 of
+msgid "The class type that you want to mark the new instrument class as."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setInstrumentName:1 of
+msgid ""
+"setInstrumentName(self,instrumentNameString:str) if a function to set "
+"instrument name information."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setLibraryName:1 of
+msgid ""
+"setLibraryName(self,libraryNameString:str) is a function to set library "
+"that you may use within new instrument class file."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setLibraryName:8
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setLibraryName:8 of
+msgid "libraryNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setLibraryName:7 of
+msgid ""
+"The library name you want the new instrument class to include. If "
+"multiple libraries are specified, they are separated by ','(comma)"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentQuantLibClassName:1
+#: of
+msgid ""
+"setParentQuantLibClassName(self,parentQuantLibClassNameString:str) is a "
+"function to set parent QuantLib classes that new instrument inherits "
+"from."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentQuantLibClassName:8
+#: of
+msgid "parentQuantLibClassNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentQuantLibClassName:7
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentRQLClassName:7 of
+msgid ""
+"The instrument name you want the new instrument class to inherit from. If"
+" multiple parent classes are specified, they are separated by ','(comma)"
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentRQLClassName:1 of
+msgid ""
+"setParentRQLClassName(self,parentRQLClassNameString:str) is a function to"
+" set parent RiskQuantLib classes that new instrument inherits from."
+msgstr ""
+
+#: RiskQuantLib.Build.instrumentObj.instrumentObj.setParentRQLClassName:8 of
+msgid "parentRQLClassNameString"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:64
+msgid "RiskQuantLib.Build.pathObj module"
+msgstr ""
+
+#: RiskQuantLib.Build.pathObj.pathObj:1 of
+msgid ""
+"pathObj() is a registration class, which stores the file path and class "
+"information. The information stored here will be used to locate files "
+"across the whole project."
+msgstr ""
+
+#: RiskQuantLib.Build.pathObj.pathObj:4 of
+msgid ""
+"This class itself can also be built. It will be auto-updated once a new "
+"instrument are specified and committed."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:72
+msgid "RiskQuantLib.Build.propertyList module"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList:1 of
+msgid ""
+"propertyList() is a class to used to format attribute building "
+"information and commit building. This is the entrance of new attribute "
+"building action."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:1 of
+msgid ""
+"addProperty(self,propertyNameSeries,belongToSeries) is a function to add "
+"new attribute registrations."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:6 of
+msgid "propertyNameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:6
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:7 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the name of attributes."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:12
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:11 of
+msgid "belongToSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.addProperty:9 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the instrument class name which the attributes belong "
+"to. Notice: All instrument name in RiskQuantLib should be capitalized "
+"with the first letter. The length of propertyNameSeries should be equal "
+"to that of belongToSeries."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.buildFunction:1 of
+msgid ""
+"buildFunction(self) is a function to start generating source code of "
+"attribute setting function."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.buildTargetSourceFile:1 of
+msgid ""
+"buildTargetSourceFile(self) is a function to find which source code file "
+"the generated code should be written into."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commit:1 of
+msgid ""
+"commit(self,projectPath:str) is a function to commit bulding of "
+"attributes. It can only be called after you fill all information that "
+"building attributes need."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commit:7 of
+msgid "projectPath"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commit:7
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:12 of
+msgid "The RiskQuantLib project path where you want to commit this change."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:1 of
+msgid ""
+"commitForEachKind(self,propertyList:list,riskQuantLibProjectPath:str) is "
+"a function to commit source code change for every instrument type."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:4 of
+msgid ""
+"This function make sure that for one instrument, the file will only be "
+"open and written once, even if bunches of attributes are specified."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:9 of
+msgid "propertyList"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:10 of
+msgid "All attributes that need to be built into the same instrument."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.commitForEachKind:12 of
+msgid "riskQuantLibProjectPath"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:1 of
+msgid ""
+"setPropertyType(self,nameSeries,belongToSeries,propertyTypeSeries) is a "
+"function to set attribute types given attribute name and which instrument"
+" it belongs to."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:7 of
+msgid "nameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:10 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the instrument class name which the attributes belong "
+"to. Notice: All instrument name in RiskQuantLib should be capitalized "
+"with the first letter."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:18 of
+msgid "propertyTypeSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:14 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying attribute types."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyList.propertyList.setPropertyType:17 of
+msgid ""
+"Notice: The length of propertyNameSeries should be equal to that of "
+"belongToSeries and propertyTypeSeries."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:80
+msgid "RiskQuantLib.Build.propertyObj module"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj:1 of
+msgid ""
+"propertyObj() is a class that store attribute building information and "
+"commit buildings."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj:3 of
+msgid "Any attribute should have a name."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.buildFunction:1 of
+msgid ""
+"buildFunction(self) is a function to generate source code of attribute "
+"set function."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.buildTargetSourceFile:1 of
+msgid ""
+"buildTargetSourceFile(self) is a function to find which source file the "
+"generated code should be written into."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setBelongTo:1 of
+msgid ""
+"setBelongTo(self,belongToString:str) is a function to set which "
+"instrument the attribute belongs to."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setBelongTo:7 of
+msgid "belongToString"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setBelongTo:7 of
+msgid "the instrument name you want the attribute to belong to."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyName:1 of
+msgid ""
+"setPropertyName(self,propertyNameString:str) is a function to set "
+"attribute name."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyName:6 of
+msgid "propertyNameString"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyName:6 of
+msgid "the attribute name you want to build attribute by."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyType:1 of
+msgid ""
+"setPropertyType(self,propertyTypeString:str) is a function to set the "
+"attribute value type."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyType:7 of
+msgid "propertyTypeString"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyObj.propertyObj.setPropertyType:7 of
+msgid "The type of attribute value."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:88
+msgid "RiskQuantLib.Build.propertyTypeList module"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList:1 of
+msgid ""
+"propertyTypeList() is a class used to format propertyType building "
+"information and commit building. This is the entrance of new propertyType"
+" building action."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.addPropertyType:1 of
+msgid ""
+"addPropertyType(self,propertyTypeNameSeries) is a function to add new "
+"propertyType registrations."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.addPropertyType:7
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:7 of
+msgid "propertyTypeNameSeries"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.addPropertyType:6
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:7 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the name of propertyTypes."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.commit:1 of
+msgid ""
+"commit(self,targetProjectPath:str = '') is a function to commit building "
+"of new propertyTypes."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.commit:7 of
+msgid "The RiskQuantLib project path where you want to build new propertyTypes."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:1 of
+msgid ""
+"setLibraryName(self,propertyTypeNameSeries,libraryNameSeries) is a "
+"function to set other library you want to use in new propertyType class."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeList.propertyTypeList.setLibraryName:10 of
+msgid ""
+"This variable must be an iterable object and each element should be a "
+"string, specifying the library you want to include in propertyType class "
+"file. If multiple classes are included, they should be within one string,"
+" separated by ','. Note: The length of libraryNameSeries must be equal to"
+" that of propertyTypeNameSeries."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:96
+msgid "RiskQuantLib.Build.propertyTypeObj module"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:1 of
+msgid ""
+"propertyTypeObj() is a class to store new propertyType class information."
+" It is the entrance of single propertyType building."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:4 of
+msgid "Any propertyType class should have a name."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj:9
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setPropertyTypeName:6 of
+msgid "The propertyType name you want to create class by."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.commit:6 of
+msgid ""
+"The RiskQuantLib project path where you want to commit propertyType "
+"creation."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setLibraryName:1 of
+msgid ""
+"setLibraryName(self,libraryNameString:str) is a function to set library "
+"that you may use within new propertyType class file."
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setLibraryName:7 of
+msgid ""
+"The library name you want the new propertyType class to include. If "
+"multiple libraries are specified, they are separated by ','(comma)"
+msgstr ""
+
+#: RiskQuantLib.Build.propertyTypeObj.propertyTypeObj.setPropertyTypeName:1 of
+msgid ""
+"setPropertyTypeName(self,propertyTypeNameString:str) if a function to set"
+" propertyType name information."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:104
+msgid "Module contents"
+msgstr ""
+

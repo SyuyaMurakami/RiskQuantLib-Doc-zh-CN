@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Property.Amount.rst:2
+msgid "RiskQuantLib.Property.Amount package"
+msgstr ""
+
+#: ../RiskQuantLib.Property.Amount.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Property.Amount.rst:8
+msgid "RiskQuantLib.Property.Amount.amount module"
+msgstr ""
+
+#: RiskQuantLib.Property.Amount.amount.amount:1 of
+msgid "基类：:class:`RiskQuantLib.Property.NumberProperty.numberProperty.numberProperty`"
+msgstr ""
+
+#: ../RiskQuantLib.Property.Amount.rst:16
+msgid "RiskQuantLib.Property.Amount.averageAmount module"
+msgstr ""
+
+#: RiskQuantLib.Property.Amount.averageAmount.averageAmount:1 of
+msgid ""
+"基类：:class:`RiskQuantLib.Property.Amount.amount.amount`, "
+":class:`RiskQuantLib.Property.average.average`"
+msgstr ""
+
+#: ../RiskQuantLib.Property.Amount.rst:24
+msgid "Module contents"
+msgstr ""
+

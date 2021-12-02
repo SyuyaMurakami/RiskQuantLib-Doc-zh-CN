@@ -1,0 +1,585 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../index.rst:4
+msgid "Home page"
+msgstr "主页"
+
+#: ../index.rst:22
+msgid "Welcome to Use RiskQuantLib"
+msgstr "欢迎使用RiskQuantLib"
+
+#: ../index.rst:24
+msgid ""
+"RiskQuantLib is a derivative of Quantlib, a famous quantitative library "
+"of financial engineering. Unlike QuantLib, however, RiskQuantLib is a "
+"scaffolding of financial analysis. RiskQuantLib provides default class of"
+" financial instruments and allows you to create new classes you want "
+"automatically, given the inheritance rules and other information. It also"
+" provides automation building tools to add attributes to classes "
+"automatically."
+msgstr ""
+"RiskQuantLib是金融工程中著名的衍生品定价库Quantlib的一个衍生库，"
+"但不同于QuantLib，RiskQuantLib是一个金融数据分析脚手架。"
+"RiskQuantLib提供默认的python类文件，作为金融工具的模板类，"
+"并且在给定继承规则和其他信息的条件下，允许使用者通过RiskQuantLib自动创建更多自定义的python类。"
+"RiskQuantLib也提供自动化工具，来为创建的python类自动添加属性。"
+
+#: ../index.rst:27
+msgid "Why Should I Use RiskQuantLib?"
+msgstr "为什么我应该使用RiskQuantLib？"
+
+#: ../index.rst:29
+msgid ""
+"RiskQuantLib provides with convenient way of object oriented coding in "
+"fields of finance."
+msgstr "RiskQuantLib提供了方便的工具来供金融分析师进行对象化编程。"
+
+#: ../index.rst:30
+msgid ""
+"RiskQuantLib is designed on the base of QuantLib, you can use the "
+"functions of QuantLib and combine it with RiskQuantLib easily."
+msgstr "RiskQuantLib是基于QuantLib实现的，你可以使用QuantLib的内置函数，"
+"并且可以很好地与RiskQuantLib相结合。"
+
+#: ../index.rst:31
+msgid ""
+"RiskQuantLib is a scaffolding, which means it creates an independent "
+"project for every mission. After creation, RiskQuantLib will be a part of"
+" your code. You have full access to your project and can change any "
+"source code of RiskQuantLib."
+msgstr "RiskQuantLib是一个脚手架，这意味着他可以为每一个数据分析项目单独新建一个工程，"
+"在新建工程之后，RiskQuantLib将会成为新工程的一部分，你可以更改工程中RiskQuantLib的源代码，使得"
+"RiskQuantLib符合当前工程的需要。"
+
+#: ../index.rst:32
+msgid ""
+"RiskQuantLib is suitable for applying to different markets, since all "
+"financial instruments are defined by your self."
+msgstr "RiskQuantLib适用于不同的市场，所有的金融工具模板类是由使用者自定义的，这使得RiskQuantLib使用者"
+"有极大的自由度。"
+
+#: ../index.rst:33
+msgid ""
+"RiskQuantLib allows you to seperate data analysis process. With "
+"RiskQuantLib, data storage, data input, data analysis, data output can be"
+" operated independently from each other. You don't have to wait for data "
+"input to analysis your data, instead of that, starting coding the "
+"analysis logic part before you know the data patterns."
+msgstr "RiskQuantLib使得数据的处理流程彼此分开。使用RiskQuantLib，可以将数据存储，"
+"数据输入，数据分析，以及数据输出彼此隔离。你甚至可以在数据输入之前提前开始编写数据处理逻辑，"
+"而不是等待数据输入之后，再进行分析。"
+
+#: ../index.rst:34
+msgid ""
+"RiskQuantLib provides template management function. You can code a "
+"template of any mission, such as stock return analysis, and save this "
+"template into RiskQuantLib, or share it with other users. Next time you "
+"meet with a similar data process problem, you can start a new "
+"RiskQuantLib project based on this template."
+msgstr "RiskQuantLib提供工程模板管理功能，使用者可以编写符合自己数据处理习惯的工程模板，"
+"比如股票收益分析，然后将这个模板保存为模板工程，与其他人分享。或者在遇见下一个相似的数据分析项目时，"
+"使用已有的模板工程来初始化新的工程。"
+
+#: ../index.rst:37
+msgid "Who Can Use RiskQuantLib?"
+msgstr "谁适合使用RiskQuantLib？"
+
+#: ../index.rst:39
+msgid ""
+"RiskQuantLib is designed to allow analyst to code easily, it's "
+"recommanded to be used by financial analyst, students in business school "
+"or quant-traders. It's very useful when dealing with analysis of multiple"
+" kinds of financial instruments."
+msgstr "RiskQuantLib是为了使金融分析师更快速，更方便地进行数据分析而设计的。任何金融分析师，"
+"金融相关专业的学生，量化交易员都可以使用RiskQuantLib。当需要处理多种金融工具时，RiskQuantLib尤为有用。"
+
+#: ../index.rst:41
+msgid ""
+"**Notice: RiskQuantLib is not designed to dealing with heavy data prcoess"
+" mission. RiskQuantLib sacrifice memory and speed to accelerate coding.**"
+msgstr "**注意: RiskQuantLib并不是为大数据分析而设计的，RiskQuantLib牺牲了运行速度和内存空间"
+"来换取更快的代码开发速度。**"
+
+#: ../index.rst:44
+msgid "Slow Start"
+msgstr "一个例子"
+
+#: ../index.rst:46
+msgid ""
+"Suppose you are employeed by a bank. One day, your bose calls you to his "
+"office, he tells you your company want to invest in a new family fund, "
+"Archegos, we suppose it is. Your mission, if you accept, is to tell your "
+"boss how risky this deal is."
+msgstr "假设你是一家著名的国际投行的员工。一天，你的老板叫你去办公室，"
+"他告诉你他想要投资一个家族基金，名为Archegos。如果你选择接受这份任务，老板将"
+"需要你通过数据研究，来计算这项投资的风险。"
+
+#: ../index.rst:48
+msgid "`Take adventure after second thought, this is far from recklessness.`"
+msgstr "`三思后的冒险，和鲁莽截然不同。`"
+
+#: ../index.rst:50
+msgid ""
+"After some investigation, you find some data from Bloomberg, however, it "
+"only tells you about some stock holdings of the whole fund, like Tencent "
+"or Alibaba, etc. The first dataframe you have is like this:"
+msgstr "你调查了一番，从彭博获取了一些数据，但是这些数据只告诉你了Archegos的一些股票持仓，"
+"其中有一些中概股，比如腾讯或者阿里巴巴。你获取的第一个数据表格看起来像这样："
+
+#: ../index.rst:53 ../index.rst:99 ../index.rst:113
+msgid "Index"
+msgstr ""
+
+#: ../index.rst:53
+msgid "Holding Mkt Value"
+msgstr ""
+
+#: ../index.rst:53 ../index.rst:166 ../index.rst:168
+msgid "Stock"
+msgstr ""
+
+#: ../index.rst:55 ../index.rst:101 ../index.rst:115
+msgid "0"
+msgstr ""
+
+#: ../index.rst:55
+msgid "239018292"
+msgstr ""
+
+#: ../index.rst:55
+msgid "TCEHY US Equity"
+msgstr ""
+
+#: ../index.rst:57 ../index.rst:103 ../index.rst:117
+msgid "1"
+msgstr ""
+
+#: ../index.rst:57
+msgid "710281723"
+msgstr ""
+
+#: ../index.rst:57
+msgid "ABC US Equity"
+msgstr ""
+
+#: ../index.rst:59 ../index.rst:105
+msgid "2"
+msgstr ""
+
+#: ../index.rst:59
+msgid "7497233"
+msgstr ""
+
+#: ../index.rst:59 ../index.rst:69
+msgid "HIYJ US Equity"
+msgstr ""
+
+#: ../index.rst:61
+msgid "3"
+msgstr ""
+
+#: ../index.rst:61
+msgid "179321234"
+msgstr ""
+
+#: ../index.rst:61
+msgid "SPACEX US Equity"
+msgstr ""
+
+#: ../index.rst:63
+msgid "4"
+msgstr ""
+
+#: ../index.rst:63
+msgid "83249"
+msgstr ""
+
+#: ../index.rst:63 ../index.rst:69
+msgid "HE US Equity"
+msgstr ""
+
+#: ../index.rst:66
+msgid ""
+"After this, you decided to download the close price of these stocks over "
+"past three years, you get your second dataframe like this:"
+msgstr "在这之后，你决定下载一些股票在过去三年的每日收盘价，你的第二个数据表看起来像这样："
+
+#: ../index.rst:69
+msgid "Date"
+msgstr ""
+
+#: ../index.rst:69
+msgid "U7HJ US Equity"
+msgstr ""
+
+#: ../index.rst:71
+msgid "2020-01-01"
+msgstr ""
+
+#: ../index.rst:71
+msgid "23.9"
+msgstr ""
+
+#: ../index.rst:71 ../index.rst:73
+msgid "nan"
+msgstr ""
+
+#: ../index.rst:71 ../index.rst:79
+msgid "9.8"
+msgstr ""
+
+#: ../index.rst:73
+msgid "2020-01-02"
+msgstr ""
+
+#: ../index.rst:73
+msgid "12.8"
+msgstr ""
+
+#: ../index.rst:73
+msgid "9.5"
+msgstr ""
+
+#: ../index.rst:75
+msgid "2020-01-03"
+msgstr ""
+
+#: ../index.rst:75
+msgid "21.9"
+msgstr ""
+
+#: ../index.rst:75
+msgid "13.1"
+msgstr ""
+
+#: ../index.rst:75
+msgid "9.3"
+msgstr ""
+
+#: ../index.rst:77
+msgid "2020-01-04"
+msgstr ""
+
+#: ../index.rst:77
+msgid "22.1"
+msgstr ""
+
+#: ../index.rst:77
+msgid "13.2"
+msgstr ""
+
+#: ../index.rst:77
+msgid "9.7"
+msgstr ""
+
+#: ../index.rst:79
+msgid "2020-01-05"
+msgstr ""
+
+#: ../index.rst:79
+msgid "22.4"
+msgstr ""
+
+#: ../index.rst:79
+msgid "12.9"
+msgstr ""
+
+#: ../index.rst:81 ../index.rst:107 ../index.rst:119
+msgid "..."
+msgstr ""
+
+#: ../index.rst:84
+msgid ""
+"You decide to calculate the volatility of stocks of Archegos holdings. So"
+" you start coding like: ::"
+msgstr "你决定计算Archegos股票持仓的历史波动率，你开始一段python编程计算，看起来像这样：::"
+
+#: ../index.rst:90
+msgid "If you don't use RiskQuantLib, you may do it like: ::"
+msgstr "如果你不使用RiskQuantLib，你可能这样做：::"
+
+#: ../index.rst:96
+msgid ""
+"Now you are satisfied with what you have done, it seems the risk of "
+"stocks can be revealed, at least to some extend. In the afternoon, your "
+"boss tells you that he knows Archegos holds two famous fund, called H and"
+" JK. He says this is a material non-public information, you may not find "
+"net asset value of these two funds by yourself, luckily, your boss has "
+"his own way. He gives you the data, which is the third dataframe and it "
+"looks like:"
+msgstr "现在你对于自己的结果非常满意，似乎股票的部分风险已经可以被解释，至少在某种程度上，可以被"
+"解释。在下午，你的老板又告诉你，他知道Archegos还持有两支著名基金，名为H和JK，他告诉你这是"
+"重大非公开信息，所以你可能无法仅凭自己找到这两支基金的单位净值，幸运的是，你的老板通过某种手段"
+"找到了这些信息，这就是你拿到的第三个数据表格，他看起来像这样："
+
+#: ../index.rst:99
+msgid "Net Asset Value"
+msgstr ""
+
+#: ../index.rst:99 ../index.rst:113 ../index.rst:160 ../index.rst:162
+#: ../index.rst:164
+msgid "Fund"
+msgstr ""
+
+#: ../index.rst:101
+msgid "2.39"
+msgstr ""
+
+#: ../index.rst:101 ../index.rst:115
+msgid "H"
+msgstr ""
+
+#: ../index.rst:103
+msgid "7.22"
+msgstr ""
+
+#: ../index.rst:103 ../index.rst:117
+msgid "JK"
+msgstr ""
+
+#: ../index.rst:105
+msgid "0.98"
+msgstr ""
+
+#: ../index.rst:105
+msgid "UIH"
+msgstr ""
+
+#: ../index.rst:110
+msgid ""
+"Archegos holding shares of these funds are the fourth dataframe, which "
+"looks like:"
+msgstr "Archegos对于这两支基金的持仓份额是你的第四个数据表，它看起来像这样："
+
+#: ../index.rst:113
+msgid "Holding Shares"
+msgstr ""
+
+#: ../index.rst:115
+msgid "20000000"
+msgstr ""
+
+#: ../index.rst:117
+msgid "45000000"
+msgstr ""
+
+#: ../index.rst:122
+msgid ""
+"Your colleague who used to finish a project, focusing on the historical "
+"NAV extreme dropdown of all mutual funds, and he tells you that you can "
+"use 1.5% as a one-day 99% VaR. So you calculate risk indicator by: ::"
+msgstr "你的同事曾经进行过一个关于单位净值的极端回撤的研究，他告诉你，你可以使用"
+"1.5%作为单日99%置信度的VaR（在险价值），所以你听从了他的建议，你这样计算风险指标：::"
+
+#: ../index.rst:132
+msgid ""
+"Now you have used all kinds of information you can get, since Archegos "
+"barely publish their holdings. You give your boss the analysis result and"
+" waiting to be praised. However, your boss is pissed off. He takes a long"
+" time to calm down and tells you that you forget sever important things:"
+msgstr "因为Archegos很少公布他们的持仓，可以说现在你已经使用了所有可以使用的信息。所以你"
+"对于结果也是有一些自信的，你去找你的老板，等待被表扬，但你的老板勃然大怒，他用了很久"
+"平复自己的心情，然后告诉你你忘了很多重要的事情："
+
+#: ../index.rst:135
+msgid ""
+"`The price of stock contains nan, you have to deal with it. And don't "
+"fill nan with last non-nan value, because this will lead to a smaller std"
+" than true value.`"
+msgstr ""
+"`股票的收盘价包含很多空值，空值应该被处理，而且不应该用上一个非空值填充，"
+"因为如果你用上一个非空值填充，会导致计算出的波动性相比真是波动性偏小。`"
+
+#: ../index.rst:136
+msgid ""
+"`He wants a conclusion of risk of Archegos, not all kinds of risk "
+"indicators.`"
+msgstr "`老板想要的是关于Archegos风险的结论，而不是一堆风险指标。`"
+
+#: ../index.rst:137
+msgid ""
+"`The stock price you used is wrong, cause it is a divident-included "
+"price.`"
+msgstr "`你使用的股价是错误的，因为没有考虑到分红的影响。`"
+
+#: ../index.rst:138
+msgid ""
+"`The only reason Archegos buys these two funds is that Archegos can use "
+"it as a bridge to buy more shares of stocks, like TCEHY US Equity, this "
+"is a trick to use leverage. So you have to take a closer look, dig down "
+"to the holdings of these two funds.`"
+msgstr "`Archegos买入并持仓这两支基金的唯一原因是Archegos可以利用它们来加杠杆，"
+"购买更多的股票，比如TCEHY US Equity。这两支基金起到了通道作用，你应该对这两支基金的持仓"
+"进行深入研究，而不是停留在表面。`"
+
+#: ../index.rst:140
+msgid ""
+"Things get to complicated now. You decide to use RiskQuantLib. First of "
+"all, you make a dictionary to hold this analysis project, named "
+"'Archegos_Risk'. Then you open a command terminal, and create a "
+"RiskQuantLib project by: ::"
+msgstr "事情现在变得越发复杂，你决定使用RiskQuantLib。首先，你需要新建一个文件夹，"
+"来作为数据分析项目的工程文件夹。新建的文件夹名为'Archegos_Risk'，然后你打开了命令终端，"
+"通过以下命令来创建一个RiskQuantLib工程：::"
+
+#: ../index.rst:145
+msgid "After this, the dictionary looks like: ::"
+msgstr "在此步操作之后，你的文件夹看起来像这样：::"
+
+#: ../index.rst:155
+msgid "Open ``Build_Attr.xlsx``, you edit it and make it looks like:"
+msgstr "打开 ``Build_Attr.xlsx``，你对excel进行编辑，使得它看起来像这样："
+
+#: ../index.rst:158
+msgid "SecurityType"
+msgstr ""
+
+#: ../index.rst:158
+msgid "AttrName"
+msgstr ""
+
+#: ../index.rst:158
+msgid "AttrType"
+msgstr ""
+
+#: ../index.rst:160
+msgid "netAssetValue"
+msgstr ""
+
+#: ../index.rst:160 ../index.rst:162 ../index.rst:164 ../index.rst:166
+msgid "Number"
+msgstr ""
+
+#: ../index.rst:162
+msgid "amount"
+msgstr ""
+
+#: ../index.rst:164
+msgid "varPercentage"
+msgstr ""
+
+#: ../index.rst:166
+msgid "mktValue"
+msgstr ""
+
+#: ../index.rst:168
+msgid "closeSeries"
+msgstr ""
+
+#: ../index.rst:168
+msgid "Series"
+msgstr ""
+
+#: ../index.rst:171
+msgid "You close this file and build this project in command terminal: ::"
+msgstr "你关闭这个excel文件，然后通过以下终端命令来编译你的RiskQuantLib工程：::"
+
+#: ../index.rst:176
+msgid ""
+"After this, you open ``RiskQuantLib.Security.Fund.fund`` to add class "
+"function: ::"
+msgstr "在此之后，你打开 ``RiskQuantLib.Security.Fund.fund`` 以便于新增一个你自定义的类函数：::"
+
+#: ../index.rst:182
+msgid "You open ``RiskQuantLib.Security.Stock.stock`` to add class function: ::"
+msgstr "接着，你打开 ``RiskQuantLib.Security.Stock.stock`` 来新增一个自定义类函数：::"
+
+#: ../index.rst:192
+msgid "**Notice: All these coding are done before you input your data.**"
+msgstr "**注意：所有这些操作是在数据输入之前发生的，此时你并不知道数据的形状，列名等信息。**"
+
+#: ../index.rst:194
+msgid ""
+"Turn into root path of this project and open ``main.py``, we start "
+"analysis: ::"
+msgstr "接着进入你的项目工程文件夹根目录，打开 ``main.py``，我们开始分析过程：::"
+
+#: ../index.rst:225
+msgid ""
+"Now it's more easy to read and modify, isn't it? You decide to continue "
+"and save your result into excel, so you code: ::"
+msgstr "现在，你的python源码变得更加易于阅读和修改了，不是么？你决定继续分析过程，"
+"接下来的一步是将你的结果保存为excel文件，所以你这样做：::"
+
+#: ../index.rst:233
+msgid ""
+"Till now, the process looks more complicated than a pandas way, however, "
+"if you noticed, with RiskQuantLib, data input, data process, data output "
+"is independent, change to any of them won't influence the others. Let's "
+"take a closer look:"
+msgstr "到现在为止，相比于用pandas进行数据分析，使用RiskQuantLib似乎更加麻烦。"
+"但是如果你注意到，在使用RiskQuantLib时，数据的输入，数据的处理，数据的输出是彼此独立的。"
+"改变其中的任何一个是不会影响到其他部分的运行的。（比如更改了输入文件的列名，你只需要对应更改RiskQuantLib输入部分的代码，分析和输出部分的代码完全不需要改动。）让我们来仔细看看源码，以便于了解这一点："
+
+#: ../index.rst:235
+msgid "*Data Input*:"
+msgstr "*数据输入*："
+
+#: ../index.rst:237
+msgid "``main.py``: ::"
+msgstr ""
+
+#: ../index.rst:263
+msgid "*Data Analysis*"
+msgstr "*数据分析*"
+
+#: ../index.rst:265
+msgid "``RiskQuantLib.Security.Fund.fund``: ::"
+msgstr ""
+
+#: ../index.rst:271
+msgid "``RiskQuantLib.Security.Stock.stock`` ::"
+msgstr ""
+
+#: ../index.rst:281 ../index.rst:291
+msgid "``main.py`` ::"
+msgstr ""
+
+#: ../index.rst:289
+msgid "*Data Output*"
+msgstr "*数据输出*"
+
+#: ../index.rst:299
+msgid ""
+"After all these are done, you can save this project as a template by "
+"using terminal command: ::"
+msgstr "当所有这些做完后，你可以将这个工程项目保存为模板。保存为模板的终端命令是这样的：::"
+
+#: ../index.rst:304
+msgid ""
+"Next time your boss wants you to analysis another fund, you may start a "
+"RiskQuantLib project by calling: ::"
+msgstr "如果之后几天，你的老板又希望你分析另一只基金，你可以用这个已经存在的模板工程来初始化新的工程，"
+"你可以这样使用：::"
+
+#: ../index.rst:309
+msgid ""
+"This is a simple introduction to RiskQuantLib, about how to *start a "
+"project*, *start coding with build*, *seperate stages of analysis*, *save"
+" project as template* and *use it again*. You may noticed that we have "
+"not solved all problems that boss gave to us. More functions can be used "
+"to do this. You can refer to RiskQuantLib Class Details for further "
+"information."
+msgstr "这是RiskQuantLib的一个简单介绍，其中包含的内容包括 *创建一个项目*，*编译你的项目*，"
+"*分离数据处理流程*，*将项目保存为模板*，以及 *用保存的模板初始化新项目*。 你可能注意到了，"
+"我们并没有完全解决之前老板给我们的所有问题。为了解决这些问题，RiskQuantLib提供了很多高级函数。"
+"你可以参考RiskQuantLib的类文件说明来获取更多信息。"
+

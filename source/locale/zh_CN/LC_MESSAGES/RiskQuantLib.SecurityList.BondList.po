@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:2
+msgid "RiskQuantLib.SecurityList.BondList package"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:8
+msgid "RiskQuantLib.SecurityList.BondList.bondIndexUnderlyingBondList module"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.BondList.bondIndexUnderlyingBondList.bondIndexUnderlyingBondList:1
+#: of
+msgid ""
+"基类：:class:`RiskQuantLib.SecurityList.BondList.bondList.bondList`, "
+":class:`RiskQuantLib.Set.SecurityList.BondList.bondIndexUnderlyingBondList.setBondIndexUnderlyingBondList`"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:16
+msgid "RiskQuantLib.SecurityList.BondList.bondList module"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.BondList.bondList.bondList:1 of
+msgid ""
+"基类：:class:`RiskQuantLib.SecurityList.base.baseList`, "
+":class:`RiskQuantLib.Set.SecurityList.BondList.bondList.setBondList`"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.BondList.bondList.bondList:1 of
+msgid "bondList is one of the five basic list classes."
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:24
+msgid "RiskQuantLib.SecurityList.BondList.convertibleBondList module"
+msgstr ""
+
+#: RiskQuantLib.SecurityList.BondList.convertibleBondList.convertibleBondList:1
+#: of
+msgid ""
+"基类：:class:`RiskQuantLib.SecurityList.BondList.bondList.bondList`, "
+":class:`RiskQuantLib.Set.SecurityList.BondList.convertibleBondList.setConvertibleBondList`"
+msgstr ""
+
+#: ../RiskQuantLib.SecurityList.BondList.rst:32
+msgid "Module contents"
+msgstr ""
+

@@ -1,0 +1,413 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../With_Pandas.rst:2
+msgid "With Pandas"
+msgstr "与Pandas配合使用"
+
+#: ../With_Pandas.rst:7
+msgid ""
+"When I am inspired to start RiskQuantLib project, my friend asked me one "
+"question:"
+msgstr "当我受启发开始开发RiskQuantLib的时候，我的朋友问了我一个问题："
+
+#: ../With_Pandas.rst:9
+msgid "`Are you trying to design another pandas?`"
+msgstr "`你是在试图重新造一个Pandas吗？`"
+
+#: ../With_Pandas.rst:11
+msgid ""
+"Well, I admit that in some way, RiskQuantLib is very similar to pandas, "
+"but at the very beginning, RiskQuantLib is designed to be based on "
+"pandas. It lies behind pandas because it is a data analysis core "
+"concentrating on dealing with data process, rather than an integrated "
+"tool to do things from data input to data output."
+msgstr "我承认在某种意义上，RiskQuantLib和Pandas非常像，但在一开始，RiskQuantLib并不是被设计用于替代Pandas的，它被设计用于在Pandas之后进行进一步的数据处理时使用。RiskQuantLib应该是一个数据处理内核，专注于数据处理逻辑，而不是作为一个像Pandas一样的集成工具，涵盖从数据输入到输出的方方面面。"
+
+#: ../With_Pandas.rst:13
+msgid ""
+"But later after the day we discussed this issue, I realized that to jump "
+"out of the curse of pandas, I should get rid of more conventions. This "
+"leads me to this place, where RiskQuantLib has its own functions for "
+"iteration or merge, etc."
+msgstr "但之后当我们重新讨论这个问题的时候，我意识到如果要摆脱Pandas的诅咒，我应该先摆脱更多的传统观念。这导致了你现在看到的RiskQuantLib，其中的模板列表类有和多默认的自定义函数，比如迭代函数和合并函数，这些函数有很多类似Pandas的地方。"
+
+#: ../With_Pandas.rst:15
+msgid "However, there is one thing need to be noticed, that is:"
+msgstr "但是，始终有一件事值得注意："
+
+#: ../With_Pandas.rst:17
+msgid ""
+"**RiskQuantLib is still based on pandas, it is not a substitute of "
+"pandas, the best practice is to code your data process logic with "
+"RiskQuantLib, and leave the rest to pandas.**"
+msgstr "**RiskQuantLib依然不是Pandas的替代品，它是基于Pandas的。最好的方式是用RiskQuantLib来编写数据处理的逻辑内核，而把其余部分交给Pandas处理。**"
+
+#: ../With_Pandas.rst:19
+msgid ""
+"For convience, RiskQuantLib provides with functions to interact with "
+"pandas, we shall introduce them as follows:"
+msgstr "为了方便，RiskQuantLib提供了很多用于与Pandas交互的函数，它们如下："
+
+#: ../With_Pandas.rst:22
+msgid "From Pandas Series"
+msgstr "从Pandas Series转换为RiskQuantLib模板列表"
+
+#: ../With_Pandas.rst:24
+msgid ""
+"The most simple way to use pandas with RiskQuantLib is to use "
+"pandas.Series, remember what we have shown before, if you have a "
+"dataframe looks like:"
+msgstr "使用pandas最简单的方式是使用pandas.Series，如果你有一个数据表，看起来像这样："
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:138
+msgid "OptionCode"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:90
+#: ../With_Pandas.rst:138
+msgid "PayOff"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:138
+msgid "ExerciseType"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:92
+#: ../With_Pandas.rst:138
+msgid "ExerciseDate"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:94
+#: ../With_Pandas.rst:138
+msgid "StockPrice"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:96
+#: ../With_Pandas.rst:138
+msgid "RiskFreeRate"
+msgstr ""
+
+#: ../With_Pandas.rst:27 ../With_Pandas.rst:76 ../With_Pandas.rst:98
+#: ../With_Pandas.rst:138
+msgid "Sigma"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:78
+msgid "A"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:31 ../With_Pandas.rst:78
+#: ../With_Pandas.rst:80 ../With_Pandas.rst:116 ../With_Pandas.rst:118
+#: ../With_Pandas.rst:140 ../With_Pandas.rst:142
+msgid "PlainVanilla"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:31 ../With_Pandas.rst:78
+#: ../With_Pandas.rst:80 ../With_Pandas.rst:116 ../With_Pandas.rst:118
+#: ../With_Pandas.rst:140 ../With_Pandas.rst:142
+msgid "European"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:78 ../With_Pandas.rst:116
+#: ../With_Pandas.rst:140
+msgid "2021-11-18"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:78
+msgid "100.0"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:78
+msgid "0.05"
+msgstr ""
+
+#: ../With_Pandas.rst:29 ../With_Pandas.rst:78
+msgid "0.20"
+msgstr ""
+
+#: ../With_Pandas.rst:31 ../With_Pandas.rst:80
+msgid "B"
+msgstr ""
+
+#: ../With_Pandas.rst:31 ../With_Pandas.rst:80 ../With_Pandas.rst:118
+#: ../With_Pandas.rst:142
+msgid "2022-03-20"
+msgstr ""
+
+#: ../With_Pandas.rst:31 ../With_Pandas.rst:80
+msgid "97.6"
+msgstr ""
+
+#: ../With_Pandas.rst:31 ../With_Pandas.rst:80
+msgid "0.032"
+msgstr ""
+
+#: ../With_Pandas.rst:31 ../With_Pandas.rst:80
+msgid "0.17"
+msgstr ""
+
+#: ../With_Pandas.rst:33 ../With_Pandas.rst:82 ../With_Pandas.rst:120
+#: ../With_Pandas.rst:144
+msgid "..."
+msgstr ""
+
+#: ../With_Pandas.rst:36
+msgid "After creating a project and building it with ``Build_Attr.xlsx``:"
+msgstr "当你创建了一个工程，并且通过如下 ``Build_Attr.xlsx`` 对工程进行了编译："
+
+#: ../With_Pandas.rst:39 ../With_Pandas.rst:88
+msgid "SecurityType"
+msgstr ""
+
+#: ../With_Pandas.rst:39 ../With_Pandas.rst:88
+msgid "AttrName"
+msgstr ""
+
+#: ../With_Pandas.rst:39 ../With_Pandas.rst:88
+msgid "AttrType"
+msgstr ""
+
+#: ../With_Pandas.rst:41 ../With_Pandas.rst:43 ../With_Pandas.rst:45
+#: ../With_Pandas.rst:47 ../With_Pandas.rst:49 ../With_Pandas.rst:90
+#: ../With_Pandas.rst:92 ../With_Pandas.rst:94 ../With_Pandas.rst:96
+#: ../With_Pandas.rst:98
+msgid "MyEuropeanOption"
+msgstr ""
+
+#: ../With_Pandas.rst:41
+msgid "myPayOff"
+msgstr ""
+
+#: ../With_Pandas.rst:41 ../With_Pandas.rst:90
+msgid "qlPayOff"
+msgstr ""
+
+#: ../With_Pandas.rst:43
+msgid "myExercise"
+msgstr ""
+
+#: ../With_Pandas.rst:43 ../With_Pandas.rst:92
+msgid "qlExercise"
+msgstr ""
+
+#: ../With_Pandas.rst:45
+msgid "underlyingStockPrice"
+msgstr ""
+
+#: ../With_Pandas.rst:45 ../With_Pandas.rst:47 ../With_Pandas.rst:49
+#: ../With_Pandas.rst:94 ../With_Pandas.rst:96 ../With_Pandas.rst:98
+msgid "qlQuote"
+msgstr ""
+
+#: ../With_Pandas.rst:47
+msgid "riskFreeRate"
+msgstr ""
+
+#: ../With_Pandas.rst:49
+msgid "sigma"
+msgstr ""
+
+#: ../With_Pandas.rst:52
+msgid "You can open the ``main.py`` and use it directly: ::"
+msgstr "你可以打开 ``main.py`` 并且直接使用：::"
+
+#: ../With_Pandas.rst:66
+msgid ""
+"We see here that ``set`` function in RiskQuantLib accept any iterable "
+"object as parameters, including pandas.Series. Usually, ``set`` function "
+"has two parameters, the first one should be the code used to identify "
+"elements, the second one should be the value you want to set."
+msgstr "我们知道 ``set`` 函数族接受任何可迭代对象作为参数，自然，你可以传入pandas.Series给它。通常， ``set`` 函数族有两个参数，第一个参数用于声明哪些元素需要被改变，第二元素声明你想将属性的值改变为什么。"
+
+#: ../With_Pandas.rst:69
+msgid "From Pandas DataFrame"
+msgstr "从Pandas DataFrame转换为RiskQuantLib模板列表"
+
+#: ../With_Pandas.rst:71
+msgid ""
+"You may ask, what if I have a dataframe that has thousands of columns? I "
+"can't set them one by one, right?"
+msgstr "你或许要问，我如果有一个数据表，它的列数非常多，甚至有一千多列，那么我总不能一列一列地使用Set函数吧？"
+
+#: ../With_Pandas.rst:73
+msgid ""
+"True, luckily, RiskQuantLib provides functions to read from "
+"pandas.DataFrame. Suppose we still want to import the dataframe mentioned"
+" before:"
+msgstr "没错，好在RiskQuantLib提供了一个现成的函数，便于从pandas.DataFrame中读取数据，我们假设你想要读取的数据表依然是之前的样子："
+
+#: ../With_Pandas.rst:85
+msgid "Now we build it by change ``Build_Attr.xlsx`` to:"
+msgstr "现在我们更改 ``Build_Attr.xlsx`` 文件，使得它看起来像这样："
+
+#: ../With_Pandas.rst:101
+msgid ""
+"**Noticed here, we have all attribute names that are the same with "
+"dataframe column names. This will help RiskQuantLib to identify column "
+"and set them automatically.**"
+msgstr "**注意到这里，我们所有的属性名称都和数据表的列名相同。这会使得RiskQuantLib能够自动识别列，并对应Set函数，来自动使用它们。**"
+
+#: ../With_Pandas.rst:103
+msgid "After building it, you can open the ``main.py`` and use it directly: ::"
+msgstr "当编译完成后，你可以打开 ``main.py`` 并且这样使用：::"
+
+#: ../With_Pandas.rst:111
+msgid ""
+"Cool, isn't it? However, I won't suggest doing this, cause RiskQuantLib "
+"is not meant to be bonded with single excel file. If you do it like this,"
+" you will find that you may have another dataframe, whose column name is "
+"not the same with this one, but its meaning is the same. For example, in "
+"another dataframe ``df2``, it may looks like:"
+msgstr "但我并不建议这样使用，因为RiskQuantLib并不应该与单个数据表绑定，如果你这样做，你有可能会遇见这样的情况，即你在数据处理中遇到了另一个数据表，他的列名和第一个数据表并不相同，但实际的意义是相同的，比如这里我们有一个数据表 ``df2``，它看起来像这样："
+
+#: ../With_Pandas.rst:114
+msgid "Code"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "Pay"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "Type"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "KDate"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "Price"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "RF"
+msgstr ""
+
+#: ../With_Pandas.rst:114
+msgid "Vol"
+msgstr ""
+
+#: ../With_Pandas.rst:116 ../With_Pandas.rst:140
+msgid "C"
+msgstr ""
+
+#: ../With_Pandas.rst:116 ../With_Pandas.rst:140
+msgid "103.5"
+msgstr ""
+
+#: ../With_Pandas.rst:116 ../With_Pandas.rst:140
+msgid "0.03"
+msgstr ""
+
+#: ../With_Pandas.rst:116 ../With_Pandas.rst:140
+msgid "0.16"
+msgstr ""
+
+#: ../With_Pandas.rst:118 ../With_Pandas.rst:142
+msgid "D"
+msgstr ""
+
+#: ../With_Pandas.rst:118 ../With_Pandas.rst:142
+msgid "88.1"
+msgstr ""
+
+#: ../With_Pandas.rst:118 ../With_Pandas.rst:142
+msgid "0.019"
+msgstr ""
+
+#: ../With_Pandas.rst:118 ../With_Pandas.rst:142
+msgid "0.10"
+msgstr ""
+
+#: ../With_Pandas.rst:123
+msgid ""
+"If you want to add these contracts to your RiskQuantLib list, you should "
+"use ``addFromDF``, rather than ``fromDF``: ::"
+msgstr "如果你想要将这些合约添加到RiskQuantLib的模板列表，你可以使用 ``addFromDF``，而不是 ``fromDF``: ::"
+
+#: ../With_Pandas.rst:128
+msgid ""
+"**However, because the column name in df2 is not the same with your "
+"registered attribute, you will find the new elements that you added just "
+"now don't have any attribute value.**"
+msgstr "**但是，因为df2的列名并不完全等于你注册过的属性名，你会发现这些你添加的新元素没有任何属性值。**"
+
+#: ../With_Pandas.rst:130
+msgid ""
+"There are two ways to solve this problem, you can change the name of "
+"columns of df2 and update the elements, or mannually set the attribute "
+"value by set function. We explain the first one as follows."
+msgstr "有两个办法来解决这一问题，一是是你可先更改df2的列名，并更新模板列表的元素。或者你可以手动使用Set函数族。我们先解释第一种方法。"
+
+#: ../With_Pandas.rst:133
+msgid "Update With DataFrame"
+msgstr "从DataFrame更新元素"
+
+#: ../With_Pandas.rst:135
+msgid "After you rename your df2, it looks like:"
+msgstr "当你对df2重新命名后，它看起来像这样："
+
+#: ../With_Pandas.rst:147
+msgid ""
+"Good, remember you have already added element C and D into "
+"``vanillaOptionList``, we should update the attribute value of them. "
+"Here, it is simple: ::"
+msgstr "如果你还记得，你已经添加了元素C和D到 ``vanillaOptionList``，我们现在要做的是更新C和D的属性，我们可以这样做：::"
+
+#: ../With_Pandas.rst:152
+msgid ""
+"After doing this, the information of contract C and D is updated, while A"
+" and B are not changed. But it is necessary to mention here:"
+msgstr "当这一步完成后，合约C和D的属性会被更新，A和B的属性则不受影响。但我们应该在此注意："
+
+#: ../With_Pandas.rst:154
+msgid ""
+"**Try not to build your project based on data pattern, build it based on "
+"analysis logic.**"
+msgstr "**工程的编译不应该基于数据模型，而应该基于分析的逻辑。**"
+
+#: ../With_Pandas.rst:156
+msgid ""
+"That is, when you design your project, you should forget all your input "
+"files, forget what name the column is given, forget how many files you "
+"would have, forget how you get these data or how you want to output and "
+"show these data. You should try to think, what kind of intrument you "
+"would use, how they are related with each other, what kind of attribute "
+"you should use, could less attribute be used, what type of variable you "
+"should use, why using self-defined types can simplicify your task, etc."
+msgstr "也就是说，当你设计自己的工程时，你应该忘记你的输入文件是什么样子的，忘记你有几个输入文件，忘记你是如何得到这些输入文件的，忘记你打算如何输出你的运算结果，忘记你的运算结果应该以什么格式展现。你应该思考你的数据处理过程中，应该使用什么样的模板类，这些模板类之间应该怎样联系起来，每个模板类应该具有哪些属性，是否可以使用更少的属性来达成目的，每个属性应该对应什么数据类型，为什么自定义的数据类型可以简化这个数据处理任务，等等。"
+
+#: ../With_Pandas.rst:159
+msgid "To Pandas DataFrame"
+msgstr "输出为Pandas DataFrame"
+
+#: ../With_Pandas.rst:161
+msgid "The most simple way to do it is: ::"
+msgstr "最简单的方法是这样：::"
+
+#: ../With_Pandas.rst:166
+msgid ""
+"Where ``attributeList`` is a python list whose elements is the name "
+"string of attribute. You can also pass an index when converting to "
+"pandas.DataFrame, like: ::"
+msgstr "这里的 ``attributeList`` 是一个python的list，它的元素是属性的名称。你也可以在使用此命令转换为pandas.DataFrame的时候指定索引，比如：::"
+

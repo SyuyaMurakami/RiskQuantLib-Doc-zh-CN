@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.InterestRate.rst:2
+msgid "RiskQuantLib.InterestRate package"
+msgstr ""
+
+#: ../RiskQuantLib.InterestRate.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.InterestRate.rst:8
+msgid "RiskQuantLib.InterestRate.base module"
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base:1 of
+msgid ""
+"基类：:class:`QuantLib.QuantLib.InterestRate`, "
+":class:`RiskQuantLib.Set.InterestRate.base.setBase`"
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base:1 of
+msgid "This is a class of interestrate."
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base:3 of
+msgid ""
+"You must specify interest code, insterest name, interest value, interest "
+"tenor to initialize an interest object."
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base:6 of
+msgid ""
+"Default day count convention is Actual365Fixed. Default compounding is "
+"Compounded. Default compounding frequency is Annual."
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base.iniInterestObj:1 of
+msgid ""
+"Calling this function will initialize QuantLib module with present "
+"attribute value."
+msgstr ""
+
+#: RiskQuantLib.InterestRate.base.base.iniPricingModule:1 of
+msgid ""
+"Calling this function will initialize QuantLib module, given attribute "
+"value."
+msgstr ""
+
+#: ../RiskQuantLib.InterestRate.rst:16
+msgid "Module contents"
+msgstr ""
+

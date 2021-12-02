@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Instrument.rst:2
+msgid "Instrument"
+msgstr "模板类"
+
+#: ../Instrument.rst:7
+msgid ""
+"``Instrument`` is any class you will use in your mission. For financial "
+"analysis, Instrument refers to stock, bond or other security type, or "
+"like interest rate or company, etc."
+msgstr "``Instrument`` （模板类）是你在数据处理中可能使用的类。对于金融分析，模板类通常"
+"指的是股票，债券，或其他证券类型，或者是利率和发行人。"
+
+#: ../Instrument.rst:9
+msgid ""
+"If you choose to inherit from ``Any`` in ``Build_Instrument.xlsx``, "
+"Instrument will be like security type. Or you inherit from ``Index`` or "
+"``Curve``, etc. Instrument will be like what you choose. You can also "
+"leave it blank, which means create a brand new branch of class."
+msgstr "如果在 ``Build_Instrument.xlsx`` 文件中，你声明模板类继承自 ``Any``，"
+"那么模板类会是一个证券类型的模板，位于 ``RiskQuantLib.Security`` 文件夹下，如果"
+"你声明模板类继承自 ``Index`` 或者 ``Curve`` 等，模板类就会处于父类的文件夹下。你也可以在"
+"声明父类的那一列留空，这样的话一个全新的独立类就会被创建，位于 ``RiskQuantLib`` 文件夹下。"
+
+#: ../Instrument.rst:11
+msgid ""
+"Any type of instrument should be initialized with ``code`` and ``name``, "
+"``code`` behaves like index in pandas, ``name`` is the string to tell you"
+" information of detail."
+msgstr "模板类的实例应该有 ``code`` 和 ``name`` 这两个属性， ``code`` 非常像pandas"
+"中的index，``set`` 函数族会默认使用 ``code`` 来作为索引元素的根属性。 ``name`` 通常作为"
+"一个可以显示更多细节信息的属性。"
+
+#: ../Instrument.rst:13
+msgid ""
+"**Notice: code and name attribute is not totally the same, code will be "
+"related to some function in instrument list.**"
+msgstr "**注意：code和name这两个属性不是完全等价的，正如上面所说，code是set函数族的默认属性。**"
+
+#: ../Instrument.rst:15
+msgid ""
+"By ``from RiskQuantLib import *``, any registered instrument will be "
+"imported automatically. You can use it be create an object of that class."
+" If you create an Instrument called pandaBond, then use it like: ::"
+msgstr "通过使用 ``from RiskQuantLib import *``，任何已经注册过的模板类都可以被自动导入，"
+"你可以用类名来创建一个类实例。比如如果你的模板类名为pandaBond，你可以这样实例化它：::"
+
+#: ../Instrument.rst:21
+msgid ""
+"Any instrument class has an optional attribute called type. When "
+"initializing, you can pass a string to it, like: ::"
+msgstr "任何模板类在实例化时都有一个可选属性，名为type。你可以选择性地传入一个字符串，像这样：::"
+
+#: ../Instrument.rst:26
+msgid ""
+"The main reason to use instrument class is to package your source code "
+"into small block, and use or maintain them independently. This proved to "
+"be effective when data processing is complicated or it is a team mission."
+msgstr "使用模板类的最主要原因是这样做可以将代码封装为一个个独立的模块，使得使用和维护都"
+"变得更加方便。当需要团队协作或者数据处理过程非常复杂的时候，实践证明对象化编程是非常有用的手段。"
+
+#: ../Instrument.rst:28
+msgid ""
+"The path of any instrument is the path of their first RiskQuantLib parent"
+" class. For example, if you inherit from ``Bond``, ``pandaBond`` will be "
+"located at ``RiskQuantLib/Security/Bond``, you should put all source code"
+" about ``pandasBond`` in "
+"``RiskQuantLib/Security/Bond/PandaBond/pandaBond.py``"
+msgstr "模板类的源文件所处的位置是他们继承的第一个RiskQuantLib父类的位置。比如：你的"
+"模板类 ``pandaBond`` 继承自 ``Bond``，那么 ``pandaBond`` 将位于 ``RiskQuantLib/Security/Bond`` 文件夹，你应该将相关的代码全部放在这个文件夹下。"
+
+#: ../Instrument.rst:30
+msgid ""
+"If you change the content of "
+"``RiskQuantLib/Security/Bond/PandaBond/pandaBond.py``, your change will "
+"be saved and no matter how many times you run ``python build.py``, these "
+"content won't be affected. This allows you to build intrument again and "
+"add new instrument, if you find mission changes."
+msgstr "如果你更改了 ``RiskQuantLib/Security/Bond/PandaBond/pandaBond.py`` 的源码，"
+"那么你的更改将会被记录，无论你再运行多少次 ``python build.py``，这些更改过的源码都不会受到影响。"
+"这使得你发现工程需要修改时，可以对工程进行重复编译。"
+
+#: ../Instrument.rst:32
+msgid ""
+"**Notice: However, any created instrument file will remain unless you "
+"delete the class file manually.**"
+msgstr "**注意：即使你在下一次编译时声明删除，任何曾经编译生成的模板类的源文件都是不会被自动删除的。这样做是为了安全的考虑，如果确实需要删除源文件，你需要手动删除。**"
+
+#: ../Instrument.rst:34
+msgid ""
+"**Notice: Instrument file can not be deleted automatically, but "
+"instrument class can be un-registered. If you want to cancel the "
+"registration of some instrument, you only need to remove its row in** "
+"``Build_Instrument.xlsx`` **and rebuild it. After this operation, you can"
+" not use it directly by** ``from RiskQuantLib.Module import *`` **or "
+"create another instrument inheriting from this.**"
+msgstr "**注意：虽然模板类的源文件不会被自动删除，但模板类可以被取消注册。如果你需要取消某个模板类的注册，只需要删除** ``Build_Instrument.xlsx`` **文件中对应的那一行，并且重新编译。这样操作后，即使使用** ``from RiskQuantLib.Module import *`` **你也无法再直接使用那个删除的模板类，它也无法作为父类被其他模板类继承。**"
+

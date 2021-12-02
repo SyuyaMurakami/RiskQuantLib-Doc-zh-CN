@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Model.KMV.rst:2
+msgid "RiskQuantLib.Model.KMV package"
+msgstr ""
+
+#: ../RiskQuantLib.Model.KMV.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Model.KMV.rst:8
+msgid "RiskQuantLib.Model.KMV.kmv module"
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv:1 of
+msgid "基类：:class:`RiskQuantLib.Model.base.base`"
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv:1 of
+msgid ""
+"kmv(base) is a class to calculate KMV relative parameters, including "
+"Asset Volatility, Asset Value, Distance to Default."
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv:4 of
+msgid ""
+"You must specify risk free rate, tenor, debt value, equity value and "
+"equity volatility to initialize KMV object."
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv.BSfunction:1 of
+msgid "A BS function used in KMV model."
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv.calAssetAndAssetSigma:1 of
+msgid "Calculate asset value and volatility of asset value"
+msgstr ""
+
+#: RiskQuantLib.Model.KMV.kmv.kmv.calDistanceToDefault:1 of
+msgid ""
+"Calculate distance to default given short term debt and long term debt "
+"and mixed ratio."
+msgstr ""
+
+#: ../RiskQuantLib.Model.KMV.rst:16
+msgid "Module contents"
+msgstr ""
+

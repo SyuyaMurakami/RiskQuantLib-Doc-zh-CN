@@ -1,0 +1,765 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Operation.rst:2
+msgid "RiskQuantLib.Operation package"
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:8
+msgid "RiskQuantLib.Operation.iloc module"
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:1
+#: RiskQuantLib.Operation.listBaseOperation.listBase:1
+#: RiskQuantLib.Operation.loc.loc:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:1 of
+msgid ""
+"This class is the function class for RiskQuantLib list to use iloc "
+"function. It's similar to that in pandas. Use it by calling "
+"stockList.iloc[number]. It returns the number-th element in that list."
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:5 of
+msgid "Passing a list to initialize iloc object."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:16
+msgid "RiskQuantLib.Operation.listBaseOperation module"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase:1 of
+msgid ""
+"listBase() is the function class that makes all RiskQuantLib list object "
+"functional. Any RiskQuantLib list class should inherit from this class to"
+" own certain functions, such as groupBy, execFunc, etc."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase:5 of
+msgid ""
+"Users can define their own functions here to set new attribute function "
+"to RiskQuantLib list class."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.add:1 of
+msgid ""
+"This function uses deep copy. It returns the addition of copies of two "
+"RiskQuantLib lists."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:1 of
+msgid ""
+"This function will add elements from a dataframe. If there is already "
+"elements in present list, all elements will be kept, while new elements "
+"will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:5
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:4 of
+msgid ""
+"The column name of dataframe should be in English, and this function will"
+" try to set it to element attribute if there exists the attribute with "
+"the same name. That is, this function will only set value of registered "
+"attribute. If not registered in current list class, it will be skipped."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:13
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:12
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:8 of
+msgid "df"
+msgstr ""
+
+#: of
+msgid "pd.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:14
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:13 of
+msgid "The dataframe you want to pull data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:15
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:13
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:14
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:12
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:13 of
+msgid "code"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:16
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:15 of
+msgid "The column name that you want to mark as 'code' attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:18
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:17
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:17
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:16 of
+msgid "name"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:18
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:17 of
+msgid "The column name that you want to mark as 'name' attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromDF:22
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:21
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:21
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:20 of
+msgid "RiskQuantLib List"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:1 of
+msgid ""
+"This function will add elements from an iterable object. If there is "
+"already elements in present list, all elements will be kept, while new "
+"elements will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:5
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:4 of
+msgid ""
+"This function will only set value of registered attribute. If not "
+"registered in current list class, it will be skipped."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:10
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:9 of
+msgid "iterable"
+msgstr ""
+
+#: of
+msgid "list"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:11
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:10 of
+msgid "The iterable object you want to pull data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:13
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:12 of
+msgid ""
+"The attribute name of iterable that you want to mark as 'code' in "
+"RiskQuantLib List Object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.addFromIterable:16
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:15 of
+msgid ""
+"The attribute name of iterable that you want to mark as 'name' in "
+"RiskQuantLib List Object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.apply:1 of
+msgid ""
+"This function will apply the given function to each element of "
+"RiskQuantLib list. Default settings will leave any change to element out."
+" Your change to elements won't be kept. Only the result of applyFunction "
+"is returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:1
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:1 of
+msgid ""
+"For each element, find all elements that meet requirements from another "
+"RiskQuantLib list object. The elements meeting requirement will be set as"
+" an attribute of present list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:5 of
+msgid ""
+"After this is down, for each element of another RiskQuantLib, find all "
+"elements that meet requirements from present RiskQuantLib list object. "
+"The elements meeting requirement will be set as an attribute of another "
+"list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:9 of
+msgid ""
+"This function actually calls join twice, but it switch the position of "
+"two RiskQuantLib list in the second call."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:15
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:9 of
+msgid "anotherList"
+msgstr ""
+
+#: of
+msgid "RiskQuantLib list or list"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:16
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:10 of
+msgid "Another list object, holding elements waiting to be selected."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:17 of
+msgid "targetAttrNameOnLeft"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:18 of
+msgid ""
+"The attribute name of present list that you want to use to mark collected"
+" elements from another list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:20
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:14
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:16 of
+msgid "filterFunction"
+msgstr ""
+
+#: of
+msgid "function"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:20 of
+msgid ""
+"This function has two parameter, left and right, and must return a bool "
+"value. If true is returned, the element will be added to each other. "
+"False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:24 of
+msgid "unsymmetrical"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:23 of
+msgid ""
+"If true, different rules will be used when join two list, where "
+"filterFunctionOnLeft will be used when present list join another list, "
+"and filterFunctionOnRight will be used when another list join present "
+"list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:27 of
+msgid "filterFunctionOnLeft"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:27 of
+msgid ""
+"This function has two parameter, presentList and anotherList, and must "
+"return a bool value. If true is returned, the element from another list "
+"will be added to present list. False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:29 of
+msgid "targetAttrNameOnRight"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:30 of
+msgid ""
+"The attribute name of another list that you want to use to mark collected"
+" elements from present list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:34 of
+msgid "filterFunctionOnRight"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:32 of
+msgid ""
+"This function has two parameter, presentList and anotherList, and must "
+"return a bool value. If true is returned, the element from present list "
+"will be added to another list. False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.connect:38
+#: RiskQuantLib.Operation.listBaseOperation.listBase.setAll:10
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:16
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:17
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:14 of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.copy:1 of
+msgid "Get a copy of present RiskQuantLib list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.dropIndex:1 of
+msgid "Delete index for each element."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.execFunc:1 of
+msgid ""
+"This function will execute instance function for every element in present"
+" RiskQuantLib list object, given the function name. If some elements "
+"don't have the function, a Null function will be used, and the result "
+"will skip the execution for that element."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.execFunc:7 of
+msgid "functionName"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.execFunc:8 of
+msgid "The function that element has, and you want to call."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fillna:1 of
+msgid ""
+"Fill the nan value or blank string will the given value. If attribute "
+"doesn't exist, nothing will be done. You can fill the nan value by single"
+" attribute or a list of attributes."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.filter:1 of
+msgid ""
+"Return a RiskQuantLib list object given the fiter function. This is used "
+"to choose some elements which meet your requirements."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromDF:1 of
+msgid ""
+"This function will convert a dataframe to RiskQuantLib list object. If "
+"there is already elements in present list, all elements will be deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.fromIterable:1 of
+msgid ""
+"This function will convert an iterable to RiskQuantLib list object. If "
+"there is already elements in present list, all elements will be deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:1 of
+msgid ""
+"This function use pandas.DataFrame.groupby as engine. Its behavior is "
+"totally the same with pandas."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:6
+#: RiskQuantLib.Operation.listBaseOperation.listBase.mean:7
+#: RiskQuantLib.Operation.listBaseOperation.listBase.std:7
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sum:7
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:7
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:7 of
+msgid "attrName"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:7 of
+msgid "The attribute that you want to group data by."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:10 of
+msgid "useObj"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:9 of
+msgid ""
+"If true, return a RiskQuantLib list object, each element of which is also"
+" a RiskQuantLib list object. Each element will be marked by setting the "
+"attribute as the common value."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:12
+#: RiskQuantLib.Operation.listBaseOperation.listBase.mean:9
+#: RiskQuantLib.Operation.listBaseOperation.listBase.std:9
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sum:9
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:9
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:7 of
+msgid "inplace"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.groupBy:13 of
+msgid "If true, operation will be done in present RiskQuantLib list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:5 of
+msgid "This function is very like pandas.DataFrame.merge."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:11
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:12 of
+msgid "targetAttrName"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:12 of
+msgid ""
+"The attribute name that you want to use to mark collected elements from "
+"another list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.join:14 of
+msgid ""
+"This function has two parameter, left and right, and must return a bool "
+"value. If true is returned, the element will be added. False means not "
+"added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.mean:1 of
+msgid ""
+"This function will average the value of each element, given the attribute"
+" name. If some elements don't have the attribute, an numpy.nan will be "
+"used, and the result will skip this value when calculating mean."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.mean:8 of
+msgid "The attribute name whose value you want to average."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.mean:10 of
+msgid "If true, the 'attributeMean' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:1 of
+msgid ""
+"This function will merge two RiskQuantLib list object. This function "
+"should only be used when washing data. After merge, any change to source "
+"list will or will not influence merge result, depending on python copy "
+"mechanism. This won't be a problem if data flows by single direction. "
+"However, troubles will come when you wish to change the origin to "
+"influence the merge result list, after merge action."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:7 of
+msgid ""
+"In short, do not change the origin list once you merge them, any change "
+"should be done by merged result."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:10 of
+msgid ""
+"If 'on' function can not identify the only element to merge, all unique "
+"attributes of the elements that meet requirement will be added to present"
+" list element. (Unique means this attribute only appears once in the list"
+" element, the others don't have it.) If the attribute appears more than "
+"one times, only the first will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:16 of
+msgid ""
+"It's like pandas.DataFrame.merge, but not totally the same. In "
+"RiskQuantLib, listA.merge(listB) is not the same from listB.merge(listA),"
+" even if you specify the same value of parameter 'how' and 'on'."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:20 of
+msgid ""
+"No matter what value parameter 'how' is given, attributes of elements in "
+"anotherList that meet requirement of 'on' will be added as attributes of "
+"elements in present list. The attributes who have the same name in both "
+"lists won't be copied, which means you can't merge two lists twice. (In "
+"the second time you merge them, the first list object has all attributes "
+"that anotherList has, so all attributes will be skipped, no attribute "
+"will be copied.)"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:27 of
+msgid ""
+"If how == 'inner', only the elements in the present list who have "
+"relative elements in anotherList will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:30 of
+msgid ""
+"If how == 'outer', all elements in presentList, plus elements from "
+"anotherList that don't have relative elements in present list will be "
+"returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:33 of
+msgid "If how == 'left', all elements in presentList will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.merge:35 of
+msgid ""
+"if how == 'right', the elements in the present list who have relative "
+"elements in anotherList, plus elements from anotherList that don't have "
+"relative elements in present list will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.new:1 of
+msgid "Return a totally new RiskQuantLib list object like this."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.reIndex:1 of
+msgid ""
+"Return a new RiskQuantLib list object whose elements are chosen according"
+" to the index, the index of new list element must be in th indexList to "
+"be included. If more than one elements meet requirement, only the first "
+"one will be kept."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.resetIndex:1 of
+msgid "Reset the index as the n-th element of list."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.rolling:1 of
+msgid ""
+"For each element, This function will collect the n elements before that "
+"element, create a new RiskQuantLib list object to holding it. The new "
+"list will be set as an attribute of '_rolling', thus the present element "
+"can reach to the information of its former elements."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:1 of
+msgid ""
+"For each element, find the attribute value and calculate the portion of "
+"each element to the sum, given attribute name."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:4 of
+msgid ""
+"After calling this function, a 'scaled_attrName' attribute will be added "
+"to each element."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:6 of
+msgid "This function is very like pandas.DataFrame.groupby.agg."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:10 of
+msgid "attrName :str"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:11 of
+msgid "The attribute which you want to scale."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:13 of
+msgid "The attribute name that you want to use to mark the portion of element."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.scale:15 of
+msgid ""
+"This function has one parameter, element, and must return a bool value. "
+"If true is returned, the element will be include when process scale. "
+"False means not included."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.setAll:1 of
+msgid ""
+"Update all elements by the list of new elements. Old elements will be "
+"deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.setAll:6 of
+msgid "List"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.setAll:6 of
+msgid "A collection of RiskQuantLib instrument objects."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.setIndex:1 of
+msgid ""
+"Set the index for each element, given attribute name. The index value "
+"will be set as the attribute value you choose."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sort:1 of
+msgid ""
+"Sort the present RiskQuantLib list by attributes. You can also sort it by"
+" a single attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.std:1 of
+msgid ""
+"This function will calculate the standard deviation of value of each "
+"element, given the attribute name. If some elements don't have the "
+"attribute, an numpy.nan will be used, and the result will skip this "
+"value."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.std:8 of
+msgid "The attribute name whose value you want to calculate standard deviation."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.std:10 of
+msgid "If true, the 'attributeStd' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sub:1 of
+msgid ""
+"This function uses deep copy. It returns the subtraction of copies of two"
+" RiskQuantLib lists."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sum:1 of
+msgid ""
+"This function will sum the value of each element, given the attribute "
+"name. If some elements don't have the attribute, an numpy.nan will be "
+"used, and the result will skip this value."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sum:8 of
+msgid "The attribute name whose value you want to sum."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.sum:10 of
+msgid "If true, the 'attributeSum' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:1 of
+msgid ""
+"This function returns a RiskQuantLib list object, where the attribute "
+"value is unique."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:6 of
+msgid "attrNameString :str"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:7 of
+msgid "The attribute name that you want to get the unique value list from."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:9
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:7 of
+msgid ""
+"If true, operation will done in present list object. If false, operation "
+"will done in a copy of present list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:13
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:11 of
+msgid "keep"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:12 of
+msgid ""
+"Only support 'First' or 'Last'. If multiple elements have the same "
+"attribute value. The first or last element will be kept, given your "
+"choice."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueAttr:17
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:15 of
+msgid "RiskQuantLib list object"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:1 of
+msgid ""
+"This function returns a RiskQuantLib list object, where the code value is"
+" unique."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.uniqueCode:10 of
+msgid ""
+"Only support 'First' or 'Last'. If multiple elements have the same code "
+"value. The first or last element will be kept, given your choice."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:1 of
+msgid ""
+"This function will update the attribute value of elements whose code "
+"appears in given codeSeries. If code of element doesn't show in "
+"codeSeries, these elements will be skipped and not changed."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:8
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:8 of
+msgid "The attribute whose value is exactly what you want to update."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:9 of
+msgid "codeSeries"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:10 of
+msgid ""
+"An iterable object that contains codes of elements whose attribute need "
+"to be updated."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:12 of
+msgid "valueSeries"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttr:12 of
+msgid "An iterable object that contains new values of attributes."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:1 of
+msgid ""
+"This function will update attribute value of current list by passed "
+"dataframe. The column name of passes dataframe should be in English, and "
+"if current list has registered attribute whose name is the same with "
+"column name, it will be updated."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:9 of
+msgid "The dataframe that you want to update data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDF:11 of
+msgid ""
+"The column name of df that you used to mark rows. Elements whose code is "
+"in this column will be updated, and those not in this column will not be "
+"influenced. If blank, the index of df will be used as code."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:1 of
+msgid ""
+"This function will update attribute value of current list by passed dict."
+" The key of passes dict should be code string. If current list has "
+"registered attribute whose name is in keys of codeValueDict, it will be "
+"updated."
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:10 of
+msgid "codeValueDict"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: RiskQuantLib.Operation.listBaseOperation.listBase.updateAttrFromDict:10 of
+msgid "A dict that maps code to value."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:24
+msgid "RiskQuantLib.Operation.loc module"
+msgstr ""
+
+#: RiskQuantLib.Operation.loc.loc:1 of
+msgid ""
+"This class is the function class for RiskQuantLib list to use loc "
+"function. It's similar to that in pandas. Use it by calling "
+"stockList.loc[index]. It returns the element in that list whose index "
+"equals given value."
+msgstr ""
+
+#: RiskQuantLib.Operation.loc.loc:5 of
+msgid "Passing a list to initialize loc object."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:32
+msgid "Module contents"
+msgstr ""
+

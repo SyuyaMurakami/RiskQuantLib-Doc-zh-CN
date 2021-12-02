@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.IndexList.rst:2
+msgid "RiskQuantLib.IndexList package"
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.rst:14
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.rst:17
+msgid "RiskQuantLib.IndexList.base module"
+msgstr ""
+
+#: RiskQuantLib.IndexList.base.baseList:1 of
+msgid ""
+"基类：:class:`QuantLib.QuantLib.Index`, "
+":class:`RiskQuantLib.Set.IndexList.base.setBase`, "
+":class:`RiskQuantLib.Operation.listBaseOperation.listBase`"
+msgstr ""
+
+#: RiskQuantLib.IndexList.base.baseList:1 of
+msgid "This class the list of index."
+msgstr ""
+
+#: RiskQuantLib.IndexList.base.baseList.addIndex:1 of
+msgid "Add a single index object into this list."
+msgstr ""
+
+#: RiskQuantLib.IndexList.base.baseList.addIndexList:1 of
+msgid "Add bundles of index into this list."
+msgstr ""
+
+#: RiskQuantLib.IndexList.base.baseList.addIndexSeries:1 of
+msgid "Add a series of index into this list."
+msgstr ""
+
+#: ../RiskQuantLib.IndexList.rst:25
+msgid "Module contents"
+msgstr ""
+

@@ -1,0 +1,39 @@
+Variable Type
+====================
+
+.. toctree::
+   :maxdepth: 4
+
+Variable is the type of attribute, ususally it should be ``String``, ``Number``, ``Series``, ``Any``. However, RiskQuantLib allows to build your own variable type, for example, ``List``, or ``Blank``, or whatever you like.
+
+This is a powerful design when you deal with some complicated situations. Somtimes, you may wonder why list in python doesn't have ``reduce`` function any more, or you want to reload the ``__add__`` function of list so that list objects can be added as you like. In RiskQuantLib, this is done by defining your own variable type class.
+
+The way to build your own type is to use ``Build_Attr.xlsx``, remember we have a dataframe like:
+
++--------------+-------------------+----------------+
+| SecurityType |    AttrName       |    AttrType    |
++==============+===================+================+
+|     Fund     | yourAttribute     |     Number     |
++--------------+-------------------+----------------+
+|     Stock    | anotherAttribute  |     String     |
++--------------+-------------------+----------------+
+|     ...      |         ...       |       ...      |
++--------------+-------------------+----------------+
+
+In the column named *AttrType*, you specified variable type of *yourAttribute* is ``Number``, and variable type of *anotherAttribute* is ``String``. Now, we want to create a type named ``yourNewType``, and let variable type of *anotherAttribute* be ``yourNewType``. All we need to do is to change ``String`` to ``yourNewType``, and run ``build.py``, which is in your project root path.
+
+The modified file should look like:
+
++--------------+-------------------+----------------+
+| SecurityType |    AttrName       |    AttrType    |
++==============+===================+================+
+|     Fund     | yourAttribute     |     Number     |
++--------------+-------------------+----------------+
+|     Stock    | anotherAttribute  |  yourNewType   |
++--------------+-------------------+----------------+
+|     ...      |         ...       |       ...      |
++--------------+-------------------+----------------+
+
+Notice here that we don't have any pre-defined type class named ``yourNewType``, don't worry, RiskQuantLib will scan and create it if it doesn't exist. After run ``build.py``, you could find the created file ``RiskQuantLib/Property/YourNewType/yourNewType.py``.
+
+Same with instrument building, once the type class file is created, RiskQuantLib can **not** delete it automatically. It can only be deleted by your own hand. However, If it doesn't show in ``Build_Attr.xlsx``, after a second building or after clear command, it will be un-registered from RiskQuantLib, so that you can't use it with automatical building any more.
