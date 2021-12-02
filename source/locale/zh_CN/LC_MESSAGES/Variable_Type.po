@@ -37,8 +37,7 @@ msgid ""
 "function any more, or you want to reload the ``__add__`` function of list"
 " so that list objects can be added as you like. In RiskQuantLib, this is "
 "done by defining your own variable type class."
-msgstr "当处理复杂的数据时，自定义数据类型是非常有效的手段。有时你会有一些问题，比如为什么python中的list不再具有reduce函数，或者你想重载list
-的 ``__add__`` 函数，以便于list可以以你想要的方式相加。在RiskQuantLib中，你可以通过自定义数据类型来做到这一点。"
+msgstr "当处理复杂的数据时，自定义数据类型是非常有效的手段。有时你会有一些问题，比如为什么python中的list不再具有reduce函数，或者你想重载list的 ``__add__`` 函数，以便于list可以以你想要的方式相加。在RiskQuantLib中，你可以通过自定义数据类型来做到这一点。"
 
 #: ../Variable_Type.rst:11
 msgid ""
