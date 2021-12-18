@@ -111,7 +111,7 @@
     company_list["Asahi"]
     # or company_list[0]
 
-在检查你的 ``company`` 属性的过程中，你发现有一些企业的 ``wordsList`` 的长度为0，这说明这个企业的数据存在缺失。你决定通过RQL list(模板列表类)的 ``filter`` 函数筛掉这些元素。当 ``filter`` 的参数 ``useObj`` 为 ``True`` 时，他的结果仍然是一个RQL list。于是，你在 ``main.py`` 中继续输入：
+在检查你的 ``company`` 属性的过程中，你发现有一些企业的 ``usedWords`` 的长度为0，这说明这个企业的数据存在缺失。你决定通过RQL list(模板列表类)的 ``filter`` 函数筛掉这些元素。当 ``filter`` 的参数 ``useObj`` 为 ``True`` 时，他的结果仍然是一个RQL list。于是，你在 ``main.py`` 中继续输入：
 
 ``main.py``
 ::
@@ -120,7 +120,7 @@
 
 *Data Analysis*
 
-随后让我们进入（复杂的）分析过程。，你决定先统计每一个company的用词频率。你打开了 ``RiskQuantLib\Company\company.py``，在 ``Company`` 类中添加了一条 ``countUsedWords`` 方法，具体操作如下：
+随后让我们进入（复杂的）分析过程。，你决定先统计每一个company的用词频率。你打开了 ``RiskQuantLib\Company\company.py``，在 ``company`` 类中添加了一条 ``countUsedWords`` 方法，具体操作如下：
 
 ``RiskQuantLib.Company.company``
 ::
@@ -138,22 +138,22 @@
 
     company_list.execFunc("countUsedWordsDict")
 
-为了满足领导的要求1，你需要统计哪些词至少在75%的企业中出现过至少一次。你打开了 ``RiskQuantLib\CompanyList\companyList.py``，在 ``Company_list`` 中添加了一条方法如下，
+为了满足领导的要求1，你需要统计哪些词至少在75%的企业中出现过至少一次。你打开了 ``RiskQuantLib\CompanyList\companyList.py``，在 ``company_list`` 中添加了一条方法如下，
 
 ``RiskQuantLib.CompanyList.companyList``
 ::
 
     class companyList(listBase,setCompanyList):
     ...
-    def rule_one(self):
-        threshold = len(self.all) * 0.75
+        def rule_one(self):
+            threshold = len(self.all) * 0.75
 
-        from collections import Counter
-        word_dict = Counter()
-        for company in self.all:
-            word_dict.update({word:1 for word in company.usedWordsDict.keys()})
+            from collections import Counter
+            word_dict = Counter()
+            for company in self.all:
+                word_dict.update({word:1 for word in company.usedWordsDict.keys()})
 
-        self.rule_one = [word for word in word_dict.keys() if word_dict[word] > threshold]
+            self.rule_one = [word for word in word_dict.keys() if word_dict[word] > threshold]
 
 在 ``main.py`` 中执行 ``company_list`` 的 ``rule_one`` 方法，使得 ``company_list`` 增加了一条属性 ``rule_one``。
 
@@ -195,7 +195,7 @@
 
     industry_list.execFunc("countAvgWords")
 
-你希望可以满足领导的要求2，对于每一个 ``company_list.rule_one`` 中的词，需要去检查它是否显著的频繁出现于某一个行业。你决定统计每个单词在各行业的使用频率，你打开了 ``RiskQuantLib\IndustryList\industryList.py``，在 ``Industrylist`` 中添加了一条方法 ``removeBiasWords`` 如下：
+你希望可以满足领导的要求2，对于每一个 ``company_list.rule_one`` 中的词，需要去检查它是否显著的频繁出现于某一个行业。你决定统计每个单词在各行业的使用频率，你打开了 ``RiskQuantLib\IndustryList\industryList.py``，在 ``Industrylist`` 中添加了一条方法 ``rule_two`` 如下：
 
 ``RiskQuantLib.IndustryList.industryList``
 ::
