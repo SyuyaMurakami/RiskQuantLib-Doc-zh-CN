@@ -108,7 +108,8 @@ def packProject():
             name = "".join(nameList[0:-1])
         else:
             name = nameList[0]
-    shutil.make_archive(projectPath+os.sep+name,"zip",projectPath)
+    parentProjectPath = os.path.dirname(projectPath)
+    shutil.make_archive(parentProjectPath+os.sep+name,"zip",projectPath)
     print('RiskQuantLib Project Packaged!')
 
 def addProjectTemplate():
@@ -129,12 +130,13 @@ def addProjectTemplate():
     -------
     None
     """
-    projectPackPath = sys.argv[1]
+    import os, shutil
+    projectPackPath = os.path.splitext(sys.argv[1])[0]
     try:
         name = sys.argv[2]
     except:
         name = ''
-    import os, shutil
+
     if name=='':
         name = projectPackPath.split(os.sep)[-1]
     else:
@@ -149,7 +151,9 @@ def addProjectTemplate():
         pass
     else:
         os.makedirs(source_path)
-    shutil.copy(projectPackPath+os.sep+name+'.zip',source_path+os.sep+name+'.zip')
+    parentProjectPath = os.path.dirname(projectPackPath)
+    shutil.copy(parentProjectPath+os.sep+name+'.zip',source_path+os.sep+name+'.zip')
+    os.remove(parentProjectPath+os.sep+name+'.zip')
     print('RiskQuantLib Project Template added!')
 
 def saveProject():
@@ -281,3 +285,20 @@ def clearAllProjectTemplate():
         [os.remove(source_path+os.sep+targetName+'.zip') for targetName in projectNameList]
         print("Delete All RiskQuantLib Project Templates Finished! ")
 
+def addProjectTemplateFromGithub():
+    """
+    addProjectTemplateFromGithub() is a function to download template from Github to local disk.
+    Use terminal command 'getRQL' to use this function.
+    After this function is called, the target repository will be saved as template project.
+
+    Returns
+    -------
+    None
+    """
+    import os
+    name = sys.argv[1]
+    RiskQuantLibDictionary = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
+    source_path = os.path.abspath(RiskQuantLibDictionary) + os.sep + r'RQLTemplate'
+    from RiskQuantLib.Tool.githubTool import Github
+    link = Github()
+    link.downloadRepositories(name,source_path)

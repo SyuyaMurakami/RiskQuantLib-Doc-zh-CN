@@ -22,7 +22,7 @@ project = 'RiskQuantLib'
 author = 'Murakami'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.32'
+release = '0.0.47'
 
 # -- General configuration ---------------------------------------------------
 

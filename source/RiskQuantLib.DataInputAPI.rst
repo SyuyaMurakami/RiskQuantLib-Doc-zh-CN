@@ -12,6 +12,14 @@ RiskQuantLib.DataInputAPI.getDataFromJYDB module
    :undoc-members:
    :show-inheritance:
 
+RiskQuantLib.DataInputAPI.getDataFromJYYX module
+------------------------------------------------
+
+.. automodule:: RiskQuantLib.DataInputAPI.getDataFromJYYX
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 RiskQuantLib.DataInputAPI.getDataFromWind module
 ------------------------------------------------
 
