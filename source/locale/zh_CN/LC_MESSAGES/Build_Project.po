@@ -96,7 +96,7 @@ msgid ""
 "**In short, any code in** ``Src`` **can be parsed by RiskQuantLib "
 "according to the comment in source code, the control comment syntax will "
 "help to generate python code as you wish.**"
-msgstr "简单来说，在`` Src ``文件夹下面的代码都可以被RiskQuantLib解析，代码的注释可以作为控制语句，控制代码的插入位置，重复，布尔逻辑等。"
+msgstr "简单来说，在 ``Src`` 文件夹下面的代码都可以被RiskQuantLib解析，代码的注释可以作为控制语句，控制代码的插入位置，重复，布尔逻辑等。"
 
 #: ../Build_Project.rst:52
 msgid ""
