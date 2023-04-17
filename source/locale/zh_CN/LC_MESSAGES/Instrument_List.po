@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,11 +54,11 @@ msgstr "``Instrument List`` 允许盛放两个完全相同的元素，也就是�
 #: ../Instrument_List.rst:13
 msgid ""
 "Usually, ``Instrument List`` will inherit from "
-"``RiskQuantLib.Operation.listBaseOperation.listBase``, which is a class "
+"``RiskQuantLib.Operation.operation.operation``, which is a class "
 "containing all kinds of operations that can be done to list. You can read"
 " `Operation Of List <https://riskquantlib-"
 "doc.readthedocs.io/en/latest/RiskQuantLib.Operation.html#module-"
-"RiskQuantLib.Operation.listBaseOperation>`_ to know details."
+"RiskQuantLib.Operation.operation>`_ to know details."
 msgstr "通常情况下，``Instrument List`` 会继承自 ``RiskQuantLib.Operation.listBaseOperation.listBase``。这个名为listBase的类包含了所有用于对列表元素进行操作的函数。你可以阅读 `Operation Of List <https://riskquantlib-doc.readthedocs.io/en/latest/RiskQuantLib.Operation.html#module-RiskQuantLib.Operation.listBaseOperation>`_ 来获取更多信息。"
 
 #: ../Instrument_List.rst:15
@@ -158,8 +158,8 @@ msgstr "遍历"
 #: ../Instrument_List.rst:92
 msgid ""
 "If ``rqlListA`` is a stockList, and in "
-"``RiskQuantLib.Security.Stock.stock``, you defined an attribute function "
-"like: ::"
+"``RiskQuantLib.Instrument.Security.Stock.stock``, you defined an "
+"attribute function like: ::"
 msgstr "如果  ``rqlListA`` 是一个股票列表，在 ``RiskQuantLib.Security.Stock.stock`` 中，你这样定义了一个类函数：::"
 
 #: ../Instrument_List.rst:100

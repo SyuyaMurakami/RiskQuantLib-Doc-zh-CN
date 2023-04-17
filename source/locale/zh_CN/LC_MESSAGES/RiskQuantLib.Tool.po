@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,12 @@ msgstr ""
 #: RiskQuantLib.Tool.databaseTool.mysqlTool:1
 #: RiskQuantLib.Tool.databaseTool.neo4jTool:1
 #: RiskQuantLib.Tool.databaseTool.oracleTool:1
+#: RiskQuantLib.Tool.databaseTool.sqlServerTool:1
+#: RiskQuantLib.Tool.fileTool.fileReceiver:1
+#: RiskQuantLib.Tool.fileTool.fileSender:1
+#: RiskQuantLib.Tool.fileTool.systemGuardian:1
+#: RiskQuantLib.Tool.fileTool.systemWatcher:1
+#: RiskQuantLib.Tool.githubTool.Github:1
 #: RiskQuantLib.Tool.outlookTool.readMailFromOutlook:1
 #: RiskQuantLib.Tool.outlookTool.sendMailFromOutlook:1 of
 msgid "基类：:class:`object`"
@@ -142,12 +148,25 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.codeBuilderTool.pythonScriptBuilder.setImport:18
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:15
 #: RiskQuantLib.Tool.fileTool.compressExcel:14
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:14
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:14
+#: RiskQuantLib.Tool.githubTool.downloadRepo:14
 #: RiskQuantLib.Tool.mathTool.percentageOfSeries:12
 #: RiskQuantLib.Tool.plotTool.plotBar:18 RiskQuantLib.Tool.plotTool.plotLine:18
 #: RiskQuantLib.Tool.plotTool.plotMultiBar:20
 #: RiskQuantLib.Tool.plotTool.plotPie:14 RiskQuantLib.Tool.plotTool.shuffle:18
-#: of
+#: RiskQuantLib.Tool.pptTool.formatPpt:35
+#: RiskQuantLib.Tool.pptTool.formatSlide:26
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:15
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:15
+#: RiskQuantLib.Tool.pptTool.replaceChart:14
+#: RiskQuantLib.Tool.pptTool.replacePicture:15
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:14
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:17
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:18
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:18 of
 msgid "None"
 msgstr ""
 
@@ -183,7 +202,45 @@ msgstr ""
 msgid "This is the API to connect with oracle database."
 msgstr ""
 
+#: RiskQuantLib.Tool.databaseTool.sqlServerTool:1 of
+msgid "This is the API to connect with sql server database."
+msgstr ""
+
 #: ../RiskQuantLib.Tool.rst:32
+msgid "RiskQuantLib.Tool.excelTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:1 of
+msgid ""
+"This function will use the format of templateExcel and the data of "
+"dataExcel to generate a new excel."
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:6 of
+msgid "templateExcelPathString"
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:7 of
+msgid "The xlsx file that specify the format of output."
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:8 of
+msgid "dataExcelPathString"
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:9 of
+msgid "The xlsx file that specify the content of output."
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:11 of
+msgid "savePathString"
+msgstr ""
+
+#: RiskQuantLib.Tool.excelTool.formatExcelWithTemplate:11 of
+msgid "The path where the output should be saved."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:40
 msgid "RiskQuantLib.Tool.fileTool module"
 msgstr ""
 
@@ -370,7 +427,97 @@ msgstr ""
 msgid "This function will wait for the change or modification of a file."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:40
+#: ../RiskQuantLib.Tool.rst:48
+msgid "RiskQuantLib.Tool.githubTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github:1 of
+msgid "This class is used to do operations of Github with github api."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github:3 of
+msgid "For basic use of search, establish url."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:1 of
+msgid ""
+"This function will download the repository specified by repositoryIndex. "
+"The downloaded file is in zip form and will be saved to targetPath."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:7 of
+msgid "repositoryIndex"
+msgstr ""
+
+#: of
+msgid "int or str"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:7 of
+msgid ""
+"The number of repository index. Or a string to specify the link of github"
+" web page. Or the name of a repository. Or any key word that can be used "
+"to search github."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:10
+#: RiskQuantLib.Tool.githubTool.downloadRepo:7
+#: RiskQuantLib.Tool.pptTool.formatPpt:15 of
+msgid "targetPath"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.downloadRepositories:10 of
+msgid "The path where zip file will be saved."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:1 of
+msgid ""
+"This function will send request to search Github and find all "
+"repositories that can be related to given key words. All repositories are"
+" sorted by star numbers. The first one is the most starred one."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:7 of
+msgid "repositoryKeyWord"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:8 of
+msgid "The key words used to search Github."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:10 of
+msgid "output"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.Github.searchRepositories:10 of
+msgid "Whether to print all repositories names."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:1 of
+msgid "This function will use Github api to download zip file of repositories."
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:5 of
+msgid "url"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:6 of
+msgid "The total github api link of some repository"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:8 of
+msgid "The file path where you want to save the zip clone"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:10 of
+msgid "name"
+msgstr ""
+
+#: RiskQuantLib.Tool.githubTool.downloadRepo:10 of
+msgid "The repository name you want to download"
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:56
 msgid "RiskQuantLib.Tool.mathTool module"
 msgstr ""
 
@@ -487,7 +634,7 @@ msgstr ""
 msgid "The percentage number. 99 means 99% percentage."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:48
+#: ../RiskQuantLib.Tool.rst:64
 msgid "RiskQuantLib.Tool.multiThreadTool module"
 msgstr ""
 
@@ -566,7 +713,7 @@ msgstr ""
 msgid "A list holding all functions you want to run."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:56
+#: ../RiskQuantLib.Tool.rst:72
 msgid "RiskQuantLib.Tool.outlookTool module"
 msgstr ""
 
@@ -609,11 +756,7 @@ msgstr ""
 msgid "Send mails by outlook"
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:64
-msgid "RiskQuantLib.Tool.parallelComputingTool module"
-msgstr ""
-
-#: ../RiskQuantLib.Tool.rst:72
+#: ../RiskQuantLib.Tool.rst:80
 msgid "RiskQuantLib.Tool.plotTool module"
 msgstr ""
 
@@ -694,7 +837,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.noncentral_chisquare:23
 #: RiskQuantLib.Tool.plotTool.noncentral_f:29
 #: RiskQuantLib.Tool.plotTool.normal:28 RiskQuantLib.Tool.plotTool.pareto:33
-#: RiskQuantLib.Tool.plotTool.poisson:19 RiskQuantLib.Tool.plotTool.power:18
+#: RiskQuantLib.Tool.plotTool.poisson:20 RiskQuantLib.Tool.plotTool.power:18
 #: RiskQuantLib.Tool.plotTool.randint:23
 #: RiskQuantLib.Tool.plotTool.random_integers:25
 #: RiskQuantLib.Tool.plotTool.random_sample:18
@@ -705,7 +848,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.standard_normal:12
 #: RiskQuantLib.Tool.plotTool.standard_t:20
 #: RiskQuantLib.Tool.plotTool.triangular:27
-#: RiskQuantLib.Tool.plotTool.uniform:24 RiskQuantLib.Tool.plotTool.vonmises:25
+#: RiskQuantLib.Tool.plotTool.uniform:27 RiskQuantLib.Tool.plotTool.vonmises:25
 #: RiskQuantLib.Tool.plotTool.wald:26 RiskQuantLib.Tool.plotTool.weibull:25
 #: RiskQuantLib.Tool.plotTool.zipf:23 of
 msgid "size"
@@ -739,7 +882,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.noncentral_f:34
 #: RiskQuantLib.Tool.plotTool.normal:33 RiskQuantLib.Tool.plotTool.pareto:38
 #: RiskQuantLib.Tool.plotTool.permutation:20
-#: RiskQuantLib.Tool.plotTool.poisson:24 RiskQuantLib.Tool.plotTool.power:23
+#: RiskQuantLib.Tool.plotTool.poisson:25 RiskQuantLib.Tool.plotTool.power:23
 #: RiskQuantLib.Tool.plotTool.randint:35
 #: RiskQuantLib.Tool.plotTool.random_integers:31
 #: RiskQuantLib.Tool.plotTool.random_sample:24
@@ -750,7 +893,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.standard_normal:18
 #: RiskQuantLib.Tool.plotTool.standard_t:25
 #: RiskQuantLib.Tool.plotTool.triangular:32
-#: RiskQuantLib.Tool.plotTool.uniform:29 RiskQuantLib.Tool.plotTool.vonmises:30
+#: RiskQuantLib.Tool.plotTool.uniform:32 RiskQuantLib.Tool.plotTool.vonmises:30
 #: RiskQuantLib.Tool.plotTool.wald:31 RiskQuantLib.Tool.plotTool.weibull:30
 #: RiskQuantLib.Tool.plotTool.zipf:28 of
 msgid "out"
@@ -765,7 +908,7 @@ msgid "Drawn samples from the parameterized beta distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.beta:40 of
-msgid "Generator.beta: which should be used for new code."
+msgid "random.Generator.beta: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.binomial:1 of
@@ -803,7 +946,7 @@ msgid ""
 "will be truncated to integers."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.binomial:17 RiskQuantLib.Tool.plotTool.choice:23
+#: RiskQuantLib.Tool.plotTool.binomial:17 RiskQuantLib.Tool.plotTool.choice:24
 #: RiskQuantLib.Tool.plotTool.geometric:21
 #: RiskQuantLib.Tool.plotTool.logseries:12
 #: RiskQuantLib.Tool.plotTool.negative_binomial:15 of
@@ -851,7 +994,7 @@ msgid "cumulative density function, etc."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.binomial:35 of
-msgid "Generator.binomial: which should be used for new code."
+msgid "random.Generator.binomial: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.binomial:39 of
@@ -920,10 +1063,10 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.logseries:61
 #: RiskQuantLib.Tool.plotTool.negative_binomial:62
 #: RiskQuantLib.Tool.plotTool.normal:68 RiskQuantLib.Tool.plotTool.pareto:79
-#: RiskQuantLib.Tool.plotTool.poisson:55 RiskQuantLib.Tool.plotTool.power:59
+#: RiskQuantLib.Tool.plotTool.poisson:56 RiskQuantLib.Tool.plotTool.power:59
 #: RiskQuantLib.Tool.plotTool.standard_gamma:54
-#: RiskQuantLib.Tool.plotTool.uniform:66 RiskQuantLib.Tool.plotTool.vonmises:63
-#: RiskQuantLib.Tool.plotTool.weibull:75 RiskQuantLib.Tool.plotTool.zipf:56 of
+#: RiskQuantLib.Tool.plotTool.uniform:69 RiskQuantLib.Tool.plotTool.vonmises:63
+#: RiskQuantLib.Tool.plotTool.weibull:75 RiskQuantLib.Tool.plotTool.zipf:57 of
 msgid "Draw samples from the distribution:"
 msgstr ""
 
@@ -975,7 +1118,7 @@ msgstr ""
 msgid "Drawn samples from the parameterized chi-square distribution."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.chisquare:31 RiskQuantLib.Tool.plotTool.choice:37
+#: RiskQuantLib.Tool.plotTool.chisquare:31 RiskQuantLib.Tool.plotTool.choice:38
 #: RiskQuantLib.Tool.plotTool.dirichlet:31 RiskQuantLib.Tool.plotTool.power:28
 #: of
 msgid "ValueError"
@@ -988,7 +1131,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.chisquare:35 of
-msgid "Generator.chisquare: which should be used for new code."
+msgid "random.Generator.chisquare: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.chisquare:39 of
@@ -1057,7 +1200,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.choice:12 of
 msgid ""
 "If an ndarray, a random sample is generated from its elements. If an int,"
-" the random sample is generated as if a were np.arange(a)"
+" the random sample is generated as if it were ``np.arange(a)``"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.choice:15
@@ -1074,7 +1217,7 @@ msgid ""
 " returned."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:18 of
+#: RiskQuantLib.Tool.plotTool.choice:19 of
 msgid "replace"
 msgstr ""
 
@@ -1083,20 +1226,22 @@ msgid "boolean, optional"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.choice:19 of
-msgid "Whether the sample is with or without replacement"
+msgid ""
+"Whether the sample is with or without replacement. Default is True, "
+"meaning that a value of ``a`` can be selected multiple times."
 msgstr ""
 
 #: of
 msgid "1-D array-like, optional"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:21 of
+#: RiskQuantLib.Tool.plotTool.choice:22 of
 msgid ""
-"The probabilities associated with each entry in a. If not given the "
-"sample assumes a uniform distribution over all entries in a."
+"The probabilities associated with each entry in a. If not given, the "
+"sample assumes a uniform distribution over all entries in ``a``."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:28 RiskQuantLib.Tool.plotTool.dirichlet:26
+#: RiskQuantLib.Tool.plotTool.choice:29 RiskQuantLib.Tool.plotTool.dirichlet:26
 #: RiskQuantLib.Tool.plotTool.standard_cauchy:19 of
 msgid "samples"
 msgstr ""
@@ -1105,11 +1250,11 @@ msgstr ""
 msgid "single item or ndarray"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:28 of
+#: RiskQuantLib.Tool.plotTool.choice:29 of
 msgid "The generated random samples"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:33 of
+#: RiskQuantLib.Tool.plotTool.choice:34 of
 msgid ""
 "If a is an int and less than zero, if a or p are not 1-dimensional, if a "
 "is an array-like of size 0, if p is not a vector of probabilities, if a "
@@ -1117,39 +1262,47 @@ msgid ""
 "greater than the population size"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:41 of
+#: RiskQuantLib.Tool.plotTool.choice:42 of
 msgid ""
-"randint, shuffle, permutation Generator.choice: which should be used in "
-"new code"
+"randint, shuffle, permutation random.Generator.choice: which should be "
+"used in new code"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:46 of
+#: RiskQuantLib.Tool.plotTool.choice:47 of
+msgid ""
+"Setting user-specified probabilities through ``p`` uses a more general "
+"but less efficient sampler than the default. The general sampler produces"
+" a different sample than the optimized sampler even if each element of "
+"``p`` is 1 / len(a)."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.choice:51 of
 msgid ""
 "Sampling random rows from a 2-D array is not possible with this function,"
 " but is possible with `Generator.choice` through its ``axis`` keyword."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:51 of
+#: RiskQuantLib.Tool.plotTool.choice:56 of
 msgid "Generate a uniform random sample from np.arange(5) of size 3:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:57 of
+#: RiskQuantLib.Tool.plotTool.choice:62 of
 msgid "Generate a non-uniform random sample from np.arange(5) of size 3:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:62 of
+#: RiskQuantLib.Tool.plotTool.choice:67 of
 msgid ""
 "Generate a uniform random sample from np.arange(5) of size 3 without "
 "replacement:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:69 of
+#: RiskQuantLib.Tool.plotTool.choice:74 of
 msgid ""
 "Generate a non-uniform random sample from np.arange(5) of size 3 without "
 "replacement:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.choice:75 of
+#: RiskQuantLib.Tool.plotTool.choice:80 of
 msgid ""
 "Any of the above can be repeated with an arbitrary array-like instead of "
 "just integers. For instance:"
@@ -1205,7 +1358,7 @@ msgid "If any value in ``alpha`` is less than or equal to zero"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.dirichlet:35 of
-msgid "Generator.dirichlet: which should be used for new code."
+msgid "random.Generator.dirichlet: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.dirichlet:39 of
@@ -1323,7 +1476,7 @@ msgid "Drawn samples from the parameterized exponential distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.exponential:39 of
-msgid "Generator.exponential: which should be used for new code."
+msgid "random.Generator.exponential: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.exponential:43 of
@@ -1407,7 +1560,7 @@ msgid "scipy.stats.f"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.f:38 of
-msgid "Generator.f: which should be used for new code."
+msgid "random.Generator.f: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.f:42 of
@@ -1472,7 +1625,12 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.gamma:13
-#: RiskQuantLib.Tool.plotTool.standard_gamma:12 of
+#: RiskQuantLib.Tool.plotTool.standard_gamma:12
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:6
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:6
+#: RiskQuantLib.Tool.pptTool.replaceChart:7
+#: RiskQuantLib.Tool.pptTool.replacePicture:8
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:7 of
 msgid "shape"
 msgstr ""
 
@@ -1508,7 +1666,7 @@ msgid "scipy.stats.gamma"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.gamma:33 of
-msgid "Generator.gamma: which should be used for new code."
+msgid "random.Generator.gamma: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.gamma:37
@@ -1557,8 +1715,8 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.lognormal:69 RiskQuantLib.Tool.plotTool.normal:81
 #: RiskQuantLib.Tool.plotTool.pareto:84 RiskQuantLib.Tool.plotTool.power:65
 #: RiskQuantLib.Tool.plotTool.standard_gamma:59
-#: RiskQuantLib.Tool.plotTool.uniform:77 RiskQuantLib.Tool.plotTool.vonmises:68
-#: RiskQuantLib.Tool.plotTool.weibull:80 RiskQuantLib.Tool.plotTool.zipf:61 of
+#: RiskQuantLib.Tool.plotTool.uniform:80 RiskQuantLib.Tool.plotTool.vonmises:68
+#: RiskQuantLib.Tool.plotTool.weibull:80 of
 msgid ""
 "Display the histogram of the samples, along with the probability density "
 "function:"
@@ -1615,7 +1773,7 @@ msgid "Drawn samples from the parameterized geometric distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.geometric:36 of
-msgid "Generator.geometric: which should be used for new code."
+msgid "random.Generator.geometric: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.geometric:40 of
@@ -1749,7 +1907,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.gumbel:31 of
 msgid ""
 "scipy.stats.gumbel_l scipy.stats.gumbel_r scipy.stats.genextreme weibull "
-"Generator.gumbel: which should be used for new code."
+"random.Generator.gumbel: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.gumbel:39 of
@@ -1885,7 +2043,7 @@ msgid "scipy.stats.hypergeom"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.hypergeometric:39 of
-msgid "Generator.hypergeometric: which should be used for new code."
+msgid "random.Generator.hypergeometric: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.hypergeometric:43 of
@@ -1980,7 +2138,7 @@ msgid "Drawn samples from the parameterized Laplace distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.laplace:33 of
-msgid "Generator.laplace: which should be used for new code."
+msgid "random.Generator.laplace: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.laplace:37 of
@@ -2070,7 +2228,7 @@ msgid "scipy.stats.logistic"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logistic:32 of
-msgid "Generator.logistic: which should be used for new code."
+msgid "random.Generator.logistic: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logistic:36 of
@@ -2179,7 +2337,7 @@ msgid "probability density function, distribution,"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.lognormal:34 of
-msgid "Generator.lognormal: which should be used for new code."
+msgid "random.Generator.lognormal: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.lognormal:38 of
@@ -2233,7 +2391,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.logseries:3 of
 msgid ""
 "Samples are drawn from a log series distribution with specified shape "
-"parameter, 0 < ``p`` < 1."
+"parameter, 0 <= ``p`` < 1."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logseries:7 of
@@ -2243,7 +2401,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logseries:13 of
-msgid "Shape parameter for the distribution.  Must be in the range (0, 1)."
+msgid "Shape parameter for the distribution.  Must be in the range [0, 1)."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logseries:23 of
@@ -2255,7 +2413,7 @@ msgid "scipy.stats.logser"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logseries:29 of
-msgid "Generator.logseries: which should be used for new code."
+msgid "random.Generator.logseries: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.logseries:33 of
@@ -2365,7 +2523,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.multinomial:40 of
-msgid "Generator.multinomial: which should be used for new code."
+msgid "random.Generator.multinomial: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.multinomial:44 of
@@ -2481,7 +2639,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.multivariate_normal:43 of
-msgid "Generator.multivariate_normal: which should be used for new code."
+msgid "random.Generator.multivariate_normal: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.multivariate_normal:47 of
@@ -2549,8 +2707,24 @@ msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.multivariate_normal:99 of
 msgid ""
-"The following is probably true, given that 0.6 is roughly twice the "
-"standard deviation:"
+"Here we generate 800 samples from the bivariate normal distribution with "
+"mean [0, 0] and covariance matrix [[6, -3], [-3, 3.5]].  The expected "
+"variances of the first and second components of the sample are 6 and 3.5,"
+" respectively, and the expected correlation coefficient is -3/sqrt(6*3.5)"
+" ≈ -0.65465."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:108 of
+msgid ""
+"Check that the mean, covariance, and correlation coefficient of the "
+"sample are close to the expected values:"
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.multivariate_normal:119 of
+msgid ""
+"We can visualize this data with a scatter plot.  The orientation of the "
+"point cloud illustrates the negative correlation of the components of "
+"this sample."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.negative_binomial:1 of
@@ -2583,7 +2757,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.negative_binomial:32 of
-msgid "Generator.negative_binomial: which should be used for new code."
+msgid "random.Generator.negative_binomial: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.negative_binomial:36 of
@@ -2685,7 +2859,7 @@ msgid "Drawn samples from the parameterized noncentral chi-square distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.noncentral_chisquare:32 of
-msgid "Generator.noncentral_chisquare: which should be used for new code."
+msgid "random.Generator.noncentral_chisquare: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.noncentral_chisquare:36 of
@@ -2774,7 +2948,7 @@ msgid "Drawn samples from the parameterized noncentral Fisher distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.noncentral_f:38 of
-msgid "Generator.noncentral_f: which should be used for new code."
+msgid "random.Generator.noncentral_f: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.noncentral_f:42 of
@@ -2853,7 +3027,7 @@ msgid "scipy.stats.norm"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.normal:39 of
-msgid "Generator.normal: which should be used for new code."
+msgid "random.Generator.normal: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.normal:43 of
@@ -2960,7 +3134,7 @@ msgid "scipy.stats.genpareto"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.pareto:46 of
-msgid "Generator.pareto: which should be used for new code."
+msgid "random.Generator.pareto: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.pareto:50 of
@@ -3042,7 +3216,7 @@ msgid "Permuted sequence or array range."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.permutation:24 of
-msgid "Generator.permutation: which should be used for new code."
+msgid "random.Generator.permutation: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.plotBar:1
@@ -3155,17 +3329,17 @@ msgid ""
 "instance instead; please see the :ref:`random-quick-start`."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:13 of
+#: RiskQuantLib.Tool.plotTool.poisson:14 of
 msgid "lam"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.poisson:13 of
 msgid ""
-"Expectation of interval, must be >= 0. A sequence of expectation "
-"intervals must be broadcastable over the requested size."
+"Expected number of events occurring in a fixed-time interval, must be >= "
+"0. A sequence must be broadcastable over the requested size."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:16 of
+#: RiskQuantLib.Tool.plotTool.poisson:17 of
 msgid ""
 "Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
 " k`` samples are drawn.  If size is ``None`` (default), a single value is"
@@ -3173,55 +3347,55 @@ msgid ""
 "samples are drawn."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:24 of
+#: RiskQuantLib.Tool.plotTool.poisson:25 of
 msgid "Drawn samples from the parameterized Poisson distribution."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:28 of
-msgid "Generator.poisson: which should be used for new code."
+#: RiskQuantLib.Tool.plotTool.poisson:29 of
+msgid "random.Generator.poisson: which should be used for new code."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:32 of
+#: RiskQuantLib.Tool.plotTool.poisson:33 of
 msgid "The Poisson distribution"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:34 of
+#: RiskQuantLib.Tool.plotTool.poisson:35 of
 msgid ""
 "f(k; \\lambda)=\\frac{\\lambda^k e^{-\\lambda}}{k!}\n"
 "\n"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:36 of
+#: RiskQuantLib.Tool.plotTool.poisson:37 of
 msgid ""
 "For events with an expected separation :math:`\\lambda` the Poisson "
 "distribution :math:`f(k; \\lambda)` describes the probability of "
 ":math:`k` events occurring within the observed interval :math:`\\lambda`."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:41 of
+#: RiskQuantLib.Tool.plotTool.poisson:42 of
 msgid ""
 "Because the output is limited to the range of the C int64 type, a "
 "ValueError is raised when `lam` is within 10 sigma of the maximum "
 "representable value."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:47 of
+#: RiskQuantLib.Tool.plotTool.poisson:48 of
 msgid ""
 "Weisstein, Eric W. \"Poisson Distribution.\" From MathWorld--A Wolfram "
 "Web Resource. http://mathworld.wolfram.com/PoissonDistribution.html"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:50 of
+#: RiskQuantLib.Tool.plotTool.poisson:51 of
 msgid ""
 "Wikipedia, \"Poisson distribution\", "
 "https://en.wikipedia.org/wiki/Poisson_distribution"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:60 of
+#: RiskQuantLib.Tool.plotTool.poisson:61 of
 msgid "Display histogram of the sample:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.poisson:66 of
+#: RiskQuantLib.Tool.plotTool.poisson:67 of
 msgid "Draw each 100 values for lambda 100 and 500:"
 msgstr ""
 
@@ -3250,11 +3424,11 @@ msgid "Drawn samples from the parameterized power distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.power:28 of
-msgid "If a < 1."
+msgid "If a <= 0."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.power:32 of
-msgid "Generator.power: which should be used for new code."
+msgid "random.Generator.power: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.power:36 of
@@ -3383,7 +3557,7 @@ msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.randint:19
 #: RiskQuantLib.Tool.plotTool.random_integers:20
-#: RiskQuantLib.Tool.plotTool.uniform:18 of
+#: RiskQuantLib.Tool.plotTool.uniform:21 of
 msgid "high"
 msgstr ""
 
@@ -3436,7 +3610,7 @@ msgid "interval [`low`, `high`], and 1 is the lowest value if `high` is omitted.
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.randint:42 of
-msgid "Generator.integers: which should be used for new code."
+msgid "random.Generator.integers: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.randint:51 of
@@ -3501,8 +3675,8 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.randn:34 of
 msgid ""
 "standard_normal : Similar, but takes a tuple as its argument. normal : "
-"Also accepts mu and sigma arguments. Generator.standard_normal: which "
-"should be used for new code."
+"Also accepts mu and sigma arguments. random.Generator.standard_normal: "
+"which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.randn:40 of
@@ -3610,7 +3784,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.random_sample:28 of
-msgid "Generator.random: which should be used for new code."
+msgid "random.Generator.random: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.random_sample:39 of
@@ -3642,7 +3816,7 @@ msgid "Drawn samples from the parameterized Rayleigh distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.rayleigh:27 of
-msgid "Generator.rayleigh: which should be used for new code."
+msgid "random.Generator.rayleigh: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.rayleigh:31 of
@@ -3783,7 +3957,7 @@ msgid "The array, list or mutable sequence to be shuffled."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.shuffle:22 of
-msgid "Generator.shuffle: which should be used for new code."
+msgid "random.Generator.shuffle: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.shuffle:31 of
@@ -3809,7 +3983,7 @@ msgid "The drawn samples."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_cauchy:23 of
-msgid "Generator.standard_cauchy: which should be used for new code."
+msgid "random.Generator.standard_cauchy: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_cauchy:27 of
@@ -3893,7 +4067,7 @@ msgid "Drawn samples."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_exponential:24 of
-msgid "Generator.standard_exponential: which should be used for new code."
+msgid "random.Generator.standard_exponential: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_exponential:28 of
@@ -3933,7 +4107,7 @@ msgid "Drawn samples from the parameterized standard gamma distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_gamma:29 of
-msgid "Generator.standard_gamma: which should be used for new code."
+msgid "random.Generator.standard_gamma: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_normal:1 of
@@ -3957,7 +4131,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_normal:25 of
-msgid "Generator.standard_normal: which should be used for new code."
+msgid "random.Generator.standard_normal: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_normal:29 of
@@ -3992,7 +4166,7 @@ msgid "Drawn samples from the parameterized standard Student's t distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_t:29 of
-msgid "Generator.standard_t: which should be used for new code."
+msgid "random.Generator.standard_t: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.standard_t:33 of
@@ -4041,34 +4215,45 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.standard_t:63 of
 msgid ""
 "Does their energy intake deviate systematically from the recommended "
-"value of 7725 kJ?"
+"value of 7725 kJ? Our null hypothesis will be the absence of deviation, "
+"and the alternate hypothesis will be the presence of an effect that could"
+" be either positive or negative, hence making our test 2-tailed."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.standard_t:66 of
-#, python-format
+#: RiskQuantLib.Tool.plotTool.standard_t:68 of
 msgid ""
-"We have 10 degrees of freedom, so is the sample mean within 95% of the "
-"recommended value?"
+"Because we are estimating the mean and we have N=11 values in our sample,"
+" we have N-1=10 degrees of freedom. We set our significance level to 95% "
+"and  compute the t statistic using the empirical mean and empirical "
+"standard  deviation of our intake. We use a ddof of 1 to base the "
+"computation of our  empirical standard deviation on an unbiased estimate "
+"of the variance (note: the final estimate is not unbiased due to the "
+"concave nature of the square  root)."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.standard_t:75 of
+#: RiskQuantLib.Tool.plotTool.standard_t:84 of
 msgid ""
-"Calculate the t statistic, setting the ddof parameter to the unbiased "
-"value so the divisor in the standard deviation will be degrees of "
-"freedom, N-1."
+"We draw 1000000 samples from Student's t distribution with the adequate "
+"degrees of freedom."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.standard_t:83 of
+#: RiskQuantLib.Tool.plotTool.standard_t:91 of
 msgid ""
-"For a one-sided t-test, how far out in the distribution does the t "
-"statistic appear?"
+"Does our t statistic land in one of the two critical regions found at  "
+"both tails of the distribution?"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.standard_t:89 of
-#, python-format
+#: RiskQuantLib.Tool.plotTool.standard_t:97 of
 msgid ""
-"So the p-value is about 0.009, which says the null hypothesis has a "
-"probability of about 99% of being true."
+"The probability value for this 2-tailed test is about 1.83%, which is  "
+"lower than the 5% pre-determined significance threshold."
+msgstr ""
+
+#: RiskQuantLib.Tool.plotTool.standard_t:100 of
+msgid ""
+"Therefore, the probability of observing values as extreme as our intake "
+"conditionally on the null hypothesis being true is too low, and we reject"
+"  the null hypothesis of no deviation."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.triangular:1 of
@@ -4129,7 +4314,7 @@ msgid "Drawn samples from the parameterized triangular distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.triangular:36 of
-msgid "Generator.triangular: which should be used for new code."
+msgid "random.Generator.triangular: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.triangular:40 of
@@ -4190,10 +4375,12 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.uniform:18 of
 msgid ""
 "Upper boundary of the output interval.  All values generated will be less"
-" than or equal to high.  The default value is 1.0."
+" than or equal to high.  The high limit may be included in the  returned "
+"array of floats due to floating-point rounding in the  equation ``low + "
+"(high-low) * random_sample()``.  The default value  is 1.0."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:21 of
+#: RiskQuantLib.Tool.plotTool.uniform:24 of
 msgid ""
 "Output shape.  If the given shape is, e.g., ``(m, n, k)``, then ``m * n *"
 " k`` samples are drawn.  If size is ``None`` (default), a single value is"
@@ -4201,52 +4388,52 @@ msgid ""
 "``np.broadcast(low, high).size`` samples are drawn."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:29 of
+#: RiskQuantLib.Tool.plotTool.uniform:32 of
 msgid "Drawn samples from the parameterized uniform distribution."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:33 of
+#: RiskQuantLib.Tool.plotTool.uniform:36 of
 msgid ""
 "randint : Discrete uniform distribution, yielding integers. "
 "random_integers : Discrete uniform distribution over the closed"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:35 of
+#: RiskQuantLib.Tool.plotTool.uniform:38 of
 msgid "interval ``[low, high]``."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:36 of
+#: RiskQuantLib.Tool.plotTool.uniform:39 of
 msgid ""
 "random_sample : Floats uniformly distributed over ``[0, 1)``. random : "
 "Alias for `random_sample`. rand : Convenience function that accepts "
 "dimensions as input, e.g.,"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:39 of
+#: RiskQuantLib.Tool.plotTool.uniform:42 of
 msgid ""
 "``rand(2,2)`` would generate a 2-by-2 array of floats, uniformly "
 "distributed over ``[0, 1)``."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:41 of
-msgid "Generator.uniform: which should be used for new code."
+#: RiskQuantLib.Tool.plotTool.uniform:44 of
+msgid "random.Generator.uniform: which should be used for new code."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:45 of
+#: RiskQuantLib.Tool.plotTool.uniform:48 of
 msgid "The probability density function of the uniform distribution is"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:47 of
+#: RiskQuantLib.Tool.plotTool.uniform:50 of
 msgid ""
 "p(x) = \\frac{1}{b - a}\n"
 "\n"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:49 of
+#: RiskQuantLib.Tool.plotTool.uniform:52 of
 msgid "anywhere within the interval ``[a, b)``, and zero elsewhere."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:51 of
+#: RiskQuantLib.Tool.plotTool.uniform:54 of
 msgid ""
 "When ``high`` == ``low``, values of ``low`` will be returned. If ``high``"
 " < ``low``, the results are officially undefined and may eventually raise"
@@ -4256,7 +4443,7 @@ msgid ""
 "in the equation ``low + (high-low) * random_sample()``. For example:"
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.uniform:70 of
+#: RiskQuantLib.Tool.plotTool.uniform:73 of
 msgid "All values are within the given interval:"
 msgstr ""
 
@@ -4321,7 +4508,7 @@ msgid "probability density function, distribution, or"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.vonmises:36 of
-msgid "Generator.vonmises: which should be used for new code."
+msgid "random.Generator.vonmises: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.vonmises:40 of
@@ -4401,7 +4588,7 @@ msgid "Drawn samples from the parameterized Wald distribution."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.wald:35 of
-msgid "Generator.wald: which should be used for new code."
+msgid "random.Generator.wald: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.wald:39 of
@@ -4485,7 +4672,7 @@ msgstr ""
 #: RiskQuantLib.Tool.plotTool.weibull:34 of
 msgid ""
 "scipy.stats.weibull_max scipy.stats.weibull_min scipy.stats.genextreme "
-"gumbel Generator.weibull: which should be used for new code."
+"gumbel random.Generator.weibull: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.weibull:42 of
@@ -4556,10 +4743,9 @@ msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:6 of
 msgid ""
-"The Zipf distribution (also known as the zeta distribution) is a "
-"continuous probability distribution that satisfies Zipf's law: the "
-"frequency of an item is inversely proportional to its rank in a frequency"
-" table."
+"The Zipf distribution (also known as the zeta distribution) is a discrete"
+" probability distribution that satisfies Zipf's law: the frequency of an "
+"item is inversely proportional to its rank in a frequency table."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:12 of
@@ -4589,7 +4775,7 @@ msgid "scipy.stats.zipf"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:34 of
-msgid "Generator.zipf: which should be used for new code."
+msgid "random.Generator.zipf: which should be used for new code."
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:38 of
@@ -4598,32 +4784,242 @@ msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:40 of
 msgid ""
-"p(x) = \\frac{x^{-a}}{\\zeta(a)},\n"
+"p(k) = \\frac{k^{-a}}{\\zeta(a)},\n"
 "\n"
 msgstr ""
 
 #: RiskQuantLib.Tool.plotTool.zipf:42 of
-msgid "where :math:`\\zeta` is the Riemann Zeta function."
+msgid ""
+"for integers :math:`k \\geq 1`, where :math:`\\zeta` is the Riemann Zeta "
+"function."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.zipf:44 of
+#: RiskQuantLib.Tool.plotTool.zipf:45 of
 msgid ""
 "It is named for the American linguist George Kingsley Zipf, who noted "
 "that the frequency of any word in a sample of a language is inversely "
 "proportional to its rank in the frequency table."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.zipf:50 of
+#: RiskQuantLib.Tool.plotTool.zipf:51 of
 msgid ""
 "Zipf, G. K., \"Selected Studies of the Principle of Relative Frequency in"
 " Language,\" Cambridge, MA: Harvard Univ. Press, 1932."
 msgstr ""
 
-#: RiskQuantLib.Tool.plotTool.zipf:67 of
-msgid "Truncate s values at 50 so plot is interesting:"
+#: RiskQuantLib.Tool.plotTool.zipf:63 of
+msgid ""
+"Display the histogram of the samples, along with the expected histogram "
+"based on the probability density function:"
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:80
+#: RiskQuantLib.Tool.plotTool.zipf:70 of
+msgid "`bincount` provides a fast histogram for small integers."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:88
+msgid "RiskQuantLib.Tool.pptTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:1 of
+msgid ""
+"This function will use the content of tableDict and textDict and "
+"graphDict to change given PPT. It will iterate across every slide and "
+"modify it. The first table in the slide will be changed into tableDict[0]"
+" and the second table in the slide will be changed into tableDict[1], "
+"etc... The first picture in the slide will be changed into graphDict[0] "
+"and the second table in the slide will be changed into graphDict[1], "
+"etc... Any symbols like {symbolName} will be changed into given string "
+"specified by textDict."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:8 of
+msgid ""
+"After change is done, this PPT will be saved into target file. You can "
+"also specify the slideIndex so that only the specified slide will be "
+"changed."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:13 of
+msgid "filePath"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:14 of
+msgid "The path of PPT file which you want to change."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:16 of
+msgid "The path where you want to change the modified file."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:19
+#: RiskQuantLib.Tool.pptTool.formatSlide:13 of
+msgid "tableDict :dict"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:18
+#: RiskQuantLib.Tool.pptTool.formatSlide:12 of
+msgid ""
+"The key->value pairs that declare what the table should be replaced to. "
+"The key of this dict should be int number and start from 0, like 0, 1, "
+"2... and the value of this dict should be pandas.DataFrame object."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:23
+#: RiskQuantLib.Tool.pptTool.formatSlide:17 of
+msgid "textDict"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:22
+#: RiskQuantLib.Tool.pptTool.formatSlide:16
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:9
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:9
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:12 of
+msgid ""
+"The key->value pairs that declare what the symbols should be replaced to."
+" The key of this dict should be string type and like '{symbolName}', and "
+"the value of this dict should be string type."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:27
+#: RiskQuantLib.Tool.pptTool.formatSlide:22 of
+msgid "graphDict :dict"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:26
+#: RiskQuantLib.Tool.pptTool.formatSlide:20 of
+msgid ""
+"The key->value pairs that declare what the graph should be replaced to. "
+"The key of this dict should be int number and start from 0, like 0, 1, "
+"2... and the value of this dict should be path string of pictures."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:31 of
+msgid "slideIndex"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatPpt:30 of
+msgid ""
+"The int number i which specify the i-th slide should be changed. If you "
+"specify this parameter, then all the rest will not be changed."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatSlide:1 of
+msgid ""
+"This function will use the content of tableDict and textDict and "
+"graphDict to change given slide. The first table in the slide will be "
+"changed into tableDict[0] and the second table in the slide will be "
+"changed into tableDict[1], etc... The first picture in the slide will be "
+"changed into graphDict[0] and the second table in the slide will be "
+"changed into graphDict[1], etc... Any symbols like {symbolName} will be "
+"changed into given string specified by textDict."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatSlide:9
+#: RiskQuantLib.Tool.pptTool.replaceChart:5
+#: RiskQuantLib.Tool.pptTool.replacePicture:6 of
+msgid "slide"
+msgstr ""
+
+#: of
+msgid "pptx.slide.Slide"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatSlide:10 of
+msgid "The slide which you want to change."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:1
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:1 of
+msgid ""
+"This function will use the content of paraDict to fill the mark in shape "
+"object. If it find any mark like {symbolName}, it will replace it into "
+"the value declared by paraDict."
+msgstr ""
+
+#: of
+msgid "pptx.shapes.graphfrm.GraphicFrame"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:7
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:8 of
+msgid "The shape object that you want to change, usually this shape is a table."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatTableWithTemplate:11
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:11
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:14
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:14 of
+msgid "paraDict"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.formatTextFrameWithTemplate:7 of
+msgid ""
+"The shape object that you want to change, usually this shape is a text "
+"frame."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceChart:1 of
+msgid ""
+"This function will replace the chart in given slide into the given "
+"picture. This change is in place."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceChart:6
+#: RiskQuantLib.Tool.pptTool.replacePicture:7 of
+msgid "The slide where the shape object lies."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceChart:8 of
+msgid "The shape object that you want to change, usually this shape is a chart."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceChart:10
+#: RiskQuantLib.Tool.pptTool.replacePicture:11 of
+msgid "picturePath"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceChart:10 of
+msgid "The path of picture that you want to use to replace the original chart."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replacePicture:1 of
+msgid ""
+"This function will replace the old picture in given slide into the given "
+"picture. This change is in place. And the new picture has the same shape "
+"with the original one."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replacePicture:9 of
+msgid "The shape object that you want to change, usually this shape is a picture."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replacePicture:11 of
+msgid ""
+"The path of new picture that you want to use to replace the original "
+"picture."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:1 of
+msgid ""
+"This function will replace the content of table into given dataframe. If "
+"two tables have different shapes, then only the common part will be "
+"changed, other cells in original table will remain unchanged. The change "
+"is in place, but the shape of original table won't be changed after this "
+"function is called."
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:10
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:13 of
+msgid "dfInput"
+msgstr ""
+
+#: RiskQuantLib.Tool.pptTool.replaceTableContent:10
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:13 of
+msgid "The dataframe that the original table should be changed to."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:96
 msgid "RiskQuantLib.Tool.strTool module"
 msgstr ""
 
@@ -4635,19 +5031,6 @@ msgstr ""
 msgid ""
 "This function will change the data type of pd.Series.index into "
 "pd.Timestamp"
-msgstr ""
-
-#: RiskQuantLib.Tool.strTool.convertFutureCodeToExpirationDate:1 of
-msgid ""
-"Convert future code into expiration date. This function only applies in "
-"China."
-msgstr ""
-
-#: RiskQuantLib.Tool.strTool.convertFutureCodeToExpirationDate:3 of
-msgid ""
-"In China, future code is like T2108.CFE, this function will convert it "
-"into expiration date, which is 2021.08.21 in this case, the third "
-"Saturday in August. (Due to the rules of exchange.)"
 msgstr ""
 
 #: RiskQuantLib.Tool.strTool.convertNumberOfDaysToChineseStr:1 of
@@ -4733,17 +5116,6 @@ msgstr ""
 msgid "A list whose elements are string that can be converted into numbers."
 msgstr ""
 
-#: RiskQuantLib.Tool.strTool.getFutureTypeByExpirationDate:1 of
-msgid ""
-"This function will classify the future code into contract type, such as "
-"'Expired','Current','Month', 'Season','Half Year', etc, given the date "
-"where you stand and the expiration date of future."
-msgstr ""
-
-#: RiskQuantLib.Tool.strTool.getFutureTypeByExpirationDate:4 of
-msgid "This function only applies in China."
-msgstr ""
-
 #: RiskQuantLib.Tool.strTool.getLastTradingDate:1 of
 msgid ""
 "This function will return the last trading date given standing point, "
@@ -4756,8 +5128,18 @@ msgid ""
 "after specifying the list where you choose string from."
 msgstr ""
 
+#: RiskQuantLib.Tool.strTool.getNTradingDaysAfterTradingDate:1 of
+msgid "This function will return the N-th trading day after standing point."
+msgstr ""
+
 #: RiskQuantLib.Tool.strTool.getNTradingDaysBeforeTradingDate:1 of
 msgid "This function will return the N-th trading day before standing point."
+msgstr ""
+
+#: RiskQuantLib.Tool.strTool.getNextTradingDate:1 of
+msgid ""
+"This function will return the next trading date given standing point, "
+"using China exchange trading calendar."
 msgstr ""
 
 #: RiskQuantLib.Tool.strTool.getNthWeekday:1 of
@@ -4812,7 +5194,84 @@ msgid ""
 " a trading day, using China exchange trading calendar."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:88
+#: ../RiskQuantLib.Tool.rst:104
+msgid "RiskQuantLib.Tool.wordTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:1 of
+msgid ""
+"This function will change the table in docx file into the given "
+"dataframe. This change is inplace. A new file will be generated and "
+"replace the original docx file."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:8
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:9 of
+msgid "targetFilePath"
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:8 of
+msgid ""
+"The docx file path that you want to change one of its table into the "
+"given dataframe."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:10 of
+msgid "tableIndex"
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatTableWithTemplate:11 of
+msgid "The table index that showed which table you want to change."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:1 of
+msgid ""
+"This function will iterate across the whole docx file and check for each "
+"paragraph and table, if it find any symbol like {symbolName}, it will "
+"replace it into the value declared by paraDict."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:7 of
+msgid "originFilePath"
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:8 of
+msgid "The docx template file whose content you want to check and replace."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.formatWordWithTemplate:10 of
+msgid "The path you want to save the after-replacement docx file."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:1 of
+msgid ""
+"This function will replace the paragraph content of word Document object."
+" This replace is inplace, so this function returns None. This function is"
+" very like the str.format() function in python, it replace any symbol "
+"like {symbolName} according to key->value relation in paraDict, if there "
+"is a {code} showed in word, and paraDict declares '{code}':'000001', then"
+" the content of {code} will be replaced to 000001."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:10 of
+msgid "paragraph"
+msgstr ""
+
+#: of
+msgid "Object"
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:11 of
+msgid "The python-docx paragraph object."
+msgstr ""
+
+#: RiskQuantLib.Tool.wordTool.replaceParagraphContent:13 of
+msgid ""
+"A python dict used to declare which symbol should be replaced and how "
+"should it be replaced."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:112
 msgid "Module contents"
 msgstr ""
 

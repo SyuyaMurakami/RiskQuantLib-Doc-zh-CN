@@ -69,7 +69,7 @@ After it, we open ``Build_Instrument.xlsx``, and edit it like:
 +----------------+------------------+-----------------------+------------+---------------------+
 | InstrumentName |ParentRQLClassName|ParentQuantLibClassName|LibararyName|DefaultInstrumentType|
 +================+==================+=======================+============+=====================+
-|myEuropeanOption|       Any        |   EuropeanOption      |            |  myEuropeanOption   |
+|myEuropeanOption|                  |   EuropeanOption      |            |  myEuropeanOption   |
 +----------------+------------------+-----------------------+------------+---------------------+
 
 Then we open ``Build_Attr.xlsx``, and make it look like:
@@ -77,15 +77,15 @@ Then we open ``Build_Attr.xlsx``, and make it look like:
 +------------------+--------------------+----------------+
 |   SecurityType   |      AttrName      |    AttrType    |
 +==================+====================+================+
-| MyEuropeanOption |      myPayOff      |    qlPayOff    |
+| myEuropeanOption |      myPayOff      |    qlPayOff    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |    myExercise      |  qlExercise    |
+| myEuropeanOption |    myExercise      |  qlExercise    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |underlyingStockPrice|     qlQuote    |
+| myEuropeanOption |underlyingStockPrice|     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  riskFreeRate      |     qlQuote    |
+| myEuropeanOption |  riskFreeRate      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |         sigma      |     qlQuote    |
+| myEuropeanOption |         sigma      |     qlQuote    |
 +------------------+--------------------+----------------+
 
 Then we build it by using terminal command:
@@ -102,9 +102,9 @@ Good, we now have a brand new project for european option pricing. RiskQuantLib 
 
    import QuantLib as ql
    import pandas as pd
-   from RiskQuantLib.Property.base import base
+   from RiskQuantLib.Property.property import property
 
-   class qlExercise(base):
+   class qlExercise(property):
 
        def __nullFunction__(self):
            pass
@@ -125,9 +125,9 @@ Again, we do the similar thing to ``RiskQuantLib/Property/QlPayOff/qlPayOff.py``
    # coding = utf-8
 
    import QuantLib as ql
-   from RiskQuantLib.Property.base import base
+   from RiskQuantLib.Property.property import property
 
-   class qlPayOff(base):
+   class qlPayOff(property):
 
        def __nullFunction__(self):
            pass
@@ -148,9 +148,9 @@ Again, we do the similar thing to ``RiskQuantLib/Property/QlQuote/qlQuote.py``, 
    # coding = utf-8
 
    import QuantLib as ql
-   from RiskQuantLib.Property.base import base
+   from RiskQuantLib.Property.property import property
 
-   class qlQuote(base):
+   class qlQuote(property):
 
        def __nullFunction__(self):
            pass
@@ -163,24 +163,24 @@ Again, we do the similar thing to ``RiskQuantLib/Property/QlQuote/qlQuote.py``, 
            self.value.setValue(value)
 
 
-The final preparation, is to edit ``RiskQuantLib/Security/MyEuropeanOption/myEuropeanOption.py``, to make it look like:
+The final preparation, is to edit ``RiskQuantLib/Instrument/Security/MyEuropeanOption/myEuropeanOption.py``, to make it look like:
 ::
 
    #!/usr/bin/python
    # coding = utf-8
 
    import QuantLib as ql
-   from RiskQuantLib.Security.base import base
+   from RiskQuantLib.Instrument.Security.security import security
    from QuantLib import EuropeanOption
-   from RiskQuantLib.Set.Security.MyEuropeanOption.myEuropeanOption import setMyEuropeanOption
+   from RiskQuantLib.Auto.Instrument.Security.MyEuropeanOption.myEuropeanOption import setMyEuropeanOption
 
-   class myEuropeanOption(base,EuropeanOption,setMyEuropeanOption):
+   class myEuropeanOption(security,EuropeanOption,setMyEuropeanOption):
 
        def __nullFunction__(self):
            pass
 
        def __init__(self, codeString,nameString,securityTypeString = 'myEuropeanOption'):
-           base.__init__(self,codeString,nameString,securityTypeString)
+           security.__init__(self,codeString,nameString,securityTypeString)
 
        def iniPricingModule(self, *args):
            EuropeanOption.__init__(self,*args)
@@ -211,7 +211,7 @@ Now everything is ready, we switch to ``main.py`` in your project root path, we 
    today = ql.Date(18, 3, 2021)
    ql.Settings.instance().evaluationDate = today
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    vanillaOption = myEuropeanOption("A","A")
    vanillaOption.setMyPayOff(100)
    vanillaOption.setMyExercise(pd.Timestamp("20211118"))
@@ -225,7 +225,7 @@ It is more readable, right? More importantly, you can change the value of any pa
 
    # You already set valuation date, don't need to do it again.
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    vanillaOption = myEuropeanOption("B","B")
    vanillaOption.setMyPayOff(100)
    vanillaOption.setMyExercise(pd.Timestamp("20220320"))
@@ -253,7 +253,7 @@ We save it as an excel file named ``European_Option.xlsx`` in your project root 
    today = ql.Date(18, 3, 2021)
    ql.Settings.instance().evaluationDate = today
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    df = pd.read_excel(path+os.sep+'European_Option.xlsx')
 
    vanillaOptionList = myEuropeanOptionList()

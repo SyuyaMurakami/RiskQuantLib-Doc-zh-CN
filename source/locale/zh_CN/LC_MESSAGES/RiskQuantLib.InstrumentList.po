@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.InstrumentList.rst:2
+msgid "RiskQuantLib.InstrumentList package"
+msgstr ""
+
+#: ../RiskQuantLib.InstrumentList.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.InstrumentList.rst:8
+msgid "RiskQuantLib.InstrumentList.instrumentList module"
+msgstr ""
+
+#: RiskQuantLib.InstrumentList.instrumentList.instrumentList:1 of
+msgid ""
+"基类：:class:`RiskQuantLib.Operation.operation.operation`, "
+":class:`RiskQuantLib.Auto.InstrumentList.instrumentList.instrumentListAuto`"
+msgstr ""
+
+#: RiskQuantLib.InstrumentList.instrumentList.instrumentList:1 of
+msgid ""
+"This is the basic list class. Any instrument list class should inherit "
+"from this."
+msgstr ""
+
+#: ../RiskQuantLib.InstrumentList.rst:16
+msgid "Module contents"
+msgstr ""
+

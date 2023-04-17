@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "out of the curse of pandas, I should get rid of more conventions. This "
 "leads me to this place, where RiskQuantLib has its own functions for "
 "iteration or merge, etc."
-msgstr "但之后当我们重新讨论这个问题的时候，我意识到如果要摆脱Pandas的诅咒，我应该先摆脱更多的传统观念。这导致了你现在看到的RiskQuantLib，其中的模板列表类有和多默认的自定义函数，比如迭代函数和合并函数，这些函数有很多类似Pandas的地方。"
+msgstr "但之后当我们重新讨论这个问题的时候，我意识到如果要摆脱Pandas的诅咒，我应该先摆脱更多的传统观念。这导致了你现在看到的RiskQuantLib，其中的模板列表类有很多默认的自定义函数，比如迭代函数和合并函数，这些函数有很多类似Pandas的地方。"
 
 #: ../With_Pandas.rst:15
 msgid "However, there is one thing need to be noticed, that is:"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../With_Pandas.rst:36
 msgid "After creating a project and building it with ``Build_Attr.xlsx``:"
-msgstr "当你创建了一个工程，并且通过如下 ``Build_Attr.xlsx`` 对工程进行了编译："
+msgstr ""
 
 #: ../With_Pandas.rst:39 ../With_Pandas.rst:88
 msgid "SecurityType"
@@ -189,7 +189,7 @@ msgstr ""
 #: ../With_Pandas.rst:47 ../With_Pandas.rst:49 ../With_Pandas.rst:90
 #: ../With_Pandas.rst:92 ../With_Pandas.rst:94 ../With_Pandas.rst:96
 #: ../With_Pandas.rst:98
-msgid "MyEuropeanOption"
+msgid "myEuropeanOption"
 msgstr ""
 
 #: ../With_Pandas.rst:41

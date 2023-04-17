@@ -38,21 +38,21 @@ After creating a project and building it with ``Build_Attr.xlsx``:
 +------------------+--------------------+----------------+
 |   SecurityType   |      AttrName      |    AttrType    |
 +==================+====================+================+
-| MyEuropeanOption |      myPayOff      |    qlPayOff    |
+| myEuropeanOption |      myPayOff      |    qlPayOff    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |    myExercise      |  qlExercise    |
+| myEuropeanOption |    myExercise      |  qlExercise    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |underlyingStockPrice|     qlQuote    |
+| myEuropeanOption |underlyingStockPrice|     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  riskFreeRate      |     qlQuote    |
+| myEuropeanOption |  riskFreeRate      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |         sigma      |     qlQuote    |
+| myEuropeanOption |         sigma      |     qlQuote    |
 +------------------+--------------------+----------------+
 
 You can open the ``main.py`` and use it directly:
 ::
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    df = pd.read_excel(path+os.sep+'European_Option.xlsx')
 
    vanillaOptionList = myEuropeanOptionList()
@@ -87,15 +87,15 @@ Now we build it by change ``Build_Attr.xlsx`` to:
 +------------------+--------------------+----------------+
 |   SecurityType   |      AttrName      |    AttrType    |
 +==================+====================+================+
-| MyEuropeanOption |        PayOff      |    qlPayOff    |
+| myEuropeanOption |        PayOff      |    qlPayOff    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  ExerciseDate      |  qlExercise    |
+| myEuropeanOption |  ExerciseDate      |  qlExercise    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |    StockPrice      |     qlQuote    |
+| myEuropeanOption |    StockPrice      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  RiskFreeRate      |     qlQuote    |
+| myEuropeanOption |  RiskFreeRate      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |         Sigma      |     qlQuote    |
+| myEuropeanOption |         Sigma      |     qlQuote    |
 +------------------+--------------------+----------------+
 
 **Noticed here, we have all attribute names that are the same with dataframe column names. This will help RiskQuantLib to identify column and set them automatically.**
@@ -103,7 +103,7 @@ Now we build it by change ``Build_Attr.xlsx`` to:
 After building it, you can open the ``main.py`` and use it directly:
 ::
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    df = pd.read_excel(path+os.sep+'European_Option.xlsx')
 
    vanillaOptionList = myEuropeanOptionList().fromDF(df,code = 'OptionCode')

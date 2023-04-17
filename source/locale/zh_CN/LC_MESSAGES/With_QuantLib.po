@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,12 +158,9 @@ msgstr ""
 msgid "DefaultInstrumentType"
 msgstr ""
 
-#: ../With_QuantLib.rst:72
+#: ../With_QuantLib.rst:72 ../With_QuantLib.rst:80 ../With_QuantLib.rst:82
+#: ../With_QuantLib.rst:84 ../With_QuantLib.rst:86 ../With_QuantLib.rst:88
 msgid "myEuropeanOption"
-msgstr ""
-
-#: ../With_QuantLib.rst:72
-msgid "Any"
 msgstr ""
 
 #: ../With_QuantLib.rst:72
@@ -184,11 +181,6 @@ msgstr ""
 
 #: ../With_QuantLib.rst:78
 msgid "AttrType"
-msgstr ""
-
-#: ../With_QuantLib.rst:80 ../With_QuantLib.rst:82 ../With_QuantLib.rst:84
-#: ../With_QuantLib.rst:86 ../With_QuantLib.rst:88
-msgid "MyEuropeanOption"
 msgstr ""
 
 #: ../With_QuantLib.rst:80
@@ -265,9 +257,9 @@ msgstr "接着，我们打开并编辑 ``RiskQuantLib/Property/QlQuote/qlQuote.p
 #: ../With_QuantLib.rst:166
 msgid ""
 "The final preparation, is to edit "
-"``RiskQuantLib/Security/MyEuropeanOption/myEuropeanOption.py``, to make "
-"it look like: ::"
-msgstr "最后的准备工作是编辑 ``RiskQuantLib/Security/MyEuropeanOption/myEuropeanOption.py``，使得它看起来像这样：::"
+"``RiskQuantLib/Instrument/Security/MyEuropeanOption/myEuropeanOption.py``,"
+" to make it look like: ::"
+msgstr "最后的准备工作是编辑 ``RiskQuantLib/Instrument/Security/MyEuropeanOption/myEuropeanOption.py``，使得它看起来像这样：::"
 
 #: ../With_QuantLib.rst:205
 msgid ""

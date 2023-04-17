@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Project_Management.rst:2
+msgid "Project Management"
+msgstr "模板管理"
+
+#: ../Project_Management.rst:7
+msgid ""
+"One of the most important use of RiskQuantLib is project management. It's"
+" necessary to introduce a conception named template. Here in "
+"RiskQuantLib, you can define and build a project before you know your "
+"data. You can also code some data process logic in instrument class file."
+" If we stop right in this step, close all files, and save this project, "
+"it is called template."
+msgstr "RiskQuantLib最为重要的功能之一是进行模板管理。这里所说的模板并不是模板类的模板，而是指一个工程。前几章我们介绍了如何利用RiskQuantLib构建和编译工程，然后在模板类里编写数据处理逻辑。如果我们就此打住，关闭所有打开的python源文件，并保存这个工程项目，它就变成了一个工程模板。"
+
+#: ../Project_Management.rst:9
+msgid ""
+"In short, *a template is a data process project which is suitable for "
+"more than one situations*, it could deal with data regardless of data "
+"paterns."
+msgstr "简而言之，*模板是适用于多种情况，可以被反复使用的数据处理工程*，模板应该适用于不同的数据格式和数据特征。"
+
+#: ../Project_Management.rst:11
+msgid ""
+"However, you can just save any project in case you would use it some day "
+"later."
+msgstr "但事实上，你可以保存任何你想保存的RiskQuantLib工程，以便于日后进行使用。"
+
+#: ../Project_Management.rst:14
+msgid "Save Project As Template"
+msgstr "将工程保存为模板。"
+
+#: ../Project_Management.rst:16
+msgid ""
+"You can save a project as a RiskQuantLib template by using terminal "
+"command: ::"
+msgstr "你可以通过以下命令来讲一个工程保存为RiskQuantLib模板：::"
+
+#: ../Project_Management.rst:21
+msgid ""
+"After run this command, a '.zip' file will be under your project path, "
+"and meanwhile, a template will be added into RiskQuantLib template "
+"library."
+msgstr "当运行这条命令后，一个zip文件将出现在工程的根目录，同时，一个模板会被添加到你计算机的RiskQuantLib库文件夹里。（并不是任何工程里的RiskQuantLib文件夹，而是python中的库文件夹。）"
+
+#: ../Project_Management.rst:24
+msgid "Show All Template"
+msgstr "显示所有保存的模板"
+
+#: ../Project_Management.rst:26
+msgid ""
+"You can show all saved template in your library by using terminal "
+"command: ::"
+msgstr "你可以通过以下命令显示所有保存的模板：::"
+
+#: ../Project_Management.rst:31
+msgid "After run this command, you will see all templates in your library."
+msgstr "当运行这条命令后，你可以看见所有保存的RiskQuantLib模板。"
+
+#: ../Project_Management.rst:34
+msgid "Unpack Template"
+msgstr "解压模板"
+
+#: ../Project_Management.rst:36
+msgid "You can unpack a project template by using terminal command: ::"
+msgstr "你可以使用如下命令来解压一个已经存在的模板：::"
+
+#: ../Project_Management.rst:41
+msgid ""
+"After run this command, you will unpack the contents of this template "
+"into ``your_new_project_path``, and you can use them as the fundation of "
+"another project."
+msgstr "当运行这条命令后，模板内的源文件会被解压到 ``your_new_project_path`` 文件路径下，你可以使用解压后的文件作为新的工程的开始。"
+
+#: ../Project_Management.rst:44
+msgid "Delete Template"
+msgstr "删除模板"
+
+#: ../Project_Management.rst:46
+msgid "If you want to delete some template, use terminal command: ::"
+msgstr "如果你需要删除某些模板，可以使用以下命令：::"
+
+#: ../Project_Management.rst:51
+msgid "Or if you want to delete all template, you should use: ::"
+msgstr "或者如果你想删除所有的模板，你可以使用以下命令：::"
+
+#: ../Project_Management.rst:56
+msgid "**Notice: Use this command carefully, cause it can not be un-done.**"
+msgstr "**注意：小心使用这个命令，它无法被撤销。**"
+

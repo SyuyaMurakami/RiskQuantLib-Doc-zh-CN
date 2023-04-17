@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,21 @@ msgstr ""
 
 #: ../RiskQuantLib.Model.Copula.rst:8
 msgid "RiskQuantLib.Model.Copula.copula module"
+msgstr ""
+
+#: RiskQuantLib.Model.Copula.copula.copula:1
+#: RiskQuantLib.Model.Copula.copula.copulae:1 of
+msgid "基类：:class:`RiskQuantLib.Model.model.model`"
+msgstr ""
+
+#: RiskQuantLib.Model.Copula.copula.copula:1 of
+msgid ""
+"Generate new samples following the same correlation relation, given a "
+"series of data."
+msgstr ""
+
+#: RiskQuantLib.Model.Copula.copula.copulae:1 of
+msgid "Generate new samples, given correlation matrix."
 msgstr ""
 
 #: ../RiskQuantLib.Model.Copula.rst:16

@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Property.rst:2
+msgid "RiskQuantLib.Property package"
+msgstr ""
+
+#: ../RiskQuantLib.Property.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../RiskQuantLib.Property.rst:26
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Property.rst:29
+msgid "RiskQuantLib.Property.average module"
+msgstr ""
+
+#: RiskQuantLib.Property.average.average:1 RiskQuantLib.Property.base.base:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Property.average.average:1 of
+msgid ""
+"This is the base class of average. Inherit from this class will make "
+"attribute into the average version."
+msgstr ""
+
+#: ../RiskQuantLib.Property.rst:37
+msgid "RiskQuantLib.Property.base module"
+msgstr ""
+
+#: RiskQuantLib.Property.base.base:1 of
+msgid ""
+"This is the basic class of any kind of attribute, except string. Any "
+"attribute should have an effective date."
+msgstr ""
+
+#: ../RiskQuantLib.Property.rst:45
+msgid "Module contents"
+msgstr ""
+

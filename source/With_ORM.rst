@@ -18,15 +18,15 @@ Now we build our project by edit ``Build_Attr.xlsx`` to:
 +------------------+--------------------+----------------+
 |   SecurityType   |      AttrName      |    AttrType    |
 +==================+====================+================+
-| MyEuropeanOption |        PayOff      |    qlPayOff    |
+| myEuropeanOption |        PayOff      |    qlPayOff    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  ExerciseDate      |  qlExercise    |
+| myEuropeanOption |  ExerciseDate      |  qlExercise    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |    StockPrice      |     qlQuote    |
+| myEuropeanOption |    StockPrice      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |  RiskFreeRate      |     qlQuote    |
+| myEuropeanOption |  RiskFreeRate      |     qlQuote    |
 +------------------+--------------------+----------------+
-| MyEuropeanOption |         Sigma      |     qlQuote    |
+| myEuropeanOption |         Sigma      |     qlQuote    |
 +------------------+--------------------+----------------+
 
 **Noticed here, we have all attribute names that are the same with ORM list element attribute names. This will help RiskQuantLib to identify attribute and set them automatically.**
@@ -34,7 +34,7 @@ Now we build our project by edit ``Build_Attr.xlsx`` to:
 After building it, you can open the ``main.py`` and use it directly:
 ::
 
-   from RiskQuantLib.Module import *
+   from RiskQuantLib.module import *
    vanillaOptionList = myEuropeanOptionList().fromIterable(ORM, code = 'OptionCode')
 
 You can generate RiskQuantLib list from another RiskQuantLib list in this way:

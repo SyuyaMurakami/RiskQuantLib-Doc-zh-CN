@@ -1,9 +1,12 @@
 #!/usr/bin/python
 #coding = utf-8
+
 import pandas as pd
 from docx import Document
 from docx.oxml.ns import qn
 from docx.shared import Pt,RGBColor
+#<import>
+#</import>
 
 def replaceParagraphContent(paragraph,paraDict:dict):
     """
@@ -142,7 +145,8 @@ def formatTableWithTemplate(targetFilePath:str,tableIndex:int,dfInput:pd.DataFra
                     print(e)
     document.save(targetFilePath)
 
-
+#<wordTool>
+#</wordTool>
 
 
 

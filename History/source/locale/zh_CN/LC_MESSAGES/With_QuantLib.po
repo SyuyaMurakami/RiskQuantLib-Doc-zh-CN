@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../With_QuantLib.rst:2
+msgid "With QuantLib"
+msgstr "与QuantLib配合使用"
+
+#: ../With_QuantLib.rst:7
+msgid "Once upon a time, there is a famous ask in Stack Overflow:"
+msgstr "曾有一段时间，在Stack Overflow上有一个有趣的问题："
+
+#: ../With_QuantLib.rst:9
+msgid ""
+"`Why it is so complicated when using QuantLib for option pricing? Even if"
+" I just want to price a vanilla option, it takes several lines to do it.`"
+msgstr "`为什么使用QuantLib进行期权定价如此繁琐，就算一个简单的香草期权，也要使用很多行代码来实现？`"
+
+#: ../With_QuantLib.rst:11
+msgid ""
+"It is true, if you use QuantLib to price a vanilla call option, you may "
+"do it like: ::"
+msgstr "确实如此，当你使用QuantLib定价香草期权，你可能会这样做：::"
+
+#: ../With_QuantLib.rst:50
+msgid ""
+"However, what if you have ten options and you want to price them all? "
+"What if you just want a test that show how your option value will be in "
+"certain market situation? For research purpose or you are a real "
+"derivative trader, you may sometimes have a table looks like:"
+msgstr "但如果你有十个期权，想对他们同时进行定价，或者你只是想探索一下，期权的价格是如何随着市场情况改变的，要如何方便地做到呢？无论你是学生还是衍生品交易员，你有时可能会有一个数据表，它看起来像这样："
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "OptionCode"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "PayOff"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "ExerciseType"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "ExerciseDate"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "StockPrice"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "RiskFreeRate"
+msgstr ""
+
+#: ../With_QuantLib.rst:53 ../With_QuantLib.rst:240
+msgid "Sigma"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:242
+msgid "A"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:57 ../With_QuantLib.rst:242
+#: ../With_QuantLib.rst:244
+msgid "PlainVanilla"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:57 ../With_QuantLib.rst:242
+#: ../With_QuantLib.rst:244
+msgid "European"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:242
+msgid "2021-11-18"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:242
+msgid "100.0"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:242
+msgid "0.05"
+msgstr ""
+
+#: ../With_QuantLib.rst:55 ../With_QuantLib.rst:242
+msgid "0.20"
+msgstr ""
+
+#: ../With_QuantLib.rst:57 ../With_QuantLib.rst:244
+msgid "B"
+msgstr ""
+
+#: ../With_QuantLib.rst:57 ../With_QuantLib.rst:244
+msgid "2022-03-20"
+msgstr ""
+
+#: ../With_QuantLib.rst:57 ../With_QuantLib.rst:244
+msgid "97.6"
+msgstr ""
+
+#: ../With_QuantLib.rst:57 ../With_QuantLib.rst:244
+msgid "0.032"
+msgstr ""
+
+#: ../With_QuantLib.rst:57 ../With_QuantLib.rst:244
+msgid "0.17"
+msgstr ""
+
+#: ../With_QuantLib.rst:59
+msgid "..."
+msgstr ""
+
+#: ../With_QuantLib.rst:62
+msgid ""
+"To do it in RiskQuantLib, we need to build our own european option "
+"pricing template first, we create a project by using terminal command: ::"
+msgstr "在RiskQuantLib中进行期权定价，我们需要创建我们自己的欧式期权定价模板。首先我们使用终端命令来新建一个工程：::"
+
+#: ../With_QuantLib.rst:67
+msgid "After it, we open ``Build_Instrument.xlsx``, and edit it like:"
+msgstr "之后，我们打开 ``Build_Instrument.xlsx``，编辑并使得它看起来像这样："
+
+#: ../With_QuantLib.rst:70
+msgid "InstrumentName"
+msgstr ""
+
+#: ../With_QuantLib.rst:70
+msgid "ParentRQLClassName"
+msgstr ""
+
+#: ../With_QuantLib.rst:70
+msgid "ParentQuantLibClassName"
+msgstr ""
+
+#: ../With_QuantLib.rst:70
+msgid "LibararyName"
+msgstr ""
+
+#: ../With_QuantLib.rst:70
+msgid "DefaultInstrumentType"
+msgstr ""
+
+#: ../With_QuantLib.rst:72
+msgid "myEuropeanOption"
+msgstr ""
+
+#: ../With_QuantLib.rst:72
+msgid "Any"
+msgstr ""
+
+#: ../With_QuantLib.rst:72
+msgid "EuropeanOption"
+msgstr ""
+
+#: ../With_QuantLib.rst:75
+msgid "Then we open ``Build_Attr.xlsx``, and make it look like:"
+msgstr "之后我们打开 ``Build_Attr.xlsx``，编辑并使得它看起来像这样："
+
+#: ../With_QuantLib.rst:78
+msgid "SecurityType"
+msgstr ""
+
+#: ../With_QuantLib.rst:78
+msgid "AttrName"
+msgstr ""
+
+#: ../With_QuantLib.rst:78
+msgid "AttrType"
+msgstr ""
+
+#: ../With_QuantLib.rst:80 ../With_QuantLib.rst:82 ../With_QuantLib.rst:84
+#: ../With_QuantLib.rst:86 ../With_QuantLib.rst:88
+msgid "MyEuropeanOption"
+msgstr ""
+
+#: ../With_QuantLib.rst:80
+msgid "myPayOff"
+msgstr ""
+
+#: ../With_QuantLib.rst:80
+msgid "qlPayOff"
+msgstr ""
+
+#: ../With_QuantLib.rst:82
+msgid "myExercise"
+msgstr ""
+
+#: ../With_QuantLib.rst:82
+msgid "qlExercise"
+msgstr ""
+
+#: ../With_QuantLib.rst:84
+msgid "underlyingStockPrice"
+msgstr ""
+
+#: ../With_QuantLib.rst:84 ../With_QuantLib.rst:86 ../With_QuantLib.rst:88
+msgid "qlQuote"
+msgstr ""
+
+#: ../With_QuantLib.rst:86
+msgid "riskFreeRate"
+msgstr ""
+
+#: ../With_QuantLib.rst:88
+msgid "sigma"
+msgstr ""
+
+#: ../With_QuantLib.rst:91
+msgid "Then we build it by using terminal command: ::"
+msgstr "然后我们使用终端命令来编译工程：::"
+
+#: ../With_QuantLib.rst:97
+msgid ""
+"Good, we now have a brand new project for european option pricing. "
+"RiskQuantLib has created the instrument class, type class we need. We "
+"need to change it a little bit for further use. We open "
+"``RiskQuantLib/Property/QlExercise/qlExercise.py``, and make it look "
+"like: ::"
+msgstr "现在我们有了一个全新的RiskQuantLib来便于进行欧式期权定价，RiskQuantLib已经自动创建了模板类，数据类型类。我们要更改这些类文件，使得他们符合我们的数据处理项目。我们打开并编辑 ``RiskQuantLib/Property/QlExercise/qlExercise.py``，使得它看起来像这样：::"
+
+#: ../With_QuantLib.rst:119
+msgid ""
+"In this step, we package the QuantLib code of exercise, so that it can be"
+" used even if we only pass a date to it. Once it is finished, we don't "
+"need to define it every time we want to price an european option."
+msgstr "在这一步，我们打包了QuantLib中关于行权的代码，以便于我们在仅仅传入一个到期日期的情况下使用它。当这一步完成后，我们就不需要每定价一个欧式期权都定义一次行权。"
+
+#: ../With_QuantLib.rst:121
+msgid ""
+"Again, we do the similar thing to "
+"``RiskQuantLib/Property/QlPayOff/qlPayOff.py``, and make it look like: ::"
+msgstr "接着，我们打开并编辑 ``RiskQuantLib/Property/QlPayOff/qlPayOff.py``，使得它看起来像这样：::"
+
+#: ../With_QuantLib.rst:142
+msgid ""
+"In this step, we package the QuantLib code of payoff, so that it can be "
+"used even if we only pass a payoff value to it. Once it is finished, we "
+"don't need to define it every time we want to price an european option."
+msgstr "在这一步，我们打包了QuantLib中关于回报的代码，以便于我们可以在仅传入回报值的情况下使用。这一步完成后，我们就不需要每定价一个欧式期权都定义一次回报。"
+
+#: ../With_QuantLib.rst:144
+msgid ""
+"Again, we do the similar thing to "
+"``RiskQuantLib/Property/QlQuote/qlQuote.py``, and make it look like: ::"
+msgstr "接着，我们打开并编辑 ``RiskQuantLib/Property/QlQuote/qlQuote.py``，使得它看起来像这样：::"
+
+#: ../With_QuantLib.rst:166
+msgid ""
+"The final preparation, is to edit "
+"``RiskQuantLib/Security/MyEuropeanOption/myEuropeanOption.py``, to make "
+"it look like: ::"
+msgstr "最后的准备工作是编辑 ``RiskQuantLib/Security/MyEuropeanOption/myEuropeanOption.py``，使得它看起来像这样：::"
+
+#: ../With_QuantLib.rst:205
+msgid ""
+"Now everything is ready, we switch to ``main.py`` in your project root "
+"path, we can pricing the same option with RiskQuantLib, by: ::"
+msgstr "现在一切都准备好了，我们换到项目根目录下的 ``main.py`` 文件，定价刚才提到的期权，我们只需要：::"
+
+#: ../With_QuantLib.rst:223
+msgid ""
+"It is more readable, right? More importantly, you can change the value of"
+" any parameter and price it again. If you want to price another option, "
+"just initialize another object: ::"
+msgstr "代码变得更加可读了不是么。更重要的是，你可以更改参数的值，来方便地进行重定价。如果需要对一个新的期权进行定价，只需要初始化另一个实例：::"
+
+#: ../With_QuantLib.rst:237
+msgid ""
+"Or do it in a more elegant way, which is to use RiskQuantLib list. "
+"Remember you have a dataframe like:"
+msgstr "或者你可以更优雅地做到这一点，那就是使用RiskQuantLib模板列表。记得我们有一个这样的数据表："
+
+#: ../With_QuantLib.rst:247
+msgid ""
+"We save it as an excel file named ``European_Option.xlsx`` in your "
+"project root path. Then in ``main.py``, we code like:"
+msgstr "我们在项目根目录下将它保存为excel文件，命名为 ``European_Option.xlsx``，接着在 ``main.py`` 我们这样编写代码："
+
+#: ../With_QuantLib.rst:268
+msgid ""
+"If you want to save the result, the only thing you need to do is to "
+"convert it to dataframe by: ::"
+msgstr "如果你想保存结果，你只需要将它转换为dataframe：::"
+
+#: ../With_QuantLib.rst:273
+msgid ""
+"**Do not forget to save your work to a template, this project can be used"
+" again, this is the most important feature of RiskQuantLib.**"
+msgstr "**别忘了将你的工程保存为工程模板，这样的期权定价模板可以被反复使用，这是RiskQuantLib很重要的一点。**"
+
+#: ../With_QuantLib.rst:275
+msgid ""
+"To do this, you should delete the file ``European_Option.xlsx``, and "
+"clear the content of ``main.py``, because these data and operation are "
+"not repeatable, only the logic behind could be used again. After this, "
+"open a terminal and call: ::"
+msgstr "为了保存为模板，你应该首先删除 ``European_Option.xlsx``，并且清空 ``main.py`` 中的代码，因为这些数据和操作是不可以被反复使用的，模板工程只需要保留数据处理的逻辑。当做完了这些后，你可以打开终端运行命令：::"
+
+#: ../With_QuantLib.rst:280
+msgid "Next time you want to use it, just use terminal command: ::"
+msgstr "当下次你遇见欧式期权定价任务时，你可以使用终端命令来恢复模板工程：::"
+

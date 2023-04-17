@@ -1,7 +1,10 @@
 #!/usr/bin/python
 #coding = utf-8
+
 import pandas as pd
 import openpyxl
+#<import>
+#</import>
 
 def formatExcelWithTemplate(templateExcelPathString:str,dataExcelPathString:str,savePathString:str):
     """
@@ -45,7 +48,8 @@ def formatExcelWithTemplate(templateExcelPathString:str,dataExcelPathString:str,
                 sheet[blockIndexString] = sheetOfData[blockIndexString].value
     wb.save(savePathString)
 
-
+#<excelTool>
+#</excelTool>
 
 
 

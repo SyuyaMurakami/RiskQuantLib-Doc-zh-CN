@@ -2,14 +2,14 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,15 @@ msgstr ""
 msgid "Subpackages"
 msgstr ""
 
-#: ../RiskQuantLib.rst:26
+#: ../RiskQuantLib.rst:20
 msgid "Submodules"
 msgstr ""
 
-#: ../RiskQuantLib.rst:29
-msgid "RiskQuantLib.Module module"
+#: ../RiskQuantLib.rst:23
+msgid "RiskQuantLib.module module"
 msgstr ""
 
-#: ../RiskQuantLib.rst:37
+#: ../RiskQuantLib.rst:31
 msgid "Module contents"
 msgstr ""
 
@@ -52,10 +52,14 @@ msgid ""
 "a '.zip' file to be added to library."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:11 RiskQuantLib.newProject:10
-#: RiskQuantLib.packProject:11 RiskQuantLib.saveProject:13
+#: RiskQuantLib.addProjectTemplate:10 RiskQuantLib.autoBuildProject:13
+#: RiskQuantLib.buildProject:15 RiskQuantLib.buildProjectFromExcel:5
+#: RiskQuantLib.newProject:10 RiskQuantLib.packProject:10
+#: RiskQuantLib.parseBuildPath:5 RiskQuantLib.persistProject:22
+#: RiskQuantLib.receiveProjectTemplate:15 RiskQuantLib.saveProject:13
+#: RiskQuantLib.sendProjectTemplate:14 RiskQuantLib.unBuildProject:16
 #: RiskQuantLib.unpackProject:17 of
-msgid "targetPathString"
+msgid "targetPath"
 msgstr ""
 
 #: of
@@ -68,11 +72,206 @@ msgid ""
 "file path which you want to add to library."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:15 RiskQuantLib.clearAllProjectTemplate:8
+#: RiskQuantLib.addProjectTemplate:13 RiskQuantLib.delProjectTemplate:11
+#: RiskQuantLib.packProject:13 RiskQuantLib.saveProject:16 of
+msgid "targetName"
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:13 of
+msgid ""
+"The name you want to use to save the .zip file as, it is not necessary to"
+" add .zip behind it."
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplate:17
+#: RiskQuantLib.addProjectTemplateFromGithub:12
+#: RiskQuantLib.autoBuildProject:30 RiskQuantLib.buildProject:32
+#: RiskQuantLib.buildProjectFromExcel:31 RiskQuantLib.clearAllProjectTemplate:8
 #: RiskQuantLib.delProjectTemplate:15 RiskQuantLib.listProjectTemplate:7
-#: RiskQuantLib.newProject:14 RiskQuantLib.packProject:15
-#: RiskQuantLib.saveProject:20 RiskQuantLib.unpackProject:21 of
+#: RiskQuantLib.newProject:14 RiskQuantLib.packProject:17
+#: RiskQuantLib.persistProject:32 RiskQuantLib.receiveProjectTemplate:19
+#: RiskQuantLib.saveProject:20 RiskQuantLib.sendProjectTemplate:18
+#: RiskQuantLib.unBuildProject:20 RiskQuantLib.unpackProject:21 of
 msgid "None"
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplateFromGithub:1 of
+msgid ""
+"addProjectTemplateFromGithub() is a function to download template from "
+"Github to local disk. Use terminal command 'getRQL' to use this function."
+" After this function is called, the target repository will be saved as "
+"template project."
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplateFromGithub:8 of
+msgid "targetGithub"
+msgstr ""
+
+#: RiskQuantLib.addProjectTemplateFromGithub:8 of
+msgid ""
+"A terminal command parameter, specify the project name you want to "
+"download from Github."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:1 of
+msgid ""
+"autoBuildProject() is a function to build RiskQuantLib project. This "
+"function keeps running until catch a KeyboardInterrupt Exception."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:4 of
+msgid ""
+"Use terminal command 'autoRQL targetProjectPath' to use this function. "
+"The project will be built according to the Build_Instrument.xlsx and "
+"Build_Attr.xlsx in the targetProjectPath."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:8 of
+msgid ""
+"After this function is called, the instrument class file and attribute "
+"API will be automatically generated and updated."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:14 RiskQuantLib.buildProject:16 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path you "
+"want to build and render."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:15 RiskQuantLib.buildProject:17
+#: RiskQuantLib.buildProjectFromExcel:13 RiskQuantLib.persistProject:24 of
+msgid "renderFromPath"
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:16 RiskQuantLib.buildProject:18
+#: RiskQuantLib.persistProject:25 of
+msgid "The path of dictionary of source file used to render target project."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:18 RiskQuantLib.buildProject:20
+#: RiskQuantLib.persistProject:28 of
+msgid "channel"
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:18 RiskQuantLib.buildProject:20
+#: RiskQuantLib.persistProject:27 of
+msgid ""
+"render action in this channel will not delete the result of render in "
+"other channel unless it is overwritten by current render."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:26 RiskQuantLib.buildProject:28
+#: RiskQuantLib.buildProjectFromExcel:27 of
+msgid "debug"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:21 RiskQuantLib.buildProject:23
+#: RiskQuantLib.buildProjectFromExcel:22 of
+msgid ""
+"If false, the break point in Src will not be effective, only break point "
+"within instrument class will effect. If true, the class method defined in"
+" Src directory will be dynamically bound to instrument node class. Then "
+"the program will take .py file under .Src directory as a module and "
+"import it, bind the class method into specified class. This mode is "
+"useful when your code is still under development. You will not have to "
+"change between ./Src/somecode.py and target instrument class .py file to "
+"edit any code error. The break point will stop right under "
+"./Src/somecode.py."
+msgstr ""
+
+#: RiskQuantLib.buildProject:1 of
+msgid "buildProject() is a function to build RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.buildProject:3 of
+msgid ""
+"Use terminal command 'bldRQL targetProjectPath' to use this function. The"
+" project will be built according to the Build_Instrument.xlsx and "
+"Build_Attr.xlsx in the targetProjectPath."
+msgstr ""
+
+#: RiskQuantLib.buildProject:7 of
+msgid ""
+"After this function is called, the instrument class file and attribute "
+"API will be automatically generated."
+msgstr ""
+
+#: RiskQuantLib.buildProject:10 of
+msgid ""
+"For old version user of RiskQuantLib, this function is totally the same "
+"as command 'python build.py' in terminal with working dictionary as "
+"targetProjectPath."
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:1 of
+msgid ""
+"buildProjectFromExcel() is a function to build project according to excel"
+" declaration."
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:6 RiskQuantLib.parseBuildPath:6 of
+msgid "The path of target RiskQuantLib project dictionary."
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:7 RiskQuantLib.parseBuildPath:20 of
+msgid "buildCachePath"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:8 of
+msgid "The path of building cache."
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:9 RiskQuantLib.parseBuildPath:16 of
+msgid "instrumentExcelPath"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:10 of
+msgid "The path of Build_Instrument.xlsx."
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:11 RiskQuantLib.parseBuildPath:18 of
+msgid "attributeExcelPath"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:12 of
+msgid "The path of Build_Attr.xlsx"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:14 of
+msgid "The path of source code dictionary"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:19 of
+msgid "bindType"
+msgstr ""
+
+#: RiskQuantLib.buildProjectFromExcel:16 of
+msgid ""
+"The channel of binding action. Source code are rendered and injected into"
+" project by different channels, The source code injected by channel A "
+"will be not influenced by source code injected by channel B, unless the "
+"content of tag is overwritten by code in channel B. This is used when you"
+" have several builders and you want them to build into the same project. "
+"In this case, you should give a bindType for each render action to make "
+"sure they do not conflict with each other."
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateTemplatePath:1 of
+msgid ""
+"checkAndCreateTemplatePath() is a function to check whether the Template "
+"path exists."
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateTemplatePath:5 of
+msgid "sourcePath"
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateTemplatePath:6 of
+msgid "The path of RiskQuantLib template dictionary."
 msgstr ""
 
 #: RiskQuantLib.clearAllProjectTemplate:1 of
@@ -99,15 +298,74 @@ msgid ""
 "RiskQuantLib project will be removed from library."
 msgstr ""
 
-#: RiskQuantLib.delProjectTemplate:11 RiskQuantLib.saveProject:16
-#: RiskQuantLib.unpackProject:14 of
-msgid "projectName"
-msgstr ""
-
 #: RiskQuantLib.delProjectTemplate:11 of
 msgid ""
 "A terminal command parameter, specify the project name you want to delete"
 " from library."
+msgstr ""
+
+#: RiskQuantLib.initiateAttributeFile:1 of
+msgid ""
+"initiateAttributeFile() is a function to generate content of "
+"Build_Attr.xlsx."
+msgstr ""
+
+#: RiskQuantLib.initiateAttributeFile:3 of
+msgid ""
+"Build_Attr.xlsx will be created in every RiskQuantLib project when "
+"initiating it. It is the declaration file of all attributes which will be"
+" bound into instruments."
+msgstr ""
+
+#: RiskQuantLib.initiateAttributeFile:8 of
+msgid "dfAttr : pandas.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.initiateBuildFile:1 of
+msgid ""
+"initiateBuildFile() is a function to generate content of build.py source "
+"file."
+msgstr ""
+
+#: RiskQuantLib.initiateBuildFile:3 of
+msgid ""
+"build.py will be created in every RiskQuantLib project when initiating "
+"it. It is the entrance of build and render action. Users can either call "
+"'python build.py' directly or add some parameter from command line."
+msgstr ""
+
+#: RiskQuantLib.initiateBuildFile:9 RiskQuantLib.initiateMainFile:8 of
+msgid "PYB : pythonScriptBuilder"
+msgstr ""
+
+#: RiskQuantLib.initiateInstrumentFile:1 of
+msgid ""
+"initiateInstrumentFile() is a function to generate content of "
+"Build_Instrument.xlsx."
+msgstr ""
+
+#: RiskQuantLib.initiateInstrumentFile:3 of
+msgid ""
+"Build_Instrument.xlsx will be created in every RiskQuantLib project when "
+"initiating it. It is the declaration file of all instruments to be used "
+"in project and their inheritance relationship."
+msgstr ""
+
+#: RiskQuantLib.initiateInstrumentFile:8 of
+msgid "dfInstrument : pandas.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.initiateMainFile:1 of
+msgid ""
+"initiateMainFile() is a function to generate content of main.py source "
+"file."
+msgstr ""
+
+#: RiskQuantLib.initiateMainFile:3 of
+msgid ""
+"main.py will be created in every RiskQuantLib project when initiating it."
+" It is the entrance of all project. Users should call 'python main.py' to"
+" run the project."
 msgstr ""
 
 #: RiskQuantLib.listProjectTemplate:1 of
@@ -159,6 +417,127 @@ msgid ""
 " you want to package."
 msgstr ""
 
+#: RiskQuantLib.packProject:13 of
+msgid ""
+"A terminal command parameter, specify the name you want to mark the "
+"project zip file with."
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:1 of
+msgid ""
+"parseBuildPath() is a function to generate the paths of project related "
+"file."
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:10 of
+msgid "checkExist"
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:8 of
+msgid ""
+"If true, this function will check the existence of related path of target"
+" project. It will raise exception iin case of absence."
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:14 of
+msgid "rqlPath"
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:15 of
+msgid "the path of RiskQuantLib dictionary"
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:17 of
+msgid "the path of instrument declaration file"
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:19 of
+msgid "the path of attribute declaration file"
+msgstr ""
+
+#: RiskQuantLib.parseBuildPath:21 of
+msgid "the path of building cache"
+msgstr ""
+
+#: RiskQuantLib.persistProject:1 of
+msgid "persistProject() is a function to persist RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.persistProject:3 of
+msgid ""
+"Use terminal command 'pstRQL targetProjectPath' to use this function. The"
+" project will be changed into a permanent project, where all current "
+"attribute APIs and instrument registrations will not be influenced by "
+"build.py anymore."
+msgstr ""
+
+#: RiskQuantLib.persistProject:7 of
+msgid ""
+"This function is like a snapshot of your project, it freezes all "
+"effective APIs into permanent ones."
+msgstr ""
+
+#: RiskQuantLib.persistProject:9 of
+msgid ""
+"Surely, you can still build the persisted project with new "
+"Build_Instrument.xlsx and Build_Attr.xlsx file. Just remember, no matter "
+"how many times you build it, the persisted API will remain effective and "
+"will not be influenced."
+msgstr ""
+
+#: RiskQuantLib.persistProject:12 of
+msgid ""
+"This command is used when you want to distribute your project to someone "
+"else, but you do not want him to change your current API. Or this command"
+" is used when you are quite sure your current code is stable and can be "
+"settled down so that you can move on to next stage."
+msgstr ""
+
+#: RiskQuantLib.persistProject:16 of
+msgid ""
+"This function will remove the file Build_Instrument.xlsx and "
+"Build_Attr.xlsx and replace them with new ones."
+msgstr ""
+
+#: RiskQuantLib.persistProject:18 of
+msgid "This command can not be cancelled or un-done, use it carefully."
+msgstr ""
+
+#: RiskQuantLib.persistProject:23 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path you "
+"want to persist."
+msgstr ""
+
+#: RiskQuantLib.receiveProjectTemplate:1 of
+msgid ""
+"receiveProjectTemplate() is a function to receive any file or dictionary "
+"from your friend by LOCAL AREA NETWORK (LAN)."
+msgstr ""
+
+#: RiskQuantLib.receiveProjectTemplate:4 of
+msgid ""
+"Use terminal command 'recvRQL' to use this function. You can also specify"
+" a path where your want to save the shared file or dictionary, like "
+"'recvRQL targetPath'. If you do not give a path, the file will be stored "
+"in current working dictionary."
+msgstr ""
+
+#: RiskQuantLib.receiveProjectTemplate:8 of
+msgid ""
+"After this function is called, you can receive the file shared from your "
+"friend, who is also in the same LAN. You can not receive files or project"
+" from people outside your local network by this function. If you want to "
+"share with friends who is across ocean, maybe you should use Github and "
+"getRQL command."
+msgstr ""
+
+#: RiskQuantLib.receiveProjectTemplate:15 of
+msgid ""
+"A terminal command parameter, specify the path where you want to hold the"
+" received file."
+msgstr ""
+
 #: RiskQuantLib.saveProject:1 of
 msgid ""
 "saveProject() is a function to save a RiskQuantLib project and add it to "
@@ -188,6 +567,64 @@ msgid ""
 "project as."
 msgstr ""
 
+#: RiskQuantLib.sendProjectTemplate:1 of
+msgid ""
+"sendProjectTemplate() is a function to send any file or dictionary to "
+"your friend by LOCAL AREA NETWORK (LAN)."
+msgstr ""
+
+#: RiskQuantLib.sendProjectTemplate:4 of
+msgid ""
+"Use terminal command 'sendRQL targetProjectPath' or 'sendRQL "
+"targetFilePath' to use this function. If you send a dictionary, it will "
+"be packed into a zip file at first, and sent to your friend."
+msgstr ""
+
+#: RiskQuantLib.sendProjectTemplate:7 of
+msgid ""
+"After this function is called, you can send to your friend who is also in"
+" the same LAN. You can not send files or project to people outside your "
+"local network by this function. If you want to share with friends who is "
+"across ocean, maybe you should use Github and getRQL command."
+msgstr ""
+
+#: RiskQuantLib.sendProjectTemplate:14 of
+msgid ""
+"A terminal command parameter, specify the path of file or dictionary you "
+"want to send."
+msgstr ""
+
+#: RiskQuantLib.unBuildProject:1 of
+msgid "unBuildProject() is a function to un-build RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.unBuildProject:3 of
+msgid ""
+"Use terminal command 'ubldRQL targetProjectPath' to use this function. "
+"The project will be un-built and return to the initial status."
+msgstr ""
+
+#: RiskQuantLib.unBuildProject:6 of
+msgid ""
+"After this function is called, the attribute API will be automatically "
+"removed, any all registration of instrument will be deleted. But, python "
+"source file will not be deleted until you do it by yourself."
+msgstr ""
+
+#: RiskQuantLib.unBuildProject:9 of
+msgid ""
+"After a project is un-built, you can not use instrument directly in "
+"main.py or create new instrument inherited from those un-registered "
+"instrument. The file Build_Instrument.xlsx and Build_Attr.xlsx will not "
+"be changed after you call this function."
+msgstr ""
+
+#: RiskQuantLib.unBuildProject:16 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path you "
+"want to un-build and un-render."
+msgstr ""
+
 #: RiskQuantLib.unpackProject:1 of
 msgid ""
 "unpackProject() is a function to unpack a RiskQuantLib project from "
@@ -203,6 +640,10 @@ msgid ""
 "this function, the content of existing RiskQuantLib project will be "
 "unpacked to the location you choose, and you can start a project at the "
 "fundation of this unpakced project."
+msgstr ""
+
+#: RiskQuantLib.unpackProject:14 of
+msgid "templateName"
 msgstr ""
 
 #: RiskQuantLib.unpackProject:14 of

@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 20:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../Install.rst:2
+msgid "Install"
+msgstr "安装"
+
+#: ../Install.rst:7
+msgid ""
+"To install RiskQuantLib, you can use ``pip`` command in terminal as "
+"follows: ::"
+msgstr "RiskQuantLib托管在pypi，你可以使用 ``pip`` 命令来安装RiskQuantLib，只需要输入：::"
+
+#: ../Install.rst:12
+msgid ""
+"RiskQuantLib can also be downloaded in Github: `RiskQuantLib "
+"<https://github.com/SyuyaMurakami/RiskQuantLib>`_"
+msgstr "RiskQuantLib也可以在Github下载：`RiskQuantLib <https://github.com/SyuyaMurakami/RiskQuantLib>`_"
+
