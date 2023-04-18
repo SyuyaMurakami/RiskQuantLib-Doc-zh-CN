@@ -20,6 +20,7 @@
    E_project.rst
    With_Github.rst
    With_Wind.rst
+   Advance.rst
 
 Welcome to Use RiskQuantLib
 ===========================

@@ -115,9 +115,9 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 +--------------+-------------------+----------------+
 | SecurityType |      AttrName     |    AttrType    |
 +==============+===================+================+
-|   Company    |      industry     |     String     |
+|   company    |      industry     |     string     |
 +--------------+-------------------+----------------+
-|   Company    |      usedWords    |                |
+|   company    |      usedWords    |                |
 +--------------+-------------------+----------------+
 |     ...      |         ...       |       ...      |
 +--------------+-------------------+----------------+
@@ -130,7 +130,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
     import os
     import sys
-    from RiskQuantLib.Module import *
+    from RiskQuantLib.module import *
     path = sys.path[0]
 
 一个RQL项目的常用设计框架是数据导入，数据分析和结果输出。你尝试用这样的框架设计代码。
@@ -187,7 +187,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
 随后让我们进入（复杂的）分析过程。，你决定先统计每一个company的用词频率。你打开了 ``RiskQuantLib\Company\company.py``，在 ``Company`` 类中添加了一条 ``countUsedWords`` 方法，具体操作如下：
 
-``RiskQuantLib.Company.company``
+``RiskQuantLib.Instrument.Company.company``
 ::
 
     class company(setCompany):
@@ -203,9 +203,9 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
     company_list.execFunc("countUsedWordsDict")
 
-为了满足领导的要求1，你需要统计哪些词至少在75%的企业中出现过至少一次。你打开了 ``RiskQuantLib\CompanyList\companyList.py``，在 ``Company_list`` 中添加了一条方法如下，
+为了满足领导的要求1，你需要统计哪些词至少在75%的企业中出现过至少一次。你打开了 ``RiskQuantLib\InstrumentList\CompanyList\companyList.py``，在 ``Company_list`` 中添加了一条方法如下，
 
-``RiskQuantLib.CompanyList.companyList``
+``RiskQuantLib.InstrumentList.CompanyList.companyList``
 ::
 
     class companyList(listBase,setCompanyList):
@@ -240,9 +240,9 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
 我们可以看见每个 ``company`` 元素有了新的属性 ``industryObj``，而 ``industry`` 元素有了新的属性 ``companiesObj`` ，他们都是RQL list。
 
-你决定先统计每个行业的企业平均用词情况，你在 ``RiskQuantLib\Industry\industry.py``，在 ``industry`` 类中添加了一条方法如下，
+你决定先统计每个行业的企业平均用词情况，你在 ``RiskQuantLib\Instrument\Industry\industry.py``，在 ``industry`` 类中添加了一条方法如下，
 
-``RiskQuantLib.Industry.industry``
+``RiskQuantLib.Instrument.Industry.industry``
 ::
 
     class industry(setIndustry):
@@ -260,9 +260,9 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
     industry_list.execFunc("countAvgWords")
 
-你希望可以满足领导的要求2，对于每一个 ``company_list.rule_one`` 中的词，需要去检查它是否显著的频繁出现于某一个行业。你决定统计每个单词在各行业的使用频率，你打开了 ``RiskQuantLib\IndustryList\industryList.py``，在 ``Industrylist`` 中添加了一条方法 ``removeBiasWords`` 如下：
+你希望可以满足领导的要求2，对于每一个 ``company_list.rule_one`` 中的词，需要去检查它是否显著的频繁出现于某一个行业。你决定统计每个单词在各行业的使用频率，你打开了 ``RiskQuantLib\InstrumentList\IndustryList\industryList.py``，在 ``Industrylist`` 中添加了一条方法 ``removeBiasWords`` 如下：
 
-``RiskQuantLib.IndustryList.industryList``
+``RiskQuantLib.InstrumentList.IndustryList.industryList``
 ::
 
     class industryList(listBase,setIndustryList):
@@ -283,7 +283,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
 于是你可以使用这个满足领导要求的单词表去进行筛选了！你在 ``company`` 类中定义如下函数 ``findUsefulWords``：
 
-``RiskQuantLib.Company.company``
+``RiskQuantLib.Instrument.Company.company``
 ::
 
     class company(setCompany):
