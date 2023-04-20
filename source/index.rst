@@ -178,13 +178,13 @@ You close this file and build this project in command terminal:
 
    python build.py
 
-After this, you open ``RiskQuantLib.Security.Fund.fund`` to add class function:
+After this, you open ``RiskQuantLib.Instrument.Security.Fund.fund`` to add class function:
 ::
 
    def calVaR(self):
       self.VaR = self.netAssetValue * self.amount * self.varPercentage
 
-You open ``RiskQuantLib.Security.Stock.stock`` to add class function:
+You open ``RiskQuantLib.Instrument.Security.Stock.stock`` to add class function:
 ::
 
    def calVaRPercentage(self):
@@ -267,13 +267,13 @@ Till now, the process looks more complicated than a pandas way, however, if you 
 
 *Data Analysis*
 
-``RiskQuantLib.Security.Fund.fund``:
+``RiskQuantLib.Instrument.Security.Fund.fund``:
 ::
 
    def calVaR(self):
       self.VaR = self.netAssetValue * self.amount * self.varPercentage
 
-``RiskQuantLib.Security.Stock.stock``
+``RiskQuantLib.Instrument.Security.Stock.stock``
 ::
 
    def calVaRPercentage(self):

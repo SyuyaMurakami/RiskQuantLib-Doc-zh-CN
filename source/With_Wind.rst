@@ -21,7 +21,7 @@ windget是独立的python库，可以独立于RiskQuantLib运行，但在此之�
 
    from windget import *
 
-或者在RiskQuantLib的工程主文件中使用：
+或者在RiskQuantLib的工程主文件中使用（在 ``0.2.0`` 之后的版本已经被废弃）：
 ::
 
    from RiskQuantLib.DataInputAPI.getDataFromWind import *
@@ -60,7 +60,7 @@ get函数族
 模糊查找字段
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-如果你并不知道万得函数的字段名称，可以使用模糊查找功能进行匹配。在pycharm中，同时按下 ``control`` + ``shift`` + ``F`` 可以调出查询框，你可以输入中文的字段名称来查询 ``get`` 函数族中符合的函数。此功能的使用必须依赖于RiskQuantLib工程，只有在RiskQuantLib工程中才可以用中文进行字段查询。
+如果你并不知道万得函数的字段名称，可以使用模糊查找功能进行匹配。在pycharm中，同时按下 ``control`` + ``shift`` + ``F`` 可以调出查询框，你可以输入中文的字段名称来查询 ``get`` 函数族中符合的函数。此功能的使用必须依赖于RiskQuantLib工程，且适用于 ``0.2.0`` 之前的版本。只有在RiskQuantLib工程中才可以用中文进行字段查询。
 
 Pycharm插件
 ^^^^^^^^^^^^^^^^^^^^^^^

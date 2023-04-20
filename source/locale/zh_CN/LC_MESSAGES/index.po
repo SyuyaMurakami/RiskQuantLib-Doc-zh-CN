@@ -494,13 +494,13 @@ msgstr "你关闭这个excel文件，然后通过以下终端命令来编译你�
 
 #: ../index.rst:179
 msgid ""
-"After this, you open ``RiskQuantLib.Security.Fund.fund`` to add class "
+"After this, you open ``RiskQuantLib.Instrument.Security.Fund.fund`` to add class "
 "function: ::"
-msgstr "在此之后，你打开 ``RiskQuantLib.Security.Fund.fund`` 以便于新增一个你自定义的类函数：::"
+msgstr "在此之后，你打开 ``RiskQuantLib.Instrument.Security.Fund.fund`` 以便于新增一个你自定义的类函数：::"
 
 #: ../index.rst:185
-msgid "You open ``RiskQuantLib.Security.Stock.stock`` to add class function: ::"
-msgstr "接着，你打开 ``RiskQuantLib.Security.Stock.stock`` 来新增一个自定义类函数：::"
+msgid "You open ``RiskQuantLib.Instrument.Security.Stock.stock`` to add class function: ::"
+msgstr "接着，你打开 ``RiskQuantLib.Instrument.Security.Stock.stock`` 来新增一个自定义类函数：::"
 
 #: ../index.rst:195
 msgid "**Notice: All these coding are done before you input your data.**"
@@ -542,11 +542,11 @@ msgid "*Data Analysis*"
 msgstr "*数据分析*"
 
 #: ../index.rst:268
-msgid "``RiskQuantLib.Security.Fund.fund``: ::"
+msgid "``RiskQuantLib.Instrument.Security.Fund.fund``: ::"
 msgstr ""
 
 #: ../index.rst:274
-msgid "``RiskQuantLib.Security.Stock.stock`` ::"
+msgid "``RiskQuantLib.Instrument.Security.Stock.stock`` ::"
 msgstr ""
 
 #: ../index.rst:284 ../index.rst:294
