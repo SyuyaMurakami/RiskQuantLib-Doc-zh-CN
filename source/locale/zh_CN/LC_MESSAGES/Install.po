@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,17 +20,17 @@ msgstr ""
 
 #: ../Install.rst:2
 msgid "Install"
-msgstr "安装"
+msgstr ""
 
 #: ../Install.rst:7
 msgid ""
 "To install RiskQuantLib, you can use ``pip`` command in terminal as "
 "follows: ::"
-msgstr "RiskQuantLib托管在pypi，你可以使用 ``pip`` 命令来安装RiskQuantLib，只需要输入::"
+msgstr ""
 
 #: ../Install.rst:12
 msgid ""
 "RiskQuantLib can also be downloaded in Github: `RiskQuantLib "
 "<https://github.com/SyuyaMurakami/RiskQuantLib>`_"
-msgstr "RiskQuantLib也可以在Github下载：`RiskQuantLib <https://github.com/SyuyaMurakami/RiskQuantLib>`_"
+msgstr ""
 

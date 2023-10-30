@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,7 @@ msgstr ""
 #: RiskQuantLib.Tool.databaseTool.neo4jTool:1
 #: RiskQuantLib.Tool.databaseTool.oracleTool:1
 #: RiskQuantLib.Tool.databaseTool.sqlServerTool:1
+#: RiskQuantLib.Tool.decoratorTool.timer:1
 #: RiskQuantLib.Tool.fileTool.fileReceiver:1
 #: RiskQuantLib.Tool.fileTool.fileSender:1
 #: RiskQuantLib.Tool.fileTool.systemGuardian:1
@@ -207,6 +208,17 @@ msgid "This is the API to connect with sql server database."
 msgstr ""
 
 #: ../RiskQuantLib.Tool.rst:32
+msgid "RiskQuantLib.Tool.decoratorTool module"
+msgstr ""
+
+#: RiskQuantLib.Tool.decoratorTool.timer:1 of
+msgid ""
+"This is a decorator which will count the time of a single function call. "
+"If this decorator is passed a prefix, it will print it along with running"
+" time of decorated function."
+msgstr ""
+
+#: ../RiskQuantLib.Tool.rst:40
 msgid "RiskQuantLib.Tool.excelTool module"
 msgstr ""
 
@@ -240,7 +252,7 @@ msgstr ""
 msgid "The path where the output should be saved."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:40
+#: ../RiskQuantLib.Tool.rst:48
 msgid "RiskQuantLib.Tool.fileTool module"
 msgstr ""
 
@@ -269,7 +281,7 @@ msgid "The path of return file."
 msgstr ""
 
 #: RiskQuantLib.Tool.fileTool.compressExcel:10 of
-msgid "subDictionary"
+msgid "subDirectory"
 msgstr ""
 
 #: RiskQuantLib.Tool.fileTool.compressExcel:10 of
@@ -427,7 +439,7 @@ msgstr ""
 msgid "This function will wait for the change or modification of a file."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:48
+#: ../RiskQuantLib.Tool.rst:56
 msgid "RiskQuantLib.Tool.githubTool module"
 msgstr ""
 
@@ -517,7 +529,7 @@ msgstr ""
 msgid "The repository name you want to download"
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:56
+#: ../RiskQuantLib.Tool.rst:64
 msgid "RiskQuantLib.Tool.mathTool module"
 msgstr ""
 
@@ -634,7 +646,7 @@ msgstr ""
 msgid "The percentage number. 99 means 99% percentage."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:64
+#: ../RiskQuantLib.Tool.rst:72
 msgid "RiskQuantLib.Tool.multiThreadTool module"
 msgstr ""
 
@@ -713,7 +725,7 @@ msgstr ""
 msgid "A list holding all functions you want to run."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:72
+#: ../RiskQuantLib.Tool.rst:80
 msgid "RiskQuantLib.Tool.outlookTool module"
 msgstr ""
 
@@ -756,7 +768,7 @@ msgstr ""
 msgid "Send mails by outlook"
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:80
+#: ../RiskQuantLib.Tool.rst:88
 msgid "RiskQuantLib.Tool.plotTool module"
 msgstr ""
 
@@ -4817,7 +4829,7 @@ msgstr ""
 msgid "`bincount` provides a fast histogram for small integers."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:88
+#: ../RiskQuantLib.Tool.rst:96
 msgid "RiskQuantLib.Tool.pptTool module"
 msgstr ""
 
@@ -5019,7 +5031,7 @@ msgstr ""
 msgid "The dataframe that the original table should be changed to."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:96
+#: ../RiskQuantLib.Tool.rst:104
 msgid "RiskQuantLib.Tool.strTool module"
 msgstr ""
 
@@ -5194,7 +5206,7 @@ msgid ""
 " a trading day, using China exchange trading calendar."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:104
+#: ../RiskQuantLib.Tool.rst:112
 msgid "RiskQuantLib.Tool.wordTool module"
 msgstr ""
 
@@ -5271,7 +5283,7 @@ msgid ""
 "should it be replaced."
 msgstr ""
 
-#: ../RiskQuantLib.Tool.rst:112
+#: ../RiskQuantLib.Tool.rst:120
 msgid "Module contents"
 msgstr ""
 

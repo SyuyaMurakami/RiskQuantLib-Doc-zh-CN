@@ -1,0 +1,1103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Operation.rst:2
+msgid "RiskQuantLib.Operation package"
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:8
+msgid "RiskQuantLib.Operation.iloc module"
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:1 RiskQuantLib.Operation.loc.loc:1
+#: RiskQuantLib.Operation.operation.operation:1 of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:1 of
+msgid ""
+"This class is the function class for RiskQuantLib list to use iloc "
+"function. It's similar to that in pandas. Use it by calling "
+"stockList.iloc[number]. It returns the number-th element in that list."
+msgstr ""
+
+#: RiskQuantLib.Operation.iloc.iloc:5 of
+msgid "Passing a list to initialize iloc object."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:16
+msgid "RiskQuantLib.Operation.loc module"
+msgstr ""
+
+#: RiskQuantLib.Operation.loc.loc:1 of
+msgid ""
+"This class is the function class for RiskQuantLib list to use loc "
+"function. It's similar to that in pandas. Use it by calling "
+"stockList.loc[index]. It returns the element in that list whose index "
+"equals given value."
+msgstr ""
+
+#: RiskQuantLib.Operation.loc.loc:5 of
+msgid "Passing a list to initialize loc object."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:24
+msgid "RiskQuantLib.Operation.operation module"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation:1 of
+msgid ""
+"operation() is the function class that makes all RiskQuantLib list object"
+" functional. Any RiskQuantLib list class should inherit from this class "
+"to own certain functions, such as groupBy, execFunc, etc."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation:5 of
+msgid ""
+"Users can define their own functions here to set new attribute function "
+"to RiskQuantLib list class."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.add:1 of
+msgid ""
+"This function uses deep copy. It returns the addition of copies of two "
+"RiskQuantLib lists."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:1 of
+msgid ""
+"This function will add elements from a dataframe. If there is already "
+"elements in present list, all elements will be kept, while new elements "
+"will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:5
+#: RiskQuantLib.Operation.operation.operation.fromDF:4 of
+msgid ""
+"The column name of dataframe should be in English, and this function will"
+" try to set it to element attribute if there exists the attribute with "
+"the same name. That is, this function will only set value of registered "
+"attribute. If not registered in current list class, it will be skipped."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:13
+#: RiskQuantLib.Operation.operation.operation.fromDF:12
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:8 of
+msgid "df"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:18 of
+msgid "pd.DataFrame"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:14
+#: RiskQuantLib.Operation.operation.operation.fromDF:13 of
+msgid "The dataframe you want to pull data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:15
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:13
+#: RiskQuantLib.Operation.operation.operation.fromDF:14
+#: RiskQuantLib.Operation.operation.operation.fromIterable:12
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:12 of
+msgid "code"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:16
+#: RiskQuantLib.Operation.operation.operation.fromDF:15 of
+msgid "The column name that you want to mark as 'code' attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:18
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:17
+#: RiskQuantLib.Operation.operation.operation.fromDF:17
+#: RiskQuantLib.Operation.operation.operation.fromIterable:16 of
+msgid "name"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:18
+#: RiskQuantLib.Operation.operation.operation.fromDF:17 of
+msgid "The column name that you want to mark as 'name' attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:22
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:21
+#: RiskQuantLib.Operation.operation.operation.fromDF:21
+#: RiskQuantLib.Operation.operation.operation.fromIterable:20 of
+msgid "RiskQuantLib List"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:1 of
+msgid ""
+"This function will add elements from an iterable object. If there is "
+"already elements in present list, all elements will be kept, while new "
+"elements will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:5
+#: RiskQuantLib.Operation.operation.operation.fromIterable:4 of
+msgid ""
+"This function will only set value of registered attribute. If not "
+"registered in current list class, it will be skipped."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:10
+#: RiskQuantLib.Operation.operation.operation.fromIterable:9 of
+msgid "iterable"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toList:14 of
+msgid "list"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:11
+#: RiskQuantLib.Operation.operation.operation.fromIterable:10 of
+msgid "The iterable object you want to pull data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:13
+#: RiskQuantLib.Operation.operation.operation.fromIterable:12 of
+msgid ""
+"The attribute name of iterable that you want to mark as 'code' in "
+"RiskQuantLib List Object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:16
+#: RiskQuantLib.Operation.operation.operation.fromIterable:15 of
+msgid ""
+"The attribute name of iterable that you want to mark as 'name' in "
+"RiskQuantLib List Object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.apply:1 of
+msgid ""
+"This function will apply the given function to each element of "
+"RiskQuantLib list. Default settings will leave any change to element out."
+" Your change to elements won't be kept. Only the result of applyFunction "
+"is returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:1
+#: RiskQuantLib.Operation.operation.operation.join:1 of
+msgid ""
+"For each element, find all elements that meet requirements from another "
+"RiskQuantLib list object. The elements meeting requirement will be set as"
+" an attribute of present list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:5 of
+msgid ""
+"After this is down, for each element of another RiskQuantLib, find all "
+"elements that meet requirements from present RiskQuantLib list object. "
+"The elements meeting requirement will be set as an attribute of another "
+"list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:9 of
+msgid ""
+"This function actually calls join twice, but it switch the position of "
+"two RiskQuantLib list in the second call."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:15
+#: RiskQuantLib.Operation.operation.operation.join:9 of
+msgid "anotherList"
+msgstr ""
+
+#: of
+msgid "RiskQuantLib list or list"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:16
+#: RiskQuantLib.Operation.operation.operation.join:10 of
+msgid "Another list object, holding elements waiting to be selected."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:17 of
+msgid "targetAttrNameOnLeft"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:18 of
+msgid ""
+"The attribute name of present list that you want to use to mark collected"
+" elements from another list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:20
+#: RiskQuantLib.Operation.operation.operation.join:14
+#: RiskQuantLib.Operation.operation.operation.scale:16 of
+msgid "filterFunction"
+msgstr ""
+
+#: of
+msgid "function"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:20 of
+msgid ""
+"This function has two parameter, left and right, and must return a bool "
+"value. If true is returned, the element will be added to each other. "
+"False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:24 of
+msgid "unsymmetrical"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:23 of
+msgid ""
+"If true, different rules will be used when join two list, where "
+"filterFunctionOnLeft will be used when present list join another list, "
+"and filterFunctionOnRight will be used when another list join present "
+"list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:27 of
+msgid "filterFunctionOnLeft"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:27 of
+msgid ""
+"This function has two parameter, presentList and anotherList, and must "
+"return a bool value. If true is returned, the element from another list "
+"will be added to present list. False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:29 of
+msgid "targetAttrNameOnRight"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:30 of
+msgid ""
+"The attribute name of another list that you want to use to mark collected"
+" elements from present list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:34 of
+msgid "filterFunctionOnRight"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:32 of
+msgid ""
+"This function has two parameter, presentList and anotherList, and must "
+"return a bool value. If true is returned, the element from present list "
+"will be added to another list. False means not added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.connect:38
+#: RiskQuantLib.Operation.operation.operation.setAll:10
+#: RiskQuantLib.Operation.operation.operation.updateAttr:22
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:28
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:21
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:19
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:19 of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.copy:1 of
+msgid "Get a copy of present RiskQuantLib list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.dropIndex:1 of
+msgid "Delete index for each element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.execFunc:1 of
+msgid ""
+"This function will execute instance function for every element in present"
+" RiskQuantLib list object, given the function name. If some elements "
+"don't have the function, a Null function will be used, and the result "
+"will skip the execution for that element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.execFunc:7 of
+msgid "functionName"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.execFunc:8 of
+msgid "The function that element has, and you want to call."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.fillna:1 of
+msgid ""
+"Fill the nan value or blank string will the given value. If attribute "
+"doesn't exist, nothing will be done. You can fill the nan value by single"
+" attribute or a list of attributes."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.filter:1 of
+msgid ""
+"Return a RiskQuantLib list object given the fiter function. This is used "
+"to choose some elements which meet your requirements."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.fromDF:1 of
+msgid ""
+"This function will convert a dataframe to RiskQuantLib list object. If "
+"there is already elements in present list, all elements will be deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.fromIterable:1 of
+msgid ""
+"This function will convert an iterable to RiskQuantLib list object. If "
+"there is already elements in present list, all elements will be deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:1
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:1 of
+msgid ""
+"This function use pandas.DataFrame.groupby as engine. Its behavior is "
+"totally the same with pandas."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:6
+#: RiskQuantLib.Operation.operation.operation.mean:7
+#: RiskQuantLib.Operation.operation.operation.std:7
+#: RiskQuantLib.Operation.operation.operation.sum:7
+#: RiskQuantLib.Operation.operation.operation.updateAttr:9
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:8
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:10 of
+msgid "attrName"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:7 of
+msgid "The attribute that you want to group data by."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:10
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:10 of
+msgid "useObj"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:9
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:9 of
+msgid ""
+"If true, return a RiskQuantLib list object, each element of which is also"
+" a RiskQuantLib list object. Each element will be marked by setting the "
+"attribute as the common value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:12
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:12
+#: RiskQuantLib.Operation.operation.operation.mean:9
+#: RiskQuantLib.Operation.operation.operation.std:9
+#: RiskQuantLib.Operation.operation.operation.sum:9
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:9
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:7 of
+msgid "inplace"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupBy:13
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:13 of
+msgid "If true, operation will be done in present RiskQuantLib list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:6 of
+msgid "func"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:7 of
+msgid ""
+"Elements will be divided into groups by the return values of this "
+"function."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.haveAttr:1 of
+msgid ""
+"Get the elements which have certain attributes, if passed a list, the "
+"elements which have all attributes in the list will be returned, "
+"otherwise an empty list will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.head:1 of
+msgid "Get the first numberOfElement elements of the list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.isIn:1 of
+msgid ""
+"Find the elements which are also in the given list. Use these elements to"
+" generate a new RiskQuantLib list and return it. anotherList can be any "
+"iterable object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.isNotIn:1 of
+msgid ""
+"Find the elements which are not in the given list. Use these elements to "
+"generate a new RiskQuantLib list and return it. anotherList can be any "
+"iterable object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.join:5 of
+msgid "This function is very like pandas.DataFrame.merge."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.join:11
+#: RiskQuantLib.Operation.operation.operation.scale:12 of
+msgid "targetAttrName"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.join:12 of
+msgid ""
+"The attribute name that you want to use to mark collected elements from "
+"another list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.join:14 of
+msgid ""
+"This function has two parameter, left and right, and must return a bool "
+"value. If true is returned, the element will be added. False means not "
+"added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.mean:1 of
+msgid ""
+"This function will average the value of each element, given the attribute"
+" name. If some elements don't have the attribute, an numpy.nan will be "
+"used, and the result will skip this value when calculating mean."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.mean:8 of
+msgid "The attribute name whose value you want to average."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.mean:10 of
+msgid "If true, the 'attributeMean' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:1 of
+msgid ""
+"This function will merge two RiskQuantLib list object. This function "
+"should only be used when washing data. After merge, any change to source "
+"list will or will not influence merge result, depending on python copy "
+"mechanism. This won't be a problem if data flows by single direction. "
+"However, troubles will come when you wish to change the origin to "
+"influence the merge result list, after merge action."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:7 of
+msgid ""
+"In short, do not change the origin list once you merge them, any change "
+"should be done by merged result."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:10 of
+msgid ""
+"If 'on' function can not identify the only element to merge, all unique "
+"attributes of the elements that meet requirement will be added to present"
+" list element. (Unique means this attribute only appears once in the list"
+" element, the others don't have it.) If the attribute appears more than "
+"one times, only the first will be added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:16 of
+msgid ""
+"It's like pandas.DataFrame.merge, but not totally the same. In "
+"RiskQuantLib, listA.merge(listB) is not the same from listB.merge(listA),"
+" even if you specify the same value of parameter 'how' and 'on'."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:20 of
+msgid ""
+"No matter what value parameter 'how' is given, attributes of elements in "
+"anotherList that meet requirement of 'on' will be added as attributes of "
+"elements in present list. The attributes who have the same name in both "
+"lists won't be copied, which means you can't merge two lists twice. (In "
+"the second time you merge them, the first list object has all attributes "
+"that anotherList has, so all attributes will be skipped, no attribute "
+"will be copied.)"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:27 of
+msgid ""
+"If how == 'inner', only the elements in the present list who have "
+"relative elements in anotherList will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:30 of
+msgid ""
+"If how == 'outer', all elements in presentList, plus elements from "
+"anotherList that don't have relative elements in present list will be "
+"returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:33 of
+msgid "If how == 'left', all elements in presentList will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.merge:35 of
+msgid ""
+"if how == 'right', the elements in the present list who have relative "
+"elements in anotherList, plus elements from anotherList that don't have "
+"relative elements in present list will be returned."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.new:1 of
+msgid "Return a totally new RiskQuantLib list object like this."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.reIndex:1 of
+msgid ""
+"Return a new RiskQuantLib list object whose elements are chosen according"
+" to the index, the index of new list element must be in th indexList to "
+"be included. If more than one elements meet requirement, only the first "
+"one will be kept."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.resetIndex:1 of
+msgid "Reset the index as the n-th element of list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.rolling:1 of
+msgid ""
+"For each element, This function will collect the n elements before that "
+"element, create a new RiskQuantLib list object to holding it. The new "
+"list will be set as an attribute of '_rolling', thus the present element "
+"can reach to the information of its former elements."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:1 of
+msgid ""
+"For each element, find the attribute value and calculate the portion of "
+"each element to the sum, given attribute name."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:4 of
+msgid ""
+"After calling this function, a 'scaled_attrName' attribute will be added "
+"to each element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:6 of
+msgid "This function is very like pandas.DataFrame.groupby.agg."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:10 of
+msgid "attrName :str"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:11 of
+msgid "The attribute which you want to scale."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:13 of
+msgid "The attribute name that you want to use to mark the portion of element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.scale:15 of
+msgid ""
+"This function has one parameter, element, and must return a bool value. "
+"If true is returned, the element will be include when process scale. "
+"False means not included."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.setAll:1 of
+msgid ""
+"Update all elements by the list of new elements. Old elements will be "
+"deleted."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.setAll:6 of
+msgid "List"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.setAll:6 of
+msgid "A collection of RiskQuantLib instrument objects."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.setIndex:1 of
+msgid ""
+"Set the index for each element, given attribute name. The index value "
+"will be set as the attribute value you choose."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.sort:1 of
+msgid ""
+"Sort the present RiskQuantLib list by attributes. You can also sort it by"
+" a single attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.std:1 of
+msgid ""
+"This function will calculate the standard deviation of value of each "
+"element, given the attribute name. If some elements don't have the "
+"attribute, an numpy.nan will be used, and the result will skip this "
+"value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.std:8 of
+msgid "The attribute name whose value you want to calculate standard deviation."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.std:10 of
+msgid "If true, the 'attributeStd' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.sub:1 of
+msgid ""
+"This function uses deep copy. It returns the subtraction of copies of two"
+" RiskQuantLib lists."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.sum:1 of
+msgid ""
+"This function will sum the value of each element, given the attribute "
+"name. If some elements don't have the attribute, an numpy.nan will be "
+"used, and the result will skip this value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.sum:8 of
+msgid "The attribute name whose value you want to sum."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.sum:10 of
+msgid "If true, the 'attributeSum' property will be added to present object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.tail:1 of
+msgid "Get the last numberOfElement elements of the list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toArray:1 of
+msgid ""
+"This function will return a numpy.ndarray object, given the attribute "
+"name whose values are used as array value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toArray:4 of
+msgid ""
+"If you don't pass any attribute name, this function will use all elements"
+" themselves in this list to form an array."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toArray:10
+#: RiskQuantLib.Operation.operation.operation.toDF:9
+#: RiskQuantLib.Operation.operation.operation.toList:10
+#: RiskQuantLib.Operation.operation.operation.zip:7 of
+msgid "attrNameList"
+msgstr ""
+
+#: of
+msgid "str or list"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toArray:10 of
+msgid "The attribute name whose values you want to use as array value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toArray:14 of
+msgid "np.ndarray"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:1 of
+msgid ""
+"This function will return a pandas.DataFrame object, given the attribute "
+"name whose values are used as dataframe value, and attribute name whose "
+"values are used as dataframe index."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:4 of
+msgid ""
+"If you don't pass any attribute name, this function will use all elements"
+" themselves in this list to form a dataframe."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:10 of
+msgid "The attribute name whose values you want to use as dataframe value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:11
+#: RiskQuantLib.Operation.operation.operation.toSeries:12 of
+msgid "attrNameAsIndex"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:12 of
+msgid "The attribute name whose values you want to use as dataframe index."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:14
+#: RiskQuantLib.Operation.operation.operation.toSeries:17 of
+msgid "index"
+msgstr ""
+
+#: of
+msgid "list or operation"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDF:14
+#: RiskQuantLib.Operation.operation.operation.toSeries:17 of
+msgid ""
+"The index list. If you do not specify the attribute name used as index, "
+"you can pass a list as index manually."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:1 of
+msgid ""
+"This function will return a dict, given the attribute name whose values "
+"are used as dict key, and attribute name whose values are used as dict "
+"value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:6 of
+msgid "attrNameAsKey"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:7 of
+msgid "The attribute name whose values you want to use as dict keys."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:9
+#: RiskQuantLib.Operation.operation.operation.toSeries:10 of
+msgid "attrNameAsValue"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:9 of
+msgid "The attribute name whose values you want to use as dict values."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toDict:13 of
+msgid "dict"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toList:1 of
+msgid ""
+"This function will return a list object, given the attribute name whose "
+"values are used as list value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toList:4 of
+msgid ""
+"If you don't pass any attribute name, this function will use all elements"
+" themselves in this list to form a new list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toList:10 of
+msgid "The attribute name whose values you want to use as list value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:1 of
+msgid ""
+"This function will return a pandas.Series object, given the attribute "
+"name whose values are used as series value, and attribute name whose "
+"values are used as series index. You can also pass a string to identify "
+"the name of series."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:5 of
+msgid ""
+"If you don't pass any attribute name, this function will use all elements"
+" themselves in this list to form a Series."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:11 of
+msgid "The attribute name whose values you want to use as series value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:13 of
+msgid "The attribute name whose values you want to use as series index."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:14 of
+msgid "nameString"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:15 of
+msgid "The name of series."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.toSeries:21 of
+msgid "pd.Series"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.union:1 of
+msgid ""
+"Find the elements which are in the given list or in the current list. Use"
+" these elements to generate a new RiskQuantLib list and return it. "
+"anotherList can be any iterable object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:1 of
+msgid ""
+"This function returns a RiskQuantLib list object, where the attribute "
+"value is unique."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:6 of
+msgid "attrNameString :str"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:7 of
+msgid "The attribute name that you want to get the unique value list from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:9
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:7 of
+msgid ""
+"If true, operation will done in present list object. If false, operation "
+"will done in a copy of present list object."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:13
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:11 of
+msgid "keep"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:12 of
+msgid ""
+"Only support 'First' or 'Last'. If multiple elements have the same "
+"attribute value. The first or last element will be kept, given your "
+"choice."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:17
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:15 of
+msgid "RiskQuantLib list object"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:1 of
+msgid ""
+"This function returns a RiskQuantLib list object, where the code value is"
+" unique."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:10 of
+msgid ""
+"Only support 'First' or 'Last'. If multiple elements have the same code "
+"value. The first or last element will be kept, given your choice."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:1 of
+msgid ""
+"This function will update the attribute value of elements whose code "
+"appears in given codeSeries. If code of element doesn't show in "
+"codeSeries, these elements will be skipped and not changed."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:5 of
+msgid "If the attribute is not registered, it will be created."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:10
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:9
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:11 of
+msgid "The attribute whose value is exactly what you want to update."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:11 of
+msgid "codeSeries"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:12 of
+msgid ""
+"An iterable object that contains codes of elements whose attribute need "
+"to be updated."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:13 of
+msgid "valueSeries"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:14 of
+msgid "An iterable object that contains new values of attributes."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:18
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:24
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:17
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:15
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:15 of
+msgid "byAttr"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttr:16 of
+msgid ""
+"The attribute that is used to index element in this list. By default, "
+"this attribute is code. But you can specify another attribute A, if you "
+"do it, this function will update the attribute value of elements whose "
+"attribute A appears in given codeSeries."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:1 of
+msgid ""
+"This function will update attribute value of current list by passed "
+"array. You have to identify that each column of array belongs to which "
+"attribute, and each row of array represents which element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:5 of
+msgid ""
+"The row number of passed array must equal to length of codeList, and the "
+"column number of passed array must equal to length of attributeNameList."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:8 of
+msgid "If the attribute are not registered, the attribute will be created."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:12 of
+msgid "array"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:13 of
+msgid "The array you which want to update this list from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:16 of
+msgid "codeList"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:15 of
+msgid ""
+"The code of element whose attribute will be updated by this function. "
+"Those whose code is not specified in this list will not be influenced. "
+"The length of this list must equal to the row number of passed array."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:19 of
+msgid "attributeNameList"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:19 of
+msgid ""
+"The attribute that you want to update. Those attribute in this list will "
+"be updated, and those are not in this list will not be influenced."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:22 of
+msgid ""
+"The attribute that is used to index element in this list. By default, "
+"this attribute is code. But you can specify another attribute A, if you "
+"do it, this function will update the attribute value of elements whose "
+"attribute A appears in given codeList."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:1 of
+msgid ""
+"This function will update attribute value of current list by passed "
+"dataframe. The column name of passes dataframe should be in English, and "
+"if current list has registered attribute whose name is the same with "
+"column name, it will be updated. If the attribute is not registered, it "
+"will be created."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:9 of
+msgid "The dataframe that you want to update data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:11 of
+msgid ""
+"A column name of df that you used to mark rows. Elements whose code is in"
+" this column will be updated, and those not in this column will not be "
+"influenced. If blank, the index of df will be used as code."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:15
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:13 of
+msgid ""
+"The attribute that is used to index element in this list. By default, "
+"this attribute is code. But you can specify another attribute A, if you "
+"do it, this function will update the attribute value of elements whose "
+"attribute A appears in df[code] or df.index."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:1 of
+msgid ""
+"This function will update attribute value of current list by passed dict."
+" The key of passes dict should be code string. If current list has "
+"registered attribute whose name is in keys of codeValueDict, it will be "
+"updated. If the attribute is not registered, it will be created."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:10 of
+msgid "codeValueDict"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:11 of
+msgid "A dict that maps code to value."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:13 of
+msgid ""
+"The attribute that is used to index element in this list. By default, "
+"this attribute is code. But you can specify another attribute A, if you "
+"do it, this function will update the attribute value of elements whose "
+"attribute A appears in given codeValueDict."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:1 of
+msgid ""
+"This function will update attribute value of current list by passed "
+"series. The name of passes series should be in English, and if current "
+"list has registered attribute whose name is the same with column name, it"
+" will be updated. If the attribute is not registered, it will be created."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:8 of
+msgid "sr"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:9 of
+msgid "The series that you want to update data from."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.zip:1 of
+msgid ""
+"This function will convert the values of given attribute into a zip "
+"object. If you also pass an external list or other iterable object, it "
+"will zip that list with the value of given internal attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.zip:8 of
+msgid "The attribute name whose values you want to zip."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.zip:10 of
+msgid "args"
+msgstr ""
+
+#: of
+msgid "list or iterable"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.zip:10 of
+msgid ""
+"External iterable object, whose value is zipped with internal attribute "
+"values."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.zip:14 of
+msgid "zip object"
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:32
+msgid "Module contents"
+msgstr ""
+

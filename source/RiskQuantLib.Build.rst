@@ -20,6 +20,14 @@ RiskQuantLib.Build.builder module
    :undoc-members:
    :show-inheritance:
 
+RiskQuantLib.Build.controller module
+------------------------------------
+
+.. automodule:: RiskQuantLib.Build.controller
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 RiskQuantLib.Build.debugger module
 ----------------------------------
 

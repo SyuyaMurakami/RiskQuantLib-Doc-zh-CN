@@ -28,6 +28,14 @@ RiskQuantLib.Tool.databaseTool module
    :undoc-members:
    :show-inheritance:
 
+RiskQuantLib.Tool.decoratorTool module
+--------------------------------------
+
+.. automodule:: RiskQuantLib.Tool.decoratorTool
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 RiskQuantLib.Tool.excelTool module
 ----------------------------------
 

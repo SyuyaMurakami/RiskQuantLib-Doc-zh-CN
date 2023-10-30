@@ -13,21 +13,15 @@ If you use ORM to get a list, whose elements is the record in database and all c
 
 Let's suppose you have a ORM list object ``ORM`` whose element has attributes named: ``OptionCode``, ``PayOff``, ``ExerciseType``, ``ExerciseDate``, ``StockPrice``, ``RiskFreeRate``, ``Sigma``.
 
-Now we build our project by edit ``Build_Attr.xlsx`` to:
+Now we build our project by edit ``config.py`` to:
+::
 
-+------------------+--------------------+----------------+
-|   SecurityType   |      AttrName      |    AttrType    |
-+==================+====================+================+
-| myEuropeanOption |        PayOff      |    qlPayOff    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  ExerciseDate      |  qlExercise    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |    StockPrice      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  RiskFreeRate      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |         Sigma      |     qlQuote    |
-+------------------+--------------------+----------------+
+    #-|instrument: myEuropeanOption
+    #-|instrument-ParentQuantLibClassName: myEuropeanOption@EuropeanOption
+    #-|instrument-DefaultInstrumentType: myEuropeanOption@myEuropeanOption
+
+    #-|attribute: myEuropeanOption.PayOff@qlPayOff, myEuropeanOption.ExerciseDate@qlExercise, myEuropeanOption.StockPrice@qlQuote, myEuropeanOption.RiskFreeRate@qlQuote, myEuropeanOption.Sigma@qlQuote
+
 
 **Noticed here, we have all attribute names that are the same with ORM list element attribute names. This will help RiskQuantLib to identify attribute and set them automatically.**
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,9 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.connect:15
-#: RiskQuantLib.Operation.operation.operation.join:9 of
+#: RiskQuantLib.Operation.operation.operation.join:9
+#: RiskQuantLib.Operation.operation.operation.link:13
+#: RiskQuantLib.Operation.operation.operation.match:13 of
 msgid "anotherList"
 msgstr ""
 
@@ -234,15 +236,19 @@ msgid "RiskQuantLib list or list"
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.connect:16
-#: RiskQuantLib.Operation.operation.operation.join:10 of
+#: RiskQuantLib.Operation.operation.operation.join:10
+#: RiskQuantLib.Operation.operation.operation.link:14
+#: RiskQuantLib.Operation.operation.operation.match:14 of
 msgid "Another list object, holding elements waiting to be selected."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:17 of
+#: RiskQuantLib.Operation.operation.operation.connect:17
+#: RiskQuantLib.Operation.operation.operation.link:15 of
 msgid "targetAttrNameOnLeft"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:18 of
+#: RiskQuantLib.Operation.operation.operation.connect:18
+#: RiskQuantLib.Operation.operation.operation.link:16 of
 msgid ""
 "The attribute name of present list that you want to use to mark collected"
 " elements from another list."
@@ -292,11 +298,13 @@ msgid ""
 "will be added to present list. False means not added."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:29 of
+#: RiskQuantLib.Operation.operation.operation.connect:29
+#: RiskQuantLib.Operation.operation.operation.link:17 of
 msgid "targetAttrNameOnRight"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:30 of
+#: RiskQuantLib.Operation.operation.operation.connect:30
+#: RiskQuantLib.Operation.operation.operation.link:18 of
 msgid ""
 "The attribute name of another list that you want to use to mark collected"
 " elements from present list."
@@ -339,11 +347,13 @@ msgid ""
 "will skip the execution for that element."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.execFunc:7 of
+#: RiskQuantLib.Operation.operation.operation.execFunc:7
+#: RiskQuantLib.Operation.operation.operation.paraFunc:12 of
 msgid "functionName"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.execFunc:8 of
+#: RiskQuantLib.Operation.operation.operation.execFunc:8
+#: RiskQuantLib.Operation.operation.operation.paraFunc:12 of
 msgid "The function that element has, and you want to call."
 msgstr ""
 
@@ -461,11 +471,13 @@ msgid "This function is very like pandas.DataFrame.merge."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.join:11
+#: RiskQuantLib.Operation.operation.operation.match:15
 #: RiskQuantLib.Operation.operation.operation.scale:12 of
 msgid "targetAttrName"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.join:12 of
+#: RiskQuantLib.Operation.operation.operation.join:12
+#: RiskQuantLib.Operation.operation.operation.match:16 of
 msgid ""
 "The attribute name that you want to use to mark collected elements from "
 "another list."
@@ -476,6 +488,57 @@ msgid ""
 "This function has two parameter, left and right, and must return a bool "
 "value. If true is returned, the element will be added. False means not "
 "added."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:1
+#: RiskQuantLib.Operation.operation.operation.match:1 of
+msgid ""
+"For each element in current rqlList, find all elements that meet "
+"requirement matchFunctionOnRight(element_in_another_list) == "
+"matchFunctionOnLeft(element_in_this_list) from another RiskQuantLib list "
+"object. The elements meeting requirement will be set as an attribute of "
+"element_in_this_list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:6 of
+msgid ""
+"After this is done, for each element in another rqlList, find all "
+"elements that meet requirement matchFunctionOnLeft(element_in_this_list) "
+"== matchFunctionOnRight(element_in_another_list) from current "
+"RiskQuantLib list object. The elements meeting requirement will be set as"
+" an attribute of element_in_another_list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:19
+#: RiskQuantLib.Operation.operation.operation.match:17 of
+msgid "matchFunctionOnLeft"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:20
+#: RiskQuantLib.Operation.operation.operation.match:18 of
+msgid ""
+"This function has and only has one parameter, which stands for element in"
+" current list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:21
+#: RiskQuantLib.Operation.operation.operation.match:19 of
+msgid "matchFunctionOnRight"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.link:22
+#: RiskQuantLib.Operation.operation.operation.match:20 of
+msgid ""
+"This function has and only has one parameter, which stands for element in"
+" another list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.match:6 of
+msgid ""
+"This function is very like rqlList.join, the only difference is that this"
+" function is vectorized, thus run with faster speed. Of cause, this "
+"function has some drawbacks, it can not deal with complicated relation "
+"which is described as coupled equation, while rqlList.join can do it."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.mean:1 of
@@ -562,6 +625,37 @@ msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.new:1 of
 msgid "Return a totally new RiskQuantLib list object like this."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.paraFunc:1 of
+msgid ""
+"This function will execute instance function for every element in present"
+" RiskQuantLib list object by parallel, which means elements will be "
+"serialized and sent to different processes."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.paraFunc:4 of
+msgid ""
+"If some elements don't have the function which named as you specify, a "
+"Null function will be used, and the result will skip the execution for "
+"that element."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.paraFunc:7 of
+msgid "The call will be delayed until you run currentRiskQuantLibList.paraRun()."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.paraFunc:16
+#: RiskQuantLib.Operation.operation.operation.paraRun:7 of
+msgid "operation"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.paraRun:1 of
+msgid ""
+"This is the trigger of run paralleled function for every element in this "
+"RiskQuantLib list. Before you use this function, you should call "
+"someList.paraFunc('functionName') for more than one time to tell "
+"RiskQuantLib what function you want to parallel."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.reIndex:1 of

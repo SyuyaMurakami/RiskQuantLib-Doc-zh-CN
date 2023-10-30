@@ -33,21 +33,14 @@ The most simple way to use pandas with RiskQuantLib is to use pandas.Series, rem
 |   ...    |    ...     |    ...     |    ...     |    ...   |    ...     | ... |   
 +----------+------------+------------+------------+----------+------------+-----+
 
-After creating a project and building it with ``Build_Attr.xlsx``:
+After creating a project and building it with ``config.py``:
+::
 
-+------------------+--------------------+----------------+
-|   SecurityType   |      AttrName      |    AttrType    |
-+==================+====================+================+
-| myEuropeanOption |      myPayOff      |    qlPayOff    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |    myExercise      |  qlExercise    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |underlyingStockPrice|     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  riskFreeRate      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |         sigma      |     qlQuote    |
-+------------------+--------------------+----------------+
+    #-|instrument: myEuropeanOption
+    #-|instrument-ParentQuantLibClassName: myEuropeanOption@EuropeanOption
+    #-|instrument-DefaultInstrumentType: myEuropeanOption@myEuropeanOption
+
+    #-|attribute: myEuropeanOption.myPayOff@qlPayOff, myEuropeanOption.myExercise@qlExercise, myEuropeanOption.underlyingStockPrice@qlQuote, myEuropeanOption.riskFreeRate@qlQuote, myEuropeanOption.sigma@qlQuote
 
 You can open the ``main.py`` and use it directly:
 ::
@@ -83,20 +76,13 @@ True, luckily, RiskQuantLib provides functions to read from pandas.DataFrame. Su
 +----------+------------+------------+------------+----------+------------+-----+
 
 Now we build it by change ``Build_Attr.xlsx`` to:
+::
 
-+------------------+--------------------+----------------+
-|   SecurityType   |      AttrName      |    AttrType    |
-+==================+====================+================+
-| myEuropeanOption |        PayOff      |    qlPayOff    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  ExerciseDate      |  qlExercise    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |    StockPrice      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  RiskFreeRate      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |         Sigma      |     qlQuote    |
-+------------------+--------------------+----------------+
+    #-|instrument: myEuropeanOption
+    #-|instrument-ParentQuantLibClassName: myEuropeanOption@EuropeanOption
+    #-|instrument-DefaultInstrumentType: myEuropeanOption@myEuropeanOption
+
+    #-|attribute: myEuropeanOption.PayOff@qlPayOff, myEuropeanOption.ExerciseDate@qlExercise, myEuropeanOption.StockPrice@qlQuote, myEuropeanOption.RiskFreeRate@qlQuote, myEuropeanOption.Sigma@qlQuote
 
 **Noticed here, we have all attribute names that are the same with dataframe column names. This will help RiskQuantLib to identify column and set them automatically.**
 
@@ -158,7 +144,7 @@ That is, when you design your project, you should forget all your input files, f
 To Pandas DataFrame
 ^^^^^^^^^^^^^^^^^^^^
 
-The most simple way to do it is:
+The most straight forward way to do it is:
 ::
 
     result = pd.DataFrame(vanillaOptionList[attributeList])
@@ -167,3 +153,8 @@ Where ``attributeList`` is a python list whose elements is the name string of at
 ::
 
     result = pd.DataFrame(vanillaOptionList[attributeList],index = vanillaOptionList['code'])
+
+Or, there is another easy way:
+::
+
+    result = vanillaOptionList[attributeList].toDF(index=vanillaOptionList['code'])

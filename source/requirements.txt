@@ -17,3 +17,4 @@ copulae
 scipy
 importlib
 matplotlib
+readthedocs-sphinx-search

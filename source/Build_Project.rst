@@ -10,18 +10,22 @@ After create a project, you should build it to suit for your mission. By ``Build
 
 ``Instrument`` means any class you will use in your mission. For financial analysis, ``Instrument`` refers to stock, bond or other security type, or like interest rate or company, etc.
 
-Then we start to build our first project. The critical thing is to tell RiskQuantLib how to build it. This is done by specify key word in ``Build_Instrument.xlsx`` and ``Build_Attr.xlsx``, which you can find in your project root dictionary once you create a project. The content of building will be written into ``RiskQuantLib.Auto``. 
+Then we start to build our first project. The critical thing is to tell RiskQuantLib how to build it. This is done by specify key word in ``config.py`` , which you can find in your project root dictionary once you create a project. The content of building will be written into ``RiskQuantLib.Auto``. 
 
 In last chapter we create a project, it looks like:
 ::
 
    --your_project_path
+     --Cache
+     --Data
+     --Result
      --RiskQuantLib
      --Src
+     --build.bat
      --build.py
+     --config.py
+     --debug.bat
      --main.py
-     --Build_Attr.xlsx
-     --Build_Instrument.xlsx
 
 We will explain the function of each term as follows:
 
@@ -73,66 +77,147 @@ And this function will be inserted into ``RiskQuantLib/Instrument/Security/Stock
 
 **For the automatically generated instrument by RiskQuantLib, use instrument name will be enough to specify a target destination, like** ``#->stock``. **But if you create the source file by yourself, you should use the absolute import path to tell RiskQuantLib where this file is, like:** ``#->RiskQuantLib.Instrument.Security.Stock.stock``
 
-Build_Instrument.xlsx
+config.py
 ^^^^^^^^^^^^^^^^^^^^^
 
-``Build_Instrument.xlsx`` is the file to tell RiskQuantLib how to generate python source code of instrument class. After calling ``build.py``, Any instrument specified will be created, the source file will be added into ``RiskQuantLib`` dictionary besides its first RiskQuantLib parent class. ``Build_Instrument.xlsx`` looks like:
+``config.py`` is the file to tell RiskQuantLib how to generate python source code of instrument class. After calling ``build.py``, Any instrument specified will be created, the source file will be added into ``RiskQuantLib`` dictionary besides its first RiskQuantLib parent class. The default ``config.py`` looks like:
+::
 
-+--------------+------------------+-----------------------+------------+---------------------+
-|InstrumentName|ParentRQLClassName|ParentQuantLibClassName|LibararyName|DefaultInstrumentType|
-+==============+==================+=======================+============+=====================+
-| treasureBond |       Bond       |                       |    numpy   |   Treasure Bond     |
-+--------------+------------------+-----------------------+------------+---------------------+
-|      ....    |        ...       |           ...         |      ...   |           ...       |
-+--------------+------------------+-----------------------+------------+---------------------+
+   #!/usr/bin/python
+   # coding = utf-8
 
-The *InstrumentName* column can be defined by your will, depending on your data. RiskQuantLib will create instrument class source file ``treasureBond.py`` under ``RiskQuantLib.Instrument.Security.Bond.TreasureBond``, and create list class source file ``treasureBondList.py`` under  ``RiskQuantLib.InstrumentList.SecurityList.BondList.TreasureBondList`` after your run ``python build.py``.
+   #-|instrument: security, company, index, interest
+   #-|instrument: bond@security, stock@security, derivative@security, fund@security
+   #-|instrument: future@derivative, option@derivative
 
-The *ParentRQLClassName* means this new instrument will inherit from this RiskQuantLib class. It can accept key word like: ``Any``, ``Fund``, ``Stock``, ``Bond``, ``Repo``, etc. However,
+   #-|instrument-DefaultInstrumentType: security@Security, company@Company, index@Index, interest@Interest
+   #-|instrument-DefaultInstrumentType: bond@Bond, stock@Stock, derivative@Derivative, fund@Fund
+   #-|instrument-DefaultInstrumentType: future@Future, option@Option
 
-**Notice: You can use the instrumentName you specified in last row to fill ParentRQLClassName column, like:**
+It might be a little confusing if we write it in above way, but it will be more clear if we see it as a tree:
+::
 
-+--------------+------------------+-----------------------+------------+---------------------+
-|InstrumentName|ParentRQLClassName|ParentQuantLibClassName|LibararyName|DefaultInstrumentType|
-+==============+==================+=======================+============+=====================+
-| treasureBond |       bond       |                       |    numpy   |   Treasure Bond     |
-+--------------+------------------+-----------------------+------------+---------------------+
-|chinaTreaBond |   treasureBond   |                       |            |     Panda Bond      |
-+--------------+------------------+-----------------------+------------+---------------------+
-|      ....    |        ...       |           ...         |      ...   |           ...       |
-+--------------+------------------+-----------------------+------------+---------------------+
+   --instrument
+     --security ( DefaultInstrumentType = Security )
+       --bond ( DefaultInstrumentType = Bond )
+       --stock ( DefaultInstrumentType = Stock )
+       --derivative ( DefaultInstrumentType = Derivative )
+         --future ( DefaultInstrumentType = Future )
+         --option ( DefaultInstrumentType = Option )
+       --fund ( DefaultInstrumentType = Fund )
+     --company ( DefaultInstrumentType = Company )
+     --index ( DefaultInstrumentType = Index )
+     --interest ( DefaultInstrumentType = Interest )
 
-The *ParentQuantLibClassName* means this new instrument will inherit from this QuantLib class. It can accept key word like: ``Instrument``, ``Bond``, etc. You can refer to QuantLib document to find what class QuantLib has.
+There are two basic kinds of keyword in ``config.py``, which is ``instrument`` and ``attribute`` , we will explain them here:
 
-The *LibraryName* is other library that you will use in instrument class source file, like numpy and pandas.
+*instrument*
+------------------
 
-The *DefaultInstrumentType* is a string to mark your new instrument class. It can be any string or blank.
+The *instrument* key word can be used to define instrument by your will, depending on your data. It is just a comment in python, but a little special. To use it, the comment line has to start with ``#-|`` command tag, and followed closely by ``instrument`` keyword, no space or other characters in the middle. Finally, a ``:`` has to follow the ``instrument`` keyword. A validated command comment is like:
+::
 
-Build_Attr.xlsx
-^^^^^^^^^^^^^^^
+   #-|instrument: instrument_a
 
-``Build_Attr.xlsx`` is the file used to tell RiskQuantLib what kind of attributes you need, when analysising your data, and which class these attributes belong to. After calling ``build.py``, any attributes specified here will be registered and can be used with ``set`` function. This file looks like:
+**You can use comma to seperate different instruments declaration, like:**
+::
 
-+--------------+-------------------+----------------+
-| SecurityType |    AttrName       |    AttrType    |
-+==============+===================+================+
-|     fund     | yourAttribute     |     number     |
-+--------------+-------------------+----------------+
-|     stock    | anotherAttribute  |     string     |
-+--------------+-------------------+----------------+
-|     ...      |         ...       |       ...      |
-+--------------+-------------------+----------------+
+   #-|instrument: instrument_a, instrument_b
 
-The *SecurityType* column can accept key word like: ``Any``, ``Fund``, ``Stock``, ``Bond``, ``Repo``, etc. However,
+**You can use @ to specify what parent instrument the current one is inheriting from, like:**
+::
 
-Any instrument you specify in *Build_Instrument.xlsx* can also be used here. If you already create a class named ``treasureBond`` in *Build_Instrument.xlsx*, then here you can fill ``treasureBond`` in *SecurityType* column.
+   #-|instrument: instrument_a@parent_instrument_p
 
-The *AttrType* column can accept key word of ``Number``, ``String``, ``Any``, ``Series``, or any other string that you think it could be a type. It tells RiskQuantLib what kind of data will be stored by this attribute. If you add 'sellPrice' to ``Stock``, this should be a ``Number`` attribute, while an attribute like 'issuerName' is a ``String`` kind. ``Series`` is used if it's an attribute like 'sellPriceOfPastSixMonth'. If you specify a kind that is never used before, it will be created as a type class, located in ``RiskQuantLib.Property``.
+**If an instrument has more than two parents, write them seperately like:**
+::
+
+   #-|instrument: instrument_a@parent_instrument_p1, instrument_a@parent_instrument_p2
+
+The instrument declared here will tell RiskQuantLib how to build your project and add class files that will be used to form a data graph. For example, if you write this in ``config.py`` :
+::
+
+   #-|instrument: treasureBond@bond
+
+RiskQuantLib will create instrument class source file ``treasureBond.py`` under ``RiskQuantLib.Instrument.Security.Bond.TreasureBond``, and create list class source file ``treasureBondList.py`` under  ``RiskQuantLib.InstrumentList.SecurityList.BondList.TreasureBondList`` after your run ``python build.py``.
+
+The @ means this new instrument will inherit from this RiskQuantLib class. It can accept key word like: ``Fund``, ``Stock``, ``Bond``, ``Repo``, etc. 
+
+**However, you should always inherit from a class that you have declared. It doesn't matter if you declare the parent class before or after this line.**
+
+**You can not split this declaration into two lines using \ or /. If you want to start a new line, a new keyword must be used, like:**
+::
+
+   #-|instrument: treasureBondOne@bond
+   #-|instrument: treasureBondTwo@bond
+
+*attribute*
+-----------------
+
+The *attribute* key word can be used to what kind of attributes you need when analysising your data, and which class these attributes belong to. After calling ``build.py``, any attributes specified here will be registered and can be used with ``set`` function. 
+
+This keyword is just a comment in python, but, as always, a little special. To use it, the comment line has to start with ``#-|`` command tag, and followed closely by ``attribute`` keyword, no space or other characters in the middle. Finally, a ``:`` has to follow the ``attribute`` keyword. A validated command comment is like:
+::
+
+   #-|attribute: fund.yourAttribute
+
+This declaration will add ``yourAttribute`` to class ``fund`` .
+
+**You can use comma to seperate different attributes declaration, like:**
+::
+
+   #-|attribute: fund.yourAttribute, stock.anotherAttribute
+
+**You can use @ to specify what data type this attribute should have, like:**
+::
+
+   #-|attribute: fund.yourAttribute@number, stock.anotherAttribute@string
+
+The default data type can be ``number``, ``string``, ``series``. It can also be self-defined, actually you can use any word after @ to specify a data type, if it doesn't exist, RiskQuantLib will create a new data type and use the new one, like:
+::
+
+   #-|attribute: fund.yourAttribute@my_new_data_type
+
+Data type tells RiskQuantLib what kind of data will be stored by this attribute. If you add 'sellPrice' to ``stock``, this should be a ``number`` attribute, while an attribute like 'issuerName' is a ``string`` kind. ``series`` is used if it's an attribute like 'sellPriceOfPastSixMonth'. If you specify a kind that is never used before, it will be created as a type class, located in ``RiskQuantLib.Property``.
+
+The data type here is not only a data type in RiskQuantLib. RiskQuantLib is designed to be used to process graph-structure-data. Data type we mentioned above is actually the ending-node of a graph, thus we'd better call it ``property`` . We will explain it in later chapter.
+
+**You should add attribute to an instrument that is already declared, no matter it is before or after.**
+
+**You can not split this declaration into two lines using \ or /. If you want to start a new line, a new keyword must be used, like:**
+::
+
+   #-|attribute: fund.yourAttributeOne
+   #-|attribute: fund.yourAttributeTwo
+
+*instrument-DefaultInstrumentType*
+--------------------------------------------
+
+This key word is a string to mark your new instrument class. It is just a label, does not actually influence the class behavior. An example is like:
+::
+
+   #-|instrument-DefaultInstrumentType: instrument_a@another_name_of_instrument_a
+
+*instrument-ParentQuantLibClassName*
+-----------------------------------------
+
+This keyword means this new instrument will inherit from this QuantLib class. It can accept key word like: ``Instrument``, ``Bond``, etc. You can refer to QuantLib document to find what class QuantLib has. Like:
+::
+
+   #-|instrument-ParentQuantLibClassName: my_bond@Bond
+
+*instrument-LibraryName*
+------------------------------------------
+
+The *LibraryName* is other library that you will use in instrument class source file, like numpy and pandas. Like:
+::
+
+   #-|instrument-LibraryName: instrument_a@tensorflow as tf
 
 build.py
 ^^^^^^^^
 
-``build.py`` is used to generate python source code automatically. After you specify what kind of class you want to create, how it inherit from other class in *Build_Instrument.xlsx*, and what attributes these class should have in *Build_Attr.xlsx*, you can call *build.py* by terminal:
+``build.py`` is used to generate python source code automatically. After you specify what kind of class you want to create, how it inherit from other class, what attributes these class should have in *config.py*, you can call *build.py* by terminal:
 ::
 
    python build.py
@@ -146,6 +231,11 @@ If your project is under development, it will be useful to use ``debug`` mode. W
 ::
 
    python build.py -a -d
+
+or just double click the file in windows system:
+::
+
+   debug.bat
 
 main.py
 ^^^^^^^
@@ -167,3 +257,30 @@ You can also set attributes directly by:
    stockA.setAnotherAttribute('valueOfAnotherAttribute')
 
 For more information about the ``Instrument``, we will introduce it in next chapter.
+
+Data
+^^^^^^^^^^^
+
+This is a folder just used to hold your data. Default as empty.
+
+Cache
+^^^^^^^^^^^
+
+This is a folder just used to hold your cache file. Default as empty.
+
+Result
+^^^^^^^^^^^
+
+This is a folder just used to hold your result file. Default as empty.
+
+build.bat
+^^^^^^^^^^^^
+
+After specifying all instruments and attributes in ``config.py`` , you can double click ``build.bat`` to build your preoject. This file only exists in windows system.
+
+debug.bat
+^^^^^^^^^^^^
+
+After specifying all instruments and attributes in ``config.py`` , you can double click ``debug.bat`` to debug your preoject. This file only exists in windows system.
+
+The difference between build and debug is debug mode import file in ``Src`` as a module, thus leads to different behaviors. You can find more information about ``Src`` above.

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,36 +76,39 @@ msgid "这也是RiskQuantLib的核心设计，任何一类节点都有两层（�
 msgstr ""
 
 #: ../E_project.rst:33
-msgid "RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点之间的链接： ``join``, ``connect`` ："
+msgid ""
+"RiskQuantLib通过四个关键的函数来完成图数据结构下各个节点之间的链接： ``join``, ``match``, ``connect``"
+" , ``link`` ："
 msgstr ""
 
-#: ../E_project.rst:35
+#: ../E_project.rst:36
 msgid "*Join*"
 msgstr ""
 
-#: ../E_project.rst:37
+#: ../E_project.rst:38
 msgid "``join`` 是用于在两个模板列表类的元素之间建立 **单向链接** 的函数。"
 msgstr ""
 
-#: ../E_project.rst:39
+#: ../E_project.rst:40
 msgid ""
 "如果 ``stockListA`` 是一个 ``stockList`` 的实例，同时 ``companyListB`` 是一个 "
 "``companyList`` 的实例，而且我们还有一个字典 "
 "``stockIPODetail``，其中保存了公司和股票代码之间的一一映射关系，比如A公司发行的股票代码为0123.HK。注意在这里，同一家公司可能在两个不同的交易所发行两个不同代码的股票，比如同时在纽约交易所和香港交易所上市就一度是一件非常流行的事情。"
+" ``stockIPODetail[companyName]`` 的返回值是一个列表，里面包含了它发行的所有股票的代码，并按照升序排列。"
 msgstr ""
 
-#: ../E_project.rst:41
+#: ../E_project.rst:42
 msgid "``join`` 函数是任何模板列表类的属性函数，你可以对任何模板列表类使用它。它的参数如下： ::"
 msgstr ""
 
-#: ../E_project.rst:46
+#: ../E_project.rst:47
 msgid ""
 "当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素, 程序都会从 ``anotherList`` "
 "的元素中寻找哪些满足条件的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 "
 "``targetAttrName`` 声明的名称，而筛选条件就是 ``filterFunction`` 声明的筛选条件。比如在上面的例子中： ::"
 msgstr ""
 
-#: ../E_project.rst:51
+#: ../E_project.rst:52
 msgid ""
 "当运行这一行之后， ``companyListB`` 的每一个元素， 也就是 ``company`` 对象下回多出一个属性，名为 "
 "``issuedStock``， 这个属性的值是一个  "
@@ -113,37 +116,65 @@ msgid ""
 "的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。"
 msgstr ""
 
-#: ../E_project.rst:53
-msgid "*Connect*"
-msgstr ""
-
 #: ../E_project.rst:55
-msgid "``connect`` 是用于在两个模板列表类的元素之间建立 **双向链接** 的函数。"
+msgid "*Match*"
 msgstr ""
 
 #: ../E_project.rst:57
-msgid "同样的，``connect`` 函数也是任何模板列表类的属性函数，你可以对任何模板列表类使用它。它的参数如下： ::"
+msgid "``match`` 是 ``join`` 的快速并行版本，使用了矢量化来加快 ``join`` 的运算。以上面的例子来说: ::"
 msgstr ""
 
 #: ../E_project.rst:62
+msgid ""
+"当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素，程序先计算 ``matchFunctionOnLeft`` "
+"函数对当前元素运算的结果A，再计算计算 ``anotherList`` 的每一个元素在进行 ``matchFunctionOnRight`` "
+"函数运算后的结果B，从 ``anotherList`` "
+"找到那些B==A的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 ``targetAttrName``"
+" 声明的名称。比如在上面的例子中： ::"
+msgstr ""
+
+#: ../E_project.rst:67
+msgid ""
+"当运行这一行之后， ``companyListB`` 的每一个元素，也就是 ``company`` 对象下会多出一个属性，名为 "
+"``issuedStock``，这个属性的值是一个 ``stockList``，其中包含了所有该公司发行的股票。如果该公司没有发行股票，那么这个 "
+"``stockList`` 的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。"
+msgstr ""
+
+#: ../E_project.rst:69
+msgid "``match`` **的缺陷在于牺牲了灵活性，并非每一个匹配条件都可以改写成解耦的形式。**"
+msgstr ""
+
+#: ../E_project.rst:72
+msgid "*Connect*"
+msgstr ""
+
+#: ../E_project.rst:74
+msgid "``connect`` 是用于在两个模板列表类的元素之间建立 **双向链接** 的函数。"
+msgstr ""
+
+#: ../E_project.rst:76
+msgid "同样的，``connect`` 函数也是任何模板列表类的属性函数，你可以对任何模板列表类使用它。它的参数如下： ::"
+msgstr ""
+
+#: ../E_project.rst:81
 msgid ""
 "当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素, 程序都会从 ``anotherList`` "
 "的元素中寻找哪些满足条件的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 "
 "``targetAttrNameOnLeft`` 声明的名称，而筛选条件就是 ``filterFunction`` 声明的筛选条件。"
 msgstr ""
 
-#: ../E_project.rst:64
+#: ../E_project.rst:83
 msgid ""
 "然后，对于 ``anotherList`` 的每一个元素, 程序都会从 ``riskQuantLibList`` "
 "的元素中寻找哪些满足条件的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 "
 "``targetAttrNameOnRight`` 声明的名称，而筛选条件就是 ``filterFunction`` 声明的筛选条件。"
 msgstr ""
 
-#: ../E_project.rst:66
+#: ../E_project.rst:85
 msgid "比如在上面的例子中： ::"
 msgstr ""
 
-#: ../E_project.rst:71
+#: ../E_project.rst:90
 msgid ""
 "当运行这一行之后， ``companyListB`` 的每一个元素， 也就是 ``company`` 对象下会多出一个属性，名为 "
 "``issuedStock``， 这个属性的值是一个  "
@@ -151,7 +182,7 @@ msgid ""
 "的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。"
 msgstr ""
 
-#: ../E_project.rst:73
+#: ../E_project.rst:92
 msgid ""
 "同时，``stockListA`` 的每一个元素，也就是 ``stock`` 对象下会多出一个属性，名为 ``issuedBy``， "
 "这个属性的值是一个  "
@@ -159,178 +190,161 @@ msgid ""
 "``companyList`` 的长度就为0。"
 msgstr ""
 
-#: ../E_project.rst:75
-msgid "让我们一起来完成一个数据关系较为复杂的任务。这会让你了解到RQL如何使用图数据结构、双层节点、提线木偶（指针）等设计让问题变得简单。"
+#: ../E_project.rst:95
+msgid "*Link*"
 msgstr ""
 
-#: ../E_project.rst:78
+#: ../E_project.rst:96
+msgid "``link`` 是 ``connect`` 的快速并行版本，使用了矢量化来加快 ``connect`` 的运算。以上面的例子来说: ::"
+msgstr ""
+
+#: ../E_project.rst:101
+msgid ""
+"当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素，程序先计算 ``matchFunctionOnLeft`` "
+"函数对当前元素运算的结果A，再计算计算 ``anotherList`` 的每一个元素在进行 ``matchFunctionOnRight`` "
+"函数运算后的结果B，从 ``anotherList`` "
+"找到那些B==A的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 "
+"``targetAttrNameOnLeft`` 声明的名称。"
+msgstr ""
+
+#: ../E_project.rst:103
+msgid ""
+"当调用了这个函数后，对于 ``anotherList`` 的每一个元素，程序先计算 ``matchFunctionOnRight`` "
+"函数对当前元素运算的结果B，再计算计算 ``riskQuantLibList`` 的每一个元素在进行 "
+"``matchFunctionOnLeft`` 函数运算后的结果A，从 ``riskQuantLibList`` "
+"找到那些A==B的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 "
+"``targetAttrNameOnRight`` 声明的名称。"
+msgstr ""
+
+#: ../E_project.rst:105
+msgid "``link`` **的缺陷在于牺牲了灵活性，并非每一个匹配条件都可以改写成解耦的形式。**"
+msgstr ""
+
+#: ../E_project.rst:107
+msgid "**让我们一起来完成一个数据关系较为复杂的任务。这会让你了解到RQL如何使用图数据结构、双层节点、提线木偶（指针）等设计让问题变得简单。**"
+msgstr ""
+
+#: ../E_project.rst:110
 msgid "一个文本计数项目"
 msgstr ""
 
-#: ../E_project.rst:80
+#: ../E_project.rst:112
 msgid ""
 "假设你是一位ESG报告研究员，你正在研究哪些名词的使用会使得企业的ESG评级更高。在分析之前，你严格的上司提出了一些令人头疼的要求。他认为只有一部分名词可以体现企业进行环境保护的行为，这些名词应当符合以下条件："
 " ::"
 msgstr ""
 
-#: ../E_project.rst:87
+#: ../E_project.rst:119
 msgid ""
 "你现在收集到了一些日本上市企业的行业信息，保存在 ``JP.xlsx`` 中。你还收集了这些企业的环保责任报告（**E "
 "report**）的名词使用情况，储存在一些txt文件中。"
 msgstr ""
 
-#: ../E_project.rst:90 ../E_project.rst:118 ../E_project.rst:120
+#: ../E_project.rst:122
 msgid "Company"
 msgstr ""
 
-#: ../E_project.rst:90
+#: ../E_project.rst:122
 msgid "Industry"
 msgstr ""
 
-#: ../E_project.rst:90
+#: ../E_project.rst:122
 msgid "E Using Words"
 msgstr ""
 
-#: ../E_project.rst:92
+#: ../E_project.rst:124
 msgid "Asahi"
 msgstr ""
 
-#: ../E_project.rst:92
+#: ../E_project.rst:124
 msgid "Chemical Product"
 msgstr ""
 
-#: ../E_project.rst:92
+#: ../E_project.rst:124
 msgid "fuel, air, efficiency, coast,..."
 msgstr ""
 
-#: ../E_project.rst:94
+#: ../E_project.rst:126
 msgid "Chubu"
 msgstr ""
 
-#: ../E_project.rst:94
+#: ../E_project.rst:126
 msgid "Electric Power"
 msgstr ""
 
-#: ../E_project.rst:94
+#: ../E_project.rst:126
 msgid "carbon, nature, cloud,..."
 msgstr ""
 
-#: ../E_project.rst:96 ../E_project.rst:122
+#: ../E_project.rst:128
 msgid "..."
 msgstr ""
 
-#: ../E_project.rst:99
+#: ../E_project.rst:131
 msgid ""
 "面对这样复杂的任务，你决定使用RiskQuantLib。你在终端中输入 ``newRQL path\\myESG`` "
-"来新建了一个RQL项目，并在项目根目录下新建了 ``Data`` 文件夹存入数据。随后你修改了两个xlsx文件并 `编译 <https"
-"://riskquantlib-doc.readthedocs.io/zh_CN/latest/Build_Project.html>`_ 生成了"
-" ``company`` 和 ``industry`` 这两个类。"
+"来新建了一个RQL项目，并在项目根目录下新建了 ``Data`` 文件夹存入数据。随后你修改了 ``config.py`` 文件并 `编译 "
+"<https://riskquantlib-"
+"doc.readthedocs.io/zh_CN/latest/Build_Project.html>`_ 生成了 ``company`` 和 "
+"``industry`` 这两个类。"
 msgstr ""
 
-#: ../E_project.rst:101
-msgid "``Build_Instrument.xlsx`` 看起来像这样:"
+#: ../E_project.rst:133
+msgid "``config.py`` 看起来像这样: ::"
 msgstr ""
 
-#: ../E_project.rst:104
-msgid "InstrumentName"
-msgstr ""
-
-#: ../E_project.rst:104
-msgid "ParentRQLClassName"
-msgstr ""
-
-#: ../E_project.rst:104
-msgid "ParentQuantLibClassName"
-msgstr ""
-
-#: ../E_project.rst:104
-msgid "LibararyName"
-msgstr ""
-
-#: ../E_project.rst:104
-msgid "DefaultInstrumentType"
-msgstr ""
-
-#: ../E_project.rst:106 ../E_project.rst:118
-msgid "industry"
-msgstr ""
-
-#: ../E_project.rst:108
-msgid "company"
-msgstr ""
-
-#: ../E_project.rst:111
+#: ../E_project.rst:138
 msgid ""
 "你为 ``company`` 类准备了 ``industry`` 属性和 ``usedWords`` 属性。在 ``build`` "
 "（编译）环节设置类的属性，可以使 ``build`` 后该类的RQLlist拥有便捷的 ``set`` 方法。"
 msgstr ""
 
-#: ../E_project.rst:113
-msgid "``Build_Attr.xlsx`` 看起来像这样:"
+#: ../E_project.rst:140
+msgid "继续在 ``config.py`` 后面追加声明，使得它看起来像这样: ::"
 msgstr ""
 
-#: ../E_project.rst:116
-msgid "SecurityType"
-msgstr ""
-
-#: ../E_project.rst:116
-msgid "AttrName"
-msgstr ""
-
-#: ../E_project.rst:116
-msgid "AttrType"
-msgstr ""
-
-#: ../E_project.rst:118
-msgid "String"
-msgstr ""
-
-#: ../E_project.rst:120
-msgid "usedWords"
-msgstr ""
-
-#: ../E_project.rst:125
+#: ../E_project.rst:146
 msgid ""
 "随后你执行了 ``build.py`` ，这生成了上述类，并自动生成他们各自的模板列表类。 随后你打开了 ``main.py`` "
 "文件开始了数据分析之旅。此时你的 ``main.py`` 文件是这样的："
 msgstr ""
 
-#: ../E_project.rst:128 ../E_project.rst:142 ../E_project.rst:160
-#: ../E_project.rst:173 ../E_project.rst:181 ../E_project.rst:201
-#: ../E_project.rst:225 ../E_project.rst:233 ../E_project.rst:258
-#: ../E_project.rst:279 ../E_project.rst:296
+#: ../E_project.rst:149 ../E_project.rst:164 ../E_project.rst:182
+#: ../E_project.rst:195 ../E_project.rst:203 ../E_project.rst:224
+#: ../E_project.rst:248 ../E_project.rst:256 ../E_project.rst:281
+#: ../E_project.rst:302 ../E_project.rst:319
 msgid "``main.py`` ::"
 msgstr ""
 
-#: ../E_project.rst:136
+#: ../E_project.rst:157
 msgid "一个RQL项目的常用设计框架是数据导入，数据分析和结果输出。你尝试用这样的框架设计代码。"
 msgstr ""
 
-#: ../E_project.rst:138
+#: ../E_project.rst:160
 msgid "*Data Input*"
 msgstr ""
 
-#: ../E_project.rst:140
+#: ../E_project.rst:162
 msgid ""
 "让我们先导入数据，为了方便之后实例的值的批量设置，我们常常将属性导入为可迭代的对象，且他的顺序是和实例的顺序相一致的（也就是说公司A如果出现在公司列表的第3位，那么公司A的"
 " ``usedWords`` 属性也应当出现在 ``usedWords`` 列表的第3位）。于是我们将企业的 ``usedWords`` "
 "设计成一个如下的列表。"
 msgstr ""
 
-#: ../E_project.rst:158
+#: ../E_project.rst:180
 msgid ""
 "实例化 ``company_list`` 和 ``industry_list`` ，并使用 ``add`` "
 "函数为他们加入元素，这个过程中也为元素添加了用于识别的 ``code`` 属性。 ``set`` 函数为 ``company_list`` 的 "
 "``company`` 元素添加了 ``industry`` 属性和 ``usedWords`` 属性。"
 msgstr ""
 
-#: ../E_project.rst:171
+#: ../E_project.rst:193
 msgid ""
 "你可以在debug的过程中使用 ``company_list[code]`` 或者 ``company_list[0]`` 来找到对应的 "
 "``company`` 元素（返回一个 ``company`` 实例）。"
 msgstr ""
 
-#: ../E_project.rst:179
+#: ../E_project.rst:201
 msgid ""
 "在检查你的 ``company`` 属性的过程中，你发现有一些企业的 ``wordsList`` "
 "的长度为0，这说明这个企业的数据存在缺失。你决定通过RQL list(模板列表类)的 ``filter`` 函数筛掉这些元素。当 "
@@ -338,126 +352,118 @@ msgid ""
 "``main.py`` 中继续输入："
 msgstr ""
 
-#: ../E_project.rst:186
+#: ../E_project.rst:209
 msgid "*Data Analysis*"
 msgstr ""
 
-#: ../E_project.rst:188
+#: ../E_project.rst:211
 msgid ""
 "随后让我们进入（复杂的）分析过程。，你决定先统计每一个company的用词频率。你打开了 "
 "``RiskQuantLib\\Company\\company.py``，在 ``Company`` 类中添加了一条 "
 "``countUsedWords`` 方法，具体操作如下："
 msgstr ""
 
-#: ../E_project.rst:190 ../E_project.rst:286
-msgid "``RiskQuantLib.Company.company`` ::"
+#: ../E_project.rst:213 ../E_project.rst:309
+msgid "``RiskQuantLib.Instrument.Company.company`` ::"
 msgstr ""
 
-#: ../E_project.rst:199
+#: ../E_project.rst:222
 msgid ""
 "你在 ``main.py`` 中执行了 ``company_list.exec(\"countUsedWords\")`` "
 "，使得对于列表中的每个元素调用它的 ``countUsedWords`` 方法。你的每个 ``Company`` 元素会因此获得额外的属性 "
 "``usedWordsDict``。"
 msgstr ""
 
-#: ../E_project.rst:206
+#: ../E_project.rst:229
 msgid ""
 "为了满足领导的要求1，你需要统计哪些词至少在75%的企业中出现过至少一次。你打开了 "
-"``RiskQuantLib\\CompanyList\\companyList.py``，在 ``Company_list`` "
-"中添加了一条方法如下，"
+"``RiskQuantLib\\InstrumentList\\CompanyList\\companyList.py``，在 "
+"``Company_list`` 中添加了一条方法如下，"
 msgstr ""
 
-#: ../E_project.rst:208
-msgid "``RiskQuantLib.CompanyList.companyList`` ::"
+#: ../E_project.rst:231
+msgid "``RiskQuantLib.InstrumentList.CompanyList.companyList`` ::"
 msgstr ""
 
-#: ../E_project.rst:223
+#: ../E_project.rst:246
 msgid ""
 "在 ``main.py`` 中执行 ``company_list`` 的 ``rule_one`` 方法，使得 ``company_list`` "
 "增加了一条属性 ``rule_one``。"
 msgstr ""
 
-#: ../E_project.rst:231
+#: ../E_project.rst:254
 msgid ""
 "之后，你决定使用RQL的 ``connect`` 函数将 ``company_list`` 和 ``industry_list`` "
 "中的某些有关联的元素进行链接，使得他们作为彼此的属性可以进行调用，这是RQL的核心理念之一（图结构数据存储）。你输入代码如下："
 msgstr ""
 
-#: ../E_project.rst:241
+#: ../E_project.rst:264
 msgid ""
 "我们可以看见每个 ``company`` 元素有了新的属性 ``industryObj``，而 ``industry`` 元素有了新的属性 "
 "``companiesObj`` ，他们都是RQL list。"
 msgstr ""
 
-#: ../E_project.rst:243
+#: ../E_project.rst:266
 msgid ""
-"你决定先统计每个行业的企业平均用词情况，你在 ``RiskQuantLib\\Industry\\industry.py``，在 "
-"``industry`` 类中添加了一条方法如下，"
+"你决定先统计每个行业的企业平均用词情况，你在 "
+"``RiskQuantLib\\Instrument\\Industry\\industry.py``，在 ``industry`` "
+"类中添加了一条方法如下，"
 msgstr ""
 
-#: ../E_project.rst:245
-msgid "``RiskQuantLib.Industry.industry`` ::"
+#: ../E_project.rst:268
+msgid "``RiskQuantLib.Instrument.Industry.industry`` ::"
 msgstr ""
 
-#: ../E_project.rst:256
+#: ../E_project.rst:279
 msgid ""
 "你在 ``main.py`` 中执行了 "
 "``industry_list.execFunc(\"avgCountWords\")``，使得对于列表中的每个元素调用它的 "
 "``countAvgWords`` 方法。你的每个 ``Industry`` 元素会因此获得新的属性 ``avgWords``。"
 msgstr ""
 
-#: ../E_project.rst:263
+#: ../E_project.rst:286
 msgid ""
 "你希望可以满足领导的要求2，对于每一个 ``company_list.rule_one`` "
 "中的词，需要去检查它是否显著的频繁出现于某一个行业。你决定统计每个单词在各行业的使用频率，你打开了 "
-"``RiskQuantLib\\IndustryList\\industryList.py``，在 ``Industrylist`` "
-"中添加了一条方法 ``removeBiasWords`` 如下："
+"``RiskQuantLib\\InstrumentList\\IndustryList\\industryList.py``，在 "
+"``Industrylist`` 中添加了一条方法 ``removeBiasWords`` 如下："
 msgstr ""
 
-#: ../E_project.rst:265
-msgid "``RiskQuantLib.IndustryList.industryList`` ::"
+#: ../E_project.rst:288
+msgid "``RiskQuantLib.InstrumentList.IndustryList.industryList`` ::"
 msgstr ""
 
-#: ../E_project.rst:277
+#: ../E_project.rst:300
 msgid "在执行 ``Industry_list.rule_two`` 后，``industry_list`` 增加了一条属性 ``rule_two``。"
 msgstr ""
 
-#: ../E_project.rst:284
+#: ../E_project.rst:307
 msgid "于是你可以使用这个满足领导要求的单词表去进行筛选了！你在 ``company`` 类中定义如下函数 ``findUsefulWords``："
 msgstr ""
 
-#: ../E_project.rst:294
+#: ../E_project.rst:317
 msgid ""
 "在执行 ``company_list.execFunc(“findUsefulWords”, industry.rule_two)`` "
 "后，每个企业会得到属性 ``usefulWordsDict``。"
 msgstr ""
 
-#: ../E_project.rst:301
+#: ../E_project.rst:325
 msgid "*Data Output*"
 msgstr ""
 
-#: ../E_project.rst:303
+#: ../E_project.rst:327
 msgid "这是满足领导意见的词表，我们可以用他做后续的研究了！"
 msgstr ""
 
-#: ../E_project.rst:306
+#: ../E_project.rst:330
 msgid "总结"
 msgstr ""
 
-#: ../E_project.rst:308
-msgid "让我们回顾一下项目的整个流程："
+#: ../E_project.rst:332
+msgid "让我们回顾一下项目的整个流程： ::"
 msgstr ""
 
-#: ../E_project.rst:310
-msgid ""
-"1.思考节点类的结构关系和属性，修改 ``instrument`` 和 ``attr`` 两个xlsx文件，运行 ``build.py``。 "
-"2.导入数据。实例化RQLlist（模板列表类）并加入元素，使用 ``set`` 函数来设置元素节点的属性。 3.开始分析。**往返** 于 "
-"``main.py`` 和各个模板类（在这个项目中是 ``company`` 和 ``industry`` "
-"）之间，为元素节点和list节点设计各种方法。并将调用方法的结果作为属性存在该节点上（或任何其他位置）。 4.重复3的过程，直到得到最终结果。 "
-"5.导出数据。"
-msgstr ""
-
-#: ../E_project.rst:316
+#: ../E_project.rst:340
 msgid "RQL的设计为使用者提供自定义的数据分析模式，使用怎样的设计取决于使用者面对的数据问题。"
 msgstr ""
 

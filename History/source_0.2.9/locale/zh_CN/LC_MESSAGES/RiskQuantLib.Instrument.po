@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Instrument.rst:2
+msgid "RiskQuantLib.Instrument package"
+msgstr ""
+
+#: ../RiskQuantLib.Instrument.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Instrument.rst:8
+msgid "RiskQuantLib.Instrument.instrument module"
+msgstr ""
+
+#: RiskQuantLib.Instrument.instrument.instrument:1 of
+msgid ""
+"基类：:class:`QuantLib.QuantLib.Instrument`, "
+":class:`RiskQuantLib.Auto.Instrument.instrument.instrumentAuto`"
+msgstr ""
+
+#: RiskQuantLib.Instrument.instrument.instrument:1 of
+msgid ""
+"This is the instrument basic class. Any instrument should inherit from "
+"this class."
+msgstr ""
+
+#: ../RiskQuantLib.Instrument.rst:16
+msgid "Module contents"
+msgstr ""
+
