@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid "如果你安装了RiskQuantLib或者windget，可以在源代码中使用
 msgstr ""
 
 #: ../With_Wind.rst:24
-msgid "或者在RiskQuantLib的工程主文件中使用： ::"
+msgid "或者在RiskQuantLib的工程主文件中使用（在 ``0.2.0`` 之后的版本已经被废弃）： ::"
 msgstr ""
 
 #: ../With_Wind.rst:30
@@ -88,7 +88,8 @@ msgstr ""
 msgid ""
 "如果你并不知道万得函数的字段名称，可以使用模糊查找功能进行匹配。在pycharm中，同时按下 ``control`` + ``shift`` + "
 "``F`` 可以调出查询框，你可以输入中文的字段名称来查询 ``get`` "
-"函数族中符合的函数。此功能的使用必须依赖于RiskQuantLib工程，只有在RiskQuantLib工程中才可以用中文进行字段查询。"
+"函数族中符合的函数。此功能的使用必须依赖于RiskQuantLib工程，且适用于 ``0.2.0`` "
+"之前的版本。只有在RiskQuantLib工程中才可以用中文进行字段查询。"
 msgstr ""
 
 #: ../With_Wind.rst:66

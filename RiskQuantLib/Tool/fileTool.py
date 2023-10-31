@@ -195,7 +195,7 @@ def generateDataFrameFromDict(inputDict:dict, dateString:str, fileNameString:str
     df['COLUMN'] = columnNameString
     return df
 
-def compressExcel(filePathString:str, outputPathString:str, subDictionary:bool = True):
+def compressExcel(filePathString:str, outputPathString:str, subDirectory:bool = True):
     """
     Re-format excel in form of ['PATH','FILE','COLUMN','ROW','VALUE']
 
@@ -205,7 +205,7 @@ def compressExcel(filePathString:str, outputPathString:str, subDictionary:bool =
         The path where you hold your excel files.
     outputPathString : str
         The path of return file.
-    subDictionary : bool
+    subDirectory : bool
         If there are still other dictionaries in filePathString.
 
     Returns
@@ -215,20 +215,20 @@ def compressExcel(filePathString:str, outputPathString:str, subDictionary:bool =
     import pandas as pd
     import operator
     from functools import reduce
-    if subDictionary:
+    if subDirectory:
         dirList = [i for i in os.listdir(filePathString) if i.find('.')==-1]
-        subDictionaryDict = {}
-        [generateFileDictFromPath(filePathString+os.sep+i,subDictionaryDict) for i in dirList]
-        dfArray = [[[generateDataFrameFromDict(subDictionaryDict[i][j][k],dateString=i,fileNameString=j,columnNameString=k) for k in subDictionaryDict[i][j].keys()] for j in subDictionaryDict[i].keys()] for i in subDictionaryDict.keys()]
+        subDirectoryDict = {}
+        [generateFileDictFromPath(filePathString+os.sep+i,subDirectoryDict) for i in dirList]
+        dfArray = [[[generateDataFrameFromDict(subDirectoryDict[i][j][k],dateString=i,fileNameString=j,columnNameString=k) for k in subDirectoryDict[i][j].keys()] for j in subDirectoryDict[i].keys()] for i in subDirectoryDict.keys()]
         dfList = reduce(operator.add,dfArray)
         dfList = reduce(operator.add,dfList)
         result = pd.concat(dfList)
         result.reset_index(drop=True,inplace=True)
         result[['PATH','FILE','COLUMN','ROW','VALUE']].to_excel(outputPathString,index=0)
     else:
-        dictionaryDict = {}
-        generateFileDictFromPath(filePathString,dictionaryDict)
-        dfArray = [[[generateDataFrameFromDict(dictionaryDict[i][j][k],dateString=i,fileNameString=j,columnNameString=k) for k in dictionaryDict[i][j].keys()] for j in dictionaryDict[i].keys()] for i in dictionaryDict.keys()]
+        directoryDict = {}
+        generateFileDictFromPath(filePathString,directoryDict)
+        dfArray = [[[generateDataFrameFromDict(directoryDict[i][j][k],dateString=i,fileNameString=j,columnNameString=k) for k in directoryDict[i][j].keys()] for j in directoryDict[i].keys()] for i in directoryDict.keys()]
         dfList = reduce(operator.add,dfArray)
         dfList = reduce(operator.add,dfList)
         result = pd.concat(dfList)
@@ -424,11 +424,17 @@ class systemGuardian:
             self.call_back_function = call_back_function
 
     def watch(self):
-        if os.path.isdir(self.path) or os.path.isfile(self.path):
+        if hasattr(self, 'path') and (os.path.isdir(self.path) or os.path.isfile(self.path)):
             stamp = os.stat(self.path).st_mtime
             if stamp != self._cachedStamp:
                 self._cachedStamp = stamp
                 return self.call_back_function(self.path)
+
+    def tryWatch(self):
+        try:
+            return self.watch()
+        except Exception as e:
+            pass
 
     def start(self):
         try:
@@ -441,11 +447,13 @@ class systemGuardian:
     #</systemGuardian>
 
 class systemWatcher:
-    def __init__(self, monitorPath: str or list, call_back_function_on_file = lambda x:x, call_back_function_on_dir = lambda x:x, call_back_function_on_any_change = lambda x:x):
+    def __init__(self, monitorPath: str or list, call_back_function_on_file = lambda x:x, call_back_function_on_dir = lambda x:x, call_back_function_on_any_change = lambda x:x, withFormat:bool = False, monitorFormat:set = {}):
         self.monitorPath = monitorPath
         self.call_back_function_on_file = call_back_function_on_file
         self.call_back_function_on_dir = call_back_function_on_dir
         self.call_back_function_on_any_change = call_back_function_on_any_change
+        self.withFormat = withFormat
+        self.monitorFormat = monitorFormat
         self.fileGuardian = []
         self.dirGuardian = []
         self.validatedFilePath = []
@@ -453,12 +461,11 @@ class systemWatcher:
         self.scanMonitorPath(monitorPath)
         self.createGuardian()
 
-
     def scanMonitorPath(self, monitorPath):
         monitorPath = [monitorPath] if type(monitorPath)==str else monitorPath
-        self.validatedFilePath = [i for i in monitorPath if os.path.isfile(i)]
+        self.validatedFilePath = [i for i in monitorPath if os.path.isfile(i) and (not self.withFormat or os.path.splitext(i)[-1] in self.monitorFormat)]
         self.validatedDirPath = [i for i in monitorPath if os.path.isdir(i)]
-        recursivePath = [([os.path.join(dirPath,dir) for dir in dirs],[os.path.join(dirPath,file) for file in files]) for rootPath in self.validatedDirPath for dirPath, dirs, files in os.walk(rootPath)]
+        recursivePath = [([os.path.join(dirPath,dir) for dir in dirs],[os.path.join(dirPath,file) for file in files if not self.withFormat or os.path.splitext(file)[-1] in self.monitorFormat]) for rootPath in self.validatedDirPath for dirPath, dirs, files in os.walk(rootPath)]
         [self.validatedDirPath.extend(i[0]) for i in recursivePath]
         [self.validatedFilePath.extend(i[1]) for i in recursivePath]
 
@@ -472,10 +479,10 @@ class systemWatcher:
         self.allGuardian = self.fileGuardian + self.dirGuardian
 
     def watch(self):
-        fileInfo = [i.watch() for i in self.fileGuardian]
+        fileInfo = [i.tryWatch() for i in self.fileGuardian]
         updatedFile = [i for i in fileInfo if type(i)==str and os.path.isfile(i)]
         self.call_back_function_on_file_result = [self.call_back_function_on_file(i) for i in updatedFile]
-        dirInfo = [i.watch() for i in self.dirGuardian]
+        dirInfo = [i.tryWatch() for i in self.dirGuardian]
         updatedDir = [i for i in dirInfo if type(i)==str and os.path.isdir(i)]
         self.call_back_function_on_dir_result = [self.call_back_function_on_dir(i) for i in updatedDir]
         self.call_back_function_on_any_change_result = self.call_back_function_on_any_change(updatedDir+updatedFile) if len(updatedDir+updatedFile)!=0 else None

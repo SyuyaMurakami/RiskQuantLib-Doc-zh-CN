@@ -1,6 +1,5 @@
 sphinx
 sphinx-rtd-theme
-pydata-sphinx-theme
 sphinx-autodoc-typehints
 nbsphinx
 ipython
@@ -17,3 +16,4 @@ copulae
 scipy
 importlib
 matplotlib
+readthedocs-sphinx-search

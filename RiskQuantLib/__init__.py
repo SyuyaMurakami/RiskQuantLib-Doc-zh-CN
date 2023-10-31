@@ -25,7 +25,7 @@ def initiateBuildFile():
     PYB.code.addLine(r'parser = argparse.ArgumentParser()')
     PYB.code.addLine(r'parser.add_argument("-a","--auto", help="use auto build model to build project dynamically", action="store_true")')
     PYB.code.addLine(r'parser.add_argument("-t", "--targetPath", type=str, help="the RiskQuantLib project you want to build")')
-    PYB.code.addLine(r'parser.add_argument("-r", "--renderFromPath", type=str, help="the dictionary of source code where the template code exists")')
+    PYB.code.addLine(r'parser.add_argument("-r", "--renderFromPath", type=str, help="the directory of source code where the template code exists")')
     PYB.code.addLine(r'parser.add_argument("-c", "--channel", type=str, help="if given a channel name, render action in this channel will not delete the result of render in other channel unless it is overwritten by current render")')
     PYB.code.addLine(r'parser.add_argument("-d", "--debug", help="use debug mode, break point in Src will start to effect", action="store_true")')
     PYB.code.addLine(r'args = parser.parse_args()')
@@ -57,39 +57,90 @@ def initiateMainFile():
     PYB.code.addLine('print("Write Your Code Here : "+path+os.sep+"main.py")')
     return PYB
 
-def initiateInstrumentFile():
+def initiateConfigFile():
     """
-    initiateInstrumentFile() is a function to generate content of Build_Instrument.xlsx.
+    initiateConfigFile() is a function to generate content of config.py source file.
 
-    Build_Instrument.xlsx will be created in every RiskQuantLib project when initiating it. It is
-    the declaration file of all instruments to be used in project and their inheritance relationship.
+    config.py will be created in every RiskQuantLib project when initiating it. It is the declaration file
+    of all instruments to be used in project and their inheritance relationship, it also contains the attribute
+    the would be used in this project.
 
     Returns
     -------
-    dfInstrument : pandas.DataFrame
+    PYB : pythonScriptBuilder
 
     """
-    import pandas as pd
-    dfInstrument = pd.DataFrame(
-        index=['InstrumentName', 'ParentRQLClassName', 'ParentQuantLibClassName', 'LibraryName',
-               'DefaultInstrumentType']).T
-    return dfInstrument
+    from RiskQuantLib.Tool.codeBuilderTool import pythonScriptBuilder, codeBuilder
+    PYB = pythonScriptBuilder()
+    PYB.setTitle()
+    PYB.code = codeBuilder(indent=0)
+    PYB.code.addLine('')
+    PYB.code.addLine(r'#-|instrument: security, company, index, interest')
+    PYB.code.addLine(r'#-|instrument: bond@security, stock@security, derivative@security, fund@security')
+    PYB.code.addLine(r'#-|instrument: future@derivative, option@derivative')
+    PYB.code.addLine('')
+    PYB.code.addLine(r'#-|instrument-DefaultInstrumentType: security@Security, company@Company, index@Index, interest@Interest')
+    PYB.code.addLine(r'#-|instrument-DefaultInstrumentType: bond@Bond, stock@Stock, derivative@Derivative, fund@Fund')
+    PYB.code.addLine(r'#-|instrument-DefaultInstrumentType: future@Future, option@Option')
+    return PYB
 
-def initiateAttributeFile():
+def initiateExecutableBuildShortcutFile():
     """
-    initiateAttributeFile() is a function to generate content of Build_Attr.xlsx.
+    initiateExecutableBuildShortcutFile() is a function to generate executable shortcut for different system.
 
-    Build_Attr.xlsx will be created in every RiskQuantLib project when initiating it. It is
-    the declaration file of all attributes which will be bound into instruments.
+    build.bat or build.sh will be created in every RiskQuantLib project when initiating it on Windows or linux. It is the shortcut
+    of run build.py by console.
 
     Returns
     -------
-    dfAttr : pandas.DataFrame
+    PYB : pythonScriptBuilder
 
     """
-    import pandas as pd
-    dfAttr = pd.DataFrame(index=['SecurityType', 'AttrName', 'AttrType']).T
-    return dfAttr
+    import sys
+    from RiskQuantLib.Tool.codeBuilderTool import pythonScriptBuilder, codeBuilder
+    PYB = pythonScriptBuilder()
+    PYB.code = codeBuilder(indent=0)
+    if sys.platform in {'win32'}:
+        PYB.code.addLine(r'''cd %~dp0''')
+        PYB.code.addLine(r'''python build.py''')
+        PYB.code.addLine(r'''pause''')
+    elif sys.platform in {'darwin','linux','linux2'}:
+        PYB.code.addLine(r'''DIR=$(cd $(dirname $0) && pwd)''')
+        PYB.code.addLine(r'''cd $DIR''')
+        PYB.code.addLine(r'''python build.py''')
+        PYB.code.addLine(r'''sleep 3''')
+    else:
+        PYB.code.addLine('')
+    return PYB
+
+def initiateExecutableDebugShortcutFile():
+    """
+    initiateExecutableDebugShortcutFile() is a function to generate executable shortcut for different system.
+
+    debug.bat or debug.sh will be created in every RiskQuantLib project when initiating it on Windows or linux. It is the shortcut
+    of run build.py by console.
+
+    Returns
+    -------
+    PYB : pythonScriptBuilder
+
+    """
+    import sys
+    from RiskQuantLib.Tool.codeBuilderTool import pythonScriptBuilder, codeBuilder
+    PYB = pythonScriptBuilder()
+    PYB.code = codeBuilder(indent=0)
+    if sys.platform in {'win32'}:
+        PYB.code.addLine(r'''cd %~dp0''')
+        PYB.code.addLine(r'''python build.py -a -d''')
+        PYB.code.addLine(r'''pause''')
+    elif sys.platform in {'darwin','linux','linux2'}:
+        PYB.code.addLine(r'''DIR=$(cd $(dirname $0) && pwd)''')
+        PYB.code.addLine(r'''cd $DIR''')
+        PYB.code.addLine(r'''python build.py -a -d''')
+        PYB.code.addLine(r'''sleep 3''')
+    else:
+        PYB.code.addLine('')
+    return PYB
 
 def parseBuildPath(targetPath: str, checkExist:bool = False):
     """
@@ -98,7 +149,7 @@ def parseBuildPath(targetPath: str, checkExist:bool = False):
     Parameters
     ----------
     targetPath : str
-        The path of target RiskQuantLib project dictionary.
+        The path of target RiskQuantLib project directory.
     checkExist : bool
         If true, this function will check the existence of related path of
         target project. It will raise exception iin case of absence.
@@ -107,41 +158,35 @@ def parseBuildPath(targetPath: str, checkExist:bool = False):
     Returns
     -------
     rqlPath : str
-        the path of RiskQuantLib dictionary
-    instrumentExcelPath : str
-        the path of instrument declaration file
-    attributeExcelPath : str
-        the path of attribute declaration file
+        the path of RiskQuantLib directory
+    configFilePath : str
+        The path of config.py used as default build config file.
     buildCachePath : str
         the path of building cache
 
     """
     import os
     rqlPath = targetPath + os.sep + "RiskQuantLib"
-    instrumentExcelPath = targetPath + os.sep + "Build_Instrument.xlsx"
-    attributeExcelPath = targetPath + os.sep + "Build_Attr.xlsx"
+    configFilePath = targetPath + os.sep + "config.py"
     buildCachePath = rqlPath + os.sep + "Build" + os.sep + "buildInfo.pkl"
-    if checkExist and (not os.path.isdir(rqlPath) or not os.path.exists(instrumentExcelPath) or not os.path.exists(attributeExcelPath)):
-        raise Exception("The target dictionary should be a RiskQuantLib project, with Build_Instrument.xlsx and Build_Attr.xlsx in it!")
-    return rqlPath, instrumentExcelPath, attributeExcelPath, buildCachePath
+    if checkExist and (not os.path.isdir(rqlPath) or not os.path.exists(configFilePath)):
+        raise Exception("The target directory should be a RiskQuantLib project, with directory named as RiskQuantLib and config.py in it!")
+    return rqlPath, configFilePath, buildCachePath
 
-def buildProjectFromExcel(targetPath: str, buildCachePath: str, instrumentExcelPath: str, attributeExcelPath: str,
-                          renderFromPath: str, bindType: str = 'renderedSourceCode', debug: bool = False):
+def buildProjectFromConfig(targetPath: str, buildCachePath: str, configFilePath:str, renderFromPath: str, bindType: str = 'renderedSourceCode', debug: bool = False):
     """
-    buildProjectFromExcel() is a function to build project according to excel declaration.
+    buildProjectFromConfig() is a function to build project according to config.py declaration.
 
     Parameters
     ----------
     targetPath : str
-        The path of target RiskQuantLib project dictionary.
+        The path of target RiskQuantLib project directory.
     buildCachePath : str
         The path of building cache.
-    instrumentExcelPath : str
-        The path of Build_Instrument.xlsx.
-    attributeExcelPath : str
-        The path of Build_Attr.xlsx
+    configFilePath : str
+        The path of config.py used as default build config file.
     renderFromPath : str
-        The path of source code dictionary
+        The path of source code directory
     bindType : str
         The channel of binding action. Source code are rendered and injected into project by different channels,
         The source code injected by channel A will be not influenced by source code injected by channel B, unless
@@ -161,15 +206,15 @@ def buildProjectFromExcel(targetPath: str, buildCachePath: str, instrumentExcelP
     None
 
     """
-    import os
-    from RiskQuantLib.Build.builder import excelBuilder
+    import os, time
+    from RiskQuantLib.Build.builder import configBuilder
     if os.path.isfile(buildCachePath):
-        buildObj = excelBuilder.loadInfo(buildCachePath)
+        buildObj = configBuilder.loadInfo(buildCachePath)
     else:
-        buildObj = excelBuilder(targetProjectPath=targetPath)
-    buildObj.buildProject(instrumentExcelPath=instrumentExcelPath, attributeExcelPath=attributeExcelPath)
+        buildObj = configBuilder(targetProjectPath=targetPath)
+    buildObj.buildProject(configFilePath=configFilePath)
     buildObj.renderProject(renderFromPath,bindType,persist=False, debug=debug)
-    print("Build Project Finished")
+    print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "- Build Project Finished")
 
 def newProject(targetPath:str = ''):
     """
@@ -191,15 +236,15 @@ def newProject(targetPath:str = ''):
     """
     if targetPath == '':
         parser = argparse.ArgumentParser()
-        parser.add_argument("target", type=str, help="the target dictionary where you want to create a RiskQuantLib project")
+        parser.add_argument("target", type=str, help="the target directory where you want to create a RiskQuantLib project")
         args = parser.parse_args()
         targetPath = args.target
 
-    import os,shutil
+    import os,shutil,sys
 
-    RiskQuantLibDictionary = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
-    sourcePath = os.path.abspath(RiskQuantLibDictionary)+os.sep+r'RiskQuantLib'
-    rqlPath, instrumentExcelPath, attributeExcelPath, buildCachePath = parseBuildPath(targetPath)
+    RiskQuantLibDirectory = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
+    sourcePath = os.path.abspath(RiskQuantLibDirectory)+os.sep+r'RiskQuantLib'
+    rqlPath, configFilePath, buildCachePath = parseBuildPath(targetPath)
 
     if not os.path.exists(rqlPath):
         # if there is no target path, create one
@@ -211,14 +256,12 @@ def newProject(targetPath:str = ''):
 
     shutil.copytree(sourcePath, rqlPath)
 
-    # create excel file for build
-    dfAttr = initiateAttributeFile()
-    dfInstrument = initiateInstrumentFile()
-    dfAttr.to_excel(attributeExcelPath,index=0)
-    dfInstrument.to_excel(instrumentExcelPath,index=0)
+    # create config.py for build
+    from RiskQuantLib.Tool.codeBuilderTool import pythonScriptBuilder, codeBuilder
+    PYB = initiateConfigFile()
+    PYB.writeToFile(configFilePath)
 
     # create build script
-    from RiskQuantLib.Tool.codeBuilderTool import pythonScriptBuilder,codeBuilder
     PYB = initiateBuildFile()
     PYB.writeToFile(targetPath + os.sep + 'build.py')
 
@@ -226,9 +269,23 @@ def newProject(targetPath:str = ''):
     PYB = initiateMainFile()
     PYB.writeToFile(targetPath+os.sep+'main.py')
 
-    # create python source file dictionary
+    # decide file extension depending on operating system
+    shortCutFileType = '.bat' if sys.platform in {'win32'} else '.sh' if sys.platform in {'darwin', 'linux', 'linux2'} else ''
+
+    # create build.bat or build.sh shortcut
+    PYB = initiateExecutableBuildShortcutFile()
+    PYB.writeToFile(targetPath + os.sep + 'build'+shortCutFileType)
+
+    # create debug.bat or debug.sh shortcut
+    PYB = initiateExecutableDebugShortcutFile()
+    PYB.writeToFile(targetPath + os.sep + 'debug'+shortCutFileType)
+
+    # create python source file directory and other useful directory
     renderFromPath = targetPath+os.sep+'Src'
-    os.makedirs(renderFromPath) if not os.path.exists(renderFromPath) else None
+    cachePath = targetPath+os.sep+'Cache'
+    dataPath = targetPath+os.sep+'Data'
+    resultPath = targetPath+os.sep+'Result'
+    [os.makedirs(p) if not os.path.exists(p) else None for p in [renderFromPath, cachePath, dataPath, resultPath]]
 
     print('RiskQuantLib project created!')
 
@@ -240,7 +297,7 @@ def packProject(targetPath:str = '', targetName:str = ''):
     Use terminal command 'pkgRQL' to use this function.
     The terminal command 'pkgRQL' accept a parameter 'targetPathString',
     which is the RiskQuantLib project path that you want to package.
-    It doesn't need to have a dictionary named 'RiskQuantLib' to be packaged.
+    It doesn't need to have a directory named 'RiskQuantLib' to be packaged.
 
     Parameters
     ----------
@@ -287,11 +344,11 @@ def checkAndCreateTemplatePath():
     Returns
     -------
     sourcePath : str
-        The path of RiskQuantLib template dictionary.
+        The path of RiskQuantLib template directory.
     """
     import os
-    RiskQuantLibDictionary = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
-    sourcePath = os.path.abspath(RiskQuantLibDictionary) + os.sep + r'RQLTemplate'
+    RiskQuantLibDirectory = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
+    sourcePath = os.path.abspath(RiskQuantLibDirectory) + os.sep + r'RQLTemplate'
     if os.path.exists(sourcePath):
         pass
     else:
@@ -351,7 +408,7 @@ def saveProject(targetPath:str = '', targetName:str = ''):
     which is the RiskQuantLib project path that you want to save,
     and an optional parameter 'projectName',
     which is the name you want to give to this project.
-    After calling this function, a '.zip' file will be created in RiskQuantLib project dictionary,
+    After calling this function, a '.zip' file will be created in RiskQuantLib project directory,
     and this project will be stored as a template.
 
     Parameters
@@ -422,8 +479,8 @@ def unpackProject(templateName:str = '', targetPath:str = ''):
         templateName = projectNameDict[templateIndex] if templateIndex in projectNameDict else templateName
 
     import sys,os,shutil
-    RiskQuantLibDictionary = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
-    sourcePath = os.path.abspath(RiskQuantLibDictionary)+os.sep+r'RQLTemplate'
+    RiskQuantLibDirectory = os.path.abspath(__file__).split('RiskQuantLib'+os.sep+'__init__')[0]
+    sourcePath = os.path.abspath(RiskQuantLibDirectory)+os.sep+r'RQLTemplate'
     shutil.unpack_archive(sourcePath+os.sep+templateName+'.zip',targetPath,"zip")
     if os.path.exists(targetPath+os.sep+templateName+'.zip'):
         os.remove(targetPath+os.sep+templateName+'.zip')
@@ -529,12 +586,12 @@ def addProjectTemplateFromGithub(targetGithub:str = ''):
 
 def receiveProjectTemplate(targetPath:str = ''):
     """
-    receiveProjectTemplate() is a function to receive any file or dictionary from your friend by
+    receiveProjectTemplate() is a function to receive any file or directory from your friend by
     LOCAL AREA NETWORK (LAN).
 
     Use terminal command 'recvRQL' to use this function. You can also specify a path where your want to
-    save the shared file or dictionary, like 'recvRQL targetPath'. If you do not give a path, the file will
-    be stored in current working dictionary.
+    save the shared file or directory, like 'recvRQL targetPath'. If you do not give a path, the file will
+    be stored in current working directory.
 
     After this function is called, you can receive the file shared from your friend, who is also in the
     same LAN. You can not receive files or project from people outside your local network by this function. If you
@@ -552,7 +609,7 @@ def receiveProjectTemplate(targetPath:str = ''):
     import os
     if targetPath == '':
         parser = argparse.ArgumentParser()
-        parser.add_argument("-t","--targetPath", type=str, help="the path where you want to save the received files into, default as current working dictionary")
+        parser.add_argument("-t","--targetPath", type=str, help="the path where you want to save the received files into, default as current working directory")
         args = parser.parse_args()
         targetPath = args.targetPath if args.targetPath else os.getcwd()
 
@@ -562,11 +619,11 @@ def receiveProjectTemplate(targetPath:str = ''):
 
 def sendProjectTemplate(targetPath:str = ''):
     """
-    sendProjectTemplate() is a function to send any file or dictionary to your friend by
+    sendProjectTemplate() is a function to send any file or directory to your friend by
     LOCAL AREA NETWORK (LAN).
 
     Use terminal command 'sendRQL targetProjectPath' or 'sendRQL targetFilePath' to use this function. If
-    you send a dictionary, it will be packed into a zip file at first, and sent to your friend.
+    you send a directory, it will be packed into a zip file at first, and sent to your friend.
 
     After this function is called, you can send to your friend who is also in the same LAN.
     You can not send files or project to people outside your local network by this function. If you
@@ -575,7 +632,7 @@ def sendProjectTemplate(targetPath:str = ''):
     Parameters
     ----------
     targetPath : str
-        A terminal command parameter, specify the path of file or dictionary you want to send.
+        A terminal command parameter, specify the path of file or directory you want to send.
 
     Returns
     -------
@@ -583,7 +640,7 @@ def sendProjectTemplate(targetPath:str = ''):
     """
     if targetPath == '':
         parser = argparse.ArgumentParser()
-        parser.add_argument("targetPath", type=str, help="the path of dictionary or file you want to send, if it's a dictionary, it will be packaged into a zip file first")
+        parser.add_argument("targetPath", type=str, help="the path of directory or file you want to send, if it's a directory, it will be packaged into a zip file first")
         args = parser.parse_args()
         targetPath = args.targetPath
 
@@ -608,21 +665,20 @@ def buildProject(targetPath:str = '', renderFromPath:str = '', channel:str = '',
     buildProject() is a function to build RiskQuantLib project.
 
     Use terminal command 'bldRQL targetProjectPath' to use this function. The project
-    will be built according to the Build_Instrument.xlsx and Build_Attr.xlsx in
-    the targetProjectPath.
+    will be built according to the targetProjectPath/config.py in the targetProjectPath.
 
     After this function is called, the instrument class file and attribute API will be
     automatically generated.
 
     For old version user of RiskQuantLib, this function is totally the same as
-    command 'python build.py' in terminal with working dictionary as targetProjectPath.
+    command 'python build.py' in terminal with working directory as targetProjectPath.
 
     Parameters
     ----------
     targetPath : str
         A terminal command parameter, specify the RiskQuantLib project path you want to build and render.
     renderFromPath : str
-        The path of dictionary of source file used to render target project.
+        The path of directory of source file used to render target project.
     channel : str
         render action in this channel will not delete the result of render in other channel
         unless it is overwritten by current render.
@@ -642,7 +698,7 @@ def buildProject(targetPath:str = '', renderFromPath:str = '', channel:str = '',
     if targetPath == '' and renderFromPath == '':
         parser = argparse.ArgumentParser()
         parser.add_argument("targetPath", type=str, help="the RiskQuantLib project you want to build")
-        parser.add_argument("-r","--renderFromPath", type=str, help="the dictionary of source code where the template code exists")
+        parser.add_argument("-r","--renderFromPath", type=str, help="the directory of source code where the template code exists")
         parser.add_argument("-c", "--channel", type=str, help="if given a channel name, render action in this channel will not delete the result of render in other channel unless it is overwritten by current render")
         parser.add_argument("-d", "--debug", help="use debug mode, break point in Src will start to effect", action="store_true")
         args = parser.parse_args()
@@ -654,8 +710,8 @@ def buildProject(targetPath:str = '', renderFromPath:str = '', channel:str = '',
     import os
     renderFromPath = renderFromPath if renderFromPath else (targetPath + os.sep + "Src")
     bindType = channel if channel else 'renderedSourceCode'
-    rqlPath,instrumentExcelPath,attributeExcelPath,buildCachePath = parseBuildPath(targetPath, checkExist=True)
-    buildProjectFromExcel(targetPath, buildCachePath,instrumentExcelPath,attributeExcelPath, renderFromPath, bindType, debug)
+    rqlPath, configFilePath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
+    buildProjectFromConfig(targetPath, buildCachePath, configFilePath, renderFromPath, bindType, debug)
 
 def autoBuildProject(targetPath:str = '', renderFromPath:str = '', channel:str = '', debug:bool = False):
     """
@@ -663,8 +719,7 @@ def autoBuildProject(targetPath:str = '', renderFromPath:str = '', channel:str =
     running until catch a KeyboardInterrupt Exception.
 
     Use terminal command 'autoRQL targetProjectPath' to use this function. The project
-    will be built according to the Build_Instrument.xlsx and Build_Attr.xlsx in
-    the targetProjectPath.
+    will be built according to the targetProjectPath/config.py in the targetProjectPath.
 
     After this function is called, the instrument class file and attribute API will be
     automatically generated and updated.
@@ -674,7 +729,7 @@ def autoBuildProject(targetPath:str = '', renderFromPath:str = '', channel:str =
     targetPath : str
         A terminal command parameter, specify the RiskQuantLib project path you want to build and render.
     renderFromPath : str
-        The path of dictionary of source file used to render target project.
+        The path of directory of source file used to render target project.
     channel : str
         render action in this channel will not delete the result of render in other channel
         unless it is overwritten by current render.
@@ -693,7 +748,7 @@ def autoBuildProject(targetPath:str = '', renderFromPath:str = '', channel:str =
     if targetPath == '' and renderFromPath == '':
         parser = argparse.ArgumentParser()
         parser.add_argument("targetPath", type=str, help="the RiskQuantLib project you want to build automatically")
-        parser.add_argument("-r", "--renderFromPath", type=str, help="the dictionary of source code where the template code exists")
+        parser.add_argument("-r", "--renderFromPath", type=str, help="the directory of source code where the template code exists")
         parser.add_argument("-c", "--channel", type=str, help="if given a channel name, render action in this channel will not delete the result of render in other channel unless it is overwritten by current render")
         parser.add_argument("-d", "--debug", help="use debug mode, break point in Src will start to effect", action="store_true")
         args = parser.parse_args()
@@ -705,14 +760,17 @@ def autoBuildProject(targetPath:str = '', renderFromPath:str = '', channel:str =
     import os
     renderFromPath = renderFromPath if renderFromPath else (targetPath + os.sep + "Src")
     bindType = channel if channel else 'renderedSourceCode'
-    rqlPath, instrumentExcelPath, attributeExcelPath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
+    rqlPath, configFilePath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
 
     # The call back function must be a single parameter function
     def build(projectPath=targetPath):
-        buildProjectFromExcel(targetPath,buildCachePath,instrumentExcelPath,attributeExcelPath, renderFromPath, bindType, debug)
+        try:
+            buildProjectFromConfig(targetPath,buildCachePath,configFilePath,renderFromPath, bindType, debug)
+        except Exception as e:
+            pass
 
     from RiskQuantLib.Tool.fileTool import systemWatcher
-    watchObj = systemWatcher([instrumentExcelPath, attributeExcelPath, renderFromPath], call_back_function_on_any_change=build)
+    watchObj = systemWatcher([configFilePath, renderFromPath], call_back_function_on_any_change=build, withFormat=True, monitorFormat={'.py','.pyt'})
     watchObj.start()
 
 def unBuildProject(targetPath:str = ''):
@@ -726,7 +784,7 @@ def unBuildProject(targetPath:str = ''):
     of instrument will be deleted. But, python source file will not be deleted until you do it by yourself.
 
     After a project is un-built, you can not use instrument directly in main.py or create new instrument
-    inherited from those un-registered instrument. The file Build_Instrument.xlsx and Build_Attr.xlsx will not be
+    inherited from those un-registered instrument. The file config.py will not be
     changed after you call this function.
 
     Parameters
@@ -745,9 +803,9 @@ def unBuildProject(targetPath:str = ''):
         targetPath = args.targetPath
 
     import os
-    rqlPath, instrumentExcelPath, attributeExcelPath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
-    from RiskQuantLib.Build.builder import excelBuilder
-    buildObj = excelBuilder.loadInfo(buildCachePath) if os.path.isfile(buildCachePath) else excelBuilder(targetProjectPath=targetPath)
+    rqlPath, configFilePath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
+    from RiskQuantLib.Build.builder import configBuilder
+    buildObj = configBuilder.loadInfo(buildCachePath) if os.path.isfile(buildCachePath) else configBuilder(targetProjectPath=targetPath)
     buildObj.clearProject()
     print("Project un-build finished!")
 
@@ -762,14 +820,12 @@ def persistProject(targetPath:str = '', renderFromPath:str = '', channel:str = '
 
     This function is like a snapshot of your project, it freezes all effective APIs into permanent ones.
 
-    Surely, you can still build the persisted project with new Build_Instrument.xlsx and Build_Attr.xlsx file.
+    Surely, you can still build the persisted project with new config.py file.
     Just remember, no matter how many times you build it, the persisted API will remain effective and will not be influenced.
 
     This command is used when you want to distribute your project to someone else, but you do not want him to change your
     current API. Or this command is used when you are quite sure your current code is stable and can be settled down so that
     you can move on to next stage.
-
-    This function will remove the file Build_Instrument.xlsx and Build_Attr.xlsx and replace them with new ones.
 
     This command can not be cancelled or un-done, use it carefully.
 
@@ -778,7 +834,7 @@ def persistProject(targetPath:str = '', renderFromPath:str = '', channel:str = '
     targetPath : str
         A terminal command parameter, specify the RiskQuantLib project path you want to persist.
     renderFromPath : str
-        The path of dictionary of source file used to render target project.
+        The path of directory of source file used to render target project.
     channel : str
         render action in this channel will not delete the result of render in other channel
         unless it is overwritten by current render.
@@ -790,7 +846,7 @@ def persistProject(targetPath:str = '', renderFromPath:str = '', channel:str = '
     if targetPath == '' and renderFromPath == '':
         parser = argparse.ArgumentParser()
         parser.add_argument("targetPath", type=str, help="the RiskQuantLib project whose code you want to change into permanent")
-        parser.add_argument("-r", "--renderFromPath", type=str, help="the dictionary of source code where the template code exists")
+        parser.add_argument("-r", "--renderFromPath", type=str, help="the directory of source code where the template code exists")
         parser.add_argument("-c", "--channel", type=str, help="if given a channel name, render action in this channel will not delete the result of render in other channel unless it is overwritten by current render")
         args = parser.parse_args()
         targetPath = args.targetPath
@@ -798,18 +854,16 @@ def persistProject(targetPath:str = '', renderFromPath:str = '', channel:str = '
         channel = args.channel
 
     import os
-    rqlPath, instrumentExcelPath, attributeExcelPath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
+    rqlPath, configFilePath, buildCachePath = parseBuildPath(targetPath, checkExist=True)
     renderFromPath = renderFromPath if renderFromPath else (targetPath + os.sep + "Src")
     bindType = channel if channel else 'renderedSourceCode'
     confirm = input("This action can not be Un-Done or Cancelled, do you confirm to continue? (y/n)")
     if confirm.lower()=='y':
-        from RiskQuantLib.Build.builder import excelBuilder
-        buildObj = excelBuilder.loadInfo(buildCachePath) if os.path.isfile(buildCachePath) else excelBuilder(targetProjectPath=targetPath)
+        from RiskQuantLib.Build.builder import configBuilder
+        buildObj = configBuilder.loadInfo(buildCachePath) if os.path.isfile(buildCachePath) else configBuilder(targetProjectPath=targetPath)
         buildObj.persistProject(sourceCodeDirPath=renderFromPath,bindType=bindType)
-        dfAttr = initiateAttributeFile()
-        dfInstrument = initiateInstrumentFile()
-        dfAttr.to_excel(attributeExcelPath, index=0)
-        dfInstrument.to_excel(instrumentExcelPath, index=0)
+        configFile = initiateConfigFile()
+        configFile.writeToFile(configFilePath)
         print("Project persisted!")
     else:
         print("Action cancelled, nothing changed!")

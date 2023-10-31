@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr "**注意：如果你把一个已经是RiskQuantLib工程的文件夹地�
 msgid "After this command, your dictionary should looks like: ::"
 msgstr "当运行这条命令之后，你的文件夹应该多出许多文件，文件夹现在看起来像这样：::"
 
-#: ../Create_Project.rst:27
+#: ../Create_Project.rst:31
 msgid ""
 "Then you can build it to suit your mission, we will explain it in next "
 "chapter."

@@ -64,29 +64,17 @@ To do it in RiskQuantLib, we need to build our own european option pricing templ
 
    newRQL yourProjectPath
 
-After it, we open ``Build_Instrument.xlsx``, and edit it like:
+After it, we open ``config.py``, and edit it like:
+::
 
-+----------------+------------------+-----------------------+------------+---------------------+
-| InstrumentName |ParentRQLClassName|ParentQuantLibClassName|LibararyName|DefaultInstrumentType|
-+================+==================+=======================+============+=====================+
-|myEuropeanOption|                  |   EuropeanOption      |            |  myEuropeanOption   |
-+----------------+------------------+-----------------------+------------+---------------------+
+    #-|instrument: myEuropeanOption
+    #-|instrument-ParentQuantLibClassName: myEuropeanOption@EuropeanOption
+    #-|instrument-DefaultInstrumentType: myEuropeanOption@myEuropeanOption
 
-Then we open ``Build_Attr.xlsx``, and make it look like:
+Then we continue to add contents into ``config.py``:
+::
 
-+------------------+--------------------+----------------+
-|   SecurityType   |      AttrName      |    AttrType    |
-+==================+====================+================+
-| myEuropeanOption |      myPayOff      |    qlPayOff    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |    myExercise      |  qlExercise    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |underlyingStockPrice|     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |  riskFreeRate      |     qlQuote    |
-+------------------+--------------------+----------------+
-| myEuropeanOption |         sigma      |     qlQuote    |
-+------------------+--------------------+----------------+
+    #-|attribute: myEuropeanOption.myPayOff@qlPayOff, myEuropeanOption.myExercise@qlExercise, myEuropeanOption.underlyingStockPrice@qlQuote, myEuropeanOption.riskFreeRate@qlQuote, myEuropeanOption.sigma@qlQuote
 
 Then we build it by using terminal command:
 ::

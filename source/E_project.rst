@@ -30,13 +30,14 @@ RiskQuantLib使用模板类和模板列表类来处理和分析数据，但如�
 
 这也是RiskQuantLib的核心设计，任何一类节点都有两层（你也可以把这两层合称为一个节点），即顶层的模板列表类和底层的模板类。顶层的模板列表类通常用于处理同一类节点内部的关系，而底层的模板类则作为具体的独立节点，负责与其他类型的节点进行交互，或者在自身的作用域下进行运算。
 
-RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点之间的链接： ``join``, ``connect`` ：
+RiskQuantLib通过四个关键的函数来完成图数据结构下各个节点之间的链接： ``join``, ``match``, ``connect`` , ``link`` ：
 
 *Join*
+-------------
 
 ``join`` 是用于在两个模板列表类的元素之间建立 **单向链接** 的函数。
 
-如果 ``stockListA`` 是一个 ``stockList`` 的实例，同时 ``companyListB`` 是一个 ``companyList`` 的实例，而且我们还有一个字典 ``stockIPODetail``，其中保存了公司和股票代码之间的一一映射关系，比如A公司发行的股票代码为0123.HK。注意在这里，同一家公司可能在两个不同的交易所发行两个不同代码的股票，比如同时在纽约交易所和香港交易所上市就一度是一件非常流行的事情。
+如果 ``stockListA`` 是一个 ``stockList`` 的实例，同时 ``companyListB`` 是一个 ``companyList`` 的实例，而且我们还有一个字典 ``stockIPODetail``，其中保存了公司和股票代码之间的一一映射关系，比如A公司发行的股票代码为0123.HK。注意在这里，同一家公司可能在两个不同的交易所发行两个不同代码的股票，比如同时在纽约交易所和香港交易所上市就一度是一件非常流行的事情。 ``stockIPODetail[companyName]`` 的返回值是一个列表，里面包含了它发行的所有股票的代码，并按照升序排列。
 
 ``join`` 函数是任何模板列表类的属性函数，你可以对任何模板列表类使用它。它的参数如下：
 ::
@@ -46,11 +47,29 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素, 程序都会从 ``anotherList`` 的元素中寻找哪些满足条件的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 ``targetAttrName`` 声明的名称，而筛选条件就是 ``filterFunction`` 声明的筛选条件。比如在上面的例子中：
 ::
 
-    companyListB.join(stockListA, 'issuedStock', lambda company, stock: stockIPODetail[company.name]==stock.code)
+    companyListB.join(stockListA, 'issuedStock', lambda company, stock: stockIPODetail[company.name]==stock.stockBelongToSameCompany)
 
 当运行这一行之后， ``companyListB`` 的每一个元素， 也就是 ``company`` 对象下回多出一个属性，名为 ``issuedStock``， 这个属性的值是一个  ``stockList``，其中包含了所有该公司发行的股票。如果该公司没有发行股票，那么这个 ``stockList`` 的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。
 
+*Match*
+------------
+
+``match`` 是 ``join`` 的快速并行版本，使用了矢量化来加快 ``join`` 的运算。以上面的例子来说:
+::
+
+    riskQuantLibList.match(anotherList, targetAttrName, matchFunctionOnLeft, matchFunctionOnRight)
+
+当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素，程序先计算 ``matchFunctionOnLeft`` 函数对当前元素运算的结果A，再计算计算 ``anotherList`` 的每一个元素在进行 ``matchFunctionOnRight`` 函数运算后的结果B，从 ``anotherList`` 找到那些B==A的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 ``targetAttrName`` 声明的名称。比如在上面的例子中：
+::
+
+    companyListB.match(stockListA, 'issuedStock', lambda company:stockIPODetail[company.name], lambda stock: stock.stockBelongToSameCompany)
+
+当运行这一行之后， ``companyListB`` 的每一个元素，也就是 ``company`` 对象下会多出一个属性，名为 ``issuedStock``，这个属性的值是一个 ``stockList``，其中包含了所有该公司发行的股票。如果该公司没有发行股票，那么这个 ``stockList`` 的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。
+
+``match`` **的缺陷在于牺牲了灵活性，并非每一个匹配条件都可以改写成解耦的形式。**
+
 *Connect*
+-----------------
 
 ``connect`` 是用于在两个模板列表类的元素之间建立 **双向链接** 的函数。
 
@@ -66,13 +85,26 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 比如在上面的例子中：
 ::
 
-    companyListB.connect(stockListA, 'issuedStock', 'issuedBy', lambda company, stock: stockIPODetail[company.name]==stock.code)
+    companyListB.connect(stockListA, 'issuedStock', 'issuedBy', lambda company, stock: stockIPODetail[company.name]==stock.stockBelongToSameCompany)
 
 当运行这一行之后， ``companyListB`` 的每一个元素， 也就是 ``company`` 对象下会多出一个属性，名为 ``issuedStock``， 这个属性的值是一个  ``stockList``，其中包含了所有该公司发行的股票。如果该公司没有发行股票，那么这个 ``stockList`` 的长度就为0，反之，发行了多只股票的情况下，其中就会包含所有的股票。
 
 同时，``stockListA`` 的每一个元素，也就是 ``stock`` 对象下会多出一个属性，名为 ``issuedBy``， 这个属性的值是一个  ``companyList``，其中包含了所有发行该股票的公司（一般一只股票只会由一个公司发行）。如果字典中没有存储该股票的发行信息，那么这个 ``companyList`` 的长度就为0。
 
-让我们一起来完成一个数据关系较为复杂的任务。这会让你了解到RQL如何使用图数据结构、双层节点、提线木偶（指针）等设计让问题变得简单。
+*Link*
+--------------
+``link`` 是 ``connect`` 的快速并行版本，使用了矢量化来加快 ``connect`` 的运算。以上面的例子来说:
+::
+
+    riskQuantLibList.link(anotherList, targetAttrNameOnLeft, targetAttrNameOnRight, matchFunctionOnLeft, matchFunctionOnRight)
+
+当调用了这个函数后，对于 ``riskQuantLibList`` 的每一个元素，程序先计算 ``matchFunctionOnLeft`` 函数对当前元素运算的结果A，再计算计算 ``anotherList`` 的每一个元素在进行 ``matchFunctionOnRight`` 函数运算后的结果B，从 ``anotherList`` 找到那些B==A的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 ``targetAttrNameOnLeft`` 声明的名称。
+
+当调用了这个函数后，对于 ``anotherList`` 的每一个元素，程序先计算 ``matchFunctionOnRight`` 函数对当前元素运算的结果B，再计算计算 ``riskQuantLibList`` 的每一个元素在进行 ``matchFunctionOnLeft`` 函数运算后的结果A，从 ``riskQuantLibList`` 找到那些A==B的元素，然后把这些元素汇总为一个模板列表，作为一个属性挂载在当前的元素下。这个属性的名称就是 ``targetAttrNameOnRight`` 声明的名称。
+
+``link`` **的缺陷在于牺牲了灵活性，并非每一个匹配条件都可以改写成解耦的形式。**
+
+**让我们一起来完成一个数据关系较为复杂的任务。这会让你了解到RQL如何使用图数据结构、双层节点、提线木偶（指针）等设计让问题变得简单。**
 
 一个文本计数项目
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -96,31 +128,20 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 |  ...    |       ...         |      ...                        |
 +---------+-------------------+---------------------------------+
 
-面对这样复杂的任务，你决定使用RiskQuantLib。你在终端中输入 ``newRQL path\myESG`` 来新建了一个RQL项目，并在项目根目录下新建了 ``Data`` 文件夹存入数据。随后你修改了两个xlsx文件并 `编译 <https://riskquantlib-doc.readthedocs.io/zh_CN/latest/Build_Project.html>`_ 生成了 ``company`` 和 ``industry`` 这两个类。
+面对这样复杂的任务，你决定使用RiskQuantLib。你在终端中输入 ``newRQL path\myESG`` 来新建了一个RQL项目，并在项目根目录下新建了 ``Data`` 文件夹存入数据。随后你修改了 ``config.py`` 文件并 `编译 <https://riskquantlib-doc.readthedocs.io/zh_CN/latest/Build_Project.html>`_ 生成了 ``company`` 和 ``industry`` 这两个类。
 
-``Build_Instrument.xlsx`` 看起来像这样:
+``config.py`` 看起来像这样:
+::
 
-+--------------+------------------+-----------------------+------------+---------------------+
-|InstrumentName|ParentRQLClassName|ParentQuantLibClassName|LibararyName|DefaultInstrumentType|
-+==============+==================+=======================+============+=====================+
-|   industry   |                  |                       |            |       industry      |
-+--------------+------------------+-----------------------+------------+---------------------+
-|   company    |                  |                       |            |       company       |
-+--------------+------------------+-----------------------+------------+---------------------+
+    #-|instrument: industry, company
 
 你为 ``company`` 类准备了 ``industry`` 属性和 ``usedWords`` 属性。在 ``build`` （编译）环节设置类的属性，可以使 ``build`` 后该类的RQLlist拥有便捷的 ``set`` 方法。
 
-``Build_Attr.xlsx`` 看起来像这样:
+继续在 ``config.py`` 后面追加声明，使得它看起来像这样:
+::
 
-+--------------+-------------------+----------------+
-| SecurityType |      AttrName     |    AttrType    |
-+==============+===================+================+
-|   company    |      industry     |     string     |
-+--------------+-------------------+----------------+
-|   company    |      usedWords    |                |
-+--------------+-------------------+----------------+
-|     ...      |         ...       |       ...      |
-+--------------+-------------------+----------------+
+    #-|instrument: industry, company
+    #-|attribute: company.industry@string, company.usedWords
 
 随后你执行了 ``build.py`` ，这生成了上述类，并自动生成他们各自的模板列表类。
 随后你打开了 ``main.py`` 文件开始了数据分析之旅。此时你的 ``main.py`` 文件是这样的：
@@ -136,6 +157,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 一个RQL项目的常用设计框架是数据导入，数据分析和结果输出。你尝试用这样的框架设计代码。
 
 *Data Input*
+-------------------
 
 让我们先导入数据，为了方便之后实例的值的批量设置，我们常常将属性导入为可迭代的对象，且他的顺序是和实例的顺序相一致的（也就是说公司A如果出现在公司列表的第3位，那么公司A的 ``usedWords`` 属性也应当出现在 ``usedWords`` 列表的第3位）。于是我们将企业的 ``usedWords`` 设计成一个如下的列表。
 
@@ -184,6 +206,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
     company_list = company_list.filter(lambda company:len(company.usedWords) != 0, useObj=True)
 
 *Data Analysis*
+--------------------
 
 随后让我们进入（复杂的）分析过程。，你决定先统计每一个company的用词频率。你打开了 ``RiskQuantLib\Company\company.py``，在 ``Company`` 类中添加了一条 ``countUsedWords`` 方法，具体操作如下：
 
@@ -299,6 +322,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
     company_list.execFunc("findUsefulWords", industry.rule_two)
 
 *Data Output*
+-----------------
 
 这是满足领导意见的词表，我们可以用他做后续的研究了！
 
@@ -307,7 +331,7 @@ RiskQuantLib通过两个关键的函数来完成图数据结构下各个节点�
 
 让我们回顾一下项目的整个流程：
 ::
-    1.思考节点类的结构关系和属性，修改instrument和attr两个xlsx文件，运行build.py。
+    1.思考节点类的结构关系和属性，修改config.py文件，运行build.py。
     2.导入数据。实例化RQLlist（模板列表类）并加入元素，使用set函数来设置元素节点的属性。
     3.开始分析。**往返** 于main.py和各个模板类（在这个项目中是company和industry）之间，为元素节点和list节点设计各种方法。并将调用方法的结果作为属性存在该节点上（或任何其他位置）。
     4.重复3的过程，直到得到最终结果。

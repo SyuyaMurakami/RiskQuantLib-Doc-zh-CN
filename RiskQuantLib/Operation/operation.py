@@ -493,7 +493,7 @@ class operation(object):
         else:
             return np.nanstd([getattr(i,attrName,np.nan) for i in self.all])
 
-    def execFunc(self,functionName,*args):
+    def execFunc(self,functionName,*args,**kwargs):
         """
         This function will execute instance function for every element in present RiskQuantLib list object,
         given the function name. If some elements don't have the function, a Null function will be used, and
@@ -505,7 +505,7 @@ class operation(object):
             The function that element has, and you want to call.
         """
         try:
-            result = [getattr(i,functionName,lambda x:None)(*args) for i in self.all]
+            result = [getattr(i,functionName,lambda *arg, **kwarg:None)(*args, **kwargs) for i in self.all]
             tmp = operation()
             tmp.setAll(result)
             return tmp
@@ -513,6 +513,56 @@ class operation(object):
             print('Execution Failed:', e)
             pass
 
+    def paraFunc(self, functionName, *args, **kwargs):
+        """
+        This function will execute instance function for every element in present RiskQuantLib list object by parallel,
+        which means elements will be serialized and sent to different processes.
+
+        If some elements don't have the function which named as you specify, a Null function will be used, and
+        the result will skip the execution for that element.
+
+        The call will be delayed until you run currentRiskQuantLibList.paraRun().
+
+        Parameters
+        ----------
+        functionName : str
+            The function that element has, and you want to call.
+
+        Returns
+        -------
+        operation
+        """
+        self._paraQueue = [] if not hasattr(self, "_paraQueue") else self._paraQueue
+        self._paraQueue.append((functionName, args, kwargs))
+        return self
+
+    def paraRun(self, nJobs: int = -1):
+        """
+        This is the trigger of run paralleled function for every element in this RiskQuantLib list. Before you use
+        this function, you should call someList.paraFunc('functionName') for more than one time to tell RiskQuantLib
+        what function you want to parallel.
+
+        Returns
+        -------
+        operation
+        """
+        self._paraQueue = [] if not hasattr(self, "_paraQueue") else self._paraQueue
+
+        def _coll(obj):
+            paraTmp = [getattr(obj, functionName, lambda *arg, **kwarg:None)(*args, **kwargs) for functionName,args,kwargs in self._paraQueue]
+            return paraTmp
+
+        from joblib import Parallel, delayed
+
+        try:
+            result = Parallel(n_jobs=nJobs)(delayed(_coll)(i) for i in self.all)
+            tmp = operation()
+            tmp.setAll(result)
+            self._paraQueue = []
+            return tmp
+        except Exception as e:
+            print('Parallel Failed:', e)
+            pass
 
     def copy(self,deep = True):
         """
@@ -734,6 +784,68 @@ class operation(object):
         to generate a new RiskQuantLib list and return it. anotherList can be any iterable object.
         """
         return self.isNotIn(anotherList) + anotherList
+
+    def match(self, anotherList, targetAttrName: str, matchFunctionOnLeft=lambda x: True, matchFunctionOnRight=lambda y: True):
+        """
+        For each element in current rqlList, find all elements that meet requirement
+        matchFunctionOnRight(element_in_another_list) == matchFunctionOnLeft(element_in_this_list)
+        from another RiskQuantLib list object. The elements meeting requirement will be set as an attribute
+        of element_in_this_list.
+
+        This function is very like rqlList.join, the only difference is that this function is
+        vectorized, thus run with faster speed. Of cause, this function has some drawbacks, it
+        can not deal with complicated relation which is described as coupled equation, while
+        rqlList.join can do it.
+
+        Parameters
+        ----------
+        anotherList : RiskQuantLib list or list
+            Another list object, holding elements waiting to be selected.
+        targetAttrName : str
+            The attribute name that you want to use to mark collected elements from another list.
+        matchFunctionOnLeft : function
+            This function has and only has one parameter, which stands for element in current list.
+        matchFunctionOnRight : function
+            This function has and only has one parameter, which stands for element in another list.
+        """
+        anotherMatchArray = np.array([matchFunctionOnRight(another) for another in anotherList])
+
+        thisMatchArray = np.array([matchFunctionOnLeft(this) for this in self.all]).reshape(-1, 1)
+        targetObjIDArray = np.apply_along_axis(lambda x: x == anotherMatchArray, 1, thisMatchArray)
+        anotherObjArray = np.array(anotherList.all)
+
+        matchedValueList = [anotherObjArray[targetIDList] for targetIDList in targetObjIDArray]
+        matchedObjList = [anotherList.new() for _ in range(len(self.all))]
+        [matchedObj.setAll(matchedValue.tolist()) for matchedObj,matchedValue in zip(matchedObjList,matchedValueList)]
+        [setattr(this, targetAttrName, matchedObj) for this, matchedObj in zip(self.all, matchedObjList)]
+
+    def link(self, anotherList, targetAttrNameOnLeft: str, targetAttrNameOnRight: str, matchFunctionOnLeft=lambda x: True, matchFunctionOnRight=lambda y: True):
+        """
+        For each element in current rqlList, find all elements that meet requirement
+        matchFunctionOnRight(element_in_another_list) == matchFunctionOnLeft(element_in_this_list)
+        from another RiskQuantLib list object. The elements meeting requirement will be set as an attribute
+        of element_in_this_list.
+
+        After this is done, for each element in another rqlList, find all elements that meet requirement
+        matchFunctionOnLeft(element_in_this_list) == matchFunctionOnRight(element_in_another_list)
+        from current RiskQuantLib list object. The elements meeting requirement will be set as an attribute
+        of element_in_another_list.
+
+        Parameters
+        ----------
+        anotherList : RiskQuantLib list or list
+            Another list object, holding elements waiting to be selected.
+        targetAttrNameOnLeft : str
+            The attribute name of present list that you want to use to mark collected elements from another list.
+        targetAttrNameOnRight : str
+            The attribute name of another list that you want to use to mark collected elements from present list.
+        matchFunctionOnLeft : function
+            This function has and only has one parameter, which stands for element in current list.
+        matchFunctionOnRight : function
+            This function has and only has one parameter, which stands for element in another list.
+        """
+        self.match(anotherList, targetAttrNameOnLeft, matchFunctionOnLeft, matchFunctionOnRight)
+        anotherList.match(self, targetAttrNameOnRight, matchFunctionOnRight, matchFunctionOnLeft)
 
     def join(self,anotherList,targetAttrName : str,filterFunction = lambda x,y:True):
         """

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 12:49+0800\n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,9 +50,9 @@ msgstr "``Instrument`` 即模板类，它是你在数据分析任务中可能用
 msgid ""
 "Then we start to build our first project. The critical thing is to tell "
 "RiskQuantLib how to build it. This is done by specify key word in "
-"``Build_Instrument.xlsx`` and ``Build_Attr.xlsx``, which you can find in "
-"your project root dictionary once you create a project. The content of "
-"building will be written into ``RiskQuantLib.Auto``."
+"``config.py`` , which you can find in your project root dictionary once "
+"you create a project. The content of building will be written into "
+"``RiskQuantLib.Auto``."
 msgstr "之后我们开始编译我们的第一个工程，其中最核心的一步是告诉RiskQuantLib如何编译，即告诉RiskQuantLib"
 "类之间的继承关系。这就需要用到工程中的 ``Build_Instrument.xlsx`` and ``Build_Attr.xlsx`` 两个文件。"
 "这两个文件在工程的根目录下。当编译完成后，大部分自动生成的代码会被写入 ``RiskQuantLib.Auto`` 文件夹下的文件中。"
@@ -61,15 +61,15 @@ msgstr "之后我们开始编译我们的第一个工程，其中最核心的一
 msgid "In last chapter we create a project, it looks like: ::"
 msgstr "在上一章，我们创建了一个新的工程，它看起来像这样：::"
 
-#: ../Build_Project.rst:26
+#: ../Build_Project.rst:30
 msgid "We will explain the function of each term as follows:"
 msgstr "我们将介绍这个工程中每个文件或者文件夹的功能："
 
-#: ../Build_Project.rst:29
+#: ../Build_Project.rst:33
 msgid "RiskQuantLib"
 msgstr ""
 
-#: ../Build_Project.rst:31
+#: ../Build_Project.rst:35
 msgid ""
 "``RiskQuantLib`` is a dictionary holding all source files of "
 "RiskQuantLib, it looks like: ::"
@@ -77,11 +77,11 @@ msgstr "``RiskQuantLib`` 是一个文件夹，它存放了所有RiskQuantLib的�
 "一个库存在。此时这个 ``RiskQuantLib`` 库完全是本地化的，任何工程都默认引用当前工程文件夹下的"
 " ``RiskQuantLib``，你可以更改其中的任何代码，来确保它适用于当前的工程。这种修改不会影响其他工程。这个文件夹的内容看起来像这样：::"
 
-#: ../Build_Project.rst:47
+#: ../Build_Project.rst:51
 msgid "Src"
 msgstr ""
 
-#: ../Build_Project.rst:48
+#: ../Build_Project.rst:52
 msgid ""
 "``Src`` is a dictionary holding all source files that is needed in your "
 "project. You can leave ``Src`` alone and never use it. It won't influence"
@@ -91,14 +91,14 @@ msgid ""
 " a great way to manage your code."
 msgstr "``Src`` 是用于存放python源代码文件的文件夹，你可以忽略这个文件夹，它的存在不会对你的项目有任何影响。或者你可以在其中存放你的项目源代码，这些代码可以被运行或者作为库导入，这和一般的文件夹没什么区别。但 ``Src`` 文件夹还提供了一种不同的方式，帮助你管理你的代码，如果你想尝试一些新的方式，它将很适合你。"
 
-#: ../Build_Project.rst:50
+#: ../Build_Project.rst:54
 msgid ""
 "**In short, any code in** ``Src`` **can be parsed by RiskQuantLib "
 "according to the comment in source code, the control comment syntax will "
 "help to generate python code as you wish.**"
 msgstr "简单来说，在 ``Src`` 文件夹下面的代码都可以被RiskQuantLib解析，代码的注释可以作为控制语句，控制代码的插入位置，重复，布尔逻辑等。"
 
-#: ../Build_Project.rst:52
+#: ../Build_Project.rst:56
 msgid ""
 "The most simple way to control your code is to tell RiskQuantLib where "
 "they should be insert. You can insert any code into any position of any "
@@ -106,7 +106,7 @@ msgid ""
 "want to do this, use ``#->`` control comment."
 msgstr "最简单的使用方式是用注释来控制代码的插入位置。只要目标的.py文件在RiskQuantLib文件夹下面，你就可以将代码插入这个文件中的任何位置。你可以通过使用 ``#->`` 注释来实现这一点。"
 
-#: ../Build_Project.rst:54
+#: ../Build_Project.rst:58
 msgid ""
 "For example, you have a instrument class named as ``stock``, and you want"
 " to add a class method to append a string ``_hello`` after the ``name`` "
@@ -115,27 +115,27 @@ msgid ""
 "this function: ::"
 msgstr "比如，你有一个模板类，名为 ``stock``，你希望增加一个类方法，它在 ``name`` 属性的后面增加一个字符串 ``_hello`` ，然后把生成的值保存为 ``greeting`` 属性。你可以编辑文件 ``RiskQuantLib/Instrument/Security/Stock.stock.py`` 来增加这个函数："
 
-#: ../Build_Project.rst:60
+#: ../Build_Project.rst:64
 msgid ""
 "This is usually what we do. But with ``Src``, you can do it another way. "
 "First, create a file named ``greeting.py`` under ``Src``, then open it "
 "and write: ::"
 msgstr "一般来说，这就是我们会做的事情。但对于在 ``Src`` 文件夹下面的源代码文件，我们可以用另一种方式来实现这个目的。首先，创建一个名为 ``greeting.py`` 的文件，然后编辑它："
 
-#: ../Build_Project.rst:67
+#: ../Build_Project.rst:71
 msgid ""
 "Then close this file and open your terminal, change working directory "
 "into current project, run: ::"
 msgstr "之后关闭文件，打开终端，将工作路径更改为当前工程的路径，然后输入命令："
 
-#: ../Build_Project.rst:72
+#: ../Build_Project.rst:76
 msgid ""
 "And this function will be inserted into "
 "``RiskQuantLib/Instrument/Security/Stock.stock.py`` automatically. Cool, "
 "isn't it?"
 msgstr "回车键运行这个命令，在 ``greeting.py`` 中的函数就会被自动插入 ``RiskQuantLib/Instrument/Security/Stock.stock.py``，这很方便，不是么？"
 
-#: ../Build_Project.rst:74
+#: ../Build_Project.rst:78
 msgid ""
 "**For the automatically generated instrument by RiskQuantLib, use "
 "instrument name will be enough to specify a target destination, like** "
@@ -144,219 +144,230 @@ msgid ""
 "like:** ``#->RiskQuantLib.Instrument.Security.Stock.stock``"
 msgstr "对于那些RiskQuantLib自动生成的模板类来说，使用类名就可以让RiskQuantLib知道你想插入的代码的位置，比如 ``#->stock``。但如果你自己编写了一个类文件，你应该使用绝对的导入路径，来告诉RiskQuantLib到底应该把代码放在哪里。比如：``#->RiskQuantLib.Instrument.Security.Stock.stock``"
 
-#: ../Build_Project.rst:77
-msgid "Build_Instrument.xlsx"
+#: ../Build_Project.rst:81
+msgid "config.py"
 msgstr ""
 
-#: ../Build_Project.rst:79
+#: ../Build_Project.rst:83
 msgid ""
-"``Build_Instrument.xlsx`` is the file to tell RiskQuantLib how to "
-"generate python source code of instrument class. After calling "
-"``build.py``, Any instrument specified will be created, the source file "
-"will be added into ``RiskQuantLib`` dictionary besides its first "
-"RiskQuantLib parent class. ``Build_Instrument.xlsx`` looks like:"
-msgstr "``Build_Instrument.xlsx`` 是告知RiskQuantLib如何编译生成模板类的excel文件，"
+"``config.py`` is the file to tell RiskQuantLib how to generate python "
+"source code of instrument class. After calling ``build.py``, Any "
+"instrument specified will be created, the source file will be added into "
+"``RiskQuantLib`` dictionary besides its first RiskQuantLib parent class. "
+"The default ``config.py`` looks like: ::"
+msgstr "``config.py`` 是告知RiskQuantLib如何编译生成模板类的配置文件，"
 "当运行 ``build.py`` 之后，你在此文件中声明的所有模板类都将被创建。这些模板类的python源文件位于"
-" ``RiskQuantLib`` 文件夹中，并且处于该模板类继承的第一个父类的文件夹里。 ``Build_Instrument.xlsx`` 看起来像这样："
+" ``RiskQuantLib`` 文件夹中，并且处于该模板类继承的第一个父类的文件夹里。 ``config.py`` 看起来像这样："
 
-#: ../Build_Project.rst:82 ../Build_Project.rst:96
-msgid "InstrumentName"
-msgstr ""
-
-#: ../Build_Project.rst:82 ../Build_Project.rst:96
-msgid "ParentRQLClassName"
-msgstr ""
-
-#: ../Build_Project.rst:82 ../Build_Project.rst:96
-msgid "ParentQuantLibClassName"
-msgstr ""
-
-#: ../Build_Project.rst:82 ../Build_Project.rst:96
-msgid "LibararyName"
-msgstr ""
-
-#: ../Build_Project.rst:82 ../Build_Project.rst:96
-msgid "DefaultInstrumentType"
-msgstr ""
-
-#: ../Build_Project.rst:84 ../Build_Project.rst:98 ../Build_Project.rst:100
-msgid "treasureBond"
-msgstr ""
-
-#: ../Build_Project.rst:84
-msgid "Bond"
-msgstr ""
-
-#: ../Build_Project.rst:84 ../Build_Project.rst:98
-msgid "numpy"
-msgstr ""
-
-#: ../Build_Project.rst:84 ../Build_Project.rst:98
-msgid "Treasure Bond"
-msgstr ""
-
-#: ../Build_Project.rst:86 ../Build_Project.rst:102 ../Build_Project.rst:123
-msgid "..."
-msgstr ""
-
-#: ../Build_Project.rst:89
+#: ../Build_Project.rst:97
 msgid ""
-"The *InstrumentName* column can be defined by your will, depending on "
-"your data. RiskQuantLib will create instrument class source file "
-"``treasureBond.py`` under "
-"``RiskQuantLib.Instrument.Security.Bond.TreasureBond``, and create list "
-"class source file ``treasureBondList.py`` under  "
-"``RiskQuantLib.InstrumentList.SecurityList.BondList.TreasureBondList`` "
-"after your run ``python build.py``."
-msgstr "你可以任意定义 *InstrumentName* 这一列的内容，但具体的定义方式应该取决于你的数据结构。"
-"当进行编译后，RiskQuantLib会在 ``RiskQuantLib.Security.Bond.TreasureBond`` 路径下创建 ``treasureBond.py``。"
-"并且在 ``RiskQuantLib.SecurityList.BondList.TreasureBondList`` 路径下创建 ``treasureBondList.py``。"
-
-#: ../Build_Project.rst:91
-msgid ""
-"The *ParentRQLClassName* means this new instrument will inherit from this"
-" RiskQuantLib class. It can accept key word like: ``Any``, ``Fund``, "
-"``Stock``, ``Bond``, ``Repo``, etc. However,"
-msgstr "*ParentRQLClassName* 这一列声明了新创建的模板类如何继承自那些已经存在的类。这一列中可以填充的字符串包括"
-" ``Any``, ``Fund``, ``Stock``, ``Bond``, ``Repo`` 等，但是："
-
-#: ../Build_Project.rst:93
-msgid ""
-"**Notice: You can use the instrumentName you specified in last row to "
-"fill ParentRQLClassName column, like:**"
-msgstr "**注意：上一行的InstrumentName列声明的模板类可以立刻被继承，比如：**"
-
-#: ../Build_Project.rst:98
-msgid "bond"
-msgstr ""
-
-#: ../Build_Project.rst:100
-msgid "chinaTreaBond"
-msgstr ""
-
-#: ../Build_Project.rst:100
-msgid "Panda Bond"
-msgstr ""
-
-#: ../Build_Project.rst:105
-msgid ""
-"The *ParentQuantLibClassName* means this new instrument will inherit from"
-" this QuantLib class. It can accept key word like: ``Instrument``, "
-"``Bond``, etc. You can refer to QuantLib document to find what class "
-"QuantLib has."
-msgstr "*ParentQuantLibClassName* 一列是用来声明新的模板类如何继承自QuantLib的预置类。"
-"这一列中可以填充的字符串有：``Instrument``, ``Bond`` 等，你需要参考QuantLib的文档来查找到底可以继承自哪些QuantLib类。"
-
-#: ../Build_Project.rst:107
-msgid ""
-"The *LibraryName* is other library that you will use in instrument class "
-"source file, like numpy and pandas."
-msgstr "*LibraryName* 一列是告诉RiskQuantLib调用哪些外部库，比如numpy，pandas等。"
-
-#: ../Build_Project.rst:109
-msgid ""
-"The *DefaultInstrumentType* is a string to mark your new instrument "
-"class. It can be any string or blank."
-msgstr "*DefaultInstrumentType* 一列中应该填写一个字符串，用来标记模板类的默认类型。你可以留空。"
+"It might be a little confusing if we write it in above way, but it will "
+"be more clear if we see it as a tree: ::"
+msgstr "这样的声明方式或许有些令人迷惑，但如果把它写成文件树的形式，就会清楚很多，像这样："
 
 #: ../Build_Project.rst:112
-msgid "Build_Attr.xlsx"
-msgstr ""
-
-#: ../Build_Project.rst:114
 msgid ""
-"``Build_Attr.xlsx`` is the file used to tell RiskQuantLib what kind of "
-"attributes you need, when analysising your data, and which class these "
-"attributes belong to. After calling ``build.py``, any attributes "
-"specified here will be registered and can be used with ``set`` function. "
-"This file looks like:"
-msgstr "``Build_Attr.xlsx`` 是用来告诉RiskQuantLib，在每个模板类中，有哪些属性需要存在。"
-"当运行 ``build.py`` 后，你在此excel文件中声明的属性将被添加到对应的模板类中，你可以使用"
-" ``set`` 函数族来对这些属性进行操作。 ``Build_Attr.xlsx`` 看起来像这样："
+"There are two basic kinds of keyword in ``config.py``, which is "
+"``instrument`` and ``attribute`` , we will explain them here:"
+msgstr "``config.py`` 文件中可以使用的关键字有两类，分别是 ``instrument`` 和 ``attribute``，我们来详细介绍下它们的使用方式："
 
-#: ../Build_Project.rst:117
-msgid "SecurityType"
+#: ../Build_Project.rst:115
+msgid "*instrument*"
 msgstr ""
 
 #: ../Build_Project.rst:117
-msgid "AttrName"
-msgstr ""
-
-#: ../Build_Project.rst:117
-msgid "AttrType"
-msgstr ""
-
-#: ../Build_Project.rst:119
-msgid "fund"
-msgstr ""
-
-#: ../Build_Project.rst:119
-msgid "yourAttribute"
-msgstr ""
-
-#: ../Build_Project.rst:119
-msgid "number"
-msgstr ""
-
-#: ../Build_Project.rst:121
-msgid "stock"
-msgstr ""
-
-#: ../Build_Project.rst:121
-msgid "anotherAttribute"
-msgstr ""
-
-#: ../Build_Project.rst:121
-msgid "string"
-msgstr ""
-
-#: ../Build_Project.rst:126
 msgid ""
-"The *SecurityType* column can accept key word like: ``Any``, ``Fund``, "
-"``Stock``, ``Bond``, ``Repo``, etc. However,"
-msgstr "*SecurityType* 列可以填充的字符串包括： ``Any``, ``Fund``, ``Stock``, ``Bond``, ``Repo`` 等，但是：""
+"The *instrument* key word can be used to define instrument by your will, "
+"depending on your data. It is just a comment in python, but a little "
+"special. To use it, the comment line has to start with ``#-|`` command "
+"tag, and followed closely by ``instrument`` keyword, no space or other "
+"characters in the middle. Finally, a ``:`` has to follow the "
+"``instrument`` keyword. A validated command comment is like: ::"
+msgstr "你可以任意定义 *instrument* 关键字之后的内容，但具体的定义方式应该取决于你的数据结构。"
+" *instrument* 关键字声明的内容看起来就是一条普通的python注释，唯一不同的是，这行注释必须顶行开始，且开始的几个字符必须是 ``#-|`` 。 ``#-|`` 又称为命令注释符，命令注释符意味着这一行注释是可以控制代码的生成方式的有意义的注释。"
+"命令注释符后面可以使用的关键字有很多，这里我们使用 ``instrument`` 关键字，然后紧跟一个冒号 ``:`` 。它们中间不能有任何的空格或者其它字符。"
+"合法的命令注释行像下面这样："
 
-#: ../Build_Project.rst:128
+#: ../Build_Project.rst:122
 msgid ""
-"Any instrument you specify in *Build_Instrument.xlsx* can also be used "
-"here. If you already create a class named ``treasureBond`` in "
-"*Build_Instrument.xlsx*, then here you can fill ``treasureBond`` in "
-"*SecurityType* column."
-msgstr "你在 ``Build_Instrument.xlsx`` 文件中声明的模板类可以在 ``Build_Attr.xlsx`` 文件中作为"
-"SecurityType列的值。此时相当于你对一个自定的模板类立刻设定属性。比如，如果你在 ``Build_Instrument.xlsx`` 中声明了一个名为 ``treasureBond`` 的模板类，在 ``Build_Attr.xlsx``，你可以在SecurityType列中填写 ``treasureBond``。"
+"**You can use comma to seperate different instruments declaration, "
+"like:** ::"
+msgstr "**你可以使用逗号来分隔不同的模板类声明，像这样:** ::"
 
-#: ../Build_Project.rst:130
+#: ../Build_Project.rst:127
 msgid ""
-"The *AttrType* column can accept key word of ``Number``, ``String``, "
-"``Any``, ``Series``, or any other string that you think it could be a "
-"type. It tells RiskQuantLib what kind of data will be stored by this "
-"attribute. If you add 'sellPrice' to ``Stock``, this should be a "
-"``Number`` attribute, while an attribute like 'issuerName' is a "
-"``String`` kind. ``Series`` is used if it's an attribute like "
+"**You can use @ to specify what parent instrument the current one is "
+"inheriting from, like:** ::"
+msgstr "**你可以使用@符号来声明模板类的父类，像这样：** ::"
+
+#: ../Build_Project.rst:132
+msgid ""
+"**If an instrument has more than two parents, write them seperately "
+"like:** ::"
+msgstr "**如果一个模板类有超过一个父类，你应该分别声明它们，像这样：** ::"
+
+#: ../Build_Project.rst:137
+msgid ""
+"The instrument declared here will tell RiskQuantLib how to build your "
+"project and add class files that will be used to form a data graph. For "
+"example, if you write this in ``config.py`` : ::"
+msgstr "在 ``config.py`` 文件中声明的模板类可以告诉RiskQuantLib 如何构建你的工程项目，并且自动生成相关的模板类文件，以便于你构建数据图。"
+"比如，如果你在 ``config.py`` 文件中写了以下内容： ::"
+
+#: ../Build_Project.rst:142
+msgid ""
+"RiskQuantLib will create instrument class source file ``treasureBond.py``"
+" under ``RiskQuantLib.Instrument.Security.Bond.TreasureBond``, and create"
+" list class source file ``treasureBondList.py`` under  "
+"``RiskQuantLib.InstrumentList.SecurityList.BondList.TreasureBondList`` "
+"after your run ``python build.py``."
+msgstr "当进行编译后，RiskQuantLib会在 ``RiskQuantLib.Security.Bond.TreasureBond`` 路径下创建 ``treasureBond.py``。"
+"并且在 ``RiskQuantLib.SecurityList.BondList.TreasureBondList`` 路径下创建 ``treasureBondList.py``。"
+
+#: ../Build_Project.rst:144
+msgid ""
+"The @ means this new instrument will inherit from this RiskQuantLib "
+"class. It can accept key word like: ``Fund``, ``Stock``, ``Bond``, "
+"``Repo``, etc."
+msgstr "@之后的内容声明了新创建的模板类如何继承自那些已经存在的类。这一列中可以填充的字符串包括"
+" ``Stock``, ``Bond``, ``Repo`` 等，但是："
+
+#: ../Build_Project.rst:146
+msgid ""
+"**However, you should always inherit from a class that you have declared."
+" It doesn't matter if you declare the parent class before or after this "
+"line.**"
+msgstr "**注意：你应该继承那些已经被声明过的模板类，你可以在当前声明语句的前方或者后面声明父模板类，但父类至少应当被声明一次：**"
+
+#: ../Build_Project.rst:148 ../Build_Project.rst:187
+msgid ""
+"**You can not split this declaration into two lines using \\ or /. If you"
+" want to start a new line, a new keyword must be used, like:** ::"
+msgstr "你不可以用 反斜杠 或者 / 符号来换行进行声明。如果声明过长，你应该重新使用关键字另起一条声明。比如这样："
+
+#: ../Build_Project.rst:155
+msgid "*attribute*"
+msgstr ""
+
+#: ../Build_Project.rst:157
+msgid ""
+"The *attribute* key word can be used to what kind of attributes you need "
+"when analysising your data, and which class these attributes belong to. "
+"After calling ``build.py``, any attributes specified here will be "
+"registered and can be used with ``set`` function."
+msgstr "*attribute* 关键字用于声明你需要的属性的名称，以及这些属性属于哪个模板类。"
+"当运行了 ``build.py`` 后，声明的属性将会被注册并且你可以使用 ``set`` 函数族来对这些属性进行赋值。"
+
+#: ../Build_Project.rst:159
+msgid ""
+"This keyword is just a comment in python, but, as always, a little "
+"special. To use it, the comment line has to start with ``#-|`` command "
+"tag, and followed closely by ``attribute`` keyword, no space or other "
+"characters in the middle. Finally, a ``:`` has to follow the "
+"``attribute`` keyword. A validated command comment is like: ::"
+msgstr "*attribute* 关键字声明的内容看起来就是一条普通的python注释，唯一不同的是，这行注释必须顶行开始，且开始的几个字符必须是 ``#-|`` 。 ``#-|`` 又称为命令注释符，命令注释符意味着这一行注释是可以控制代码的生成方式的有意义的注释。"
+"命令注释符后面可以使用的关键字有很多，这里我们使用 ``attribute`` 关键字，然后紧跟一个冒号 ``:`` 。它们中间不能有任何的空格或者其它字符。"
+"合法的命令注释行像下面这样："
+
+#: ../Build_Project.rst:164
+msgid "This declaration will add ``yourAttribute`` to class ``fund`` ."
+msgstr "这条声明将会在 ``fund`` 模板类上添加 ``yourAttribute`` 属性。"
+
+#: ../Build_Project.rst:166
+msgid ""
+"**You can use comma to seperate different attributes declaration, like:**"
+" ::"
+msgstr "**你可以使用逗号来分隔不同的属性声明，像这样:** ::"
+
+#: ../Build_Project.rst:171
+msgid ""
+"**You can use @ to specify what data type this attribute should have, "
+"like:** ::"
+msgstr "**你可以使用@来声明当前属性的数据类型，像这样:** ::"
+
+#: ../Build_Project.rst:176
+msgid ""
+"The default data type can be ``number``, ``string``, ``series``. It can "
+"also be self-defined, actually you can use any word after @ to specify a "
+"data type, if it doesn't exist, RiskQuantLib will create a new data type "
+"and use the new one, like: ::"
+msgstr "@后面可以填充的字符串包括 ``number``, ``string``, ``series``。"
+"或者是其他任何你认为可以作为数据类型的字符串。它告诉RiskQuantLib在此属性上存储的值应该是什么数据类型。"
+"如果你使用了RiskQuantLib预置的数据类型以外的数据类型，那么当编译之后，新的模板数据类型将会被创建，它也是一个类文件，你可以在 ``RiskQuantLib.Property`` 文件夹下找到。"
+
+#: ../Build_Project.rst:181
+msgid ""
+"Data type tells RiskQuantLib what kind of data will be stored by this "
+"attribute. If you add 'sellPrice' to ``stock``, this should be a "
+"``number`` attribute, while an attribute like 'issuerName' is a "
+"``string`` kind. ``series`` is used if it's an attribute like "
 "'sellPriceOfPastSixMonth'. If you specify a kind that is never used "
 "before, it will be created as a type class, located in "
 "``RiskQuantLib.Property``."
-msgstr "*AttrType* 列可以填充的字符串包括 ``Number``, ``String``, ``Any``, ``Series``。"
-"或者是其他任何你认为可以作为数据类型的字符串。它告诉RiskQuantLib在此属性上存储的值应该是什么数据类型。"
-"如果你为 ``Stock`` 模板类添加了名为sellPrice的属性，考虑到价格应该是一个数字，那么AttrType列中应该填"
-" ``Number``，但如果属性名为issuerName，数据类型应该是 ``String``，如果属性名为sellPriceOfPastSixMonth，"
-"那么数据类型应该是 ``Series``，如果你使用了RiskQuantLib预置的数据类型以外的数据类型，那么当编译之后，"
-"新的模板数据类型将会被创建，它也是一个类文件，你可以在 ``RiskQuantLib.Property`` 文件夹下找到。"
+msgstr "数据类型告诉RiskQuantLib到底应该在这个属性上以何种方式来存储数据。如果你为 ``stock`` 模板类添加了名为sellPrice的属性，考虑到价格应该是一个数字，那么@之后应该写"
+" ``number``，但如果属性名为issuerName，数据类型应该是 ``string``，如果属性名为sellPriceOfPastSixMonth，"
+"那么数据类型应该是 ``series``。"
 
-#: ../Build_Project.rst:133
+#: ../Build_Project.rst:183
+msgid ""
+"The data type here is not only a data type in RiskQuantLib. RiskQuantLib "
+"is designed to be used to process graph-structure-data. Data type we "
+"mentioned above is actually the ending-node of a graph, thus we'd better "
+"call it ``property`` . We will explain it in later chapter."
+msgstr "这里说的数据类型不仅仅是一个数据类型。RiskQuantLib是被设计用来进行图数据处理的。这里的数据类型也是数据图的一个终端节点类。我们会在之后的章节介绍。"
+
+#: ../Build_Project.rst:185
+msgid ""
+"**You should add attribute to an instrument that is already declared, no "
+"matter it is before or after.**"
+msgstr "**注意：你应该仅仅向那些被声明过的模板类添加属性。你可以当前属性声明的前面或后面进行模板类的声明，但至少应该声明那个模板类一次。**"
+
+#: ../Build_Project.rst:194
+msgid "*instrument-DefaultInstrumentType*"
+msgstr ""
+
+#: ../Build_Project.rst:196
+msgid ""
+"This key word is a string to mark your new instrument class. It is just a"
+" label, does not actually influence the class behavior. An example is "
+"like: ::"
+msgstr "这个关键字用来为声明的模板类提供一个简称，它只是作为一个标签，没有更多的其它功能。使用它的例子如下： ::"
+
+#: ../Build_Project.rst:202
+msgid "*instrument-ParentQuantLibClassName*"
+msgstr ""
+
+#: ../Build_Project.rst:204
+msgid ""
+"This keyword means this new instrument will inherit from this QuantLib "
+"class. It can accept key word like: ``Instrument``, ``Bond``, etc. You "
+"can refer to QuantLib document to find what class QuantLib has. Like: ::"
+msgstr "这个关键字是用来声明新的模板类如何继承自QuantLib的预置类。这一列中可以填充的字符串有：``Instrument``, ``Bond`` 等，你需要参考QuantLib的文档来查找到底可以继承自哪些QuantLib类。使用它的例子如下： ::"
+
+#: ../Build_Project.rst:210
+msgid "*instrument-LibraryName*"
+msgstr ""
+
+#: ../Build_Project.rst:212
+msgid ""
+"The *LibraryName* is other library that you will use in instrument class "
+"source file, like numpy and pandas. Like: ::"
+msgstr "这个关键字是告诉RiskQuantLib调用哪些外部库，比如numpy，pandas等。使用它的例子如下： ::"
+
+#: ../Build_Project.rst:218
 msgid "build.py"
 msgstr ""
 
-#: ../Build_Project.rst:135
+#: ../Build_Project.rst:220
 msgid ""
 "``build.py`` is used to generate python source code automatically. After "
 "you specify what kind of class you want to create, how it inherit from "
-"other class in *Build_Instrument.xlsx*, and what attributes these class "
-"should have in *Build_Attr.xlsx*, you can call *build.py* by terminal: ::"
+"other class, what attributes these class should have in *config.py*, you "
+"can call *build.py* by terminal: ::"
 msgstr "``build.py`` 是用于编译整个RiskQuantLib工程的，当你已经声明了编译的规则之后，"
 "通过在终端运行如下命令来进行编译：::"
 
-#: ../Build_Project.rst:140
+#: ../Build_Project.rst:225
 msgid ""
 "**Notice: If you do not use control comment syntax in Src, this build.py "
 "will only need to be excuted once, at the begin of your project. Do not "
@@ -366,7 +377,7 @@ msgid ""
 " directory:** ::"
 msgstr "**注意：如果你不使用Src文件夹，或者在Src文件夹下面的源文件中不使用控制注释语句，那么通常项目只会在开始时执行一次编译，而不是在每次运行main.py的时候都执行编译，那样做是不必要的。但如果你使用控制注释语句，你可以使用下面的命令来自动编译整个工程，每当你对Src文件夹的任何文件进行修改，它都会重新编译：**"
 
-#: ../Build_Project.rst:145
+#: ../Build_Project.rst:230
 msgid ""
 "If your project is under development, it will be useful to use ``debug`` "
 "mode. With this mode, the python source code in ``Src`` will not be "
@@ -378,27 +389,84 @@ msgid ""
 "debug mode, run: ::"
 msgstr "如果你的项目还处于活跃的开发期，那么使用调试模式是非常有必要的。在调试模式下，``Src`` 文件夹中的代码不会被作为代码块直接插入目标源文件，他们会被当成是一个模组，直接导入到目标位置，然后动态绑定给类。这使得 ``Src`` 文件夹下面的任何源文件中的断点可以生效，以便于你直接在 ``Src`` 文件夹下面进行代码修改和调试。当然，自动编译依然可以使用，每当你对源代码进行编辑，它都会自动编译整个工程。如果想要进入自动调试模式，可以使用下面的代码："
 
-#: ../Build_Project.rst:151
+#: ../Build_Project.rst:235
+msgid "or just double click the file in windows system: ::"
+msgstr "或者在windows系统中，你可以直接双击以下文件来打开调试模式： ::"
+
+#: ../Build_Project.rst:241
 msgid "main.py"
 msgstr ""
 
-#: ../Build_Project.rst:153
+#: ../Build_Project.rst:243
 msgid ""
 "``main.py`` is entrance of your project. You can start your coding here, "
 "by: ::"
 msgstr "``main.py`` 是整个项目的入口，你可以在这个文件中开始编辑数据处理相关代码。"
 
-#: ../Build_Project.rst:158
+#: ../Build_Project.rst:248
 msgid "Then you can use the class directly by: ::"
 msgstr "然后你可以直接使用模板类，只需要：::"
 
-#: ../Build_Project.rst:163
+#: ../Build_Project.rst:253
 msgid "You can also set attributes directly by: ::"
 msgstr "你可以直接使用set函数族来设定属性，像这样：::"
 
-#: ../Build_Project.rst:169
+#: ../Build_Project.rst:259
 msgid ""
 "For more information about the ``Instrument``, we will introduce it in "
 "next chapter."
 msgstr "如果需要了解更多关于 ``Instrument`` （模板类）的信息，我们将在下一章介绍。"
+
+#: ../Build_Project.rst:262
+msgid "Data"
+msgstr ""
+
+#: ../Build_Project.rst:264
+msgid "This is a folder just used to hold your data. Default as empty."
+msgstr "这是个用于存放数据的文件夹，默认为空。"
+
+#: ../Build_Project.rst:267
+msgid "Cache"
+msgstr ""
+
+#: ../Build_Project.rst:269
+msgid "This is a folder just used to hold your cache file. Default as empty."
+msgstr "这是个用于存放缓存的文件夹，默认为空。"
+
+#: ../Build_Project.rst:272
+msgid "Result"
+msgstr ""
+
+#: ../Build_Project.rst:274
+msgid "This is a folder just used to hold your result file. Default as empty."
+msgstr "这是个用于存放结果的文件夹，默认为空。"
+
+#: ../Build_Project.rst:277
+msgid "build.bat"
+msgstr ""
+
+#: ../Build_Project.rst:279
+msgid ""
+"After specifying all instruments and attributes in ``config.py`` , you "
+"can double click ``build.bat`` to build your preoject. This file only "
+"exists in windows system."
+msgstr "当你在 ``config.py`` 声明了所有需要的模板类和属性后，你可以双击 ``build.bat`` 来进行构建。当然，只有在windows系统中初始化的RiskQuantLib项目中才会有这个文件。"
+
+#: ../Build_Project.rst:282
+msgid "debug.bat"
+msgstr ""
+
+#: ../Build_Project.rst:284
+msgid ""
+"After specifying all instruments and attributes in ``config.py`` , you "
+"can double click ``debug.bat`` to debug your preoject. This file only "
+"exists in windows system."
+msgstr "当你在 ``config.py`` 声明了所有需要的模板类和属性后，你可以双击 ``debug.bat`` 来进行调试。当然，只有在windows系统中初始化的RiskQuantLib项目中才会有这个文件。"
+
+#: ../Build_Project.rst:286
+msgid ""
+"The difference between build and debug is debug mode import file in "
+"``Src`` as a module, thus leads to different behaviors. You can find more"
+" information about ``Src`` above."
+msgstr "调试和构建的不同之处在于，调试模式下，``Src`` 文件下的代码会被加载成为模组，然后导入主函数运行。而构建模式下，``Src`` 文件夹下面的代码会被当作代码块 ``chunk`` 进行分发。"
 
