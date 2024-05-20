@@ -28,6 +28,14 @@ RiskQuantLib.Operation.operation module
    :undoc-members:
    :show-inheritance:
 
+RiskQuantLib.Operation.vectorization module
+-------------------------------------------
+
+.. automodule:: RiskQuantLib.Operation.vectorization
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

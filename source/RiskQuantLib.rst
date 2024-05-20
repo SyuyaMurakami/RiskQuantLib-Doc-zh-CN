@@ -19,10 +19,10 @@ Subpackages
 Submodules
 ----------
 
-RiskQuantLib.module module
+RiskQuantLib.Module module
 --------------------------
 
-.. automodule:: RiskQuantLib.module
+.. automodule:: RiskQuantLib.Module
    :members:
    :undoc-members:
    :show-inheritance:
