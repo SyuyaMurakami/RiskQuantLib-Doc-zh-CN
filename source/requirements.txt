@@ -11,9 +11,9 @@ pandas
 QuantLib
 joblib
 mysql-connector
-copula
-copulae
 scipy
 importlib
 matplotlib
 readthedocs-sphinx-search
+copula
+copulae
