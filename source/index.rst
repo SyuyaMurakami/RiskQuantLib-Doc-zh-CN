@@ -21,6 +21,7 @@
    With_Github.rst
    With_Wind.rst
    Advance.rst
+   About.rst
 
 Welcome to Use RiskQuantLib
 ===========================
