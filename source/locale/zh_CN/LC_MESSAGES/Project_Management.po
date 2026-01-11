@@ -2,108 +2,214 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"POT-Creation-Date: 2026-01-11 11:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: ../Project_Management.rst:2
 msgid "Project Management"
-msgstr "模板管理"
+msgstr "项目管理"
 
 #: ../Project_Management.rst:7
 msgid ""
 "One of the most important use of RiskQuantLib is project management. It's"
-" necessary to introduce a conception named template. Here in "
-"RiskQuantLib, you can define and build a project before you know your "
-"data. You can also code some data process logic in instrument class file."
-" If we stop right in this step, close all files, and save this project, "
-"it is called template."
-msgstr "RiskQuantLib最为重要的功能之一是进行模板管理。这里所说的模板并不是模板类的模板，而是指一个工程。前几章我们介绍了如何利用RiskQuantLib构建和编译工程，然后在模板类里编写数据处理逻辑。如果我们就此打住，关闭所有打开的python源文件，并保存这个工程项目，它就变成了一个工程模板。"
+" necessary to introduce a conception named module. Here in RiskQuantLib, "
+"you can define and build a project before you know your data. You can "
+"also code some data process logic in instrument class file. If we stop "
+"right in this step, close all files, and save this project, it is called "
+"module."
+msgstr "RiskQuantLib最为重要的功能之一是进行项目管理。这里所说的项目管理指的是构成项目的子模块。前几章我们介绍了如何利用RiskQuantLib构建和编译工程，然后在模板类里编写数据处理逻辑。如果我们就此打住，关闭所有打开的python源文件，并保存这个工程项目，它就变成了一个项目模板。子模块除了项目模板，还可以有模型模板以及工具模板。"
 
 #: ../Project_Management.rst:9
 msgid ""
-"In short, *a template is a data process project which is suitable for "
-"more than one situations*, it could deal with data regardless of data "
-"paterns."
-msgstr "简而言之，*模板是适用于多种情况，可以被反复使用的数据处理工程*，模板应该适用于不同的数据格式和数据特征。"
+"In short, *a module is a data process project or model or tool which is "
+"suitable for more than one situations*, it could deal with data "
+"regardless of data paterns."
+msgstr "简而言之，*子模块是适用于多种情况，可以被反复使用的数据处理工程，或者计算模型，或者工具函数*，子模块应该适用于不同的数据格式和数据特征。"
 
 #: ../Project_Management.rst:11
 msgid ""
-"However, you can just save any project in case you would use it some day "
-"later."
-msgstr "但事实上，你可以保存任何你想保存的RiskQuantLib工程，以便于日后进行使用。"
+"There are three kinds of modules in RiskQuantLib, they are *template*, "
+"*model* and *tool*."
+msgstr "有三种子模块类型，即工程模板，计算模型，以及计算工具。"
 
 #: ../Project_Management.rst:14
-msgid "Save Project As Template"
-msgstr "将工程保存为模板。"
+msgid "Initialize Module"
+msgstr "初始化子模块"
 
 #: ../Project_Management.rst:16
 msgid ""
-"You can save a project as a RiskQuantLib template by using terminal "
-"command: ::"
-msgstr "你可以通过以下命令来讲一个工程保存为RiskQuantLib模板：::"
+"If you are a new user and just installed RiskQuantLib, then it is "
+"recommended that run the following the initialize default modules: ::"
+msgstr "如果你刚刚安装了RiskQuantLib，建议在终端运行以下命令来初始化子模块： ::"
 
-#: ../Project_Management.rst:21
-msgid ""
-"After run this command, a '.zip' file will be under your project path, "
-"and meanwhile, a template will be added into RiskQuantLib template "
-"library."
-msgstr "当运行这条命令后，一个zip文件将出现在工程的根目录，同时，一个模板会被添加到你计算机的RiskQuantLib库文件夹里。（并不是任何工程里的RiskQuantLib文件夹，而是python中的库文件夹。）"
+#: ../Project_Management.rst:22
+msgid "Show All Module"
+msgstr "展示子模块"
 
 #: ../Project_Management.rst:24
-msgid "Show All Template"
-msgstr "显示所有保存的模板"
-
-#: ../Project_Management.rst:26
 msgid ""
-"You can show all saved template in your library by using terminal "
-"command: ::"
-msgstr "你可以通过以下命令显示所有保存的模板：::"
+"You can show all saved modules in your library by using terminal command:"
+" ::"
+msgstr "你可以通过以下终端命令展示所有已经存储的子模块： ::"
 
-#: ../Project_Management.rst:31
-msgid "After run this command, you will see all templates in your library."
-msgstr "当运行这条命令后，你可以看见所有保存的RiskQuantLib模板。"
+#: ../Project_Management.rst:29
+msgid ""
+"After run this command, you will see all modules in your library. Or you "
+"can specify the sub-category of modules, use one the following: ::"
+msgstr "运行此命令后，可以看见所有已经在库中的子模块。你也可以指定显示的子模块的类型： ::"
 
-#: ../Project_Management.rst:34
-msgid "Unpack Template"
-msgstr "解压模板"
+#: ../Project_Management.rst:37
+msgid "Save Project As Template"
+msgstr "将工程模板保存为子模块"
 
-#: ../Project_Management.rst:36
-msgid "You can unpack a project template by using terminal command: ::"
-msgstr "你可以使用如下命令来解压一个已经存在的模板：::"
+#: ../Project_Management.rst:39
+msgid ""
+"You can just save any project, no matter it is a RiskQuantLib project or "
+"not, in case you would use it some day later."
+msgstr "你可以保存任何你想保存的RiskQuantLib工程或者文件夹，以便于日后进行使用。"
 
 #: ../Project_Management.rst:41
-msgid ""
-"After run this command, you will unpack the contents of this template "
-"into ``your_new_project_path``, and you can use them as the fundation of "
-"another project."
-msgstr "当运行这条命令后，模板内的源文件会被解压到 ``your_new_project_path`` 文件路径下，你可以使用解压后的文件作为新的工程的开始。"
-
-#: ../Project_Management.rst:44
-msgid "Delete Template"
-msgstr "删除模板"
+msgid "You can do this by using terminal command: ::"
+msgstr "你可以通过以下命令来将一个工程保存为RiskQuantLib工程模板： ::"
 
 #: ../Project_Management.rst:46
-msgid "If you want to delete some template, use terminal command: ::"
-msgstr "如果你需要删除某些模板，可以使用以下命令：::"
+msgid ""
+"After run this command, a template will be added into RiskQuantLib "
+"template library."
+msgstr "当运行这条命令后，一个模板会被添加到你计算机的RiskQuantLib库文件夹里。（并不是任何工程里的RiskQuantLib文件夹，而是python中的库文件夹。）"
+
+#: ../Project_Management.rst:49
+msgid "Save Module As Model"
+msgstr "将计算模型保存为子模块"
 
 #: ../Project_Management.rst:51
-msgid "Or if you want to delete all template, you should use: ::"
-msgstr "或者如果你想删除所有的模板，你可以使用以下命令：::"
+msgid ""
+"Model is a kind of RiskQuantLib module which is used to calculate "
+"statistic models. It is an independent file or directory. By default, "
+"RiskQuantLib provides models Copula and KMV, you may define your own "
+"models and save them into library."
+msgstr "这里的计算模型可以理解为统计学模型或者数值模型。它通常是个独立文件或者目录。RiskQuantLib在默认情况下提供了Copula和KMV两个模型，你也可以自定义模型并存入库中。注意，默认工具必须在执行 ``initRQL`` 命令后才会出现在库中。"
 
-#: ../Project_Management.rst:56
+#: ../Project_Management.rst:53
+msgid ""
+"You can save a module as a RiskQuantLib model by using terminal command: "
+"::"
+msgstr "使用以下命令来将模型存储在子模块库： ::"
+
+#: ../Project_Management.rst:58
+msgid ""
+"After run this command, a model will be added into RiskQuantLib model "
+"library."
+msgstr "当运行这条命令后，一个模型子模块会被添加到你计算机的RiskQuantLib库文件夹里。（并不是任何工程里的RiskQuantLib文件夹，而是python中的库文件夹。）"
+
+#: ../Project_Management.rst:61
+msgid "Save Module As Tool"
+msgstr "将计算工具保存为子模块"
+
+#: ../Project_Management.rst:63
+msgid ""
+"Tool is a kind of RiskQuantLib module which is used to operate some data-"
+"independent logic. It is a file or directory. By default, RiskQuantLib "
+"provides tools like *pptTool*, *wordTool*, *excelTool*, *threadTool*, "
+"etc. You may define your own tools and save them into library."
+msgstr "计算工具指的是和数据类型无关的计算函数文件。类似日期函数，去除空值的函数都可以是计算工具。计算工具也可以是包含很多文件的文件夹。RiskQuantLib默认提供了包括 *pptTool*, *wordTool*, *excelTool*, *threadTool* 等计算工具。你也可以定义自己的计算工具。注意，默认工具必须在执行 ``initRQL`` 命令后才会出现在库中。"
+
+#: ../Project_Management.rst:65
+msgid "You can save a module as a RiskQuantLib tool by using terminal command: ::"
+msgstr "使用以下命令来将计算工具存储在子模块库： ::"
+
+#: ../Project_Management.rst:70
+msgid ""
+"After run this command, a tool will be added into RiskQuantLib tool "
+"library."
+msgstr "当运行这条命令后，一个工具子模块会被添加到你计算机的RiskQuantLib库文件夹里。（并不是任何工程里的RiskQuantLib文件夹，而是python中的库文件夹。）"
+
+#: ../Project_Management.rst:73
+msgid "Set Module As Default"
+msgstr "设置默认子模块"
+
+#: ../Project_Management.rst:75
+msgid ""
+"You can specify a model or tool as default module, after doing this, any "
+"new project created by ``newRQL`` will be equipped with this module. Use:"
+" ::"
+msgstr "你可以指定一个计算模型或者计算工具为默认的子模块，如果指定为默认，那么任何使用 ``newRQL`` 创建的RiskQuantLib项目都会包含这个子模块： ::"
+
+#: ../Project_Management.rst:80
+msgid ""
+"``module_category`` can be ``model`` or ``tool``. ``module_name`` should "
+"be the name of module which you see by ``listRQL``, or the index number "
+"of it."
+msgstr "``module_category`` 可以是 ``model`` 或者 ``tool`` 。 ``module_name`` 应该是你通过 ``listRQL`` 命令看见的子模块名称或者序号。"
+
+#: ../Project_Management.rst:83
+msgid "Remove Module From Default"
+msgstr "取消默认子模块"
+
+#: ../Project_Management.rst:85
+msgid ""
+"You can remove a model or tool from default, after doing this, any new "
+"project created by ``newRQL`` will **Not** be equipped with this module "
+"anymore. Use: ::"
+msgstr "你可以取消指定子模块为默认。如果取消指定默认，那么任何使用 ``newRQL`` 创建的RiskQuantLib项目都不再会包含这个子模块： ::"
+
+#: ../Project_Management.rst:90
+msgid ""
+"Again, ``module_category`` can be ``model`` or ``tool``. ``module_name`` "
+"should be the name of module which you see in the ``model`` or ``Tool`` "
+"directory of your RiskQuantLib project, like ``mailTool``, etc."
+msgstr "``module_category`` 可以是 ``model`` 或者 ``tool`` 。 ``module_name`` 应该是你的新RiskQuantLib中的 ``Model`` 或者 ``Tool`` 文件夹下的文件或文件夹名称，不包括扩展名。比如 ``mailTool`` 。"
+
+#: ../Project_Management.rst:93
+msgid "Unpack Module"
+msgstr "安装子模块"
+
+#: ../Project_Management.rst:95
+msgid "You can unpack a module by using terminal command: ::"
+msgstr "你可以使用如下命令来安装一个已经存在的子模块： ::"
+
+#: ../Project_Management.rst:100
+msgid ""
+"After run this command, you will unpack the contents of this module into "
+"``your_new_project_path``, and you can use them as the fundation of "
+"another project."
+msgstr "当运行这条命令后，子模块内的源文件会被解压到 ``your_new_project_path`` 文件路径下，你可以使用解压后的文件作为新的工程的开始。"
+
+#: ../Project_Management.rst:102 ../Project_Management.rst:112
+msgid ""
+"``module_category`` can be ``template`` or ``model`` or ``tool``. "
+"``module_name`` should be the name of module which you see by "
+"``listRQL``, or the index number of it."
+msgstr "``module_category`` 可以是 ``template`` 或者 ``model`` 或者 ``tool`` 。 ``module_name`` 应该是你通过 ``listRQL`` 命令看见的子模块名称或者序号。"
+
+#: ../Project_Management.rst:105
+msgid "Delete Module"
+msgstr "删除子模块"
+
+#: ../Project_Management.rst:107
+msgid "If you want to delete some module, use terminal command: ::"
+msgstr "如果你想从库中删除子模块，可以使用终端命令： ::"
+
+#: ../Project_Management.rst:114
+msgid "Or if you want to delete all modules, you should use: ::"
+msgstr "或者如果你想删除所有的模板，你可以使用以下命令： ::"
+
+#: ../Project_Management.rst:119
 msgid "**Notice: Use this command carefully, cause it can not be un-done.**"
 msgstr "**注意：小心使用这个命令，它无法被撤销。**"
 

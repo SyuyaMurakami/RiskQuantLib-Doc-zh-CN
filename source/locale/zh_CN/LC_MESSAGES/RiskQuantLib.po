@@ -2,21 +2,23 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"POT-Creation-Date: 2026-01-11 11:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: ../RiskQuantLib.rst:2
 msgid "RiskQuantLib package"
@@ -38,77 +40,138 @@ msgstr ""
 msgid "Module contents"
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:1 of
+#: RiskQuantLib.addModule:1 of
 msgid ""
-"addProjectTemplate() is a function to add a RiskQuantLib project '.zip' "
-"file to library."
+"addModule() is a function to add a RiskQuantLib module '.zip' file to "
+"library."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:3 of
+#: RiskQuantLib.addModule:3 of
+msgid "Use terminal command 'addRQL' to use this function."
+msgstr ""
+
+#: RiskQuantLib.addModule:5 of
 msgid ""
-"Use terminal command 'addRQL' to use this function. The terminal command "
-"'addRQL' accept a parameter 'targetPathString', which is the RiskQuantLib"
-" project '.zip' file path that you want to add to library. It have to be "
-"a '.zip' file to be added to library."
+"The terminal command 'addRQL' accept two parameters: 'moduleCategory' and"
+" 'targetPathString'. 'moduleCategory' is the sub-category of your "
+"library, by default, it can be template, model or tool. "
+"'targetPathString' is the RiskQuantLib module '.zip' file path that you "
+"want to add to library. It has to be a '.zip' file to be added to "
+"library."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:10 RiskQuantLib.autoBuildProject:12
-#: RiskQuantLib.buildProject:14 RiskQuantLib.buildProjectFromConfig:5
-#: RiskQuantLib.newProject:10 RiskQuantLib.packProject:10
-#: RiskQuantLib.parseBuildPath:5 RiskQuantLib.persistProject:20
-#: RiskQuantLib.receiveProjectTemplate:15 RiskQuantLib.saveProject:13
-#: RiskQuantLib.sendProjectTemplate:14 RiskQuantLib.unBuildProject:16
-#: RiskQuantLib.unpackProject:17 of
-msgid "targetPath"
+#: RiskQuantLib.addModule:11 RiskQuantLib.addModuleFromGithub:6
+#: RiskQuantLib.autoBuildProject:11 RiskQuantLib.buildProject:13
+#: RiskQuantLib.buildProjectFromConfig:4
+#: RiskQuantLib.checkAndCreateLibraryPath:4 RiskQuantLib.copyProject:11
+#: RiskQuantLib.deleteModule:11 RiskQuantLib.listModule:6
+#: RiskQuantLib.newProject:8 RiskQuantLib.packModule:9
+#: RiskQuantLib.parseBuildPath:4 RiskQuantLib.persistProject:19
+#: RiskQuantLib.receiveModule:13 RiskQuantLib.removeDefaultModule:12
+#: RiskQuantLib.saveModule:14 RiskQuantLib.sendModule:14
+#: RiskQuantLib.setDefaultModule:12 RiskQuantLib.unBuildProject:14
+#: RiskQuantLib.unpackModule:13 of
+msgid "Parameters"
 msgstr ""
 
-#: of
+#: RiskQuantLib.addModule:12 RiskQuantLib.deleteModule:12
+#: RiskQuantLib.listModule:7 RiskQuantLib.removeDefaultModule:13
+#: RiskQuantLib.saveModule:15 RiskQuantLib.setDefaultModule:13
+#: RiskQuantLib.unpackModule:14 of
+msgid "moduleCategory"
+msgstr ""
+
+#: RiskQuantLib.addModule:-1 RiskQuantLib.addModuleFromGithub:-1
+#: RiskQuantLib.autoBuildProject:-1 RiskQuantLib.buildProject:-1
+#: RiskQuantLib.buildProjectFromConfig:-1
+#: RiskQuantLib.checkAndCreateLibraryPath:-1 RiskQuantLib.copyProject:-1
+#: RiskQuantLib.deleteModule:-1 RiskQuantLib.listModule:-1
+#: RiskQuantLib.newProject:-1 RiskQuantLib.packModule:-1
+#: RiskQuantLib.parseBuildPath:-1 RiskQuantLib.persistProject:-1
+#: RiskQuantLib.receiveModule:-1 RiskQuantLib.removeDefaultModule:-1
+#: RiskQuantLib.saveModule:-1 RiskQuantLib.sendModule:-1
+#: RiskQuantLib.setDefaultModule:-1 RiskQuantLib.unBuildProject:-1
+#: RiskQuantLib.unpackModule:-1 of
 msgid "str"
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:11 of
+#: RiskQuantLib.addModule:13 of
 msgid ""
-"A terminal command parameter, specify the RiskQuantLib project '.zip' "
-"file path which you want to add to library."
+"A terminal command parameter, specify the library sub-category you want "
+"to add '.zip' file into."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:13 RiskQuantLib.delProjectTemplate:11
-#: RiskQuantLib.packProject:13 RiskQuantLib.saveProject:16 of
+#: RiskQuantLib.addModule:14 RiskQuantLib.autoBuildProject:12
+#: RiskQuantLib.buildProject:14 RiskQuantLib.buildProjectFromConfig:5
+#: RiskQuantLib.newProject:9 RiskQuantLib.packModule:10
+#: RiskQuantLib.parseBuildPath:5 RiskQuantLib.persistProject:20
+#: RiskQuantLib.receiveModule:14 RiskQuantLib.saveModule:17
+#: RiskQuantLib.sendModule:15 RiskQuantLib.unBuildProject:15
+#: RiskQuantLib.unpackModule:18 of
+msgid "targetPath"
+msgstr ""
+
+#: RiskQuantLib.addModule:15 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib module '.zip' file"
+" path which you want to add to library."
+msgstr ""
+
+#: RiskQuantLib.addModule:16 RiskQuantLib.deleteModule:14
+#: RiskQuantLib.packModule:12 RiskQuantLib.saveModule:19 of
 msgid "targetName"
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:13 of
+#: RiskQuantLib.addModule:17 of
 msgid ""
 "The name you want to use to save the .zip file as, it is not necessary to"
 " add .zip behind it."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplate:17
-#: RiskQuantLib.addProjectTemplateFromGithub:12
-#: RiskQuantLib.autoBuildProject:29 RiskQuantLib.buildProject:31
-#: RiskQuantLib.buildProjectFromConfig:29
-#: RiskQuantLib.clearAllProjectTemplate:8 RiskQuantLib.delProjectTemplate:15
-#: RiskQuantLib.listProjectTemplate:7 RiskQuantLib.newProject:14
-#: RiskQuantLib.packProject:17 RiskQuantLib.persistProject:30
-#: RiskQuantLib.receiveProjectTemplate:19 RiskQuantLib.saveProject:20
-#: RiskQuantLib.sendProjectTemplate:18 RiskQuantLib.unBuildProject:20
-#: RiskQuantLib.unpackProject:21 of
+#: RiskQuantLib.addModule:20 RiskQuantLib.addModuleFromGithub:11
+#: RiskQuantLib.autoBuildProject:37 RiskQuantLib.buildProject:37
+#: RiskQuantLib.buildProjectFromConfig:35
+#: RiskQuantLib.checkAndCreateLibraryPath:9 RiskQuantLib.clearAllModule:7
+#: RiskQuantLib.copyProject:18 RiskQuantLib.deleteModule:18
+#: RiskQuantLib.initiateBuildFile:8 RiskQuantLib.initiateConfigFile:8
+#: RiskQuantLib.initiateExecutableBuildShortcutFile:7
+#: RiskQuantLib.initiateExecutableDebugShortcutFile:7
+#: RiskQuantLib.initiateMainFile:7 RiskQuantLib.listModule:11
+#: RiskQuantLib.newProject:13 RiskQuantLib.packModule:19
+#: RiskQuantLib.parseBuildPath:13 RiskQuantLib.persistProject:36
+#: RiskQuantLib.receiveModule:18 RiskQuantLib.removeDefaultModule:19
+#: RiskQuantLib.saveModule:23 RiskQuantLib.sendModule:19
+#: RiskQuantLib.setDefaultModule:19 RiskQuantLib.unBuildProject:19
+#: RiskQuantLib.unpackModule:22 of
+msgid "Returns"
+msgstr ""
+
+#: RiskQuantLib.addModule:21 RiskQuantLib.addModuleFromGithub:12
+#: RiskQuantLib.autoBuildProject:38 RiskQuantLib.buildProject:38
+#: RiskQuantLib.buildProjectFromConfig:36 RiskQuantLib.clearAllModule:8
+#: RiskQuantLib.copyProject:19 RiskQuantLib.deleteModule:19
+#: RiskQuantLib.listModule:12 RiskQuantLib.newProject:14
+#: RiskQuantLib.packModule:20 RiskQuantLib.persistProject:37
+#: RiskQuantLib.receiveModule:19 RiskQuantLib.removeDefaultModule:20
+#: RiskQuantLib.saveModule:24 RiskQuantLib.sendModule:20
+#: RiskQuantLib.setDefaultModule:20 RiskQuantLib.unBuildProject:20
+#: RiskQuantLib.unpackModule:23 of
 msgid "None"
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplateFromGithub:1 of
+#: RiskQuantLib.addModuleFromGithub:1 of
 msgid ""
-"addProjectTemplateFromGithub() is a function to download template from "
-"Github to local disk. Use terminal command 'getRQL' to use this function."
-" After this function is called, the target repository will be saved as "
-"template project."
+"addModuleFromGithub() is a function to download template from Github to "
+"local disk. Use terminal command 'getRQL' to use this function. After "
+"this function is called, the target repository will be saved as template "
+"project."
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplateFromGithub:8 of
+#: RiskQuantLib.addModuleFromGithub:7 of
 msgid "targetGithub"
 msgstr ""
 
-#: RiskQuantLib.addProjectTemplateFromGithub:8 of
+#: RiskQuantLib.addModuleFromGithub:8 of
 msgid ""
 "A terminal command parameter, specify the project name you want to "
 "download from Github."
@@ -149,8 +212,8 @@ msgstr ""
 msgid "The path of directory of source file used to render target project."
 msgstr ""
 
-#: RiskQuantLib.autoBuildProject:17 RiskQuantLib.buildProject:19
-#: RiskQuantLib.persistProject:26 of
+#: RiskQuantLib.autoBuildProject:16 RiskQuantLib.buildProject:18
+#: RiskQuantLib.persistProject:24 of
 msgid "channel"
 msgstr ""
 
@@ -161,12 +224,14 @@ msgid ""
 "other channel unless it is overwritten by current render."
 msgstr ""
 
-#: RiskQuantLib.autoBuildProject:25 RiskQuantLib.buildProject:27
-#: RiskQuantLib.buildProjectFromConfig:25 of
+#: RiskQuantLib.autoBuildProject:19 RiskQuantLib.buildProject:21
+#: RiskQuantLib.buildProjectFromConfig:19 of
 msgid "debug"
 msgstr ""
 
-#: of
+#: RiskQuantLib.autoBuildProject:-1 RiskQuantLib.buildProject:-1
+#: RiskQuantLib.buildProjectFromConfig:-1 RiskQuantLib.packModule:-1
+#: RiskQuantLib.parseBuildPath:-1 RiskQuantLib.persistProject:-1 of
 msgid "bool"
 msgstr ""
 
@@ -182,6 +247,27 @@ msgid ""
 "change between ./Src/somecode.py and target instrument class .py file to "
 "edit any code error. The break point will stop right under "
 "./Src/somecode.py."
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:26 RiskQuantLib.buildProject:28
+#: RiskQuantLib.buildProjectFromConfig:26 RiskQuantLib.persistProject:27 of
+msgid "force"
+msgstr ""
+
+#: RiskQuantLib.autoBuildProject:27 of
+msgid ""
+"If True, the cached building file buildInfo.pkl will be deleted, a new "
+"builder object will be created. This is useful when there are some "
+"mistakes in buildInfo.pkl, or error happens when caching buildInfo.pkl. "
+"In these cases, old buildInfo.pkl exists but can not be used. If this "
+"parameter is specified as True, buildInfo.pkl will be deleted before "
+"auto-building. However, any information in old building will be deleted. "
+"If you use guardian projects, there could be problems, you will have to "
+"build all guardian projects again. Another thing to notice is the action "
+"of parameter force in autoBuildProject is different with that in "
+"buildProject or persistProject. buildInfo.pkl will be neglected in "
+"buildProject and persistProject, but will be deleted for a single time "
+"before auto-building."
 msgstr ""
 
 #: RiskQuantLib.buildProject:1 of
@@ -206,6 +292,21 @@ msgid ""
 "For old version user of RiskQuantLib, this function is totally the same "
 "as command 'python build.py' in terminal with working directory as "
 "targetProjectPath."
+msgstr ""
+
+#: RiskQuantLib.buildProject:29 RiskQuantLib.buildProjectFromConfig:27
+#: RiskQuantLib.persistProject:28 of
+msgid ""
+"If True, the cached building file buildInfo.pkl will be neglected, a new "
+"builder object will be created. This is useful when there are some "
+"mistakes in buildInfo.pkl, or error happens when caching buildInfo.pkl. "
+"In these cases, old buildInfo.pkl exists but can not be used. The "
+"traditional way to solve this problem is manually deleting this file and "
+"build whole project again. With this parameter specified as True, users "
+"can choose to build project no matter buildInfo.pkl exists or not. "
+"However, any information in old building will be deleted. If you use "
+"guardian projects, there could be problems, you will have to build all "
+"guardian projects again."
 msgstr ""
 
 #: RiskQuantLib.buildProjectFromConfig:1 of
@@ -238,7 +339,7 @@ msgstr ""
 msgid "The path of source code directory"
 msgstr ""
 
-#: RiskQuantLib.buildProjectFromConfig:17 of
+#: RiskQuantLib.buildProjectFromConfig:13 of
 msgid "bindType"
 msgstr ""
 
@@ -253,48 +354,122 @@ msgid ""
 "sure they do not conflict with each other."
 msgstr ""
 
-#: RiskQuantLib.checkAndCreateTemplatePath:1 of
+#: RiskQuantLib.checkAndCreateLibraryPath:1 of
 msgid ""
-"checkAndCreateTemplatePath() is a function to check whether the Template "
+"checkAndCreateLibraryPath() is a function to check whether the Template "
 "path exists."
 msgstr ""
 
-#: RiskQuantLib.checkAndCreateTemplatePath:5 of
+#: RiskQuantLib.checkAndCreateLibraryPath:5 RiskQuantLib.removeDefaultModule:15
+#: RiskQuantLib.setDefaultModule:15 RiskQuantLib.unpackModule:16 of
+msgid "moduleName"
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateLibraryPath:-1 of
+msgid "tuple"
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateLibraryPath:6 of
+msgid ""
+"The parameter tells how many sub-categories the library has. By default, "
+"it has Template, Model and Tool."
+msgstr ""
+
+#: RiskQuantLib.checkAndCreateLibraryPath:10 of
 msgid "sourcePath"
 msgstr ""
 
-#: RiskQuantLib.checkAndCreateTemplatePath:6 of
+#: RiskQuantLib.checkAndCreateLibraryPath:11 of
 msgid "The path of RiskQuantLib template directory."
 msgstr ""
 
-#: RiskQuantLib.clearAllProjectTemplate:1 of
+#: RiskQuantLib.checkModuleCategory:1 of
 msgid ""
-"clearAllProjectTemplate() is a function to delete all RiskQuantLib "
-"projects from library."
+"This function will check the parameter value of moduleCategory is "
+"validated or not."
 msgstr ""
 
-#: RiskQuantLib.clearAllProjectTemplate:3 of
+#: RiskQuantLib.clearAllModule:1 of
+msgid ""
+"clearAllModule() is a function to delete all RiskQuantLib modules from "
+"library."
+msgstr ""
+
+#: RiskQuantLib.clearAllModule:3 of
 msgid ""
 "Use terminal command 'clearRQL' to use this function. After calling this "
-"function, all existing RiskQuantLib projects will be removed."
+"function, all existing RiskQuantLib modules will be removed."
 msgstr ""
 
-#: RiskQuantLib.delProjectTemplate:1 of
-msgid "delProject() is a function to delete a RiskQuantLib project from library."
+#: RiskQuantLib.copyProject:1 of
+msgid ""
+"copyProject() is a function to copy RiskQuantLib project to another "
+"directory."
 msgstr ""
 
-#: RiskQuantLib.delProjectTemplate:3 of
+#: RiskQuantLib.copyProject:3 of
+msgid ""
+"Use terminal command 'copyRQL fromProjectPath toProjectPath' to use this "
+"function. The project will be copied into the specified directory, if "
+"toProjectPath does not exist, it will be created."
+msgstr ""
+
+#: RiskQuantLib.copyProject:6 of
+msgid ""
+"This function will copy every file in current project into new directory "
+"except those files which  are under path fromProjectPath/RiskQuantLib. If"
+" files with the same name already exist in toProjectPath, then they will "
+"be overwritten, so use it carefully."
+msgstr ""
+
+#: RiskQuantLib.copyProject:12 of
+msgid "fromProjectPath"
+msgstr ""
+
+#: RiskQuantLib.copyProject:13 of
+msgid ""
+"A terminal command parameter, specify the RiskQuantLib project path you "
+"want to copy from."
+msgstr ""
+
+#: RiskQuantLib.copyProject:14 of
+msgid "toProjectPath"
+msgstr ""
+
+#: RiskQuantLib.copyProject:15 of
+msgid "The path where you want to copy RiskQuantLib project to."
+msgstr ""
+
+#: RiskQuantLib.deleteModule:1 of
+msgid "deleteModule() is a function to delete a RiskQuantLib module from library."
+msgstr ""
+
+#: RiskQuantLib.deleteModule:3 of
 msgid ""
 "Use terminal command 'delRQL' to use this function. The terminal command "
-"'delRQL' accept a parameter 'projectName', which is the project name you "
-"want to delete from library. After calling this function, the existing "
-"RiskQuantLib project will be removed from library."
+"'delRQL' accept two parameters: 'moduleCategory' and 'targetName'. "
+"'moduleCategory' is the sub-category of your library where you want to "
+"delete module from, by default, it can be template, model or tool. "
+"'targetName' is the module name you want to delete. After calling this "
+"function, the existing RiskQuantLib module will be removed from library."
 msgstr ""
 
-#: RiskQuantLib.delProjectTemplate:11 of
+#: RiskQuantLib.deleteModule:13 of
 msgid ""
-"A terminal command parameter, specify the project name you want to delete"
-" from library."
+"A terminal command parameter, specify the library sub-category you want "
+"to delete module from."
+msgstr ""
+
+#: RiskQuantLib.deleteModule:15 of
+msgid ""
+"A terminal command parameter, specify the module name you want to delete "
+"from library."
+msgstr ""
+
+#: RiskQuantLib.initDefaultModule:1 of
+msgid ""
+"This function is used to initialize default module when installing or "
+"upgrading RiskQuantLib."
 msgstr ""
 
 #: RiskQuantLib.initiateBuildFile:1 of
@@ -370,14 +545,18 @@ msgid ""
 " run the project."
 msgstr ""
 
-#: RiskQuantLib.listProjectTemplate:1 of
-msgid ""
-"listProjectTemplate() is a function to show all RiskQuantLib projects "
-"from library."
+#: RiskQuantLib.listModule:1 of
+msgid "listModule() is a function to show all RiskQuantLib modules from library."
 msgstr ""
 
-#: RiskQuantLib.listProjectTemplate:3 of
+#: RiskQuantLib.listModule:3 of
 msgid "Use terminal command 'listRQL' to use this function."
+msgstr ""
+
+#: RiskQuantLib.listModule:8 of
+msgid ""
+"A terminal command parameter, specify the library sub-category you want "
+"to show."
 msgstr ""
 
 #: RiskQuantLib.newProject:1 of
@@ -399,30 +578,38 @@ msgid ""
 "new project."
 msgstr ""
 
-#: RiskQuantLib.packProject:1 of
+#: RiskQuantLib.packModule:1 of
 msgid ""
-"packProject() is a function to pack a RiskQuantLib project into '.zip' "
+"packModule() is a function to pack a RiskQuantLib project into '.zip' "
 "file."
 msgstr ""
 
-#: RiskQuantLib.packProject:3 of
+#: RiskQuantLib.packModule:3 of
 msgid ""
 "Use terminal command 'pkgRQL' to use this function. The terminal command "
-"'pkgRQL' accept a parameter 'targetPathString', which is the RiskQuantLib"
-" project path that you want to package. It doesn't need to have a "
-"directory named 'RiskQuantLib' to be packaged."
+"'pkgRQL' accept a parameter 'targetPathString', which is the path that "
+"you want to package. It doesn't need to have a directory named "
+"'RiskQuantLib' to be packaged."
 msgstr ""
 
-#: RiskQuantLib.packProject:11 of
-msgid ""
-"A terminal command parameter, specify the RiskQuantLib project path which"
-" you want to package."
+#: RiskQuantLib.packModule:11 of
+msgid "A terminal command parameter, specify the path which you want to package."
 msgstr ""
 
-#: RiskQuantLib.packProject:13 of
+#: RiskQuantLib.packModule:13 of
 msgid ""
-"A terminal command parameter, specify the name you want to mark the "
-"project zip file with."
+"A terminal command parameter, specify the name you want to mark the zip "
+"file with."
+msgstr ""
+
+#: RiskQuantLib.packModule:14 of
+msgid "keepTop"
+msgstr ""
+
+#: RiskQuantLib.packModule:15 of
+msgid ""
+"A terminal command parameter, specify if this function will keep the top "
+"level directory."
 msgstr ""
 
 #: RiskQuantLib.parseBuildPath:1 of
@@ -431,7 +618,7 @@ msgid ""
 "file."
 msgstr ""
 
-#: RiskQuantLib.parseBuildPath:10 of
+#: RiskQuantLib.parseBuildPath:7 of
 msgid "checkExist"
 msgstr ""
 
@@ -496,13 +683,13 @@ msgid ""
 "want to persist."
 msgstr ""
 
-#: RiskQuantLib.receiveProjectTemplate:1 of
+#: RiskQuantLib.receiveModule:1 of
 msgid ""
-"receiveProjectTemplate() is a function to receive any file or directory "
-"from your friend by LOCAL AREA NETWORK (LAN)."
+"receiveModule() is a function to receive any file or directory from your "
+"friend by LOCAL AREA NETWORK (LAN)."
 msgstr ""
 
-#: RiskQuantLib.receiveProjectTemplate:4 of
+#: RiskQuantLib.receiveModule:4 of
 msgid ""
 "Use terminal command 'recvRQL' to use this function. You can also specify"
 " a path where your want to save the shared file or directory, like "
@@ -510,7 +697,7 @@ msgid ""
 "in current working directory."
 msgstr ""
 
-#: RiskQuantLib.receiveProjectTemplate:8 of
+#: RiskQuantLib.receiveModule:8 of
 msgid ""
 "After this function is called, you can receive the file shared from your "
 "friend, who is also in the same LAN. You can not receive files or project"
@@ -519,55 +706,93 @@ msgid ""
 "getRQL command."
 msgstr ""
 
-#: RiskQuantLib.receiveProjectTemplate:15 of
+#: RiskQuantLib.receiveModule:15 of
 msgid ""
 "A terminal command parameter, specify the path where you want to hold the"
 " received file."
 msgstr ""
 
-#: RiskQuantLib.saveProject:1 of
+#: RiskQuantLib.removeDefaultModule:1 of
 msgid ""
-"saveProject() is a function to save a RiskQuantLib project and add it to "
+"setDefaultModule() is a function to remove a module from default "
+"initialization."
+msgstr ""
+
+#: RiskQuantLib.removeDefaultModule:3 of
+msgid ""
+"Use terminal command 'udftRQL' to use this function. The terminal command"
+" 'udftRQL' accept two parameters: 'moduleCategory' and 'moduleName'. "
+"'moduleCategory' is the sub-category of your library where you want to "
+"remove module from, by default, it can be model or tool. 'moduleName' is "
+"the module name you want to set as default one. After calling this "
+"function, the RiskQuantLib module will be removed from default, which "
+"means every new RiskQuantLib project created by 'newRQL' command will not"
+" use this module anymore."
+msgstr ""
+
+#: RiskQuantLib.removeDefaultModule:14 of
+msgid ""
+"A terminal command parameter, specify the library sub-category you want "
+"to remove module from."
+msgstr ""
+
+#: RiskQuantLib.removeDefaultModule:16 of
+msgid ""
+"A terminal command parameter, specify the module name you want to remove "
+"from default."
+msgstr ""
+
+#: RiskQuantLib.saveModule:1 of
+msgid ""
+"saveModule() is a function to save a RiskQuantLib module and add it to "
 "library."
 msgstr ""
 
-#: RiskQuantLib.saveProject:3 of
+#: RiskQuantLib.saveModule:3 of
 msgid ""
 "Use terminal command 'saveRQL' to use this function. The terminal command"
-" 'saveRQL' accept a parameter 'targetPathString', which is the "
-"RiskQuantLib project path that you want to save, and an optional "
-"parameter 'projectName', which is the name you want to give to this "
-"project. After calling this function, a '.zip' file will be created in "
-"RiskQuantLib project directory, and this project will be stored as a "
-"template."
+" 'saveRQL' accept two parameters: 'moduleCategory' and 'targetPath'. "
+"'moduleCategory' is the sub-category of your library where you want to "
+"save file into, by default, it can be template, model or tool. "
+"'targetPath' is the file or directory path that you want to save. There "
+"is also an optional parameter 'targetName', which is the name you want to"
+" give to this module. After calling this function, a '.zip' file will be "
+"created in the target directory, and this file will be stored as a "
+"module."
 msgstr ""
 
-#: RiskQuantLib.saveProject:14 of
+#: RiskQuantLib.saveModule:16 of
 msgid ""
-"A terminal command parameter, specify the RiskQuantLib project path which"
-" you want to save as template."
+"A terminal command parameter, specify the library sub-category you want "
+"to save '.zip' file into."
 msgstr ""
 
-#: RiskQuantLib.saveProject:16 of
+#: RiskQuantLib.saveModule:18 of
+msgid ""
+"A terminal command parameter, specify the file or directory path which "
+"you want to save as template."
+msgstr ""
+
+#: RiskQuantLib.saveModule:20 of
 msgid ""
 "A terminal command parameter, specify the name you want to save this "
-"project as."
+"module as."
 msgstr ""
 
-#: RiskQuantLib.sendProjectTemplate:1 of
+#: RiskQuantLib.sendModule:1 of
 msgid ""
-"sendProjectTemplate() is a function to send any file or directory to your"
-" friend by LOCAL AREA NETWORK (LAN)."
+"sendModule() is a function to send any file or directory to your friend "
+"by LOCAL AREA NETWORK (LAN)."
 msgstr ""
 
-#: RiskQuantLib.sendProjectTemplate:4 of
+#: RiskQuantLib.sendModule:4 of
 msgid ""
 "Use terminal command 'sendRQL targetProjectPath' or 'sendRQL "
 "targetFilePath' to use this function. If you send a directory, it will be"
 " packed into a zip file at first, and sent to your friend."
 msgstr ""
 
-#: RiskQuantLib.sendProjectTemplate:7 of
+#: RiskQuantLib.sendModule:7 of
 msgid ""
 "After this function is called, you can send to your friend who is also in"
 " the same LAN. You can not send files or project to people outside your "
@@ -575,10 +800,48 @@ msgid ""
 "across ocean, maybe you should use Github and getRQL command."
 msgstr ""
 
-#: RiskQuantLib.sendProjectTemplate:14 of
+#: ../RiskQuantLib.rst
+msgid "返回类型"
+msgstr ""
+
+#: RiskQuantLib.sendModule:11 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: RiskQuantLib.sendModule:16 of
 msgid ""
 "A terminal command parameter, specify the path of file or directory you "
 "want to send."
+msgstr ""
+
+#: RiskQuantLib.setDefaultModule:1 of
+msgid ""
+"setDefaultModule() is a function to set a module into default "
+"initialization one."
+msgstr ""
+
+#: RiskQuantLib.setDefaultModule:3 of
+msgid ""
+"Use terminal command 'dftRQL' to use this function. The terminal command "
+"'dftRQL' accept two parameters: 'moduleCategory' and 'moduleName'. "
+"'moduleCategory' is the sub-category of your library where you want to "
+"set module as default from, by default, it can be model or tool. "
+"'moduleName' is the module name you want to set as default one. After "
+"calling this function, the existing RiskQuantLib module will be set as "
+"default, which means every new RiskQuantLib project created by 'newRQL' "
+"command will use this module."
+msgstr ""
+
+#: RiskQuantLib.setDefaultModule:14 of
+msgid ""
+"A terminal command parameter, specify the library sub-category you want "
+"to set module as default from."
+msgstr ""
+
+#: RiskQuantLib.setDefaultModule:16 of
+msgid ""
+"A terminal command parameter, specify the module name you want to set as "
+"default."
 msgstr ""
 
 #: RiskQuantLib.unBuildProject:1 of
@@ -612,36 +875,41 @@ msgid ""
 "want to un-build and un-render."
 msgstr ""
 
-#: RiskQuantLib.unpackProject:1 of
+#: RiskQuantLib.unpackModule:1 of
 msgid ""
-"unpackProject() is a function to unpack a RiskQuantLib project from "
-"library and use it again."
+"unpackModule() is a function to unpack a RiskQuantLib module from library"
+" and use it again."
 msgstr ""
 
-#: RiskQuantLib.unpackProject:3 of
+#: RiskQuantLib.unpackModule:3 of
 msgid ""
 "Use terminal command 'tplRQL' to use this function. The terminal command "
-"'tplRQL' accept a parameter 'projectName', which is the project name you "
-"want to unpack from library. and a parameter 'targetPathString', which is"
-" the path where you want to unpack RiskQuantLib project, After calling "
-"this function, the content of existing RiskQuantLib project will be "
-"unpacked to the location you choose, and you can start a project at the "
-"fundation of this unpakced project."
+"'tplRQL' accept two parameters: 'moduleCategory' and 'moduleName', "
+"'moduleCategory' is the sub-category of your library where you want to "
+"unpack module from, by default, it can be template, model or tool. "
+"'moduleName' is the module name you want to unpack from library. "
+"'targetPathString' is the path where you want to unpack RiskQuantLib "
+"module into. After calling this function, the content of existing "
+"RiskQuantLib module will be unpacked to the location you choose, and you "
+"can start a project at the foundation of this un-packed module, or use "
+"the functions or models of un-packed module."
 msgstr ""
 
-#: RiskQuantLib.unpackProject:14 of
-msgid "templateName"
-msgstr ""
-
-#: RiskQuantLib.unpackProject:14 of
+#: RiskQuantLib.unpackModule:15 of
 msgid ""
-"A terminal command parameter, specify the project name you want to unpack"
-" from library."
+"A terminal command parameter, specify the library sub-category you want "
+"to un-pack '.zip' file from."
 msgstr ""
 
-#: RiskQuantLib.unpackProject:17 of
+#: RiskQuantLib.unpackModule:17 of
 msgid ""
-"A terminal command parameter, specify the path where you want to unpack "
-"RiskQuantLib project."
+"A terminal command parameter, specify the module name you want to unpack "
+"from library."
+msgstr ""
+
+#: RiskQuantLib.unpackModule:19 of
+msgid ""
+"A terminal command parameter, specify the path where you want to un-pack "
+"module into."
 msgstr ""
 

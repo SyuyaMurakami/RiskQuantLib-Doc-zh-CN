@@ -2,21 +2,23 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"POT-Creation-Date: 2026-01-11 11:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: ../RiskQuantLib.Build.rst:2
 msgid "RiskQuantLib.Build package"
@@ -39,7 +41,7 @@ msgstr ""
 #: RiskQuantLib.Build.debugger.debugger:1 RiskQuantLib.Build.render.render:1
 #: RiskQuantLib.Build.router.router:1 RiskQuantLib.Build.tree.treeOperation:1
 #: of
-msgid "基类：:class:`object`"
+msgid "基类：:py:class:`object`"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.builder:1 of
@@ -64,6 +66,29 @@ msgid ""
 "builders to construct project by another form."
 msgstr ""
 
+#: RiskQuantLib.Build.builder.builder:10
+#: RiskQuantLib.Build.builder.builder.bindContent:4
+#: RiskQuantLib.Build.builder.builder.buildContent:4
+#: RiskQuantLib.Build.builder.builder.checkRender:5
+#: RiskQuantLib.Build.builder.builder.loadInfo:5
+#: RiskQuantLib.Build.builder.builder.persistProject:5
+#: RiskQuantLib.Build.builder.builder.renderProject:4
+#: RiskQuantLib.Build.builder.builder.updateRender:5
+#: RiskQuantLib.Build.builder.configBuilder:7
+#: RiskQuantLib.Build.builder.databaseBuilder:8
+#: RiskQuantLib.Build.builder.dataframeBuilder:7
+#: RiskQuantLib.Build.builder.excelBuilder:7
+#: RiskQuantLib.Build.builder.stringBuilder:7
+#: RiskQuantLib.Build.builder.validateBuilder:8
+#: RiskQuantLib.Build.debugger.debugger.findClassMethodFunction:6
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:4
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:5
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:6
+#: RiskQuantLib.Build.render.render:6 RiskQuantLib.Build.render.render.render:4
+#: of
+msgid "Parameters"
+msgstr ""
+
 #: RiskQuantLib.Build.builder.builder:11
 #: RiskQuantLib.Build.builder.configBuilder:8
 #: RiskQuantLib.Build.builder.databaseBuilder:9
@@ -74,6 +99,21 @@ msgstr ""
 msgid "buildFromProjectPath"
 msgstr ""
 
+#: RiskQuantLib.Build.builder.builder:-1
+#: RiskQuantLib.Build.builder.builder.bindContent:-1
+#: RiskQuantLib.Build.builder.builder.checkRender:-1
+#: RiskQuantLib.Build.builder.builder.loadInfo:-1
+#: RiskQuantLib.Build.builder.builder.persistProject:-1
+#: RiskQuantLib.Build.builder.builder.renderProject:-1
+#: RiskQuantLib.Build.builder.builder.updateRender:-1
+#: RiskQuantLib.Build.builder.configBuilder:-1
+#: RiskQuantLib.Build.builder.databaseBuilder:-1
+#: RiskQuantLib.Build.builder.dataframeBuilder:-1
+#: RiskQuantLib.Build.builder.excelBuilder:-1
+#: RiskQuantLib.Build.builder.stringBuilder:-1
+#: RiskQuantLib.Build.builder.validateBuilder:-1
+#: RiskQuantLib.Build.render.render:-1
+#: RiskQuantLib.Build.render.render.render:-1
 #: RiskQuantLib.Build.render.render.render:10 of
 msgid "str"
 msgstr ""
@@ -88,13 +128,13 @@ msgstr ""
 msgid "The path of builder class, default as Build directory in current project."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder:14
-#: RiskQuantLib.Build.builder.configBuilder:11
-#: RiskQuantLib.Build.builder.databaseBuilder:12
-#: RiskQuantLib.Build.builder.dataframeBuilder:11
-#: RiskQuantLib.Build.builder.excelBuilder:11
-#: RiskQuantLib.Build.builder.stringBuilder:11
-#: RiskQuantLib.Build.builder.validateBuilder:12 of
+#: RiskQuantLib.Build.builder.builder:13
+#: RiskQuantLib.Build.builder.configBuilder:10
+#: RiskQuantLib.Build.builder.databaseBuilder:11
+#: RiskQuantLib.Build.builder.dataframeBuilder:10
+#: RiskQuantLib.Build.builder.excelBuilder:10
+#: RiskQuantLib.Build.builder.stringBuilder:10
+#: RiskQuantLib.Build.builder.validateBuilder:11 of
 msgid "targetProjectPath"
 msgstr ""
 
@@ -110,15 +150,15 @@ msgid ""
 "to build information, default as current project."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder:19
-#: RiskQuantLib.Build.builder.builder.checkRender:9
-#: RiskQuantLib.Build.builder.builder.updateRender:9
-#: RiskQuantLib.Build.builder.configBuilder:16
-#: RiskQuantLib.Build.builder.databaseBuilder:17
-#: RiskQuantLib.Build.builder.dataframeBuilder:16
-#: RiskQuantLib.Build.builder.excelBuilder:16
-#: RiskQuantLib.Build.builder.stringBuilder:16
-#: RiskQuantLib.Build.builder.validateBuilder:17 of
+#: RiskQuantLib.Build.builder.builder:16
+#: RiskQuantLib.Build.builder.builder.checkRender:6
+#: RiskQuantLib.Build.builder.builder.updateRender:6
+#: RiskQuantLib.Build.builder.configBuilder:13
+#: RiskQuantLib.Build.builder.databaseBuilder:14
+#: RiskQuantLib.Build.builder.dataframeBuilder:13
+#: RiskQuantLib.Build.builder.excelBuilder:13
+#: RiskQuantLib.Build.builder.stringBuilder:13
+#: RiskQuantLib.Build.builder.validateBuilder:14 of
 msgid "templateSearchPath"
 msgstr ""
 
@@ -135,6 +175,42 @@ msgid ""
 "The path of directory where .pyt file for building exists, default as "
 "Build/Component in current project. If buildFromProjectPath is specified,"
 " the default will be buildFromProjectPath/Build/Component."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:22
+#: RiskQuantLib.Build.builder.builder.bindContent:16
+#: RiskQuantLib.Build.builder.builder.buildContent:10
+#: RiskQuantLib.Build.builder.builder.buildDir:4
+#: RiskQuantLib.Build.builder.builder.buildFile:5
+#: RiskQuantLib.Build.builder.builder.buildProject:7
+#: RiskQuantLib.Build.builder.builder.checkRender:12
+#: RiskQuantLib.Build.builder.builder.clearProject:4
+#: RiskQuantLib.Build.builder.builder.delRender:5
+#: RiskQuantLib.Build.builder.builder.dumpInfo:4
+#: RiskQuantLib.Build.builder.builder.initiateInstrumentTree:4
+#: RiskQuantLib.Build.builder.builder.initiateProject:8
+#: RiskQuantLib.Build.builder.builder.initiatePropertyTree:4
+#: RiskQuantLib.Build.builder.builder.loadInfo:10
+#: RiskQuantLib.Build.builder.builder.persistProject:17
+#: RiskQuantLib.Build.builder.builder.renderProject:26
+#: RiskQuantLib.Build.builder.builder.updateBuildInfo:5
+#: RiskQuantLib.Build.builder.builder.updatePathInfo:5
+#: RiskQuantLib.Build.builder.builder.updateRender:12
+#: RiskQuantLib.Build.builder.configBuilder:19
+#: RiskQuantLib.Build.builder.configBuilder.buildProject:7
+#: RiskQuantLib.Build.builder.databaseBuilder:20
+#: RiskQuantLib.Build.builder.databaseBuilder.buildProject:7
+#: RiskQuantLib.Build.builder.dataframeBuilder:19
+#: RiskQuantLib.Build.builder.dataframeBuilder.buildProject:7
+#: RiskQuantLib.Build.builder.excelBuilder:19
+#: RiskQuantLib.Build.builder.excelBuilder.buildProject:7
+#: RiskQuantLib.Build.builder.stringBuilder:19
+#: RiskQuantLib.Build.builder.stringBuilder.buildProject:7
+#: RiskQuantLib.Build.builder.validateBuilder:20
+#: RiskQuantLib.Build.builder.validateBuilder.buildProject:7
+#: RiskQuantLib.Build.render.render:12
+#: RiskQuantLib.Build.render.render.render:9 of
+msgid "Returns"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.builder:23
@@ -186,9 +262,9 @@ msgstr ""
 msgid "Content of python source code, with comment used as control syntax"
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder.bindContent:9
-#: RiskQuantLib.Build.builder.builder.persistProject:14
-#: RiskQuantLib.Build.builder.builder.renderProject:12 of
+#: RiskQuantLib.Build.builder.builder.bindContent:7
+#: RiskQuantLib.Build.builder.builder.persistProject:9
+#: RiskQuantLib.Build.builder.builder.renderProject:8 of
 msgid "bindType"
 msgstr ""
 
@@ -199,13 +275,15 @@ msgid ""
 "in another channel, unless it overwrites the same tag."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder.bindContent:13
-#: RiskQuantLib.Build.builder.builder.buildContent:7
-#: RiskQuantLib.Build.builder.builder.renderProject:15 of
+#: RiskQuantLib.Build.builder.builder.bindContent:11
+#: RiskQuantLib.Build.builder.builder.buildContent:5
+#: RiskQuantLib.Build.builder.builder.renderProject:14 of
 msgid "persist"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Build.builder.builder.bindContent:-1
+#: RiskQuantLib.Build.builder.builder.buildContent:-1
+#: RiskQuantLib.Build.builder.builder.renderProject:-1 of
 msgid "bool"
 msgstr ""
 
@@ -364,7 +442,7 @@ msgid ""
 "is not building cache in specified path, an exception will be raised."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder.loadInfo:7 of
+#: RiskQuantLib.Build.builder.builder.loadInfo:6 of
 msgid "savePath"
 msgstr ""
 
@@ -379,8 +457,8 @@ msgid ""
 "influenced by any building action any more."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder.persistProject:7
-#: RiskQuantLib.Build.builder.builder.renderProject:6 of
+#: RiskQuantLib.Build.builder.builder.persistProject:6
+#: RiskQuantLib.Build.builder.builder.renderProject:5 of
 msgid "sourceCodeDirPath"
 msgstr ""
 
@@ -413,7 +491,7 @@ msgid ""
 "folder or sub-folder will be rendered and parsed."
 msgstr ""
 
-#: RiskQuantLib.Build.builder.builder.renderProject:23 of
+#: RiskQuantLib.Build.builder.builder.renderProject:17 of
 msgid "debug"
 msgstr ""
 
@@ -466,7 +544,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Build.builder.configBuilder:1 of
-msgid "基类：:class:`RiskQuantLib.Build.builder.stringBuilder`"
+msgid "基类：:py:class:`~RiskQuantLib.Build.builder.stringBuilder`"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.configBuilder:1 of
@@ -478,7 +556,7 @@ msgstr ""
 #: RiskQuantLib.Build.builder.databaseBuilder:1
 #: RiskQuantLib.Build.builder.excelBuilder:1
 #: RiskQuantLib.Build.builder.stringBuilder:1 of
-msgid "基类：:class:`RiskQuantLib.Build.builder.dataframeBuilder`"
+msgid "基类：:py:class:`~RiskQuantLib.Build.builder.dataframeBuilder`"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.databaseBuilder:1 of
@@ -489,7 +567,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Build.builder.dataframeBuilder:1 of
-msgid "基类：:class:`RiskQuantLib.Build.builder.validateBuilder`"
+msgid "基类：:py:class:`~RiskQuantLib.Build.builder.validateBuilder`"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.dataframeBuilder:1 of
@@ -523,7 +601,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Build.builder.validateBuilder:1 of
-msgid "基类：:class:`RiskQuantLib.Build.builder.builder`"
+msgid "基类：:py:class:`~RiskQuantLib.Build.builder.builder`"
 msgstr ""
 
 #: RiskQuantLib.Build.builder.validateBuilder:1 of
@@ -631,7 +709,10 @@ msgstr ""
 msgid "function"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Build.debugger.debugger.findClassMethodFunction:-1
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:-1
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:-1
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:-1 of
 msgid "list"
 msgstr ""
 
@@ -666,7 +747,8 @@ msgstr ""
 msgid "numberOfLine"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:-1
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:-1 of
 msgid "int"
 msgstr ""
 
@@ -701,7 +783,7 @@ msgid ""
 "find those."
 msgstr ""
 
-#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:9 of
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:8 of
 msgid "controlCommentLineRange"
 msgstr ""
 
@@ -770,7 +852,7 @@ msgstr ""
 msgid "Initialize a render, find jinja2 template in componentPathString"
 msgstr ""
 
-#: RiskQuantLib.Build.render.render:9 of
+#: RiskQuantLib.Build.render.render:7 of
 msgid "componentPathString"
 msgstr ""
 
@@ -784,7 +866,7 @@ msgstr ""
 msgid "Render a jinja2 template will given kwargs."
 msgstr ""
 
-#: RiskQuantLib.Build.render.render.render:6 of
+#: RiskQuantLib.Build.render.render.render:5 of
 msgid "templateFileName"
 msgstr ""
 
@@ -869,7 +951,7 @@ msgstr ""
 
 #: RiskQuantLib.Build.tree.inheritNode:1 RiskQuantLib.Build.tree.inheritTree:1
 #: of
-msgid "基类：:class:`RiskQuantLib.Build.tree.treeOperation`"
+msgid "基类：:py:class:`~RiskQuantLib.Build.tree.treeOperation`"
 msgstr ""
 
 #: RiskQuantLib.Build.tree.inheritNode:1 of

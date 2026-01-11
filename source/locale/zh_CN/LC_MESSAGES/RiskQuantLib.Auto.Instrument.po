@@ -2,21 +2,23 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"POT-Creation-Date: 2026-01-11 11:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: ../RiskQuantLib.Auto.Instrument.rst:2
 msgid "RiskQuantLib.Auto.Instrument package"
@@ -31,7 +33,7 @@ msgid "RiskQuantLib.Auto.Instrument.instrument module"
 msgstr ""
 
 #: RiskQuantLib.Auto.Instrument.instrument.instrumentAuto:1 of
-msgid "基类：:class:`object`"
+msgid "基类：:py:class:`object`"
 msgstr ""
 
 #: RiskQuantLib.Auto.Instrument.instrument.instrumentAuto:1 of

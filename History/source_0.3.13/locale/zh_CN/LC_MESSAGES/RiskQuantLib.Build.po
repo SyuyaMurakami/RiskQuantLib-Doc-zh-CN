@@ -1,0 +1,970 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../RiskQuantLib.Build.rst:2
+msgid "RiskQuantLib.Build package"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:16
+msgid "RiskQuantLib.Build.builder module"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:1
+#: RiskQuantLib.Build.controller.controller:1
+#: RiskQuantLib.Build.debugger.debugger:1 RiskQuantLib.Build.render.render:1
+#: RiskQuantLib.Build.router.router:1 RiskQuantLib.Build.tree.treeOperation:1
+#: of
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:1 of
+msgid ""
+"builder is a class to use default render and router to re-construct the "
+"whole project. Any RiskQuantLib project should have a default builder. "
+"You can also add other builders to achieve different project mode or use "
+"other builder to assist your current project by specifying render "
+"channel."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:6
+#: RiskQuantLib.Build.builder.configBuilder:3
+#: RiskQuantLib.Build.builder.databaseBuilder:4
+#: RiskQuantLib.Build.builder.dataframeBuilder:3
+#: RiskQuantLib.Build.builder.excelBuilder:3
+#: RiskQuantLib.Build.builder.stringBuilder:3
+#: RiskQuantLib.Build.builder.validateBuilder:4 of
+msgid ""
+"builder is a class to combine router and render to re-construct the whole"
+" project, a project must have a default builder. It may also have other "
+"builders to construct project by another form."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:11
+#: RiskQuantLib.Build.builder.configBuilder:8
+#: RiskQuantLib.Build.builder.databaseBuilder:9
+#: RiskQuantLib.Build.builder.dataframeBuilder:8
+#: RiskQuantLib.Build.builder.excelBuilder:8
+#: RiskQuantLib.Build.builder.stringBuilder:8
+#: RiskQuantLib.Build.builder.validateBuilder:9 of
+msgid "buildFromProjectPath"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render.render:10 of
+msgid "str"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:12
+#: RiskQuantLib.Build.builder.configBuilder:9
+#: RiskQuantLib.Build.builder.databaseBuilder:10
+#: RiskQuantLib.Build.builder.dataframeBuilder:9
+#: RiskQuantLib.Build.builder.excelBuilder:9
+#: RiskQuantLib.Build.builder.stringBuilder:9
+#: RiskQuantLib.Build.builder.validateBuilder:10 of
+msgid "The path of builder class, default as Build directory in current project."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:14
+#: RiskQuantLib.Build.builder.configBuilder:11
+#: RiskQuantLib.Build.builder.databaseBuilder:12
+#: RiskQuantLib.Build.builder.dataframeBuilder:11
+#: RiskQuantLib.Build.builder.excelBuilder:11
+#: RiskQuantLib.Build.builder.stringBuilder:11
+#: RiskQuantLib.Build.builder.validateBuilder:12 of
+msgid "targetProjectPath"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:14
+#: RiskQuantLib.Build.builder.configBuilder:11
+#: RiskQuantLib.Build.builder.databaseBuilder:12
+#: RiskQuantLib.Build.builder.dataframeBuilder:11
+#: RiskQuantLib.Build.builder.excelBuilder:11
+#: RiskQuantLib.Build.builder.stringBuilder:11
+#: RiskQuantLib.Build.builder.validateBuilder:12 of
+msgid ""
+"The path of target RiskQuantLib project which will be changed according "
+"to build information, default as current project."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:19
+#: RiskQuantLib.Build.builder.builder.checkRender:9
+#: RiskQuantLib.Build.builder.builder.updateRender:9
+#: RiskQuantLib.Build.builder.configBuilder:16
+#: RiskQuantLib.Build.builder.databaseBuilder:17
+#: RiskQuantLib.Build.builder.dataframeBuilder:16
+#: RiskQuantLib.Build.builder.excelBuilder:16
+#: RiskQuantLib.Build.builder.stringBuilder:16
+#: RiskQuantLib.Build.builder.validateBuilder:17 of
+msgid "templateSearchPath"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:17
+#: RiskQuantLib.Build.builder.builder.checkRender:7
+#: RiskQuantLib.Build.builder.builder.updateRender:7
+#: RiskQuantLib.Build.builder.configBuilder:14
+#: RiskQuantLib.Build.builder.databaseBuilder:15
+#: RiskQuantLib.Build.builder.dataframeBuilder:14
+#: RiskQuantLib.Build.builder.excelBuilder:14
+#: RiskQuantLib.Build.builder.stringBuilder:14
+#: RiskQuantLib.Build.builder.validateBuilder:15 of
+msgid ""
+"The path of directory where .pyt file for building exists, default as "
+"Build/Component in current project. If buildFromProjectPath is specified,"
+" the default will be buildFromProjectPath/Build/Component."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder:23
+#: RiskQuantLib.Build.builder.builder.bindContent:17
+#: RiskQuantLib.Build.builder.builder.buildContent:11
+#: RiskQuantLib.Build.builder.builder.buildDir:5
+#: RiskQuantLib.Build.builder.builder.buildFile:6
+#: RiskQuantLib.Build.builder.builder.buildProject:8
+#: RiskQuantLib.Build.builder.builder.checkRender:13
+#: RiskQuantLib.Build.builder.builder.clearProject:5
+#: RiskQuantLib.Build.builder.builder.delRender:6
+#: RiskQuantLib.Build.builder.builder.dumpInfo:5
+#: RiskQuantLib.Build.builder.builder.initiateInstrumentTree:5
+#: RiskQuantLib.Build.builder.builder.initiateProject:9
+#: RiskQuantLib.Build.builder.builder.initiatePropertyTree:5
+#: RiskQuantLib.Build.builder.builder.loadInfo:11
+#: RiskQuantLib.Build.builder.builder.persistProject:18
+#: RiskQuantLib.Build.builder.builder.renderProject:27
+#: RiskQuantLib.Build.builder.builder.updateBuildInfo:6
+#: RiskQuantLib.Build.builder.builder.updatePathInfo:6
+#: RiskQuantLib.Build.builder.builder.updateRender:13
+#: RiskQuantLib.Build.builder.configBuilder:20
+#: RiskQuantLib.Build.builder.configBuilder.buildProject:8
+#: RiskQuantLib.Build.builder.databaseBuilder:21
+#: RiskQuantLib.Build.builder.databaseBuilder.buildProject:8
+#: RiskQuantLib.Build.builder.dataframeBuilder:20
+#: RiskQuantLib.Build.builder.dataframeBuilder.buildProject:8
+#: RiskQuantLib.Build.builder.excelBuilder:20
+#: RiskQuantLib.Build.builder.excelBuilder.buildProject:8
+#: RiskQuantLib.Build.builder.stringBuilder:20
+#: RiskQuantLib.Build.builder.stringBuilder.buildProject:8
+#: RiskQuantLib.Build.builder.validateBuilder:21
+#: RiskQuantLib.Build.builder.validateBuilder.buildProject:8
+#: RiskQuantLib.Build.render.render:13 of
+msgid "None"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:1 of
+msgid ""
+"Parse the source code, find where the code should be injected into, and "
+"inject them."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:5 of
+msgid "sourceCodeToBeInjected"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:6 of
+msgid "Content of python source code, with comment used as control syntax"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:9
+#: RiskQuantLib.Build.builder.builder.persistProject:14
+#: RiskQuantLib.Build.builder.builder.renderProject:12 of
+msgid "bindType"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:8 of
+msgid ""
+"The type of binding action. Different bind type will be saved into "
+"different channel. Binding action in one channel will not influence one "
+"in another channel, unless it overwrites the same tag."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:13
+#: RiskQuantLib.Build.builder.builder.buildContent:7
+#: RiskQuantLib.Build.builder.builder.renderProject:15 of
+msgid "persist"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.bindContent:12
+#: RiskQuantLib.Build.builder.builder.renderProject:15 of
+msgid ""
+"If true, the current source code will be saved as permanent source code. "
+"It will not be influenced by building action any more. This action can "
+"not be cancelled."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.buildContent:1 of
+msgid "Render set attribute functions and write them into related .py file."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.buildContent:6 of
+msgid ""
+"If true, the current set attribute function will be saved as permanent "
+"source code. It will not be influenced by building action any more. This "
+"action can not be cancelled."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.buildDir:1 of
+msgid ""
+"Iterate through all instrument and make directory that does not exist "
+"yet, then add __init__.py into it."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.buildFile:1 of
+msgid ""
+"Render initiate .pyt file and write them into related .py file. If .py "
+"file already exists, it will be skipped and not change. If .py file does "
+"not exist, it will be created and initialized."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.buildProject:1
+#: RiskQuantLib.Build.builder.configBuilder.buildProject:1
+#: RiskQuantLib.Build.builder.databaseBuilder.buildProject:1
+#: RiskQuantLib.Build.builder.dataframeBuilder.buildProject:1
+#: RiskQuantLib.Build.builder.excelBuilder.buildProject:1
+#: RiskQuantLib.Build.builder.stringBuilder.buildProject:1
+#: RiskQuantLib.Build.builder.validateBuilder.buildProject:1 of
+msgid ""
+"Trigger of building. Call this function will parse instrument inherit "
+"tree into validated building information, create directory that is needed"
+" but does not exist yet, create file that is needed but does not exist "
+"yet. Generate set attribute function and write them into related "
+"instrument. And finally, write these change into building cache .pkl "
+"file."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkAndMakeDir:1 of
+msgid "Make directory recursively if it does not exist."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkAndMakeDirAndInitiate:1 of
+msgid ""
+"Make directory recursively if it does not exist, then add an __init__.py "
+"file in it."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkAndMakeFile:1 of
+msgid "Make a file is it does not exist, and write content into it."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkPath:1 of
+msgid ""
+"In old versions of RiskQuantLib, if the project and built, and then, the "
+"project dir name is changed, the builder can not recognize the new "
+"project path and will raise an error when you build it again. This "
+"function is used to check whether the path has been changed. If changed, "
+"it will replace the old path into the default project path."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkPath:6 of
+msgid ""
+"This is the default behavior of RiskQuantLib, if your project does not "
+"use many guardians, this default setting will be helpful and make it "
+"convenient to change project location or run your old project in a new "
+"computer."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkPath:10 of
+msgid ""
+"However, it may cause problem when you use guardian projects. The best "
+"way is always un-build a project when you want to change its location or "
+"rename it, and build it again when rename action is finished. It is "
+"safer."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.checkRender:1 of
+msgid ""
+"Change the render into a new one if it does not exist, use specified "
+"templateSearchPath. templateSearchPath is default as current "
+"templateSearchPath."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.clearProject:1 of
+msgid ""
+"Clear any code generated by building and render action. But it will not "
+"delete .py file."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.delRender:1 of
+msgid ""
+"Delete the render from current builder. This is the preparation for "
+"dumping current builder into .pkl file, since render object can not be "
+"serialized."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.dumpInfo:1 of
+msgid "Dump current builder into disk."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.formatWarning:1 of
+msgid "Make the warning message more readable and neglect the redundant line."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.initiateInstrumentTree:1 of
+msgid ""
+"Initialize a new inherit tree object to store instrument information, and"
+" add default nodes into it."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.initiateProject:1 of
+msgid ""
+"Initialize the project will brand new instrument inherit tree and "
+"property inherit tree. It will also replace the render object into a new "
+"one."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.initiateProject:4 of
+msgid ""
+"This function will clear up all current instrument inherit information "
+"and property information, all current attributes will be removed."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.initiatePropertyTree:1 of
+msgid ""
+"Initialize a new inherit tree object to store property type information, "
+"and add default nodes into it."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.linkContent:1 of
+msgid ""
+"This function will use control declaration in source code to build the "
+"whole project again. Any instrument that is required by source code will "
+"be created, any attribute this is needed will be added. These actions "
+"will be operated on an independent builder named as mimicBuilder, which "
+"is the update version of base builder."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.loadInfo:1 of
+msgid ""
+"Load building cache from a RiskQuantLib project or a .pkl file. If there "
+"is not building cache in specified path, an exception will be raised."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.loadInfo:7 of
+msgid "savePath"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.loadInfo:7 of
+msgid "The path of building cache .pkl file, or the path of RiskQuantLib project."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.persistProject:1 of
+msgid ""
+"Build and render current project according to current information, and "
+"turn the generated code into permanent code. These code will not be "
+"influenced by any building action any more."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.persistProject:7
+#: RiskQuantLib.Build.builder.builder.renderProject:6 of
+msgid "sourceCodeDirPath"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.persistProject:7 of
+msgid ""
+"The path of directory where source code exist. Any sub file in this "
+"folder or sub-folder will be rendered and parsed and injected to target "
+"project."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.persistProject:10
+#: RiskQuantLib.Build.builder.builder.renderProject:9 of
+msgid ""
+"The channel of binding action. Source code are rendered and injected into"
+" project by different channels, The source code injected by channel A "
+"will be not influenced by source code injected by channel B, unless the "
+"content of tag is overwritten by code in channel B. This is used when you"
+" have several builders and you want them to build into the same project. "
+"In this case, you should give a bindType for each render action to make "
+"sure they do not conflict with each other."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.renderProject:1 of
+msgid "Render and inject source code into target project."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.renderProject:6 of
+msgid ""
+"The path of directory where source code exist. Any sub file in this "
+"folder or sub-folder will be rendered and parsed."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.renderProject:23 of
+msgid "debug"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.renderProject:18 of
+msgid ""
+"If false, the break point in Src will not be effective, only break point "
+"within instrument class will effect. If true, the class method defined in"
+" Src directory will be dynamically bound to instrument node class. Then "
+"the program will take .py file under .Src directory as a module and "
+"import it, bind the class method into specified class. This mode is "
+"useful when your code is still under development. You will not have to "
+"change between ./Src/somecode.py and target instrument class .py file to "
+"edit any code error. The break point will stop right under "
+"./Src/somecode.py."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.updateBuildInfo:1 of
+msgid ""
+"Parse instrument inherit tree, property type tree, attribute information "
+"and instrument dependency. This function will change these information "
+"into list to prepare for further render."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.updatePathInfo:1 of
+msgid ""
+"Render the filePath.pyt according to current parsed information to "
+"generate absolute file path and relative file path."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.updateRender:1 of
+msgid ""
+"Change the render into a new one, use specified templateSearchPath. "
+"templateSearchPath is default as current templateSearchPath."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.validateStringForJson:1 of
+msgid ""
+"This function will parse json like string into a validated json string. "
+"All escape character will be kept as original form, which is to say, any "
+"'' will not be treated as an escape sign."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.builder.validateStringForJson:4 of
+msgid ""
+"This function is used to parse .pyt file when .pyt file is in a json form"
+" and contains file path. In windows, these file paths will have '', and "
+"it will be wrongly seen as escape character. This function will keep the "
+"string as raw string, validateStringForJson(string) equals "
+"r'stringContent'."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.configBuilder:1 of
+msgid "基类：:class:`RiskQuantLib.Build.builder.stringBuilder`"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.configBuilder:1 of
+msgid ""
+"configBuilder is a child class of stringBuilder, it takes config.py as "
+"information of building."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.databaseBuilder:1
+#: RiskQuantLib.Build.builder.excelBuilder:1
+#: RiskQuantLib.Build.builder.stringBuilder:1 of
+msgid "基类：:class:`RiskQuantLib.Build.builder.dataframeBuilder`"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.databaseBuilder:1 of
+msgid ""
+"databaseBuilder is a child class of dataframeBuilder, you should pass two"
+" sql syntax and a connection object into this class to classify building "
+"information."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.dataframeBuilder:1 of
+msgid "基类：:class:`RiskQuantLib.Build.builder.validateBuilder`"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.dataframeBuilder:1 of
+msgid ""
+"dataframeBuilder is a child class of validatedBuilder, it takes two "
+"pandas.DataFrame as information of building."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.dataframeBuilder.setAttributeInfo:1 of
+msgid ""
+"Pass a pandas.DataFrame into this function to use it as attribute "
+"building information."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.dataframeBuilder.setInstrumentInfo:1 of
+msgid ""
+"Pass a pandas.DataFrame into this function to use it as instrument "
+"building information."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.excelBuilder:1 of
+msgid ""
+"excelBuilder is a child class of dataframeBuilder, it takes two xlsx file"
+" as information of building."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.stringBuilder:1 of
+msgid ""
+"stringBuilder is a child class of validatedBuilder, it takes string as "
+"information of building."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder:1 of
+msgid "基类：:class:`RiskQuantLib.Build.builder.builder`"
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder:1 of
+msgid ""
+"validateBuilder is a child class of builder, it will parse the "
+"information, screen out those wrong syntax and pass validated information"
+" to base builder."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder.validateParentClassName:1 of
+msgid ""
+"If class name in inheritTreeNodeDict, return it. Otherwise, parent class "
+"will be root instrument, and parent class is defaulted as blank string."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder.validateRootInstrumentName:1 of
+msgid ""
+"You can have some words who have the same meaning with root instrument "
+"name. This function is used to identify those words."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder.validateRootInstrumentName:4 of
+msgid ""
+"If instrumentName in rootInstrumentName, return default root instrument "
+"name, which is blank string. otherwise, return instrumentName itself."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder.validateString:1 of
+msgid ""
+"Strip any blank in string, if comma exists in string, split string "
+"according to comma, then strip any blank in every sub-string."
+msgstr ""
+
+#: RiskQuantLib.Build.builder.validateBuilder.validateString:4 of
+msgid ""
+"If lowerCaseFirstLetter is True, the first letter of every sub-string "
+"will be changed into lower-case letter."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:24
+msgid "RiskQuantLib.Build.controller module"
+msgstr ""
+
+#: RiskQuantLib.Build.controller.controller.findDeclareTag:1 of
+msgid ""
+"Find the line start with #-|, return a list whose element is each line "
+"string."
+msgstr ""
+
+#: RiskQuantLib.Build.controller.controller.linkController:1 of
+msgid ""
+"Given original builder, create a new builder, this new builder will copy "
+"all build path of original builder, but use additional build information "
+"declared by declaration content to modify itself. Then the new builder "
+"will trigger a build action. This function will return the new builder as"
+" a mimic one of original builder."
+msgstr ""
+
+#: RiskQuantLib.Build.controller.controller.parseDeclareTagAsDF:1 of
+msgid ""
+"Given the list whose element is line string of declaration content, "
+"transfer instrument declaration and attribute declaration into series, "
+"and merge all series into a build dataframe. Return the buildInstrument "
+"dataframe and buildAttr dataframe."
+msgstr ""
+
+#: RiskQuantLib.Build.controller.controller.parseDeclareTagAsSeries:1 of
+msgid ""
+"Transform each declaration line about instrument into Series, which "
+"contains instrument build information."
+msgstr ""
+
+#: RiskQuantLib.Build.controller.controller.parseDeclareTagByGivenString:1 of
+msgid ""
+"Split content by given string, and split each element of line by given "
+"string. Return the list whose element is the first part of word of each "
+"line, and the list whose element if the last part of word of each line."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:32
+msgid "RiskQuantLib.Build.debugger module"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger:1 of
+msgid ""
+"debugger is a class used to render .py file. It will parse the functions "
+"in .py file and bound them into the class which is specified by #-> "
+"comment command. This is different with the normal render, the normal "
+"render will take .py file as a text file and take the content as it be. "
+"This debugger takes .py file as an executable file and will execute it by"
+" import the file and bind its functions into class dynamically."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findClassMethodFunction:1 of
+msgid ""
+"For all possible definition parsed from ast module, only those with first"
+" argument as 'self' can be treated as class method. For python, this is "
+"not a restriction, you can use any key word to replace 'self', however, "
+"for RiskQuantLib, it takes 'self' as the only possible one in order to "
+"debug."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findClassMethodFunction:7
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:6 of
+msgid "function"
+msgstr ""
+
+#: of
+msgid "list"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findClassMethodFunction:8
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:7 of
+msgid ""
+"The list whose element is the parsed ast function definition object, "
+"which is ast.FunctionDef."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineId:1 of
+msgid "Find the line index of control comment."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:1 of
+msgid ""
+"For every control comment, find the line index where it starts effective "
+"and line index where it stops effective."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:5 of
+msgid "controlCommentLineId"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:6 of
+msgid ""
+"The list whose element is the line index number where the control "
+"comments lie."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:7 of
+msgid "numberOfLine"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findControlCommentLineRange:8
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:10 of
+msgid "The total line number of source code."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunction:1 of
+msgid ""
+"Use python ast module to parse source code. This aims at finding "
+"functions that can be treated as validated python functions. ast module "
+"can be used in python>=3.5, it is the abstract-syntax-tree, used as "
+"interface to python interpreter."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunctionEnd:1 of
+msgid "Find function end line index."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunctionStart:1 of
+msgid ""
+"Find function start line index. For some functions with decorators, the "
+"start line will be the start line of first decorator."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:1 of
+msgid ""
+"For all possible class method, it can not be debugged unless it is "
+"distributed into a RiskQuantLib instrument node. Only those functions "
+"which is under some control comment can be debugged, this function is to "
+"find those."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:9 of
+msgid "controlCommentLineRange"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findFunctionUnderControlComment:9 of
+msgid ""
+"The list whose element is a tuple, which is (line index where control "
+"comment start effective, line index where that control comment end "
+"effective)."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:1 of
+msgid ""
+"Given a list whose element is a tuple: (start line of chunk, end line of "
+"chunk), and given the total line number, this function will find those "
+"chunk which does not belong to given chunk and not cross with given "
+"chunk. In short, this function is to find replenishment of given set."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:7 of
+msgid "functionChunk"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:8 of
+msgid "The list whose element is the start and end of a chunk."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.findOtherChunkOutsideGivenChunk:9 of
+msgid "endLineNum"
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.importModuleFromFile:1 of
+msgid ""
+"Import module from given file and cache it into sys.modules. If this file"
+" has already been imported, it will load the cached one."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.splitSrcByChunkAndFindThoseCanBeDebugged:1
+#: of
+msgid ""
+"This function will check the while source code and find those functions "
+"can be treated as class method, the definition of these functions are "
+"wrapped into a chunk. Then the other source code are packed into chunks "
+"according to class-method chunk. All these source code chunk are then "
+"labelled as 'can be debugged' and 'can not be debugged', if it can be "
+"debugged, its function name will be found and returned."
+msgstr ""
+
+#: RiskQuantLib.Build.debugger.debugger.unParseSourceCode:1 of
+msgid ""
+"Given a list of source code, whose element is each line of source code, "
+"given start line and end line, this function will merge the content "
+"between start and end line, and return the merged source code."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:40
+msgid "RiskQuantLib.Build.render module"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render:1 of
+msgid ""
+"render is a class used to set up jinja2 Environment to render code "
+"templates."
+msgstr ""
+
+#: RiskQuantLib.Build.render.render:3 of
+msgid "Initialize a render, find jinja2 template in componentPathString"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render:9 of
+msgid "componentPathString"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render:8 of
+msgid ""
+"path of directory where templates exist. Any sub-folder will be searched,"
+" file and sub-file will be added into template directory"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render.render:1 of
+msgid "Render a jinja2 template will given kwargs."
+msgstr ""
+
+#: RiskQuantLib.Build.render.render.render:6 of
+msgid "templateFileName"
+msgstr ""
+
+#: RiskQuantLib.Build.render.render.render:6 of
+msgid ""
+"path of template file. Any sub-folder will be searched, file and sub-file"
+" will be added into template directory"
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:48
+msgid "RiskQuantLib.Build.router module"
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.contentSplit:1 of
+msgid ""
+"Split content by given tagStart and tagEnd, return content before "
+"tagStart and content after tagEnd"
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.convertInjectTagToFilePath:1 of
+msgid ""
+"Parse a line of tag information. Split the line by comma, parse every "
+"sub-string into (filePath,tagName) and reform them into a list."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.findIndentOfLine:1 of
+msgid "Find the blank before given text."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.injectToContent:1 of
+msgid ""
+"Insert several contents into related tag. Contents will be between "
+"tagStart and tagEnd. kwargs is a dict whose key is tag name and value is "
+"content to be inserted."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.injectToFile:1 of
+msgid "Read a .py file and insert several contents into related tag position."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.insertToContent:1 of
+msgid "Insert some content to given tag position"
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.insertToFile:1 of
+msgid "Read a .py file and insert some code into tag position."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.parseInjectTarget:1 of
+msgid ""
+"Find the line of control comment, split whole content by control comment "
+"line. Parse the target file and tag name for every control comment. "
+"Finally, return a dict whose key is target file and value is "
+"(tag,content) pair."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.persistToContent:1 of
+msgid ""
+"Insert several contents right before related tag. Contents will be before"
+" tagStart. kwargs is a dict whose key is tag name and value is content to"
+" be inserted."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.persistToFile:1 of
+msgid "Read a .py file and insert several contents before related tag position."
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.stripTag:1 of
+msgid "Delete the row of tag"
+msgstr ""
+
+#: RiskQuantLib.Build.router.router.validateInjectTag:1 of
+msgid ""
+"Parse a single tag information. If user does not specify @, use file name"
+" as tag name. Then convert dirA.dirB.dirC into dirA/dirB/dirC. Return "
+"target file path and target tag name."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:56
+msgid "RiskQuantLib.Build.tree module"
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode:1 RiskQuantLib.Build.tree.inheritTree:1
+#: of
+msgid "基类：:class:`RiskQuantLib.Build.tree.treeOperation`"
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode:1 of
+msgid "A link chain node used to hold inherit information."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.addAttr:1 of
+msgid ""
+"Add a (key, value) pair to current attribute dict. If this dict does not "
+"exist, it will be created."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.dependOnOutside:1 of
+msgid "Specify a library which current node depends on."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.destroyNode:1 of
+msgid ""
+"Delete this node and delete any inherit relationship from its parent "
+"nodes and child nodes."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.extendInheritTree:1 of
+msgid ""
+"Given a inheritNode object, this function will append the name of "
+"inheritNode after the inheritTree of that node, then return the new list "
+"as extended inheritTree."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.inheritFrom:1 of
+msgid "Inherit from one or more node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.inheritFromOutside:1 of
+msgid "Inherit from a node which is not a node in current inherit tree."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.setAttr:1 of
+msgid "Add an attribute to current node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritNode.updateInheritTree:1 of
+msgid ""
+"Given a list, this function will insert this list before the inheritTree "
+"of that node and its any child node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree:1 of
+msgid "A link chain used to hold inherit information."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.addNode:1 of
+msgid ""
+"Add a single node into current inherit tree, if it already exists, set "
+"that node into active, if it does not exist, a new node will be created "
+"as set as active."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.delNode:1 of
+msgid "Delete a node from current inherit tree."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.getAttr:1 of
+msgid "Iterate through nodes and get attribute in every node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.getInheritList:1 of
+msgid "Get the inheritTree attribute of every node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.getNode:1 of
+msgid "Select a node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.getParentInheritListSeries:1 of
+msgid ""
+"Iterate through every node and get the inheritTree of every parent of "
+"that node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.inheritFrom:1 of
+msgid ""
+"Select alive node and make it inheriting from one or more nodes in "
+"current inherit tree."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.inheritTree.replaceNode:1 of
+msgid "Replace a node into a brand new one, and set alive into that node."
+msgstr ""
+
+#: RiskQuantLib.Build.tree.treeOperation.copy:1 of
+msgid "Get a copy of present tree object."
+msgstr ""
+
+#: ../RiskQuantLib.Build.rst:64
+msgid "Module contents"
+msgstr ""
+

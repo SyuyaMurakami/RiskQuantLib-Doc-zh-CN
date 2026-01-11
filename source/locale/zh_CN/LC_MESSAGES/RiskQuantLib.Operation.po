@@ -2,21 +2,23 @@
 # Copyright (C)
 # This file is distributed under the same license as the RiskQuantLib
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RiskQuantLib \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"POT-Creation-Date: 2026-01-11 11:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: ../RiskQuantLib.Operation.rst:2
 msgid "RiskQuantLib.Operation package"
@@ -27,43 +29,12 @@ msgid "Submodules"
 msgstr ""
 
 #: ../RiskQuantLib.Operation.rst:8
-msgid "RiskQuantLib.Operation.iloc module"
-msgstr ""
-
-#: RiskQuantLib.Operation.iloc.iloc:1 RiskQuantLib.Operation.loc.loc:1
-#: RiskQuantLib.Operation.operation.operation:1 of
-msgid "基类：:class:`object`"
-msgstr ""
-
-#: RiskQuantLib.Operation.iloc.iloc:1 of
-msgid ""
-"This class is the function class for RiskQuantLib list to use iloc "
-"function. It's similar to that in pandas. Use it by calling "
-"stockList.iloc[number]. It returns the number-th element in that list."
-msgstr ""
-
-#: RiskQuantLib.Operation.iloc.iloc:5 of
-msgid "Passing a list to initialize iloc object."
-msgstr ""
-
-#: ../RiskQuantLib.Operation.rst:16
-msgid "RiskQuantLib.Operation.loc module"
-msgstr ""
-
-#: RiskQuantLib.Operation.loc.loc:1 of
-msgid ""
-"This class is the function class for RiskQuantLib list to use loc "
-"function. It's similar to that in pandas. Use it by calling "
-"stockList.loc[index]. It returns the element in that list whose index "
-"equals given value."
-msgstr ""
-
-#: RiskQuantLib.Operation.loc.loc:5 of
-msgid "Passing a list to initialize loc object."
-msgstr ""
-
-#: ../RiskQuantLib.Operation.rst:24
 msgid "RiskQuantLib.Operation.operation module"
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation:1
+#: RiskQuantLib.Operation.vectorization.vectorization:1 of
+msgid "基类：:py:class:`object`"
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation:1 of
@@ -101,13 +72,49 @@ msgid ""
 "attribute. If not registered in current list class, it will be skipped."
 msgstr ""
 
+#: RiskQuantLib.Operation.operation.operation.addFromDF:12
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:9
+#: RiskQuantLib.Operation.operation.operation.connect:14
+#: RiskQuantLib.Operation.operation.operation.execFunc:6
+#: RiskQuantLib.Operation.operation.operation.fromDF:11
+#: RiskQuantLib.Operation.operation.operation.fromIterable:8
+#: RiskQuantLib.Operation.operation.operation.groupBy:5
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:5
+#: RiskQuantLib.Operation.operation.operation.join:8
+#: RiskQuantLib.Operation.operation.operation.link:12
+#: RiskQuantLib.Operation.operation.operation.match:12
+#: RiskQuantLib.Operation.operation.operation.mean:6
+#: RiskQuantLib.Operation.operation.operation.paraFunc:10
+#: RiskQuantLib.Operation.operation.operation.scale:9
+#: RiskQuantLib.Operation.operation.operation.setAll:4
+#: RiskQuantLib.Operation.operation.operation.std:6
+#: RiskQuantLib.Operation.operation.operation.sum:6
+#: RiskQuantLib.Operation.operation.operation.toArray:8
+#: RiskQuantLib.Operation.operation.operation.toDF:8
+#: RiskQuantLib.Operation.operation.operation.toDict:5
+#: RiskQuantLib.Operation.operation.operation.toList:8
+#: RiskQuantLib.Operation.operation.operation.toSeries:9
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:5
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:5
+#: RiskQuantLib.Operation.operation.operation.updateAttr:8
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:11
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:7
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:7
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:7
+#: RiskQuantLib.Operation.operation.operation.zip:6 of
+msgid "Parameters"
+msgstr ""
+
 #: RiskQuantLib.Operation.operation.operation.addFromDF:13
 #: RiskQuantLib.Operation.operation.operation.fromDF:12
 #: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:8 of
 msgid "df"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toDF:18 of
+#: RiskQuantLib.Operation.operation.operation.addFromDF:-1
+#: RiskQuantLib.Operation.operation.operation.fromDF:-1
+#: RiskQuantLib.Operation.operation.operation.toDF:18
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:-1 of
 msgid "pd.DataFrame"
 msgstr ""
 
@@ -117,14 +124,38 @@ msgid "The dataframe you want to pull data from."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.addFromDF:15
-#: RiskQuantLib.Operation.operation.operation.addFromIterable:13
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:12
 #: RiskQuantLib.Operation.operation.operation.fromDF:14
-#: RiskQuantLib.Operation.operation.operation.fromIterable:12
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:12 of
+#: RiskQuantLib.Operation.operation.operation.fromIterable:11
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:10 of
 msgid "code"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.addFromDF:-1
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:-1
+#: RiskQuantLib.Operation.operation.operation.connect:-1
+#: RiskQuantLib.Operation.operation.operation.execFunc:-1
+#: RiskQuantLib.Operation.operation.operation.fromDF:-1
+#: RiskQuantLib.Operation.operation.operation.fromIterable:-1
+#: RiskQuantLib.Operation.operation.operation.groupBy:-1
+#: RiskQuantLib.Operation.operation.operation.join:-1
+#: RiskQuantLib.Operation.operation.operation.link:-1
+#: RiskQuantLib.Operation.operation.operation.match:-1
+#: RiskQuantLib.Operation.operation.operation.mean:-1
+#: RiskQuantLib.Operation.operation.operation.paraFunc:-1
+#: RiskQuantLib.Operation.operation.operation.scale:-1
+#: RiskQuantLib.Operation.operation.operation.std:-1
+#: RiskQuantLib.Operation.operation.operation.sum:-1
+#: RiskQuantLib.Operation.operation.operation.toDF:-1
+#: RiskQuantLib.Operation.operation.operation.toDict:-1
+#: RiskQuantLib.Operation.operation.operation.toSeries:-1
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:-1
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttr:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:-1 of
 msgid "str"
 msgstr ""
 
@@ -133,16 +164,42 @@ msgstr ""
 msgid "The column name that you want to mark as 'code' attribute."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.addFromDF:18
-#: RiskQuantLib.Operation.operation.operation.addFromIterable:17
-#: RiskQuantLib.Operation.operation.operation.fromDF:17
-#: RiskQuantLib.Operation.operation.operation.fromIterable:16 of
+#: RiskQuantLib.Operation.operation.operation.addFromDF:17
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:15
+#: RiskQuantLib.Operation.operation.operation.fromDF:16
+#: RiskQuantLib.Operation.operation.operation.fromIterable:14 of
 msgid "name"
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.addFromDF:18
 #: RiskQuantLib.Operation.operation.operation.fromDF:17 of
 msgid "The column name that you want to mark as 'name' attribute."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.addFromDF:21
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:20
+#: RiskQuantLib.Operation.operation.operation.connect:37
+#: RiskQuantLib.Operation.operation.operation.fromDF:20
+#: RiskQuantLib.Operation.operation.operation.fromIterable:19
+#: RiskQuantLib.Operation.operation.operation.paraFunc:15
+#: RiskQuantLib.Operation.operation.operation.paraRun:6
+#: RiskQuantLib.Operation.operation.operation.setAll:9
+#: RiskQuantLib.Operation.operation.operation.toArray:13
+#: RiskQuantLib.Operation.operation.operation.toDF:17
+#: RiskQuantLib.Operation.operation.operation.toDict:12
+#: RiskQuantLib.Operation.operation.operation.toList:13
+#: RiskQuantLib.Operation.operation.operation.toSeries:20
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:16
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:14
+#: RiskQuantLib.Operation.operation.operation.updateAttr:21
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:27
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:20
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:18
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:18
+#: RiskQuantLib.Operation.operation.operation.vecApply:14
+#: RiskQuantLib.Operation.operation.operation.vecFunc:14
+#: RiskQuantLib.Operation.operation.operation.zip:13 of
+msgid "Returns"
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.addFromDF:22
@@ -171,7 +228,12 @@ msgstr ""
 msgid "iterable"
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toList:14 of
+#: RiskQuantLib.Operation.operation.operation.addFromIterable:-1
+#: RiskQuantLib.Operation.operation.operation.fromIterable:-1
+#: RiskQuantLib.Operation.operation.operation.setAll:-1
+#: RiskQuantLib.Operation.operation.operation.toList:14
+#: RiskQuantLib.Operation.operation.operation.updateAttr:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:-1 of
 msgid "list"
 msgstr ""
 
@@ -197,9 +259,7 @@ msgstr ""
 #: RiskQuantLib.Operation.operation.operation.apply:1 of
 msgid ""
 "This function will apply the given function to each element of "
-"RiskQuantLib list. Default settings will leave any change to element out."
-" Your change to elements won't be kept. Only the result of applyFunction "
-"is returned."
+"RiskQuantLib list."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.connect:1
@@ -231,7 +291,10 @@ msgstr ""
 msgid "anotherList"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.connect:-1
+#: RiskQuantLib.Operation.operation.operation.join:-1
+#: RiskQuantLib.Operation.operation.operation.link:-1
+#: RiskQuantLib.Operation.operation.operation.match:-1 of
 msgid "RiskQuantLib list or list"
 msgstr ""
 
@@ -254,13 +317,18 @@ msgid ""
 " elements from another list."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:20
-#: RiskQuantLib.Operation.operation.operation.join:14
-#: RiskQuantLib.Operation.operation.operation.scale:16 of
+#: RiskQuantLib.Operation.operation.operation.connect:19
+#: RiskQuantLib.Operation.operation.operation.join:13
+#: RiskQuantLib.Operation.operation.operation.scale:14 of
 msgid "filterFunction"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.connect:-1
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:-1
+#: RiskQuantLib.Operation.operation.operation.join:-1
+#: RiskQuantLib.Operation.operation.operation.link:-1
+#: RiskQuantLib.Operation.operation.operation.match:-1
+#: RiskQuantLib.Operation.operation.operation.scale:-1 of
 msgid "function"
 msgstr ""
 
@@ -271,11 +339,18 @@ msgid ""
 "False means not added."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:24 of
+#: RiskQuantLib.Operation.operation.operation.connect:22 of
 msgid "unsymmetrical"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.connect:-1
+#: RiskQuantLib.Operation.operation.operation.groupBy:-1
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:-1
+#: RiskQuantLib.Operation.operation.operation.mean:-1
+#: RiskQuantLib.Operation.operation.operation.std:-1
+#: RiskQuantLib.Operation.operation.operation.sum:-1
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:-1
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:-1 of
 msgid "bool"
 msgstr ""
 
@@ -287,7 +362,7 @@ msgid ""
 "list."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:27 of
+#: RiskQuantLib.Operation.operation.operation.connect:26 of
 msgid "filterFunctionOnLeft"
 msgstr ""
 
@@ -310,7 +385,7 @@ msgid ""
 " elements from present list."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.connect:34 of
+#: RiskQuantLib.Operation.operation.operation.connect:31 of
 msgid "filterFunctionOnRight"
 msgstr ""
 
@@ -335,10 +410,6 @@ msgstr ""
 msgid "Get a copy of present RiskQuantLib list object."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.dropIndex:1 of
-msgid "Delete index for each element."
-msgstr ""
-
 #: RiskQuantLib.Operation.operation.operation.execFunc:1 of
 msgid ""
 "This function will execute instance function for every element in present"
@@ -348,7 +419,7 @@ msgid ""
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.execFunc:7
-#: RiskQuantLib.Operation.operation.operation.paraFunc:12 of
+#: RiskQuantLib.Operation.operation.operation.paraFunc:11 of
 msgid "functionName"
 msgstr ""
 
@@ -403,8 +474,8 @@ msgstr ""
 msgid "The attribute that you want to group data by."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.groupBy:10
-#: RiskQuantLib.Operation.operation.operation.groupByFunc:10 of
+#: RiskQuantLib.Operation.operation.operation.groupBy:8
+#: RiskQuantLib.Operation.operation.operation.groupByFunc:8 of
 msgid "useObj"
 msgstr ""
 
@@ -421,8 +492,8 @@ msgstr ""
 #: RiskQuantLib.Operation.operation.operation.mean:9
 #: RiskQuantLib.Operation.operation.operation.std:9
 #: RiskQuantLib.Operation.operation.operation.sum:9
-#: RiskQuantLib.Operation.operation.operation.uniqueAttr:9
-#: RiskQuantLib.Operation.operation.operation.uniqueCode:7 of
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:8
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:6 of
 msgid "inplace"
 msgstr ""
 
@@ -646,7 +717,9 @@ msgid "The call will be delayed until you run currentRiskQuantLibList.paraRun().
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.paraFunc:16
-#: RiskQuantLib.Operation.operation.operation.paraRun:7 of
+#: RiskQuantLib.Operation.operation.operation.paraRun:7
+#: RiskQuantLib.Operation.operation.operation.vecApply:15
+#: RiskQuantLib.Operation.operation.operation.vecFunc:15 of
 msgid "operation"
 msgstr ""
 
@@ -666,15 +739,11 @@ msgid ""
 "one will be kept."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.resetIndex:1 of
-msgid "Reset the index as the n-th element of list."
-msgstr ""
-
 #: RiskQuantLib.Operation.operation.operation.rolling:1 of
 msgid ""
 "For each element, This function will collect the n elements before that "
 "element, create a new RiskQuantLib list object to holding it. The new "
-"list will be set as an attribute of '_rolling', thus the present element "
+"list will be set as an attribute of 'rolling', thus the present element "
 "can reach to the information of its former elements."
 msgstr ""
 
@@ -719,18 +788,12 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.setAll:6 of
+#: RiskQuantLib.Operation.operation.operation.setAll:5 of
 msgid "List"
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.setAll:6 of
 msgid "A collection of RiskQuantLib instrument objects."
-msgstr ""
-
-#: RiskQuantLib.Operation.operation.operation.setIndex:1 of
-msgid ""
-"Set the index for each element, given attribute name. The index value "
-"will be set as the attribute value you choose."
 msgstr ""
 
 #: RiskQuantLib.Operation.operation.operation.sort:1 of
@@ -792,14 +855,18 @@ msgid ""
 " themselves in this list to form an array."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toArray:10
+#: RiskQuantLib.Operation.operation.operation.toArray:9
 #: RiskQuantLib.Operation.operation.operation.toDF:9
-#: RiskQuantLib.Operation.operation.operation.toList:10
+#: RiskQuantLib.Operation.operation.operation.toList:9
 #: RiskQuantLib.Operation.operation.operation.zip:7 of
 msgid "attrNameList"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.toArray:-1
+#: RiskQuantLib.Operation.operation.operation.toDF:-1
+#: RiskQuantLib.Operation.operation.operation.toList:-1
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:-1
+#: RiskQuantLib.Operation.operation.operation.zip:-1 of
 msgid "str or list"
 msgstr ""
 
@@ -807,7 +874,8 @@ msgstr ""
 msgid "The attribute name whose values you want to use as array value."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toArray:14 of
+#: RiskQuantLib.Operation.operation.operation.toArray:14
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:-1 of
 msgid "np.ndarray"
 msgstr ""
 
@@ -837,12 +905,13 @@ msgstr ""
 msgid "The attribute name whose values you want to use as dataframe index."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toDF:14
-#: RiskQuantLib.Operation.operation.operation.toSeries:17 of
+#: RiskQuantLib.Operation.operation.operation.toDF:13
+#: RiskQuantLib.Operation.operation.operation.toSeries:16 of
 msgid "index"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.toDF:-1
+#: RiskQuantLib.Operation.operation.operation.toSeries:-1 of
 msgid "list or operation"
 msgstr ""
 
@@ -868,7 +937,7 @@ msgstr ""
 msgid "The attribute name whose values you want to use as dict keys."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toDict:9
+#: RiskQuantLib.Operation.operation.operation.toDict:8
 #: RiskQuantLib.Operation.operation.operation.toSeries:10 of
 msgid "attrNameAsValue"
 msgstr ""
@@ -877,7 +946,8 @@ msgstr ""
 msgid "The attribute name whose values you want to use as dict values."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toDict:13 of
+#: RiskQuantLib.Operation.operation.operation.toDict:13
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:-1 of
 msgid "dict"
 msgstr ""
 
@@ -927,7 +997,8 @@ msgstr ""
 msgid "The name of series."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.toSeries:21 of
+#: RiskQuantLib.Operation.operation.operation.toSeries:21
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:-1 of
 msgid "pd.Series"
 msgstr ""
 
@@ -959,8 +1030,8 @@ msgid ""
 "will done in a copy of present list object."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.uniqueAttr:13
-#: RiskQuantLib.Operation.operation.operation.uniqueCode:11 of
+#: RiskQuantLib.Operation.operation.operation.uniqueAttr:11
+#: RiskQuantLib.Operation.operation.operation.uniqueCode:9 of
 msgid "keep"
 msgstr ""
 
@@ -1023,11 +1094,11 @@ msgstr ""
 msgid "An iterable object that contains new values of attributes."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.updateAttr:18
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:24
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:17
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:15
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:15 of
+#: RiskQuantLib.Operation.operation.operation.updateAttr:15
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:21
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDF:14
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromDict:12
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromSeries:12 of
 msgid "byAttr"
 msgstr ""
 
@@ -1064,7 +1135,7 @@ msgstr ""
 msgid "The array you which want to update this list from."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:16 of
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:14 of
 msgid "codeList"
 msgstr ""
 
@@ -1075,7 +1146,7 @@ msgid ""
 "The length of this list must equal to the row number of passed array."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:19 of
+#: RiskQuantLib.Operation.operation.operation.updateAttrFromArray:18 of
 msgid "attributeNameList"
 msgstr ""
 
@@ -1162,6 +1233,39 @@ msgstr ""
 msgid "The series that you want to update data from."
 msgstr ""
 
+#: RiskQuantLib.Operation.operation.operation.vecApply:1 of
+msgid ""
+"This function is like operation.apply, it will apply the given function "
+"to each  element of RiskQuantLib list. The passed function should be one-"
+"parameter function, whose parameter represents the element of current "
+"RiskQuantLib list."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.vecApply:5
+#: RiskQuantLib.Operation.operation.operation.vecFunc:5 of
+msgid ""
+"The difference is this function will try to vectorize the calculation to "
+"speed up. It will convert the attribute to np.array and operate "
+"mathematical calculation."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.vecApply:8
+#: RiskQuantLib.Operation.operation.operation.vecFunc:8 of
+msgid ""
+"Notice: Only Pure Mathematic Function can be vectorized, this is to say, "
+"any logic key word of python, like 'in', 'if', 'for', etc, can Not be "
+"used in passed function. If must be pure math formula. Luckily, all numpy"
+" function can be used. If you want to do some logistic calculation, you "
+"should make sure you write function as logic-matrix-like."
+msgstr ""
+
+#: RiskQuantLib.Operation.operation.operation.vecFunc:1 of
+msgid ""
+"This function is like operation.execFunc, it will call the given function"
+" of each  element of RiskQuantLib list. The passed function should be the"
+" attribute function  of element of current RiskQuantLib List."
+msgstr ""
+
 #: RiskQuantLib.Operation.operation.operation.zip:1 of
 msgid ""
 "This function will convert the values of given attribute into a zip "
@@ -1173,11 +1277,11 @@ msgstr ""
 msgid "The attribute name whose values you want to zip."
 msgstr ""
 
-#: RiskQuantLib.Operation.operation.operation.zip:10 of
+#: RiskQuantLib.Operation.operation.operation.zip:9 of
 msgid "args"
 msgstr ""
 
-#: of
+#: RiskQuantLib.Operation.operation.operation.zip:-1 of
 msgid "list or iterable"
 msgstr ""
 
@@ -1191,7 +1295,15 @@ msgstr ""
 msgid "zip object"
 msgstr ""
 
-#: ../RiskQuantLib.Operation.rst:32
+#: ../RiskQuantLib.Operation.rst:16
+msgid "RiskQuantLib.Operation.vectorization module"
+msgstr ""
+
+#: RiskQuantLib.Operation.vectorization.vectorization:1 of
+msgid "Add element to object, and mark it as attribute 'all'."
+msgstr ""
+
+#: ../RiskQuantLib.Operation.rst:24
 msgid "Module contents"
 msgstr ""
 

@@ -10,6 +10,9 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.8"
+  jobs:
+    pre_install:
+      - pip install numpy
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
@@ -19,4 +22,4 @@ sphinx:
 # https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
 python:
   install:
-  - requirements: source/requirements.txt
+  - requirements: requirements.txt

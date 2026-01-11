@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../With_Github.rst:2
+msgid "与Github配合使用"
+msgstr ""
+
+#: ../With_Github.rst:7
+msgid ""
+"在 **模板管理** "
+"中，我们了解到RiskQuantLib可以将工程保存为模板，然后供下一次进行数据分析时初始化项目使用。这样的使用方式仅仅局限于一台电脑。如果你在团队中试图使用RiskQuantLib，你或许需要向团队成员分享代码和模板工程，RiskQuantLib通过Github来实现这一功能，通过预置的命令，RiskQuantLib可以获取Github上所有的公开项目，并将这些项目保存为本地计算机上的工程模板。"
+msgstr ""
+
+#: ../With_Github.rst:10
+msgid "从Github获取项目"
+msgstr ""
+
+#: ../With_Github.rst:12
+msgid ""
+"在终端对话框中，使用以下命令来获取Github项目，以下我们将使用 `hub项目 "
+"<https://github.com/github/hub>`_ 作为例子: ::"
+msgstr ""
+
+#: ../With_Github.rst:17
+msgid "运行成功后，会显示如下信息： ::"
+msgstr ""
+
+#: ../With_Github.rst:22
+msgid "你也可以通过终端命令中的 ``listRQL`` 来查看已经保存为模板工程的项目。"
+msgstr ""
+
+#: ../With_Github.rst:25
+msgid "模糊查找项目"
+msgstr ""
+
+#: ../With_Github.rst:27
+msgid "如果你并不知道Github项目的确切网址，你可以通过大致的关键字来模糊查找，在 ``getRQL`` 命令后输入关键字，可以触发模糊查询功能。 ::"
+msgstr ""
+
+#: ../With_Github.rst:32
+msgid "运行此命令会使得RiskQuantLib在Github中查询所有相关的项目，并按照相关性和项目标星数进行排列。你可以看到如下界面： ::"
+msgstr ""
+
+#: ../With_Github.rst:47
+msgid ""
+"输入对应项目前面的数字，可以将此项目下载到本地作为工程，在本例子中，我们选择 ``HelloGitHub`` "
+"，因此应该输入1，之后会看到如下界面： ::"
+msgstr ""
+
+#: ../With_Github.rst:52
+msgid "之后你可以使用已经保存的模板工程来初始化新的工程。"
+msgstr ""
+

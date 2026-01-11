@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the RiskQuantLib
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RiskQuantLib \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-30 17:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../With_Wind.rst:2
+msgid "与万得配合使用"
+msgstr ""
+
+#: ../With_Wind.rst:7
+msgid ""
+"RiskQuantLib提供了二次封装的数据接口，以供使用者更加方便地利用万得金融终端的 ``python API`` "
+"进行数据分析。这样的接口是利用另一个独立的python库进行的，名字叫做 ``windget`` , ``windget`` 提供了以 "
+"``get`` 作为关键字的函数族，并封装了万得API提供的绝大部分函数接口。"
+msgstr ""
+
+#: ../With_Wind.rst:10
+msgid "安装和导入windget"
+msgstr ""
+
+#: ../With_Wind.rst:12
+msgid "windget是独立的python库，可以独立于RiskQuantLib运行，但在此之前，需要使用 ``pip`` 命令进行安装: ::"
+msgstr ""
+
+#: ../With_Wind.rst:17
+msgid ""
+"**如果你是RiskQuantLib的用户，你无需进行这一步操作，RiskQuantLib在** ``0.0.45`` **版本之后已经集成了**"
+" ``windget`` 。 **在进行更新和安装的时候，RiskQuantLib会自动对** ``windget`` **进行安装和更新。**"
+msgstr ""
+
+#: ../With_Wind.rst:19
+msgid "如果你安装了RiskQuantLib或者windget，可以在源代码中使用以下命令进行导入： ::"
+msgstr ""
+
+#: ../With_Wind.rst:24
+msgid "或者在RiskQuantLib的工程主文件中使用（在 ``0.2.0`` 之后的版本已经被废弃）： ::"
+msgstr ""
+
+#: ../With_Wind.rst:30
+msgid "get函数族"
+msgstr ""
+
+#: ../With_Wind.rst:32
+msgid ""
+"同模板类和模板列表类中的函数族一样， ``get`` 函数族指的是一类名称以 ``get`` 开头的函数，他们负责从万得的python "
+"API中获取数据。这类函数的名称是 ``get`` 加上获取数据的字段的英文关键字。比如想要获取收盘价，函数的名称应该为 ``getClose``"
+" ，你可以通过以下命令来获取收盘价： ::"
+msgstr ""
+
+#: ../With_Wind.rst:37
+msgid "你可以将 ``Series`` 添加在任何字段的名称之后，来获取当前字段的时间序列。比如要获取股票的收盘价时间序列，可以使用： ::"
+msgstr ""
+
+#: ../With_Wind.rst:42
+msgid ""
+"在这种情况下， ``Series`` 被称为函数族尾缀，注意， ``Series`` 并不是唯一的函数族尾缀，其他可用的尾缀包括 ``Wsi`` "
+"， ``Wst`` ， ``Wsee`` ， ``Wses`` ， ``Wsq`` 。他们对应的意义分别如下： ::"
+msgstr ""
+
+#: ../With_Wind.rst:51
+msgid "**注意：所有的字段之后都可以增加** ``Series`` **作为尾缀，但其他的尾缀不一定适用。**"
+msgstr ""
+
+#: ../With_Wind.rst:53
+msgid "**注意：以上例子中的股票字符串均可以使用列表或者pandas.Series进行替代，比如：** ::"
+msgstr ""
+
+#: ../With_Wind.rst:61
+msgid "模糊查找字段"
+msgstr ""
+
+#: ../With_Wind.rst:63
+msgid ""
+"如果你并不知道万得函数的字段名称，可以使用模糊查找功能进行匹配。在pycharm中，同时按下 ``control`` + ``shift`` + "
+"``F`` 可以调出查询框，你可以输入中文的字段名称来查询 ``get`` "
+"函数族中符合的函数。此功能的使用必须依赖于RiskQuantLib工程，且适用于 ``0.2.0`` "
+"之前的版本。只有在RiskQuantLib工程中才可以用中文进行字段查询。"
+msgstr ""
+
+#: ../With_Wind.rst:66
+msgid "Pycharm插件"
+msgstr ""
+
+#: ../With_Wind.rst:68
+msgid ""
+"windget提供了一个pycharm插件，进行代码的自动补全，以此弥补用户无法准确获取万得函数字段的问题。在pycharm的 ``File-"
+"Setting-Plugin`` "
+"中的插件市场中，搜索windget并安装，重启pycharm即可使用windget的pycharm插件。此插件不需要依赖于RiskQuantLib工程，可以在任何pycharm项目中使用。"
+msgstr ""
+
